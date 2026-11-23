@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ayanna Edwards — Ownership &amp; Access Report</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --panel2:#f0f2f5; --ink:#1a1f28; --muted:#5c6572;
+    --line:#e2e5ea; --accent:#2564d6; --accent2:#6d5ae0;
+    --high:#d6304a; --med:#b3760a; --low:#178a4f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:linear-gradient(180deg,#eef0f3,#f6f7f9 240px); color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px; margin:0 auto; padding:48px 24px 96px}
+  header.top{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:36px; display:flex; justify-content:space-between; align-items:flex-end; gap:24px; flex-wrap:wrap}
+  .eyebrow{color:var(--accent); font-weight:600; letter-spacing:.12em; text-transform:uppercase; font-size:12px; margin:0 0 10px}
+  h1{font-size:33px; line-height:1.15; margin:0 0 14px; letter-spacing:-.02em}
+  .meta{display:flex; flex-wrap:wrap; gap:8px 20px; color:var(--muted); font-size:13.5px}
+  .meta b{color:var(--ink); font-weight:600}
+  .avatar{width:64px; height:64px; border-radius:50%; border:2px solid var(--line); background:var(--panel2)}
+  h2{font-size:22px; margin:52px 0 16px; letter-spacing:-.01em}
+  h3{font-size:15px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:26px 0 10px}
+  p{margin:0 0 14px}
+  a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+  a.ext::after{content:" \2197"; font-size:11px; opacity:.7}
+  code{background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:12.5px; font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace}
+  strong{color:#fff}
+  .verdict{background:linear-gradient(135deg,#fdf6ea,#fbeedb); border:1px solid #edd9ae; border-radius:14px; padding:24px 26px; margin:0 0 26px}
+  .verdict .tag{display:inline-block; font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--med); margin-bottom:8px}
+  .verdict h2{margin:0 0 10px; font-size:24px} .verdict p{color:#3a3f47; margin:0} .verdict p+p{margin-top:10px}
+  .stats{display:grid; grid-template-columns:repeat(5,1fr); gap:12px; margin:22px 0 8px}
+  .stat{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px; box-shadow:0 1px 2px rgba(20,25,35,.04)}
+  .stat .n{font-size:24px; font-weight:700; letter-spacing:-.02em}
+  .stat .l{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-top:2px}
+  .stat.hi .n{color:var(--high)} .stat.me .n{color:var(--med)} .stat.lo .n{color:var(--low)} .stat.gd .n{color:var(--low)}
+  .callout{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:16px 0; box-shadow:0 1px 2px rgba(20,25,35,.04)}
+  .callout h4{margin:0 0 8px; font-size:14px}
+  .callout.warn{border-color:#edd9ae; background:#fdf6ea} .callout.warn h4{color:var(--med)}
+  .callout.bad{border-color:#f0c4cc; background:#fdf0f2} .callout.bad h4{color:var(--high)}
+  .callout.key h4{color:var(--accent)}
+  .callout.good{border-color:#bfe3cf; background:#eefbf3} .callout.good h4{color:var(--low)}
+  ul{margin:0 0 14px; padding-left:22px} li{margin:6px 0} ol{margin:0 0 14px; padding-left:22px}
+  .tablecard{border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:14px 0; background:var(--panel); box-shadow:0 1px 3px rgba(20,25,35,.05)}
+  .tbl-head{display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--panel2); border-bottom:1px solid var(--line)}
+  .tbl-head .dot{width:10px; height:10px; border-radius:50%}
+  .tbl-head.hi .dot{background:var(--high)} .tbl-head.me .dot{background:var(--med)} .tbl-head.lo .dot{background:var(--low)}
+  .tbl-head h4{margin:0; font-size:14px; letter-spacing:.04em} .tbl-head .sub{color:var(--muted); font-size:12.5px; font-weight:400}
+  .scroll{overflow-x:auto}
+  table.data{width:100%; border-collapse:collapse; min-width:640px}
+  table.data th,table.data td{padding:11px 14px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); font-size:13px; line-height:1.5}
+  table.data thead th{color:var(--muted); text-transform:uppercase; letter-spacing:.05em; font-size:11px; font-weight:600; background:var(--panel)}
+  table.data tbody tr:last-child td{border-bottom:none}
+  table.data tbody tr:hover{background:var(--panel2)}
+  td .svc{font-weight:600; color:var(--ink)}
+  .badge{display:inline-block; padding:2px 9px; border-radius:99px; font-size:11px; font-weight:700; letter-spacing:.03em; text-transform:uppercase}
+  .badge.active{background:#eafbf1; color:var(--low); border:1px solid #bfe3cf}
+  .badge.overdue{background:#fdf0f2; color:var(--high); border:1px solid #f0c4cc}
+  .badge.blank{background:#fdf6ea; color:var(--med); border:1px solid #edd9ae}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:12.5px}
+  footer a{color:var(--muted); text-decoration:underline}
+  @media (max-width:820px){ .stats{grid-template-columns:repeat(2,1fr)} h1{font-size:26px} }
+  @media print{ body{background:#fff; color:#111} .verdict,.callout,.stat,.tablecard{border-color:#ccc} a{color:#111} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <div>
+    <p class="eyebrow">Secureframe &middot; Identity &amp; Ownership</p>
+    <h1>Ayanna Edwards — Ownership Report</h1>
+    <div class="meta">
+      <span><b>ayannae@planera.io</b></span>
+      <span>Generated 2026-08-18</span>
+      <span>Source: <a class="ext" href="https://app.secureframe.com/users/858f792e-e7ee-4552-92e2-0145c7623573" target="_blank">Secureframe user record</a></span>
+    </div>
+  </div>
+  <img class="avatar" src="https://secure.gravatar.com/avatar/023eda5db056fdc6c299bf714ec7abe3?d=https%3A%2F%2Favatar-management--avatars.us-west-2.prod.public.atl-paas.net%2Finitials%2FAE-0.png" alt="Ayanna Edwards">
+</header>
+
+<div class="verdict">
+  <span class="tag">Exec Summary</span>
+  <h2>Admin-level contractor with incomplete HR &amp; security onboarding</h2>
+  <p>Ayanna Edwards is a <strong>contractor</strong> holding <strong>Admin</strong>-level Secureframe access across 4 connected accounts (Google Workspace, Jira, Slack, AWS), but owns <strong>zero</strong> registered devices, cloud resources, or repositories. Two onboarding tasks — background check and Secureframe agent install — are overdue and were dismissed rather than completed. Core HR fields (title, department, start/end date, manager) are blank.</p>
+  <p>Recommend HR reconcile employment record fields and confirm whether Admin access is still warranted for the current scope of work, before next audit cycle.</p>
+</div>
+
+<div class="stats">
+  <div class="stat gd"><div class="n">4</div><div class="l">Active Accounts</div></div>
+  <div class="stat"><div class="n">0</div><div class="l">Devices Owned</div></div>
+  <div class="stat"><div class="n">0</div><div class="l">Cloud Resources</div></div>
+  <div class="stat hi"><div class="n">2</div><div class="l">Overdue Tasks</div></div>
+  <div class="stat me"><div class="n">4</div><div class="l">HR Fields Blank</div></div>
+</div>
+
+<h2>Identity</h2>
+<div class="tablecard">
+  <div class="tbl-head"><h4>Profile</h4><span class="sub">Secureframe user ID <code>858f792e-e7ee-4552-92e2-0145c7623573</code></span></div>
+  <div class="scroll">
+  <table class="data">
+    <tbody>
+      <tr><td><span class="svc">Employee Type</span></td><td>Contractor</td></tr>
+      <tr><td><span class="svc">Access Role</span></td><td><strong style="color:var(--med)">Admin</strong></td></tr>
+      <tr><td><span class="svc">Title</span></td><td><span class="badge blank">Blank</span></td></tr>
+      <tr><td><span class="svc">Department</span></td><td><span class="badge blank">Blank</span></td></tr>
+      <tr><td><span class="svc">Start Date</span></td><td><span class="badge blank">Blank</span></td></tr>
+      <tr><td><span class="svc">End Date</span></td><td><span class="badge blank">Blank</span></td></tr>
+      <tr><td><span class="svc">Manager</span></td><td>None set</td></tr>
+      <tr><td><span class="svc">Onboarding Status</span></td><td>Completed</td></tr>
+      <tr><td><span class="svc">Personnel Status</span></td><td>All tasks completed <span style="color:var(--muted)">(see Outstanding below — dismissed &ne; completed)</span></td></tr>
+      <tr><td><span class="svc">Active</span></td><td><span class="badge active">Active</span> via Google Workspace</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<h2>Owned Accounts (4)</h2>
+<div class="tablecard">
+  <div class="tbl-head lo"><div class="dot"></div><h4>Connected Vendor Accounts</h4><span class="sub">All active</span></div>
+  <div class="scroll">
+  <table class="data">
+    <thead><tr><th>Vendor</th><th>Third-Party ID</th><th>Status</th><th>Created</th><th>Last Updated</th><th>Link</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="svc">Google Workspace</span></td>
+        <td><code>115834988142819600445</code></td>
+        <td><span class="badge active">Active</span></td>
+        <td>2025-03-18</td>
+        <td>2026-08-18</td>
+        <td><a class="ext" href="https://app.secureframe.com/integration_connections/88066aa0-8fc2-4b8d-b759-677688810306" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Jira</span></td>
+        <td><code>712020:c83b91bd-74fb-45a6-9dc2-d037f6554779</code></td>
+        <td><span class="badge active">Active</span></td>
+        <td>2025-05-02</td>
+        <td>2026-03-31</td>
+        <td><a class="ext" href="https://app.secureframe.com/integration_connections/1f108728-3e27-400f-bba9-c7039d6f4d0b" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Slack</span></td>
+        <td><code>U08HX0Q7V9C</code></td>
+        <td><span class="badge active">Active</span></td>
+        <td>2025-03-18</td>
+        <td>2025-04-01</td>
+        <td><a class="ext" href="https://app.secureframe.com/integration_connections/a17d2d1e-e9fe-4acf-9faf-108023c00eec" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">AWS</span></td>
+        <td><code>f851b3c0-4091-70da-ee96-7baae7adccd3</code></td>
+        <td><span class="badge active">Active</span></td>
+        <td>2026-08-07</td>
+        <td>2026-08-15</td>
+        <td><a class="ext" href="https://app.secureframe.com/integration_connections/a2da53a2-e54e-45b1-a8b2-260b7b4aee4d" target="_blank">Open</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<h3>Devices / Cloud Resources / Repositories</h3>
+<p>0 owned in each category. Notably, the AWS account (granted 2026-08-07) has no corresponding managed device on file — endpoint compliance for whatever machine accesses AWS/Jira/Slack cannot currently be verified.</p>
+
+<h2>Outstanding Items</h2>
+<div class="tablecard">
+  <div class="tbl-head hi"><div class="dot"></div><h4>Onboarding Tasks</h4><span class="sub">2 overdue, dismissed without completion</span></div>
+  <div class="scroll">
+  <table class="data">
+    <thead><tr><th>Task</th><th>Status</th><th>Due</th><th>Dismissed</th><th>Link</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="svc">Background check</span></td>
+        <td><span class="badge overdue">Overdue &middot; Not Completed</span></td>
+        <td>2025-05-21</td>
+        <td>2025-04-21 (same day as due-date set)</td>
+        <td><a class="ext" href="https://app.secureframe.com/tasks/1a7ddc9e-96c3-4bc4-8c27-504cde70a7ff" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Secureframe agent install</span></td>
+        <td><span class="badge overdue">Overdue &middot; Not Completed</span></td>
+        <td>2025-05-21</td>
+        <td>2025-04-21 (same day as due-date set)</td>
+        <td><a class="ext" href="https://app.secureframe.com/tasks/65a2121e-6570-41ff-af22-38e1ffcfd081" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Completed trainings</span></td>
+        <td><span class="badge active">Completed 2025-04-25</span></td>
+        <td>2025-05-21</td>
+        <td>&mdash;</td>
+        <td><a class="ext" href="https://app.secureframe.com/tasks/27ff527f-5d55-4260-bc4f-57c37d6e6b5d" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Accepted policies</span></td>
+        <td><span class="badge active">Completed 2026-05-07</span></td>
+        <td>2025-05-21</td>
+        <td>&mdash;</td>
+        <td><a class="ext" href="https://app.secureframe.com/tasks/31e1f73a-4477-4124-867b-2d4204f1c4cb" target="_blank">Open</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<h2>HR Alignment Flags</h2>
+
+<div class="callout bad">
+  <h4>1. Blank HR fields on an Admin-privileged contractor</h4>
+  <p>No start date, end date, title, or department in Secureframe. A contractor with standing Admin access and indefinite dates is an audit gap — reconcile against the HR system of record and confirm the expected offboard date.</p>
+</div>
+
+<div class="callout warn">
+  <h4>2. Admin access_role on a contractor</h4>
+  <p>Contractor + Admin is a classic over-provisioning pattern that auditors flag. Confirm with HR/IT that this privilege level still matches her current scope of work, or downscope.</p>
+</div>
+
+<div class="callout bad">
+  <h4>3. Background check dismissed, not completed</h4>
+  <p>Task was dismissed the same day it was created rather than resolved. If HR policy requires a background check prior to contractor start, this needs to be completed or formally waived and documented — not silently dismissed.</p>
+</div>
+
+<div class="callout warn">
+  <h4>4. Secureframe agent never installed</h4>
+  <p>No monitored/managed device is tied to her identity despite 4 active accounts including AWS. Device compliance (encryption, OS patch state) cannot be verified for whatever endpoint she uses.</p>
+</div>
+
+<footer>
+  Generated from Secureframe MCP data for planning purposes &middot; verify against live Secureframe records before acting &middot;
+  <a href="https://app.secureframe.com/users/858f792e-e7ee-4552-92e2-0145c7623573" target="_blank">View live user record</a>
+</footer>
+
+</div>
+</body>
+</html>

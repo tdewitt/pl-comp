@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HR - Compliance Ownership Transition</title>
+<style>
+  :root{
+    --bg:#f6f7f9; --panel:#ffffff; --panel2:#f0f2f5; --ink:#1a1f28; --muted:#5c6572;
+    --line:#e2e5ea; --accent:#2564d6; --accent2:#6d5ae0;
+    --high:#d6304a; --med:#b3760a; --low:#178a4f;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:linear-gradient(180deg,#eef0f3,#f6f7f9 240px); color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px; margin:0 auto; padding:48px 24px 96px}
+  header.top{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:36px}
+  .eyebrow{color:var(--accent); font-weight:600; letter-spacing:.12em; text-transform:uppercase; font-size:12px; margin:0 0 10px}
+  h1{font-size:33px; line-height:1.15; margin:0; letter-spacing:-.02em}
+  h2{font-size:22px; margin:52px 0 16px; letter-spacing:-.01em}
+  h3{font-size:15px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:26px 0 10px}
+  p{margin:0 0 14px}
+  a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+  a.ext::after{content:" \2197"; font-size:11px; opacity:.7}
+  code{background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:12.5px; font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace}
+  strong{color:#000}
+  .stats{display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:22px 0 8px}
+  .stat{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px; box-shadow:0 1px 2px rgba(20,25,35,.04)}
+  .stat .n{font-size:24px; font-weight:700; letter-spacing:-.02em}
+  .stat .l{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-top:2px}
+  .callout{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:16px 0; box-shadow:0 1px 2px rgba(20,25,35,.04)}
+  .callout h4{margin:0 0 8px; font-size:14px; color:var(--accent)}
+  ul{margin:0 0 14px; padding-left:22px} li{margin:6px 0} ol{margin:0 0 14px; padding-left:22px}
+  .tablecard{border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:14px 0; background:var(--panel); box-shadow:0 1px 3px rgba(20,25,35,.05)}
+  .tbl-head{display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--panel2); border-bottom:1px solid var(--line)}
+  .tbl-head h4{margin:0; font-size:14px; letter-spacing:.04em} .tbl-head .sub{color:var(--muted); font-size:12.5px; font-weight:400}
+  .scroll{overflow-x:auto}
+  table.data{width:100%; border-collapse:collapse; min-width:640px}
+  table.data th,table.data td{padding:11px 14px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); font-size:13px; line-height:1.5}
+  table.data thead th{color:var(--muted); text-transform:uppercase; letter-spacing:.05em; font-size:11px; font-weight:600; background:var(--panel)}
+  table.data tbody tr:last-child td{border-bottom:none}
+  table.data tbody tr:hover{background:var(--panel2)}
+  td .svc{font-weight:600; color:var(--ink)}
+  .badge{display:inline-block; padding:2px 9px; border-radius:99px; font-size:11px; font-weight:700; letter-spacing:.03em; text-transform:uppercase}
+  .badge.active{background:#eafbf1; color:var(--low); border:1px solid #bfe3cf}
+  .badge.overdue{background:#fdf0f2; color:var(--high); border:1px solid #f0c4cc}
+  .badge.risk-high{background:#fdf0f2; color:var(--high); border:1px solid #f0c4cc}
+  .handoff{border:1px solid var(--line); border-radius:14px; padding:18px 20px; margin:14px 0; background:var(--panel); box-shadow:0 1px 3px rgba(20,25,35,.05)}
+  .handoff h4{margin:0 0 4px; font-size:16px}
+  .handoff .who{color:var(--muted); font-size:12.5px; margin-bottom:12px}
+  .handoff dl{display:grid; grid-template-columns:140px 1fr; gap:6px 14px; margin:0; font-size:13.5px}
+  .handoff dt{color:var(--muted)} .handoff dd{margin:0}
+  @media (max-width:820px){ .stats{grid-template-columns:repeat(2,1fr)} h1{font-size:26px} }
+  @media print{ body{background:#fff; color:#111} .callout,.stat,.tablecard{border-color:#ccc} a{color:#111} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Secureframe</p>
+  <h1>HR - Compliance Ownership Transition</h1>
+</header>
+
+<h2>Summary</h2>
+<p>Ayanna owns <strong>7 Secureframe tests</strong> — recurring HR/Governance evidence (background checks, confidentiality agreements, performance reviews, policy acknowledgements) — <strong>6 currently failing</strong>. She also owns the <strong>Sequoia One</strong> TPRM vendor relationship. 5 of the controls those tests roll up into are owned by two other Secureframe users.</p>
+<p>Suggested next steps: (1) reassign the 7 tests and work through the 6 failing ones, (2) reassign the Sequoia One review cadence, (3) review whether the 4 other HR-tagged tests below should move with this handover, and (4) consider whether the differently-owned controls below should be assigned as part of this transition.</p>
+
+<div class="stats">
+  <div class="stat"><div class="n">7</div><div class="l">Owned Tests</div></div>
+  <div class="stat"><div class="n">6</div><div class="l">Tests Failing</div></div>
+  <div class="stat"><div class="n">5</div><div class="l">HR Controls, Other Owners</div></div>
+</div>
+
+<h2>Priority Handoff: Owned Tests (7)</h2>
+<p>These are recurring evidence-collection tests behind SOC 2 controls in the Governance / HR domain.</p>
+
+<div class="tablecard">
+  <div class="tbl-head"><h4>Test Ownership</h4><span class="sub">6 failing &middot; 1 passing</span></div>
+  <div class="scroll">
+  <table class="data">
+    <thead><tr><th>Test</th><th>Key</th><th>Status</th><th>Maps to Control</th><th>Last Passed</th><th>Link</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="svc">Job candidate resumes</span></td>
+        <td><code>GOV-2-1</code></td>
+        <td><span class="badge overdue">Failing</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/b5591d45-c6c8-4418-b8e5-c94e019b2ed1" target="_blank">ORG-08</a></td>
+        <td>2025-08-19</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/0b130669-09fe-48b3-ab3f-eb7a3ce2917c" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">New hire screening</span></td>
+        <td><code>GOV-3-1-1</code></td>
+        <td><span class="badge overdue">Failing</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/4b7c61f6-3caa-4ca0-92e8-54845171ed93" target="_blank">ORG-07</a></td>
+        <td>2026-06-13</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/503bb994-3dc0-49e8-9c5e-13b92d2079c5" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Employee confidentiality agreements</span></td>
+        <td><code>GOV-4</code></td>
+        <td><span class="badge overdue">Failing</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/b5591d45-c6c8-4418-b8e5-c94e019b2ed1" target="_blank">ORG-08</a></td>
+        <td>2025-09-15</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/8ac5ff0a-75a8-43a2-8030-496bb8450044" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Acknowledgement of Acceptable Use Policy</span></td>
+        <td><code>POL-23-1</code></td>
+        <td><span class="badge overdue">Failing</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/0a427c78-d780-4e7d-8046-33601926c5bd" target="_blank">ORG-17</a></td>
+        <td>2026-06-01</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/cbf7663e-999f-4453-ac16-1d6ac094841c" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Acknowledgement of Code of Conduct</span></td>
+        <td><code>POL-23-16</code></td>
+        <td><span class="badge overdue">Failing</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/0a427c78-d780-4e7d-8046-33601926c5bd" target="_blank">ORG-17</a></td>
+        <td>2026-06-01</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/cfa46837-7dcd-4c42-b5bb-46ec8cdbf8db" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Annual performance reviews</span></td>
+        <td><code>GOV-16</code></td>
+        <td><span class="badge overdue">Failing</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/2ff36594-2d4f-4695-a47a-c7f5e777b3ba" target="_blank">ORG-04</a></td>
+        <td>2025-07-25</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/e689c482-d65e-44ee-9f3f-a24a98c9cc4b" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Performance Review Policy</span></td>
+        <td><code>POL-14</code></td>
+        <td><span class="badge active">Passing</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/2c459442-4820-40ff-93c6-c5a54c272570" target="_blank">ORG-15</a></td>
+        <td>2024-06-17</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/1a631979-f698-465f-9a05-0bf5e1163ec6" target="_blank">Open</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="callout">
+  <h4>Handover action</h4>
+  <p>Reassign the <code>owner</code> field on all 7 tests to the incoming owner in Secureframe. Prioritize the 6 failing tests — most are HR evidence uploads (resumes, confidentiality agreements, performance reviews) or annual policy re-acknowledgements that are now overdue and will surface as findings in the next audit window if left untouched.</p>
+</div>
+
+<h2>Vendor Relationship</h2>
+
+<div class="handoff">
+  <h4>Sequoia One <span class="badge risk-high" style="margin-left:8px">High Risk</span></h4>
+  <div class="who">Third-Party Risk Management vendor &middot; owner: Ayanna Edwards &middot; <a class="ext" href="https://app.secureframe.com/vendors/329ff944-b34b-413c-863b-a0c502eaac36" target="_blank">Open in Secureframe</a></div>
+  <dl>
+    <dt>Services provided</dt><dd>Human Resources (HR platform / EOR)</dd>
+    <dt>Status</dt><dd>Completed (initial assessment)</dd>
+    <dt>Contract start</dt><dd>2025-10-01</dd>
+    <dt>Contract end</dt><dd>Not set</dd>
+    <dt>Last reviewed</dt><dd>2026-07-02</dd>
+    <dt>Security page</dt><dd><a class="ext" href="https://trust.sequoia.com" target="_blank">trust.sequoia.com</a></dd>
+    <dt>Environment</dt><dd>Production</dd>
+  </dl>
+</div>
+
+<div class="callout">
+  <h4>Handover action</h4>
+  <p>Reassign the <code>owner</code> field on the Sequoia One TPRM record to the incoming group/individual in Secureframe. This vendor was last reviewed 2026-07-02 — confirm the new owner picks up the next periodic review cycle so it doesn't lapse.</p>
+</div>
+
+<h2>Related Controls</h2>
+<p>Her tests roll up into 5 mapped controls. Listing current ownership in case it's relevant to how this handover gets scoped:</p>
+
+<div class="tablecard">
+  <div class="tbl-head"><h4>Controls</h4><span class="sub">5 controls, owned by others</span></div>
+  <div class="scroll">
+  <table class="data">
+    <thead><tr><th>Control</th><th>Current Owner</th><th>Health</th><th>Link</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="svc">ORG-08</span> — Confidentiality agreements &amp; screening</td>
+        <td>Nitin Bhandari</td>
+        <td><span class="badge overdue">Unhealthy</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/b5591d45-c6c8-4418-b8e5-c94e019b2ed1" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">ORG-15</span> — Performance Review Policy</td>
+        <td>Nitin Bhandari</td>
+        <td><span class="badge active">Healthy</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/2c459442-4820-40ff-93c6-c5a54c272570" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">ORG-04</span> — Annual performance reviews</td>
+        <td>Nitin Bhandari</td>
+        <td><span class="badge overdue">Unhealthy</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/2ff36594-2d4f-4695-a47a-c7f5e777b3ba" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">ORG-07</span> — New hire screening</td>
+        <td>Erik Swenson</td>
+        <td><span class="badge overdue">Unhealthy</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/4b7c61f6-3caa-4ca0-92e8-54845171ed93" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">ORG-17</span> — Policy acknowledgements</td>
+        <td>Erik Swenson</td>
+        <td><span class="badge overdue">Unhealthy</span></td>
+        <td><a class="ext" href="https://app.secureframe.com/controls/0a427c78-d780-4e7d-8046-33601926c5bd" target="_blank">Open</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="callout">
+  <h4>Worth considering</h4>
+  <p>Nitin and Erik currently hold ownership on ORG-08, ORG-15, ORG-04, ORG-07, and ORG-17, while Ayanna owns the underlying test evidence for the same controls. Whether it makes sense to align control ownership with test ownership as part of this handover is a call for whoever's coordinating the transition.</p>
+</div>
+
+<h2>Other HR-Tagged Tests</h2>
+<p>These 4 tests are also tagged <code>Human Resources</code> but are currently owned by other Secureframe users. Listing them here in case it's useful context for scoping this handover.</p>
+
+<div class="tablecard">
+  <div class="tbl-head"><h4>HR Aligned Tests</h4></div>
+  <div class="scroll">
+  <table class="data">
+    <thead><tr><th>Test</th><th>Key</th><th>Current Owner</th><th>Link</th></tr></thead>
+    <tbody>
+      <tr>
+        <td><span class="svc">Job descriptions</span></td>
+        <td><code>GOV-1</code></td>
+        <td>Mike Guzewicz</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/551aefb9-8221-4812-9034-1ca20fadb5a4" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Organizational chart</span></td>
+        <td><code>GOV-8-1</code></td>
+        <td>Tucker DeWitt</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/6560477b-881a-471f-99ef-bee57757cd66" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Organizational chart distribution</span></td>
+        <td><code>GOV-8-2</code></td>
+        <td>Tucker DeWitt</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/0fdd8d97-a79d-4cac-a3b4-ff1879f49c21" target="_blank">Open</a></td>
+      </tr>
+      <tr>
+        <td><span class="svc">Disciplinary process</span></td>
+        <td><code>GOV-21</code></td>
+        <td>Nitin Bhandari</td>
+        <td><a class="ext" href="https://app.secureframe.com/tests/946cca0a-fe8d-4d74-9c48-8144135937e4" target="_blank">Open</a></td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="callout">
+  <h4>Worth considering</h4>
+  <p>Whether <code>GOV-1</code>, <code>GOV-8-1</code>, <code>GOV-8-2</code>, and <code>GOV-21</code> should move with this handover is a call for whoever's coordinating the transition.</p>
+</div>
+
+</div>
+</body>
+</html>
