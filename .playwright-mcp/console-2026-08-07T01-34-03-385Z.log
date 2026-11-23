@@ -1,0 +1,6 @@
+[     162ms] [WARNING] Error with Permissions-Policy header: Unrecognized feature: 'ambient-light-sensor'. @ :0
+[    1140ms] [ERROR] Permissions policy violation: picture-in-picture is not allowed in this document. @ https://app.secureframe.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:0
+[    1334ms] [WARNING] Skipping feature flags: unauthenticated. @ https://app.secureframe.com/vite/assets/vendor-209d34ae.js:236
+[    1334ms] [WARNING] [Apollo] Recreating client. Clearing cache. @ https://app.secureframe.com/vite/assets/vendor-209d34ae.js:236
+[    1425ms] [ERROR] Permissions policy violation: picture-in-picture is not allowed in this document. @ https://app.secureframe.com/cdn-cgi/challenge-platform/scripts/jsd/main.js:0
+[ 1172009ms] [WARNING] WebSocket connection to 'wss://api.appcues.net/v1/socket/websocket?vsn=2.0.0' failed: WebSocket is closed before the connection is established. @ https://fast.appcues.com/generic/main/7.29.0/appcues.main.218252b40d64d313ce5b7e1b4d2efcbccccb4ca6.js:146

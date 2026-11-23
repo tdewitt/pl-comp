@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Lifecycle &amp; Revocation Strategy — IdP (Okta) Business Case</title>
+<style>
+  :root{
+    --bg:#0f1115; --panel:#161a21; --panel2:#1b2029; --ink:#e7ebf0; --muted:#9aa4b2;
+    --line:#252c37; --accent:#5b9dff; --accent2:#8a7dff;
+    --high:#ff5f6b; --med:#f4b740; --low:#4fd08a;
+    --free:#4fd08a; --tax:#ff7a85; --sales:#8b95a4;
+  }
+  *{box-sizing:border-box}
+  body{margin:0; background:linear-gradient(180deg,#0c0e12,#0f1115 240px); color:var(--ink);
+    font:15px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif; -webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px; margin:0 auto; padding:48px 24px 96px}
+  header.top{border-bottom:1px solid var(--line); padding-bottom:28px; margin-bottom:36px}
+  .eyebrow{color:var(--accent); font-weight:600; letter-spacing:.12em; text-transform:uppercase; font-size:12px; margin:0 0 10px}
+  h1{font-size:33px; line-height:1.15; margin:0 0 14px; letter-spacing:-.02em}
+  .meta{display:flex; flex-wrap:wrap; gap:8px 20px; color:var(--muted); font-size:13.5px}
+  .meta b{color:var(--ink); font-weight:600}
+  h2{font-size:22px; margin:52px 0 16px; letter-spacing:-.01em}
+  h3{font-size:15px; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin:26px 0 10px}
+  p{margin:0 0 14px}
+  a{color:var(--accent); text-decoration:none} a:hover{text-decoration:underline}
+  code{background:var(--panel2); border:1px solid var(--line); border-radius:5px; padding:1px 6px; font-size:12.5px; font-family:"SF Mono",ui-monospace,Menlo,Consolas,monospace}
+  strong{color:#fff}
+  .verdict{background:linear-gradient(135deg,#191d27,#141922); border:1px solid #2c3441; border-radius:14px; padding:24px 26px; margin:0 0 26px}
+  .verdict .tag{display:inline-block; font-size:12px; font-weight:700; letter-spacing:.1em; text-transform:uppercase; color:var(--high); margin-bottom:8px}
+  .verdict h2{margin:0 0 10px; font-size:24px} .verdict p{color:#cdd5df; margin:0} .verdict p+p{margin-top:10px}
+  .stats{display:grid; grid-template-columns:repeat(6,1fr); gap:12px; margin:22px 0 8px}
+  .stat{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:14px 16px}
+  .stat .n{font-size:24px; font-weight:700; letter-spacing:-.02em}
+  .stat .l{font-size:11px; color:var(--muted); text-transform:uppercase; letter-spacing:.05em; margin-top:2px}
+  .stat.hi .n{color:var(--high)} .stat.me .n{color:var(--med)} .stat.lo .n{color:var(--low)} .stat.gd .n{color:var(--free)} .stat.bd .n{color:var(--tax)}
+  .callout{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:18px 20px; margin:16px 0}
+  .callout h4{margin:0 0 8px; font-size:14px}
+  .callout.warn h4{color:var(--med)} .callout.key h4{color:var(--accent)} .callout.money{border-color:#294a38; background:#111f19} .callout.money h4{color:var(--low)}
+  ul{margin:0 0 14px; padding-left:22px} li{margin:6px 0} ol{margin:0 0 14px; padding-left:22px}
+  .tablecard{border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:14px 0}
+  .tbl-head{display:flex; align-items:center; gap:12px; padding:14px 18px; background:var(--panel2); border-bottom:1px solid var(--line)}
+  .tbl-head .dot{width:10px; height:10px; border-radius:50%}
+  .tbl-head.hi .dot{background:var(--high)} .tbl-head.me .dot{background:var(--med)} .tbl-head.lo .dot{background:var(--low)}
+  .tbl-head h4{margin:0; font-size:14px; letter-spacing:.04em} .tbl-head .sub{color:var(--muted); font-size:12.5px; font-weight:400}
+  .scroll{overflow-x:auto}
+  table.data{width:100%; border-collapse:collapse; min-width:780px}
+  table.data th,table.data td{padding:11px 14px; text-align:left; vertical-align:top; border-bottom:1px solid var(--line); font-size:13px; line-height:1.5}
+  table.data thead th{color:var(--muted); text-transform:uppercase; letter-spacing:.05em; font-size:11px; font-weight:600; background:var(--panel)}
+  table.data tbody tr:last-child td{border-bottom:none}
+  table.data tbody tr:hover{background:#12161d}
+  td .svc{font-weight:600; color:#fff} .num{font-variant-numeric:tabular-nums; text-align:right}
+  .price{font-weight:700; font-variant-numeric:tabular-nums}
+  .price.free{color:var(--free)} .price.tax{color:var(--tax)} .price.sales{color:var(--sales)}
+  .lever{font-weight:600} .lever.yes{color:var(--free)} .lever.no{color:var(--tax)} .lever.part{color:var(--med)} .lever.idp{color:var(--accent)}
+  .matrix{border:1px solid var(--line); border-radius:14px; overflow:hidden; margin:8px 0 6px}
+  .matrix table{width:100%; border-collapse:collapse}
+  .matrix th,.matrix td{padding:14px 16px; text-align:left; vertical-align:top; border:1px solid var(--line); font-size:13.5px}
+  .matrix thead th{background:var(--panel2); color:var(--muted); font-weight:600; text-transform:uppercase; letter-spacing:.05em; font-size:11.5px}
+  .matrix tbody th{background:var(--panel2); color:var(--ink); font-weight:700; width:120px}
+  .matrix .rk-hi{color:var(--high)} .matrix .rk-me{color:var(--med)} .matrix .rk-lo{color:var(--low)}
+  .opt{display:grid; gap:12px; margin:14px 0}
+  .opt .o{background:var(--panel); border:1px solid var(--line); border-radius:12px; padding:16px 18px}
+  .opt .o.rec{border-color:#294a38; background:#111f19}
+  .opt .o h4{margin:0 0 6px; font-size:15px}
+  .opt .o .verd{font-size:11.5px; font-weight:700; text-transform:uppercase; letter-spacing:.08em}
+  .rec .verd{color:var(--low)} .rej .verd{color:var(--sales)}
+  footer{margin-top:56px; padding-top:20px; border-top:1px solid var(--line); color:var(--muted); font-size:12.5px}
+  footer a{color:var(--muted); text-decoration:underline}
+  @media (max-width:820px){ .stats{grid-template-columns:repeat(3,1fr)} h1{font-size:26px} }
+  @media print{ body{background:#fff; color:#111} .verdict,.callout,.stat,.tablecard,.matrix,.opt .o{border-color:#ccc} a{color:#111} }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="eyebrow">Compliance &middot; Identity Lifecycle</p>
+  <h1>Lifecycle &amp; Revocation Strategy — the Okta Question</h1>
+  <div class="meta">
+    <span><b>Date</b> 2026-07-16</span>
+    <span><b>Scope</b> 29 active services, Secureframe TPRM register</span>
+    <span><b>Headcount</b> 78 people</span>
+    <span><b>Question</b> Does deprovisioning risk justify a dedicated IdP?</span>
+  </div>
+</header>
+
+<div class="verdict">
+  <span class="tag">Bottom line up front</span>
+  <h2>Don't buy Okta. One app of net-new spend (~$13.5k/yr) closes the real gap — you've already built the rest.</h2>
+  <p>An IdP automates the full account lifecycle, and <strong>both directions matter</strong>: provisioning a joiner is recurring <strong>labor</strong> (the right access across every tool, by hand if unautomated), and deprovisioning a leaver is standing <strong>risk</strong> (a surviving account, session, or token). SSO login is the commodity part, and Google already does it. The question is whether automating grant-and-revoke across 29 apps justifies a dedicated IdP.</p>
+  <p><strong>You've already answered it in production.</strong> 1Password runs Google Groups &rarr; SCIM bridge today: Google drives create/deactivate, no Okta involved. That is the recommended pattern, already live and proven. It leaves Slack as the one high-risk, all-staff app still lacking automated lifecycle.</p>
+  <p>The same lever handles both: SCIM, or a create/deactivate API. Mapping each app to that lever, <strong>14 automate for $0</strong> (IdP-native federation, or a free API below the SSO tier), and the rest gate automation behind a paid vendor SCIM tier or leave it manual. <strong>Okta does not remove that tax.</strong> The vendor charges it regardless of IdP, and Google can drive the same SCIM. Automating where the labor saved or risk removed clears the cost runs <strong>~$1.1k/mo</strong> (Slack alone; 1Password is already done). Okta would be additive on top.</p>
+</div>
+
+<div class="stats">
+  <div class="stat hi"><div class="n">9</div><div class="l">High risk*</div></div>
+  <div class="stat me"><div class="n">8</div><div class="l">Medium risk</div></div>
+  <div class="stat lo"><div class="n">12</div><div class="l">Low risk</div></div>
+  <div class="stat gd"><div class="n">15</div><div class="l">Lifecycle free/done</div></div>
+  <div class="stat bd"><div class="n">12</div><div class="l">Paid tier / manual</div></div>
+  <div class="stat"><div class="n">~$13.5k</div><div class="l">Net-new / yr</div></div>
+</div>
+<p class="meta">*Slack and GitLab promoted to High in this report (see reclassification). Secureframe scores unchanged.</p>
+
+<h2>Two things matter: labor and risk</h2>
+<p>An IdP sells three things: SSO login, provisioning, and deprovisioning. Login is commodity (Google, free). The other two are the real work, and they pull in different currencies. <strong>Provisioning is recurring labor</strong>: every joiner and every internal move needs the right access across the right tools, granted by hand if nothing automates it. <strong>Deprovisioning is standing risk</strong>: every leaver's surviving account, live session, or personal token is exposure until the account is deactivated. Both are automated by the same lever, so the analysis scores each app once and weighs automating it by the labor it saves <em>plus</em> the risk it removes.</p>
+<div class="callout key">
+  <h4>Why "has SSO" is not "lifecycle managed" — in either direction</h4>
+  <p><strong>Revoke:</strong> turning off someone's Google account blocks the login <em>handshake</em> but does not delete the downstream account, kill a live session, revoke a personal API token, or disable a local password. <strong>Grant:</strong> SSO/JIT at most creates a bare account on first login; it does not place the person in the right groups, roles, or projects. Both directions need <strong>SCIM or an admin API</strong> to actually manage the account. That lever is what this report scores.</p>
+</div>
+
+<h2>The lifecycle lever, per app</h2>
+<p>For each service: risk, seats (actual from Secureframe where integrated; otherwise 78 for all-staff tools or 10 as a documented placeholder), the <strong>lifecycle lever</strong> (the same API/SCIM that both grants and revokes), the monthly cost to automate at list price, and the recommended move. Lever legend: <span class="lever idp">IdP-native</span> (federation, no local accounts — the Google user is the account) &middot; <span class="lever yes">API&nbsp;free</span> (create/deactivate API below the SSO tier — scriptable now) &middot; <span class="lever no">SCIM&nbsp;tax</span> (automation gated at a paid tier) &middot; <span class="lever part">Manual</span> (no affordable programmatic lever). All-staff and high-churn tools weight toward the labor axis; sensitive-data tools weight toward risk.</p>
+
+<div class="tablecard">
+  <div class="tbl-head hi"><span class="dot"></span><h4>HIGH RISK — automated revocation is mandatory</h4><span class="sub">9 services</span></div>
+  <div class="scroll">
+  <table class="data">
+    <thead><tr><th>Service</th><th class="num">Seats</th><th>Lifecycle lever</th><th>Cost to automate /mo</th><th>Recommended move</th></tr></thead>
+    <tbody>
+      <tr><td><span class="svc">AWS</span></td><td class="num">36</td><td><span class="lever idp">IdP-native</span> (Identity Center + SCIM, free)</td><td><span class="price free">$0</span></td><td>Federate to Google, SCIM on, root to break-glass. Solved free.</td></tr>
+      <tr><td><span class="svc">Google Workspace</span></td><td class="num">96</td><td><span class="lever idp">The IdP itself</span></td><td><span class="price free">—</span></td><td>Harden with phishing-resistant MFA. Source of all revocation.</td></tr>
+      <tr><td><span class="svc">MongoDB Atlas</span></td><td class="num">10</td><td><span class="lever idp">IdP-native</span> (federation free) + free Admin API</td><td><span class="price free">$0</span></td><td>Enforce federation, no local DB users. Solved free.</td></tr>
+      <tr><td><span class="svc">Ramp</span></td><td class="num">78</td><td><span class="lever yes">API free</span> + free SCIM</td><td><span class="price free">$0</span></td><td>Enforce Google SSO, wire free SCIM. Solved free.</td></tr>
+      <tr><td><span class="svc">Vercel</span></td><td class="num">10</td><td><span class="lever yes">API free</span> (Pro member API); SCIM = Enterprise</td><td><span class="price free">$0</span> <span class="price sales">(+$300 opt. SAML)</span></td><td>Script deactivation via member API now. Enforced SAML is a $300/mo option, not required for revocation.</td></tr>
+      <tr><td><span class="svc">Slack</span> <span class="lever part">↑High</span></td><td class="num">75</td><td><span class="lever no">SCIM tax</span> (SCIM = Business+, same tier as SSO; std API can't deactivate)</td><td><span class="price tax">$1,125</span></td><td><strong>Pay.</strong> No cheap lever; at High, buy Business+ for SCIM deprovisioning.</td></tr>
+      <tr><td><span class="svc">1Password</span></td><td class="num">78</td><td><span class="lever yes">Done</span> (SCIM bridge live: Google Groups &rarr; 1Password)</td><td><span class="price free">$0 incr.</span></td><td><strong>Already automated.</strong> Google drives provisioning + deprovisioning via the bridge. Proof of the recommended pattern.</td></tr>
+      <tr><td><span class="svc">GitLab</span> <span class="lever part">↑High</span></td><td class="num">53</td><td><span class="lever yes">API free</span> (Members API on Free tier deactivates)</td><td><span class="price free">$0</span> <span class="price sales">(+$1,537 opt. SAML)</span></td><td>Script deactivation via free Members API. Premium SAML ($29/user) is optional hardening, not needed for revocation.</td></tr>
+      <tr><td><span class="svc">Sequoia One</span></td><td class="num">31</td><td><span class="lever part">Manual</span> (PEO; no native API, Finch only)</td><td><span class="price sales">Contact sales</span></td><td>Not swappable. Documented exception: comp controls, quarterly review, manual offboarding, expiry date.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="tablecard">
+  <div class="tbl-head me"><span class="dot"></span><h4>MEDIUM RISK — automate if cheap, else compensating controls</h4><span class="sub">8 services</span></div>
+  <div class="scroll">
+  <table class="data">
+    <thead><tr><th>Service</th><th class="num">Seats</th><th>Lifecycle lever</th><th>Cost to automate /mo</th><th>Recommended move</th></tr></thead>
+    <tbody>
+      <tr><td><span class="svc">Zoom</span></td><td class="num">78</td><td><span class="lever yes">API free</span> (User Mgmt API on Pro)</td><td><span class="price free">$0</span></td><td>Script deactivation. Skip the $1,430/mo Business SSO tax.</td></tr>
+      <tr><td><span class="svc">LaunchDarkly</span></td><td class="num">10</td><td><span class="lever yes">API free</span> (REST members on free tier)</td><td><span class="price free">$0</span></td><td>Script deactivation. SSO is Enterprise/contact-sales — skip.</td></tr>
+      <tr><td><span class="svc">Apollo</span></td><td class="num">10</td><td><span class="lever part">Manual</span> (no member API even at SSO tier)</td><td><span class="price tax">$1,190</span> buys SSO, not revocation</td><td>Manual offboarding + quarterly review. SSO tier doesn't add a lever.</td></tr>
+      <tr><td><span class="svc">Gong</span></td><td class="num">10</td><td><span class="lever no">SCIM tax</span> (SCIM = Enterprise; read-only below)</td><td><span class="price sales">Contact sales</span></td><td>Manual + comp controls unless Enterprise already in play.</td></tr>
+      <tr><td><span class="svc">Intercom</span></td><td class="num">10</td><td><span class="lever no">SCIM tax</span> (SCIM = Expert; API read-only)</td><td><span class="price tax">$1,320</span></td><td>Customer PII. Manual + comp controls, time-boxed; revisit if seat count grows.</td></tr>
+      <tr><td><span class="svc">Amplitude</span></td><td class="num">10</td><td><span class="lever no">SCIM tax</span> (SCIM = Growth+, needs SSO first)</td><td><span class="price sales">Contact sales</span></td><td>Manual + comp controls, documented, time-boxed.</td></tr>
+      <tr><td><span class="svc">productboard</span></td><td class="num">10</td><td><span class="lever no">SCIM tax</span> (SCIM = Enterprise)</td><td><span class="price sales">Contact sales</span></td><td>Manual + comp controls unless Enterprise already in play.</td></tr>
+      <tr><td><span class="svc">Cursor</span></td><td class="num">10</td><td><span class="lever part">Manual</span> (write API = Enterprise; Teams read-only)</td><td><span class="price tax">$320</span> buys SSO, not revocation</td><td>Manual removal on Teams + quarterly review.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="tablecard">
+  <div class="tbl-head lo"><span class="dot"></span><h4>LOW RISK — scripted or manual is sufficient; do not pay the tax</h4><span class="sub">12 services</span></div>
+  <div class="scroll">
+  <table class="data">
+    <thead><tr><th>Service</th><th class="num">Seats</th><th>Lifecycle lever</th><th>Cost to automate /mo</th><th>Recommended move</th></tr></thead>
+    <tbody>
+      <tr><td><span class="svc">Datadog</span></td><td class="num">35</td><td><span class="lever yes">API free</span> (Users API on Pro)</td><td><span class="price free">$0</span></td><td>Script deactivation. SSO is per-host Enterprise — skip.</td></tr>
+      <tr><td><span class="svc">Calendly</span></td><td class="num">10</td><td><span class="lever yes">API free</span> (org membership API, Standard)</td><td><span class="price free">$0</span></td><td>Script or manual. Skip Enterprise SSO+SCIM.</td></tr>
+      <tr><td><span class="svc">OpenAI</span></td><td class="num">10</td><td><span class="lever yes">API free</span> (platform Admin API) / <span class="lever no">chat SCIM=Ent</span></td><td><span class="price free">$0</span></td><td>Script for platform org; manual for chat seats. Skip Enterprise.</td></tr>
+      <tr><td><span class="svc">Anthropic</span></td><td class="num">10</td><td><span class="lever yes">API free</span> (console Admin API) / <span class="lever no">chat SCIM=Ent</span></td><td><span class="price free">$0</span></td><td>Script for console org; manual for Team seats. Skip Enterprise.</td></tr>
+      <tr><td><span class="svc">Figma</span></td><td class="num">10</td><td><span class="lever no">SCIM tax</span> (SCIM = Org, same as SSO)</td><td><span class="price tax">$550</span></td><td>Manual removal at offboarding. Skip at Low.</td></tr>
+      <tr><td><span class="svc">Notion</span></td><td class="num">10</td><td><span class="lever no">SCIM tax</span> (SCIM = Enterprise)</td><td><span class="price">$200</span> buys SSO only</td><td>Manual removal. Skip at Low.</td></tr>
+      <tr><td><span class="svc">Canva</span></td><td class="num">10</td><td><span class="lever no">SCIM tax</span> (Enterprise)</td><td><span class="price sales">Contact sales</span></td><td>Manual. Skip at Low.</td></tr>
+      <tr><td><span class="svc">LangSmith</span></td><td class="num">10</td><td><span class="lever no">SCIM tax</span> (Enterprise)</td><td><span class="price sales">Contact sales</span></td><td>Manual. Skip at Low.</td></tr>
+      <tr><td><span class="svc">Stream.io</span></td><td class="num">10</td><td><span class="lever part">Manual</span> (no org-member API)</td><td><span class="price sales">Contact sales</span></td><td>Manual. Skip at Low.</td></tr>
+      <tr><td><span class="svc">Jira</span></td><td class="num">93</td><td><span class="lever part">Manual</span> free (managed accounts) / SCIM = Guard</td><td><span class="price free">$0</span> <span class="price sales">(Guard ~$372)</span></td><td>Manual deactivate via free managed accounts. <strong>Skip Guard</strong> (see below).</td></tr>
+      <tr><td><span class="svc">Confluence</span></td><td class="num">78</td><td><span class="lever part">Manual</span> free (managed accounts) / SCIM = Guard</td><td><span class="price free">$0</span></td><td>Same Atlassian managed-account path. Skip Guard.</td></tr>
+      <tr><td><span class="svc">Loom</span></td><td class="num">10</td><td><span class="lever part">Manual</span> free (managed accounts) / SCIM = Guard</td><td><span class="price free">$0</span></td><td>Same. Skip Guard.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</div>
+
+<div class="callout warn">
+  <h4>Atlassian Guard — should you pay for it? No.</h4>
+  <p>Guard <em>does</em> include SCIM deprovisioning (so it's not "just SSO"), but it is <strong>Atlassian-scoped only</strong> and bundles that lifecycle with enforced-SSO + org security policies at <strong>~$4/user/month billed org-wide across every Atlassian product</strong> (~$372/mo here). Jira, Confluence, and Loom are all <strong>Low risk</strong>, and Atlassian's free <strong>managed accounts</strong> (domain verification) already let you centrally and manually deactivate a leaver across all three. Paying $4/user to <em>automate</em> deprovisioning of a wiki and issue tracker fails the risk test. Buy Guard only if you later want its security policies (session controls, token governance, audit) for their own sake — that's a hardening decision, not a lifecycle one.</p>
+</div>
+
+<h2>What this costs</h2>
+<div class="callout money">
+  <h4>Three postures, priced</h4>
+  <ul>
+    <li><strong>Recommended net-new: ~$1,125/mo (~$13.5k/yr) — Slack Business+, and possibly $0.</strong> 1Password (the other high-risk, all-staff, no-free-lever app) is <em>already</em> automated via the Google Groups SCIM bridge, at no incremental cost. Slack is the last one that clears on both axes (all-staff labor + high risk, no free lever). If Slack is already on Business+ (its enforced SSO suggests it may be), turning on SCIM is $0 too — confirm the current tier. Every other app is lifecycle-free-already (free create/deactivate API for both grant and revoke) or manual at low risk and low churn. GitLab and Vercel enforced-SAML are optional hardening; their lifecycle is already automatable via free API.</li>
+    <li><strong>"SSO everywhere" strawman: ~$120k+/yr</strong> (≈$9.7k/mo of computable list prices plus 8 contact-sales/per-host unknowns). Buys enforced login you mostly already have via Google, and — critically — does <em>not</em> buy revocation on the apps that gate SCIM above the SSO tier.</li>
+    <li><strong>Add Okta: strictly additive.</strong> ~$4–6/user/mo (~$4–6k/yr for ~80 users) <em>on top of</em> whichever vendor SCIM taxes you still pay. It removes none of them, because the vendors gate SCIM by their own tier regardless of IdP, and Google can drive that same SCIM.</li>
+  </ul>
+</div>
+
+<h2>The matrix, applied</h2>
+<div class="matrix">
+  <table>
+    <thead><tr><th></th><th>Independent revocation lever below SSO tier</th><th>No lever (SCIM gated at/above SSO, or none)</th></tr></thead>
+    <tbody>
+      <tr><th class="rk-hi">High</th><td>Enforce federation + free API/SCIM lifecycle, disable local passwords. Cost ~$0. <em>(AWS, MongoDB, Ramp, Vercel, GitLab)</em></td><td>Pay for SCIM — revocation has no substitute here. <em>(Slack, 1Password)</em>. If no API at all: manual + comp controls, or replace. <em>(Sequoia)</em></td></tr>
+      <tr><th class="rk-me">Medium</th><td>Script deprovisioning; skip the SSO tax. <em>(Zoom, LaunchDarkly)</em></td><td>Compensating controls: manual offboarding, quarterly review, time-boxed exception. Pay only if seat count makes manual unsafe. <em>(Intercom, Gong, Amplitude, productboard, Apollo, Cursor)</em></td></tr>
+      <tr><th class="rk-lo">Low</th><td>Script into offboarding automation; move on. <em>(Datadog, Calendly, OpenAI, Anthropic)</em></td><td>Manual removal at offboarding, documented. No spend. <em>(Figma, Notion, Canva, LangSmith, Stream, Jira, Confluence, Loom)</em></td></tr>
+    </tbody>
+  </table>
+</div>
+<p class="meta"><strong>Rule:</strong> any single High signal promotes. Risk does not average. Automate when labor or risk clears the cost; login alone is not the deciding factor.</p>
+
+<h2>Options &amp; recommendation</h2>
+<div class="opt">
+  <div class="o rec"><span class="verd">Recommended</span><h4>Google-as-IdP + targeted SCIM + scripted lifecycle</h4><p>Buy SCIM only for Slack and 1Password (~$22k/yr). Script both provisioning and deprovisioning for the free-API apps. Manual + documented exceptions where risk and churn are both low. Drive it all from Google's provisioning catalog, which already covers the major apps and handles joiner automation as well as leaver.</p></div>
+  <div class="o rej"><span class="verd">Not now</span><h4>Adopt Okta</h4><p>Its pitch is exactly the joiner/mover/leaver automation that matters here — but it adds license cost and its own catalog nuances while removing zero vendor SCIM taxes, and Google already automates the same lifecycle. Genuinely wins at scale: when the volume of SCIM/script integrations, onboarding cadence, or access-review demand exceeds what the team can reliably operate by hand. Trigger-based, not today.</p></div>
+</div>
+
+<h2>Risks &amp; next steps</h2>
+<ul>
+  <li><strong>Orphaned service/bot accounts.</strong> Integrated counts exceed headcount — Google 96, Jira 93, GitLab 53 vs. 78 people — because of service accounts (<code>gitbot</code>, <code>gitlabauth</code>, <code>support</code>, <code>test-gcp-access</code>, null-email machine users). These have no offboarding trigger at all and are a standing lifecycle risk. Inventory and owner-assign them.</li>
+  <li><strong>The revocation gap is real and priced above.</strong> 12 of 29 apps have no free lever; most are low-risk (manual is fine). Slack is the one high-risk app still lacking automated lifecycle (1Password is already handled by the SCIM bridge). Fund Slack.</li>
+  <li><strong>SSO theater:</strong> confirm local-password fallback is off and sessions/tokens are revoked on the apps already showing SSO (esp. Vercel — verify enforced SAML vs. social login).</li>
+</ul>
+<ol>
+  <li>Close the Slack gap: if it's already on Business+, enable SCIM ($0); if not, fund Business+ (~$13.5k/yr). 1Password is already automated via the bridge.</li>
+  <li>Write offboarding scripts against the free-API apps: AWS, MongoDB, Ramp, Vercel, GitLab, Zoom, LaunchDarkly, Datadog, Calendly, OpenAI, Anthropic.</li>
+  <li>Enforce Google SSO + kill local passwords on Ramp, Zoom, Intercom, Amplitude (current gaps).</li>
+  <li>Document manual-offboarding exceptions (owner, quarterly review, expiry) for Sequoia, Apollo, Gong, productboard, Cursor, Figma, Notion, Canva, LangSmith, Stream, Atlassian.</li>
+  <li>Inventory service/bot accounts across Google, Jira, GitLab; assign owners.</li>
+  <li>Revisit Okta when app count crosses ~50 or offboarding cadence makes scripted lifecycle unmanageable.</li>
+</ol>
+
+<footer>
+  <p>Risk levels from Secureframe TPRM (Slack, GitLab promoted to High in this report only). Seat counts are active integration accounts from Secureframe where available (Google 96, Jira 93, Slack 75, GitLab 53, AWS 36, Datadog 35, Sequoia 31); other seats are 78 for all-staff tools or 10 as a documented placeholder. Prices are US list, per-user/month annual unless noted; "contact sales" figures are genuinely unpublished. Monthly costs are gross at the SSO/lifecycle tier — many apps are already licensed at some tier, so incremental spend is lower. Verify at renewal.</p>
+  <p>Sources: <a href="https://aws.amazon.com/iam/identity-center/faqs/">AWS Identity Center</a> · <a href="https://www.mongodb.com/docs/atlas/security/federated-authentication/">MongoDB Atlas</a> · <a href="https://ramp.com/pricing">Ramp</a> · <a href="https://1password.com/business-pricing">1Password</a> · <a href="https://docs.slack.dev/admins/scim-api/">Slack SCIM</a> · <a href="https://docs.gitlab.com/api/group_members/">GitLab Members API</a> · <a href="https://vercel.com/docs/saml">Vercel</a> · <a href="https://www.atlassian.com/software/guard/pricing">Atlassian Guard</a>.</p>
+</footer>
+
+</div>
+</body>
+</html>

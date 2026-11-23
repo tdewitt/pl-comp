@@ -1,0 +1,1 @@
+Validate that static application security testing (SAST) is performed on code changes prior to merging to the production branch. 

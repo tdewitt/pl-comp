@@ -1,0 +1,68 @@
+{
+  "tabs": [
+    {
+      "text": "Risk management",
+      "selector": "BUTTON.css-hewl0j"
+    },
+    {
+      "text": "Exit assessment",
+      "selector": "BUTTON.css-2ou9sw"
+    },
+    {
+      "text": "details",
+      "selector": "BUTTON.css-2ou9sw.sc-dkcKFv.hyGcxI"
+    },
+    {
+      "text": "assessment",
+      "selector": "BUTTON.css-2ou9sw.sc-dkcKFv.gMUihF"
+    },
+    {
+      "text": "treatment",
+      "selector": "BUTTON.css-2ou9sw.sc-dkcKFv.gMUihF"
+    },
+    {
+      "text": "tasks",
+      "selector": "BUTTON.css-2ou9sw.sc-dkcKFv.gMUihF"
+    },
+    {
+      "text": "documents",
+      "selector": "BUTTON.css-2ou9sw.sc-dkcKFv.gMUihF"
+    },
+    {
+      "text": "review",
+      "selector": "BUTTON.css-2ou9sw.sc-dkcKFv.gMUihF"
+    },
+    {
+      "text": "Complete with Comply AI",
+      "selector": "BUTTON.css-2ou9sw"
+    },
+    {
+      "text": "Learn more",
+      "selector": "BUTTON.css-2ou9sw"
+    },
+    {
+      "text": "None",
+      "selector": "BUTTON.css-9ihm7k"
+    },
+    {
+      "text": "None",
+      "selector": "BUTTON.css-9ihm7k"
+    },
+    {
+      "text": "Next",
+      "selector": "BUTTON.css-2ou9sw"
+    }
+  ],
+  "buttons": [],
+  "inputs": [],
+  "textareas": [
+    {
+      "type": "textarea",
+      "name": "description",
+      "ariaLabel": "",
+      "placeholder": "Add a description",
+      "id": "risk-description"
+    }
+  ],
+  "selects": []
+}

@@ -1,0 +1,106 @@
+Found 34 records to process
+
+Processing in batches of 2
+
+
+=== BATCH 1 (records 1-2) ===
+
+[1/34] Processing R-24...
+  Filling details tab...
+    Setting owner: Mike Guzewicz
+    Setting CIA: confidentiality, integrity, availability
+  Filling assessment tab...
+    Setting impact: 5 - Very High
+    Setting likelihood: 4 - High
+  Filling treatment tab...
+    Setting treatment: mitigate
+    Setting residual impact: 4
+    Setting residual likelihood: 2
+  Completing assessment...
+    Assessment completed!
+  ✓ R-24 completed
+[2/34] Processing R-26...
+  Filling details tab...
+    Setting owner: Mike Guzewicz
+    Setting CIA: confidentiality, integrity, availability
+  Filling assessment tab...
+    Setting impact: 5 - Very High
+    Setting likelihood: 3 - Moderate
+  Filling treatment tab...
+    Setting treatment: mitigate
+    Setting residual impact: 4
+    Setting residual likelihood: 2
+  Completing assessment...
+    Assessment completed!
+  ✓ R-26 completed
+
+Closing browser after batch 1...
+
+=== BATCH 2 (records 3-4) ===
+
+[3/34] Processing R-82...
+  Filling details tab...
+    Setting owner: Mike Guzewicz
+    Setting CIA: confidentiality, integrity
+  Filling assessment tab...
+    Setting impact: 4 - High
+    Setting likelihood: 3 - Moderate
+  Filling treatment tab...
+    Setting treatment: mitigate
+    Setting residual impact: 3
+    Setting residual likelihood: 2
+  Completing assessment...
+    Assessment completed!
+  ✓ R-82 completed
+[4/34] Processing R-55...
+  ✗ R-55 failed: page.goto: net::ERR_CONNECTION_REFUSED at https://app.secureframe.com/risk-management/assessment/b36f2196-6030-459e-a504-66a1772cee7c
+Call log:
+[2m  - navigating to "https://app.secureframe.com/risk-management/assessment/b36f2196-6030-459e-a504-66a1772cee7c", waiting until "networkidle"[22m
+
+
+Closing browser after batch 2...
+
+=== BATCH 3 (records 5-6) ===
+
+[5/34] Processing R-20...
+  ✗ R-20 failed: page.goto: net::ERR_CONNECTION_REFUSED at https://app.secureframe.com/risk-management/assessment/e827fa33-de91-43d7-86fb-01ceaed3b5b9
+Call log:
+[2m  - navigating to "https://app.secureframe.com/risk-management/assessment/e827fa33-de91-43d7-86fb-01ceaed3b5b9", waiting until "networkidle"[22m
+
+[6/34] Processing R-67...
+  ✗ R-67 failed: page.goto: net::ERR_CONNECTION_REFUSED at https://app.secureframe.com/risk-management/assessment/564cb0ea-ffc9-4bd1-88f9-d17fba341304
+Call log:
+[2m  - navigating to "https://app.secureframe.com/risk-management/assessment/564cb0ea-ffc9-4bd1-88f9-d17fba341304", waiting until "networkidle"[22m
+
+
+Closing browser after batch 3...
+
+=== BATCH 4 (records 7-8) ===
+
+[7/34] Processing R-51...
+  ✗ R-51 failed: page.goto: net::ERR_CONNECTION_REFUSED at https://app.secureframe.com/risk-management/assessment/938cb2cf-cec4-4c87-83ec-6db5ce5c086c
+Call log:
+[2m  - navigating to "https://app.secureframe.com/risk-management/assessment/938cb2cf-cec4-4c87-83ec-6db5ce5c086c", waiting until "networkidle"[22m
+
+[8/34] Processing R-73...
+  ✗ R-73 failed: page.goto: net::ERR_CONNECTION_REFUSED at https://app.secureframe.com/risk-management/assessment/b6108e71-c2a9-454b-a34f-eb32c149c0fd
+Call log:
+[2m  - navigating to "https://app.secureframe.com/risk-management/assessment/b6108e71-c2a9-454b-a34f-eb32c149c0fd", waiting until "networkidle"[22m
+
+
+Closing browser after batch 4...
+
+=== BATCH 5 (records 9-10) ===
+
+browserType.launchPersistentContext: Timeout 180000ms exceeded.
+Call log:
+[2m  - <launching> /Users/tucker/Library/Caches/ms-playwright/chromium-1228/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --window-size=1920,1080 --user-data-dir=/Users/tucker/compliance/.playwright-profile --remote-debugging-pipe about:blank[22m
+[2m  - <launched> pid=72040[22m
+
+    at async main (/Users/tucker/compliance/secureframe-batch-v3.js:33:21) {
+  log: [
+    '  - <launching> /Users/tucker/Library/Caches/ms-playwright/chromium-1228/chrome-mac-arm64/Google Chrome for Testing.app/Contents/MacOS/Google Chrome for Testing --disable-field-trial-config --disable-background-networking --disable-background-timer-throttling --disable-backgrounding-occluded-windows --disable-back-forward-cache --disable-breakpad --disable-client-side-phishing-detection --disable-component-extensions-with-background-pages --disable-component-update --no-default-browser-check --disable-default-apps --disable-dev-shm-usage --disable-edgeupdater --disable-extensions --disable-features=AvoidUnnecessaryBeforeUnloadCheckSync,BoundaryEventDispatchTracksNodeRemoval,DestroyProfileOnBrowserClose,DialMediaRouteProvider,GlobalMediaControls,HttpsUpgrades,LensOverlay,MediaRouter,PaintHolding,ThirdPartyStoragePartitioning,Translate,AutoDeElevate,RenderDocument,OptimizationHints,msForceBrowserSignIn,msEdgeUpdateLaunchServicesPreferredVersion --enable-features=CDPScreenshotNewSurface --allow-pre-commit-input --disable-hang-monitor --disable-ipc-flooding-protection --disable-popup-blocking --disable-prompt-on-repost --disable-renderer-backgrounding --force-color-profile=srgb --metrics-recording-only --no-first-run --password-store=basic --use-mock-keychain --no-service-autorun --export-tagged-pdf --disable-search-engine-choice-screen --unsafely-disable-devtools-self-xss-warnings --edge-skip-compat-layer-relaunch --disable-infobars --disable-search-engine-choice-screen --disable-sync --enable-unsafe-swiftshader --no-sandbox --window-size=1920,1080 --user-data-dir=/Users/tucker/compliance/.playwright-profile --remote-debugging-pipe about:blank',
+    '  - <launched> pid=72040'
+  ],
+  name: 'TimeoutError'
+}

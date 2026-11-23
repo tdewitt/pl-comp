@@ -1,0 +1,2639 @@
+{
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-07T04:00:00Z",
+  "purpose": "Flat Playwright writer-agent input for all 44 retained Secureframe risks.",
+  "write_rules": {
+    "description": "Catalog descriptions are immutable. Never attempt to edit them.",
+    "execute_only_when": "execution.approved is true and execution.action is not skip",
+    "write_order": [
+      "bulk_new",
+      "existing_assessment_review"
+    ],
+    "quantitative_assessment": "leave unchanged",
+    "tasks": "skip",
+    "documents": "skip",
+    "verify": "Review page, complete assessment, then confirm status through the read API."
+  },
+  "counts": {
+    "total": 44,
+    "bulk_new": 34,
+    "existing_assessment_review": 9,
+    "reference_skip": 1
+  },
+  "assessments": [
+    {
+      "risk_id": "R-24",
+      "secureframe_risk_id": "f711a777-7f3f-48af-ae74-ec05827c2471",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Improper access lifecycle controls can expose customer data, enable destructive privileged changes, and cause a material multi-tenant incident.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "Access spans cloud, production, source control, and SaaS systems; AC-06 and AC-07 are at risk, making excessive or stale privilege likely without stronger lifecycle enforcement."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Enforce role-based provisioning, MFA, time-bound privileged access, same-day termination revocation, quarterly owner reviews, and tracked exceptions.",
+        "control_keys": [
+          "AC-03",
+          "AC-04",
+          "AC-06",
+          "AC-07",
+          "AC-08",
+          "AC-09"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-24 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-26",
+      "secureframe_risk_id": "85c21e38-3a49-4cf0-9594-7bdeb718dfeb",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Excessive vendor or contractor production access could expose or alter customer data and disrupt service outside Planera's direct management chain.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Third-party access is operationally necessary and at-risk least-privilege controls make misuse, compromise, or stale access plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Require sponsor approval, named MFA accounts, least privilege, expiration, logging, quarterly review, and immediate revocation when an engagement ends.",
+        "control_keys": [
+          "AC-04",
+          "AC-05",
+          "AC-06",
+          "AC-09",
+          "RA-04",
+          "RA-13"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-26 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-82",
+      "secureframe_risk_id": "0900d830-d509-4baf-9fc6-66615d122ca0",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Compliance",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Unreviewed access allows stale or excessive privilege to persist across systems holding customer and company data.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Access changes continuously and provisioning controls are at risk, so incomplete review coverage is plausible despite a healthy scheduled-review control."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Perform documented quarterly owner reviews of production, cloud, source-control, data, and critical SaaS access; track removals and exceptions to closure.",
+        "control_keys": [
+          "AC-04",
+          "AC-07",
+          "AC-08",
+          "AC-09"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-82 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-55",
+      "secureframe_risk_id": "b36f2196-6030-459e-a504-66a1772cee7c",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Expired, exposed, weak, or misissued certificates can interrupt customer access or undermine service identity and encrypted transport.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "Managed cloud TLS and healthy encryption controls make systemic failure unlikely, but unmanaged domains, secrets, and renewal failures remain possible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain an owned certificate inventory, prefer managed issuance and renewal, protect private keys, alert before expiry, and test renewal paths.",
+        "control_keys": [
+          "AC-11",
+          "AC-12",
+          "CM-01"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-55 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-20",
+      "secureframe_risk_id": "e827fa33-de91-43d7-86fb-01ceaed3b5b9",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Operations",
+          "People",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Inconsistent onboarding or offboarding can create inappropriate access, missing agreements, unmanaged devices, and retained credentials after departure.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Personnel and contractor changes recur and termination controls are at risk, making cross-team process omissions plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Use an authoritative joiner-mover-leaver workflow with manager approval, role templates, policy acknowledgment, equipment tracking, same-day revocation, and monthly reconciliation.",
+        "control_keys": [
+          "AC-04",
+          "AC-07",
+          "AC-08",
+          "AC-09",
+          "ORG-18"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-20 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-67",
+      "secureframe_risk_id": "564cb0ea-ffc9-4bd1-88f9-d17fba341304",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Unencrypted customer schedules, credentials, backups, or logs could be read or altered and create severe contractual and reputational harm.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "Healthy at-rest, in-transit, and key-management controls reduce likelihood, while legacy paths, exports, and misconfiguration remain possible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Enforce approved encryption for all stores, backups, logs, queues, traffic, and administration; govern keys and continuously detect exceptions.",
+        "control_keys": [
+          "AC-10",
+          "AC-11",
+          "AC-12"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-67 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-51",
+      "secureframe_risk_id": "938cb2cf-cec4-4c87-83ec-6db5ce5c086c",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Production customer data in non-production can receive weaker access, retention, monitoring, and deletion protections.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "Healthy segregation and production-data controls reduce likelihood, but debugging copies, snapshots, exports, and fixtures remain realistic exception paths."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Prohibit production data by default; use synthetic data and require time-bound approval, minimization, logging, and verified deletion for exceptions.",
+        "control_keys": [
+          "CM-04",
+          "CM-05",
+          "C-02",
+          "C-04"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-51 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-73",
+      "secureframe_risk_id": "b6108e71-c2a9-454b-a34f-eb32c149c0fd",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Absent classification causes inconsistent access, encryption, sharing, retention, and disposal for customer, employee, credential, and AI data.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Planera handles multiple data types across product, analytics, support, SaaS, and AI systems, making inconsistent application plausible despite a healthy policy."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Define a practical classification and handling matrix, inventory principal stores and flows, assign owners, embed requirements in SDLC and vendor reviews, and review annually.",
+        "control_keys": [
+          "C-04",
+          "C-05",
+          "AC-01",
+          "AC-12"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-73 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-101",
+      "secureframe_risk_id": "694970cb-f83e-4e5a-9cea-b93ea0bb7f82",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal",
+          "Operations"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Failure to delete data when required can violate contracts and privacy commitments while extending attacker-accessible retention.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "Deletion spans databases, backups, logs, analytics, AI systems, and vendors, so incomplete propagation remains possible despite healthy policy controls."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Use a tracked deletion workflow with due dates, complete system and vendor coverage, verification evidence, backup rules, exceptions, and annual testing.",
+        "control_keys": [
+          "C-01",
+          "C-02",
+          "C-03",
+          "C-05"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-101 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    },
+    {
+      "risk_id": "R-81",
+      "secureframe_risk_id": "b4f99473-f7c0-43d4-b582-f5dad4b23cf6",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Operations"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 3,
+        "impact_label": "Moderate",
+        "impact_justification": "Without disposal evidence, Planera may be unable to prove timely deletion of customer data, accounts, backups, or vendor copies.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Deletion crosses systems and teams and the relevant change-log control is not tested, making evidence omissions plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Record each disposal request, scope, due date, systems, vendors, executor, completion, verification, exceptions, and approval in a protected retained log.",
+        "control_keys": [
+          "C-03",
+          "C-05",
+          "PI-01-4"
+        ],
+        "residual_impact": 2,
+        "residual_impact_label": "Low",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-81 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-34",
+      "secureframe_risk_id": "23fb3259-70ae-4dd0-af31-0165f98f3647",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Missed security alerts can allow compromise, lateral movement, data loss, or outage to continue long enough to become a severe incident.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "Core network monitoring controls are unhealthy and Planera lacks a demonstrated 24/7 response function, making delayed detection likely."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Define monitored sources and use cases, severity and paging rules, on-call ownership, daily alert review, response SLAs, tuning, escalation, and coverage metrics.",
+        "control_keys": [
+          "NET-02",
+          "NET-04",
+          "NET-05",
+          "IR-01",
+          "IR-02"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-34 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-12",
+      "secureframe_risk_id": "8112f0e0-1acc-48f6-8276-5e2cd7ff252b",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Incomplete containment, communication, and recovery procedures can magnify data loss, downtime, notification failures, and customer harm during an incident.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "An incident plan and exercises exist, but incident tracking and lessons-learned controls are at risk, so execution gaps during unfamiliar events are plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain threat-specific playbooks, roles, severity criteria, containment and evidence steps, notification decision trees, vendor contacts, exercises, and post-incident actions.",
+        "control_keys": [
+          "IR-01",
+          "IR-02",
+          "IR-03",
+          "IR-04",
+          "COM-04"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-12 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-69",
+      "secureframe_risk_id": "60abebd5-3249-4467-bd33-9305846ca4d1",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Unauthorized alteration, deletion, or disclosure of audit logs can hide attacker activity and undermine investigations and audit evidence.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "Infrastructure code shows encrypted centralized CloudTrail logging and alarms, making broad compromise unlikely; access-policy or retention errors remain possible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Centralize logs in a separated account, encrypt and restrict write/delete access, validate integrity, alert on configuration changes, enforce retention, and test retrieval.",
+        "control_keys": [
+          "AC-07-13",
+          "NET-04-7",
+          "AC-10",
+          "NET-05"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-69 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-30",
+      "secureframe_risk_id": "ed2feac5-3b3d-45a8-a509-7679e3fbdd79",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 3,
+        "impact_label": "Moderate",
+        "impact_justification": "Failure to improve detection and response allows recurring operational weaknesses to consume capacity and prolong future incidents.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "Reviews and drills are often displaced by delivery pressure, while lessons-learned controls are at risk, making improvement omissions likely."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Perform at least annual program review plus post-incident retrospectives, assign dated improvements, measure completion, tune detections, and report overdue actions.",
+        "control_keys": [
+          "IR-03",
+          "IR-04",
+          "NET-05"
+        ],
+        "residual_impact": 2,
+        "residual_impact_label": "Low",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-30 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-104",
+      "secureframe_risk_id": "140c348e-4514-402e-85d7-577b5745db3e",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 3,
+        "impact_label": "Moderate",
+        "impact_justification": "Teams without practiced incident roles and playbooks may contain and recover from incidents slowly and inconsistently.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Exercises compete with delivery work and can be skipped, making inadequate practice plausible even with a healthy tabletop control."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Schedule quarterly drills with two mandatory exercises annually, cover technical and executive scenarios, capture metrics and lessons, and track corrective actions.",
+        "control_keys": [
+          "IR-01",
+          "IR-04"
+        ],
+        "residual_impact": 2,
+        "residual_impact_label": "Low",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-104 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    },
+    {
+      "risk_id": "R-83",
+      "secureframe_risk_id": "b7bcc07f-e1bb-4a11-a3e3-31d0ed8e6678",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Undetected or unremediated vulnerabilities in applications, APIs, dependencies, or infrastructure can enable severe compromise or outage.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "The production scanning control is unhealthy and the codebase has a large, fast-changing attack surface, making exploitable findings likely without reliable coverage and SLAs."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Run authenticated infrastructure, application, API, dependency, container, and cloud scans at least quarterly and continuously where possible; triage, assign SLAs, verify fixes, and govern exceptions.",
+        "control_keys": [
+          "VM-01",
+          "VM-02",
+          "VM-02-1",
+          "VM-03",
+          "VM-05"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-83 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-2",
+      "secureframe_risk_id": "76657a3f-2cf4-418a-a8db-6149077be37e",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Engineering",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Without independent penetration testing, exploitable attack chains across identity, application, API, and cloud boundaries may remain undiscovered until abuse.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Complex product and AI/MCP surfaces make meaningful attack chains plausible, although Secureframe reports the annual third-party penetration-test control healthy."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Perform annual independent scoped penetration testing and after material architectural change; include tenant isolation and AI/MCP paths, track findings by severity, retest, and retain reports.",
+        "control_keys": [
+          "VM-03",
+          "VM-01",
+          "VM-05"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-2 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-54",
+      "secureframe_risk_id": "b6971e78-132b-4327-a5a6-de04c66e191c",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Unreviewed or untested code and infrastructure changes can introduce security flaws, data corruption, tenant-impacting defects, or outage.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Frequent deployments create continuous change exposure, though healthy testing, approval, and change-policy controls materially reduce realized likelihood."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Require tracked changes, independent review, automated testing and security checks, production approval, rollback plans, deployment auditability, and emergency-change retrospective review.",
+        "control_keys": [
+          "CM-02",
+          "CM-03",
+          "CM-07",
+          "CM-08"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-54 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-88",
+      "secureframe_risk_id": "76b6de26-3e2d-49f9-8acd-62f91fb7974d",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Engineering",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Rapid delivery without security consideration can ship authorization, injection, secret-handling, and data-boundary defects with broad customer impact.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "The active red-team report documents material security findings and rapid AI development expands the attack surface, making security omission likely despite general change controls."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Embed threat modeling, security acceptance criteria, automated scanning, mandatory review for sensitive paths, abuse-case tests, release gates, and tracked remediation into the SDLC.",
+        "control_keys": [
+          "CM-08",
+          "CM-02",
+          "CM-03",
+          "VM-02"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-88 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-16",
+      "secureframe_risk_id": "3d778376-027c-4572-9395-37603988c5f0",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Weak perimeter controls can expose services to scanning, exploitation, credential attacks, and network-based disruption affecting customer data and availability.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Firewall and network-policy controls are healthy and infrastructure defines layered protections, but the production traffic-monitoring control is unhealthy and configuration drift remains plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain default-deny network rules, managed WAF protections, restricted administrative paths, IDS or equivalent telemetry, change review, external exposure inventory, and recurring validation.",
+        "control_keys": [
+          "NET-02",
+          "NET-03",
+          "NET-06",
+          "CM-03"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-16 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-106",
+      "secureframe_risk_id": "1fb2e249-fdf3-4b02-b195-02d74966a7f4",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Cloud misconfiguration can expose storage, identities, networks, logs, or secrets and produce organization-wide compromise or outage.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Planera operates material AWS and GCP infrastructure through IaC, reducing manual drift but retaining complexity, privileged changes, and multi-cloud configuration exposure."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Require IaC for cloud changes, secure baselines, independent review, policy checks, continuous configuration monitoring, least privilege, drift detection, exception expiry, and remediation SLAs.",
+        "control_keys": [
+          "CM-01",
+          "CM-06",
+          "CM-07",
+          "ORG-05",
+          "AC-06"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-106 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-107",
+      "secureframe_risk_id": "a800b898-c3a9-46ba-b40c-5d2c3cd25e0b",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "A successful DDoS attack could make the scheduling service unavailable during time-sensitive construction operations and cause contractual and reputational harm.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Internet-facing SaaS services are routinely probed and cloud-provider protections reduce but do not eliminate application-layer or dependency exhaustion attacks."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Use CDN and managed DDoS/WAF protections, rate limits, autoscaling and quotas, dependency timeouts, runbooks, alerting, capacity tests, and periodic attack-path review.",
+        "control_keys": [
+          "AVA-01",
+          "AVA-02",
+          "AVA-04",
+          "NET-03",
+          "NET-05"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-107 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-71",
+      "secureframe_risk_id": "31ee10da-4fe0-4239-8f8e-3b4b36a61eb0",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations"
+        ],
+        "cia": [
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Loss or corruption of customer schedules and configuration data could halt projects, destroy trust, and create severe contractual harm.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Backups and BCDR policy exist, but restore testing is not tested in Secureframe; unverified coverage, retention, or recovery dependencies make failure plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Define RPO and RTO by data class, automate encrypted backups, isolate credentials, monitor success, test representative restores at least annually, document dependencies, and remediate failures.",
+        "control_keys": [
+          "AVA-03",
+          "AVA-04",
+          "AVA-05",
+          "AVA-06"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-71 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-1",
+      "secureframe_risk_id": "caade62b-e249-4b6d-b68b-d3aa671ace90",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Weak environment isolation can let test identities, data, code, or credentials alter production or expose customer information.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Healthy segregation and production-data controls materially reduce likelihood, while shared tooling, privileged engineers, and debugging exceptions preserve some exposure."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain separate accounts, networks, identities, secrets, data, and deployment roles; prohibit direct developer writes, govern break-glass access, and continuously test boundaries.",
+        "control_keys": [
+          "CM-04",
+          "CM-05",
+          "AC-06",
+          "CM-03"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-1 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    },
+    {
+      "risk_id": "R-23",
+      "secureframe_risk_id": "630304b5-5f60-41e7-aacc-74aa0e243a1b",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Stale network and data-flow diagrams impair threat modeling, incident response, vendor assessment, change review, and accurate customer or auditor representations.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "The network-diagram control is healthy but the data-flow control is unmapped, while multi-cloud, AI, and MCP architecture changes make documentation drift plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain version-controlled current network and data-flow diagrams with trust boundaries, data classes, stores, vendors, AI flows, regions, owners, review dates, and change triggers.",
+        "control_keys": [
+          "NET-11",
+          "NET-06-5",
+          "ORG-58",
+          "CM-07"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-23 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-19",
+      "secureframe_risk_id": "00413e35-b2e7-4502-b01e-371a320e70e7",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "A critical vendor with weak controls can expose customer data, interrupt service, or create regulatory and contractual liability beyond Planera's direct control.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Planera depends on cloud, SaaS, and AI providers and the new-vendor assessment control is at risk, making incomplete review plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Tier vendors by data and operational criticality; require pre-contract security, privacy, resilience, and AI reviews; track issues, contract terms, annual reassessment, and termination obligations.",
+        "control_keys": [
+          "RA-04",
+          "RA-05",
+          "RA-06",
+          "RA-13"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-19 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-60",
+      "secureframe_risk_id": "dd411d47-2d9a-47cd-b804-0cf3c7fd7475",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Inadequate due diligence can accept hidden security, privacy, resilience, or subprocessor weaknesses that materially affect Planera and its customers.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "Planera generally selects established providers and reviews assurance reports, but assurance scope and exceptions can be missed and RA-06 is at risk."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Review SOC reports and bridge letters, scope and exceptions, security architecture, privacy terms, subprocessors, incidents, resilience, and remediation before approval and annually by tier.",
+        "control_keys": [
+          "RA-04",
+          "RA-05",
+          "RA-06"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-60 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    },
+    {
+      "risk_id": "R-76",
+      "secureframe_risk_id": "24539d16-d8eb-4fb1-b78a-ac6ccb5a43f6",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Dependence on one AI provider or proprietary capability can cause feature outage, forced redesign, cost shock, degraded output, or loss of negotiating leverage.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "AI providers change models, pricing, quotas, terms, and availability frequently; Planera uses multiple providers, reducing but not eliminating concentrated dependencies."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain an AI dependency inventory, approved alternatives, abstraction and fallback paths, exportability, quota and cost alerts, outage runbooks, contract review, and periodic substitution tests.",
+        "control_keys": [
+          "RA-04",
+          "RA-05",
+          "RA-06",
+          "AVA-04"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-76 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-63",
+      "secureframe_risk_id": "704c3b16-55e7-40f8-b1c9-85dd46d525d7",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Unauthorized access to AI training, tuning, evaluation, prompt, or customer-context data could expose confidential schedules and contaminate model behavior.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "AI data flows cross chat, MCP, model providers, observability, and code-execution paths; multiple identities and vendors make access errors plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Inventory AI datasets and context flows, classify them, enforce tenant-aware least privilege, encrypt data, prohibit provider training where required, minimize retention, log access, and test isolation.",
+        "control_keys": [
+          "AC-07",
+          "AC-10",
+          "AC-11",
+          "C-04",
+          "CM-08"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-63 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-64",
+      "secureframe_risk_id": "e0a8fc9b-f344-474b-a35b-044c173a1179",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal"
+        ],
+        "cia": [
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Biased AI output could disadvantage users, reduce schedule quality, create customer disputes, or trigger legal concerns if used in consequential workflows.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "Planera's scheduling use is not primarily a protected-class decision system, reducing likelihood, but opaque foundation-model behavior and customer data variation preserve plausible bias."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Define prohibited uses and fairness criteria, review training and evaluation data, test representative scenarios, monitor feedback and outcomes, require human review, and document limitations.",
+        "control_keys": [
+          "CM-08",
+          "PI-03-6",
+          "RA-01"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-64 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-65",
+      "secureframe_risk_id": "b5ddfe4e-89db-4b6a-9987-3a9e3e072946",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Incorrect AI-generated or AI-modified schedules can drive costly or unsafe construction decisions and materially damage customers and Planera.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "The product influences real project planning, models are nondeterministic, and tool execution increases consequence; human confirmation exists but significant failure remains likely without systematic evaluation."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Require human confirmation for consequential changes, bounded permissions, pre-release and regression evaluations, safety and schedule-quality checks, rollback, monitoring, incident handling, and clear limitations.",
+        "control_keys": [
+          "CM-08",
+          "CM-02",
+          "PI-03-6",
+          "IR-01"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-65 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-68",
+      "secureframe_risk_id": "42271f57-ae36-474f-9c69-3b40770dd49b",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "AI noncompliance can cause regulatory action, contractual claims, forced product changes, remediation cost, and reputational harm.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Multiple evolving providers and tool paths plus no explicit AI inventory or recurring legal review make noncompliance plausible despite change controls and human confirmation."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain an AI inventory; conduct legal, privacy, security, and impact reviews before material changes; monitor regulation quarterly; preserve human confirmation, disclosures, vendor review, and annual reassessment.",
+        "control_keys": [
+          "RA-01",
+          "RA-02",
+          "ORG-03",
+          "CM-08",
+          "CM-02",
+          "CM-03",
+          "RA-04",
+          "COM-06"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-68 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "skip",
+        "phase": "reference",
+        "approved": true,
+        "status": "verified_completed"
+      }
+    },
+    {
+      "risk_id": "R-87",
+      "secureframe_risk_id": "7130cdbc-dc8e-484d-b439-da6807ae2aae",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Poor-quality or unrepresentative AI data can produce unsafe, brittle, or misleading scheduling analysis at scale.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Customer schedules vary widely and model behavior changes; quality controls exist in code but no complete governed AI dataset and evaluation program was identified."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Define dataset provenance and quality criteria, validate and version evaluation sets, test edge cases and drift, gate releases, monitor production feedback, and retire contaminated data.",
+        "control_keys": [
+          "CM-08",
+          "PI-01-3",
+          "PI-03-6"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-87 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-91",
+      "secureframe_risk_id": "b173e366-0c33-4f4d-9e1b-30ff01aa9d20",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Unclear ownership or licensing of generated text, code, schedules, or source material can create infringement claims and customer-contract disputes.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Foundation-model provenance and output terms remain evolving, and users can supply third-party material, making ambiguity plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Define approved AI uses and providers, review terms and indemnities, prohibit unlicensed sensitive inputs, maintain attribution where needed, add contractual and product disclosures, and route disputes to legal review.",
+        "control_keys": [
+          "COM-03",
+          "CM-08",
+          "RA-04"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-91 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-109",
+      "secureframe_risk_id": "f151653e-ecaf-421d-bfa1-3a6a2550de02",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Lifecycle flaws across AI design, deployment, tool authorization, operation, maintenance, or retirement can expose tenant data or permit harmful actions.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "Repository red-team evidence documents critical and high AI-path findings, so accepting unchanged residual risk is not defensible until production applicability and remediation are verified."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Replace acceptance with mitigation: govern lifecycle stages, threat-model AI paths, verify identity and tenant boundaries, gate tools by capability, secure secrets, red-team releases, monitor abuse, and verify decommissioning.",
+        "control_keys": [
+          "RA-01",
+          "CM-08",
+          "CM-02",
+          "AC-07",
+          "IR-01"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-109 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    },
+    {
+      "risk_id": "R-22",
+      "secureframe_risk_id": "9eeab310-2f7c-4a28-8f8e-873666499a5a",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "People",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Missing or undistributed security policies leave personnel without authoritative requirements and undermine the entire control environment and audit assertions.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "Core information-security and management-review controls are healthy, but policy acceptance is unhealthy, so dissemination and acknowledgment gaps remain possible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain an approved policy set with owners, annual review, version history, role-based distribution, mandatory acknowledgment, exception handling, and evidence of completion.",
+        "control_keys": [
+          "ORG-12",
+          "ORG-16",
+          "ORG-17",
+          "ORG-21"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-22 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-21",
+      "secureframe_risk_id": "829df274-97b0-42fe-934f-66fcd0d11a99",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Unknown systems, data stores, services, owners, or dependencies cannot be consistently secured, monitored, patched, reviewed, or recovered.",
+        "likelihood": 2,
+        "likelihood_label": "Low",
+        "likelihood_justification": "The annual asset-inventory control is healthy and infrastructure is codified, but SaaS, endpoints, shadow services, AI vendors, and ownership drift remain possible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain one inventory covering cloud, applications, repositories, endpoints, SaaS, data stores, vendors, owners, criticality, classification, lifecycle status, and annual reconciliation.",
+        "control_keys": [
+          "AC-01",
+          "CM-06",
+          "RA-04"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-21 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-49",
+      "secureframe_risk_id": "d1825bf1-28ec-4eae-a151-85f42624a253",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Engineering",
+          "People",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Untrained personnel are more likely to mishandle data, credentials, phishing, incidents, and secure-development responsibilities.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "Annual training is unhealthy and policy acceptance is unhealthy, making missed or ineffective training likely, particularly for role-specific engineering risks."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Require onboarding and annual baseline training, secure-coding and role-specific modules, phishing and incident exercises, completion tracking, remediation for overdue users, and effectiveness metrics.",
+        "control_keys": [
+          "ORG-09",
+          "ORG-17",
+          "CM-08"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-49 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-46",
+      "secureframe_risk_id": "8e6216f4-0c54-442d-b4f6-924fa461e4f8",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Engineering",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 3,
+        "impact_label": "Moderate",
+        "impact_justification": "Failure to monitor credible security advisories can leave actively exploited vulnerabilities unrecognized and unpatched.",
+        "likelihood": 4,
+        "likelihood_label": "High",
+        "likelihood_justification": "High-impact advisories occur regularly and prior Slack evidence showed a widely reported issue was missed, making recurrence likely without an owned feed process."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Subscribe owned channels to authoritative advisories, review each relevant notice, create tracked remediation issues, define emergency patch escalation, and measure response time.",
+        "control_keys": [
+          "ORG-09",
+          "VM-01",
+          "VM-05"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-46 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    },
+    {
+      "risk_id": "R-14",
+      "secureframe_risk_id": "6b6e1ef7-29a2-4a7c-9784-dfcde1298fe6",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 5,
+        "impact_label": "Very High",
+        "impact_justification": "Leakage of source code, credentials, customer schedules, prompts, or proprietary methods can enable compromise, contractual claims, and competitive harm.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Secrets and sensitive context cross repositories, CI, cloud, support, and AI execution; red-team evidence identifies credential-handling concerns, making leakage plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Define a leakage response plan covering secret rotation, access revocation, containment, customer and legal decisions, repository and log review, takedown, evidence, and post-incident prevention.",
+        "control_keys": [
+          "IR-01",
+          "C-04",
+          "AC-12",
+          "CM-08",
+          "COM-04"
+        ],
+        "residual_impact": 4,
+        "residual_impact_label": "High",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-14 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-17",
+      "secureframe_risk_id": "9f2c1ebd-e541-4efd-bde0-b4f301cc25ab",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "b22d9359-48ad-4b87-ae0f-23040a3d0d5c",
+          "name": "Nitin Bhandari",
+          "role": "CEO"
+        },
+        "departments": [
+          "Compliance",
+          "Legal",
+          "Operations"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity",
+          "availability"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Missing audit evidence and compliance records can cause control exceptions, failed audits, contractual friction, and inability to demonstrate historical operation.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Evidence is distributed across Secureframe, cloud systems, tickets, repositories, and people; manual collection and staff change make retention gaps plausible."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Define record classes, owners, retention periods, protected repositories, collection cadence, legal holds, disposal, access, and periodic completeness checks for compliance evidence.",
+        "control_keys": [
+          "C-01",
+          "C-05",
+          "RA-03",
+          "ORG-58"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-17 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "complete_assessment",
+        "phase": "bulk_new",
+        "approved": true,
+        "status": "pending"
+      }
+    },
+    {
+      "risk_id": "R-72",
+      "secureframe_risk_id": "86a9b153-e9cd-4929-befc-9d9b4dca983e",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "b22d9359-48ad-4b87-ae0f-23040a3d0d5c",
+          "name": "Nitin Bhandari",
+          "role": "CEO"
+        },
+        "departments": [
+          "Compliance",
+          "Engineering",
+          "Legal"
+        ],
+        "cia": [
+          "confidentiality",
+          "integrity"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "Failure to identify and implement applicable legal and regulatory obligations can cause penalties, contract breach, feature restrictions, and reputational harm.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Planera's geographic reach, AI functionality, privacy commitments, and vendor ecosystem continue to evolve, making the prior low-risk acceptance position weak without a formal obligations process."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Replace acceptance with mitigation: maintain an obligations register, assign owners, review quarterly and before market or product changes, translate requirements into controls, retain legal decisions, and track remediation.",
+        "control_keys": [
+          "ORG-03",
+          "COM-03",
+          "COM-06",
+          "RA-01"
+        ],
+        "residual_impact": 3,
+        "residual_impact_label": "Moderate",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-72 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 2,
+        "residual_likelihood_label": "Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    },
+    {
+      "risk_id": "R-3",
+      "secureframe_risk_id": "3e90727d-93f6-442d-968b-f303b267d76e",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Operations",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_label": "High",
+        "impact_justification": "An unencrypted lost or stolen endpoint can expose credentials, customer information, and company data.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Remote work and travel make device loss plausible, while healthy managed-endpoint encryption materially limits successful data access."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Require managed full-disk encryption, strong authentication, screen lock, inventory and compliance monitoring, remote revocation or wipe, and exception remediation before sensitive access.",
+        "control_keys": [
+          "NET-01",
+          "AC-12"
+        ],
+        "residual_impact": 2,
+        "residual_impact_label": "Low",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-3 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    },
+    {
+      "risk_id": "R-84",
+      "secureframe_risk_id": "69e298b5-b722-4b11-bae2-e23919c08ad7",
+      "immutable_fields": [
+        "description"
+      ],
+      "details": {
+        "owner": {
+          "id": "9f4153bf-7f0a-449f-90e6-89659301a32e",
+          "name": "Mike Guzewicz",
+          "role": "Head of Operations/DevOps"
+        },
+        "departments": [
+          "Operations",
+          "People",
+          "Security"
+        ],
+        "cia": [
+          "confidentiality"
+        ],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 3,
+        "impact_label": "Moderate",
+        "impact_justification": "A lost workstation can expose local data or active sessions and require rapid credential, device, customer, and legal response.",
+        "likelihood": 3,
+        "likelihood_label": "Moderate",
+        "likelihood_justification": "Device loss is plausible in a distributed workforce, while encryption and management make compromise less likely than the loss event itself."
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Maintain a documented lost-device procedure with immediate reporting, session and credential revocation, remote lock or wipe, inventory update, investigation, notification assessment, and lessons learned.",
+        "control_keys": [
+          "NET-01",
+          "IR-01",
+          "AC-08"
+        ],
+        "residual_impact": 2,
+        "residual_impact_label": "Low",
+        "residual_impact_justification": "Controls reduce exposure and blast radius, but a material R-84 event could still cause meaningful customer, operational, contractual, or compliance harm.",
+        "residual_likelihood": 1,
+        "residual_likelihood_label": "Very Low",
+        "residual_likelihood_justification": "The documented treatment and mapped controls should reduce occurrence to very low, but configuration, vendor, and human error cannot be eliminated."
+      },
+      "skip_sections": [
+        "quantitative_assessment",
+        "tasks",
+        "documents"
+      ],
+      "execution": {
+        "action": "update_assessment",
+        "phase": "existing_assessment_review",
+        "approved": false,
+        "status": "pending_review"
+      }
+    }
+  ]
+}

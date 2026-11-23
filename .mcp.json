@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "secureframe": {
+      "type": "http",
+      "url": "https://mcp.secureframe.com/"
+    }
+  }
+}

@@ -1,0 +1,6 @@
+.playwright-profile/
+.secureframe-policy-profile/
+auth-state.json
+vendors/*-review.json
+vendors/*/review-*.json
+vendors/*/_review_text/

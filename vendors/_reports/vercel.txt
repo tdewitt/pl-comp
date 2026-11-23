@@ -1,0 +1,8400 @@
+6:4
+6.7
+09
+Z
+T2
+2:0
+
+VERCEL INC.
+
+-15
+
+SOC 2 REPORT
+25
+
+-10
+
+FOR
+
+ne
+ra.
+i
+
+o,
+
+20
+
+VERCEL AI CLOUD
+
+ike
+g@
+
+pla
+
+A TYPE 2 INDEPENDENT SERVICE AUDITOR’S REPORT ON CONTROLS
+RELEVANT TO SECURITY, AVAILABILITY, AND CONFIDENTIALITY
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+JULY 1, 2024, TO JUNE 30, 2025
+
+M
+
+ike
+
+Attestation and Compliance Services
+
+Proprietary & Confidential
+Unauthorized use, reproduction, or distribution of this report, in whole or in part, is strictly prohibited.
+
+6:4
+6.7
+09
+Z
+T2
+2:0
+-15
+-10
+25
+20
+o,
+ne
+ra.
+i
+pla
+ike
+g@
+,m
+icz
+Gu
+ze
+w
+ike
+M
+This report is intended solely for use by the management of Vercel Inc., user entities of Vercel Inc.’s
+services, and other parties who have sufficient knowledge and understanding of Vercel Inc.’s services
+covered by this report (each referred to herein as a “specified user”).
+If the report recipient is not a specified user (herein referred to as a "non-specified user"), use of this
+report is the non-specified user's sole responsibility and at the non-specified user's sole and exclusive
+risk. Non-specified users may not rely on this report and do not acquire any rights against Schellman &
+Company, LLC as a result of such access. Further, Schellman & Company, LLC does not assume any
+duties or obligations to any non-specified user who obtains this report and/or has access to it.
+Unauthorized use, reproduction, or distribution of this report, in whole or in part, is strictly prohibited.
+
+6:4
+6.7
+09
+Z
+
+TABLE OF
+CONTENTS
+T2
+2:0
+
+SECTION 1 INDEPENDENT SERVICE AUDITOR’S
+REPORT .................................................... 1
+
+-15
+
+SECTION 2 MANAGEMENT’S ASSERTION .................. 5
+
+-10
+
+SECTION 3 DESCRIPTION OF THE SYSTEM ................ 7
+
+25
+
+SECTION 4 TESTING MATRICES ............................... 22
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+SECTION 5 OTHER INFORMATION PROVIDED BY
+MANAGEMENT ....................................... 61
+
+ike
+
+M
+Gu
+ze
+w
+pla
+
+ike
+g@
+
+,m
+
+icz
+
+o,
+
+ne
+ra.
+i
+-10
+
+25
+
+20
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+SECTION 1
+
+INDEPENDENT SERVICE
+AUDITOR’S REPORT
+
+1
+
+INDEPENDENT SERVICE AUDITOR’S REPORT
+To Vercel Inc.:
+Scope
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+We have examined Vercel Inc.’s (“Vercel” or the “service organization”) accompanying description of its Vercel AI
+Cloud system, in Section 3, throughout the period July 1, 2024, to June 30, 2025, (the “description”), based on the
+criteria for a description of a service organization’s system in DC section 200, 2018 Description Criteria for a
+Description of a Service Organization’s System in a SOC 2® Report (AICPA, Description Criteria) (“description
+criteria”), and the suitability of the design and operating effectiveness of controls stated in the description throughout
+the period July 1, 2024, to June 30, 2025, to provide reasonable assurance that Vercel’s service commitments and
+system requirements were achieved based on the trust services criteria relevant to security, availability, and
+confidentiality (“applicable trust services criteria”) set forth in TSP section 100, Trust Services Criteria for Security,
+Availability, Processing Integrity, Confidentiality, and Privacy (AICPA, Trust Services Criteria).
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+Vercel uses various subservice organizations for cloud hosting services. The description indicates that
+complementary subservice organization controls that are suitably designed and operating effectively are necessary,
+along with controls at Vercel, to achieve Vercel’s service commitments and system requirements based on the
+applicable trust services criteria. The description presents Vercel’s controls, the applicable trust services criteria,
+and the types of complementary subservice organization controls assumed in the design of Vercel’s controls. The
+description does not disclose the actual controls at the subservice organizations. Our examination did not include
+the services provided by the subservice organizations, and we have not evaluated the suitability of the design or
+operating effectiveness of such complementary subservice organization controls.
+
+Service Organization’s Responsibilities
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+The information included in Section 5, “Other Information Provided by Vercel” is presented by Vercel management
+to provide additional information and is not a part of the description. Information about Vercel’s management's
+response to exceptions noted has not been subjected to the procedures applied in the examination of the
+description, the suitability of the design of controls, and the operating effectiveness of the controls to achieve
+Vercel’s service commitments and system requirements based on the applicable trust services criteria.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+Vercel is responsible for its service commitments and system requirements and for designing, implementing, and
+operating effective controls within the system to provide reasonable assurance that Vercel’s service commitments
+and system requirements were achieved. Vercel has provided the accompanying assertion, in Section 2,
+(“assertion”) about the description and the suitability of design and operating effectiveness of controls stated therein.
+Vercel is also responsible for preparing the description and assertion, including the completeness, accuracy, and
+method of presentation of the description and assertion; providing the services covered by the description; selecting
+the applicable trust services criteria and stating the related controls in the description; and identifying the risks that
+threaten the achievement of the service organization’s service commitments and system requirements.
+Service Auditor’s Responsibilities
+Our responsibility is to express an opinion on the description and on the suitability of design and operating
+effectiveness of controls stated in the description based on our examination. Our examination was conducted in
+accordance with attestation standards established by the American Institute of Certified Public Accountants
+(AICPA). Those standards require that we plan and perform our examination to obtain reasonable assurance about
+whether, in all material respects, the description is presented in accordance with the description criteria and the
+controls stated therein were suitably designed and operated effectively to provide reasonable assurance that the
+service organization’s service commitments and system requirements were achieved based on the applicable trust
+services criteria. We believe that the evidence we obtained is sufficient and appropriate to provide a reasonable
+basis for our opinion.
+
+2
+
+An examination of the description of a service organization’s system and the suitability of the design and operating
+effectiveness of controls involves the following:
+Obtaining an understanding of the system and the service organization’s service commitments and system
+requirements.
+
+•
+
+Assessing the risks that the description is not presented in accordance with the description criteria and that
+controls were not suitably designed or did not operate effectively.
+
+•
+
+Performing procedures to obtain evidence about whether the description is presented in accordance with
+the description criteria.
+
+•
+
+Performing procedures to obtain evidence about whether controls stated in the description were suitably
+designed to provide reasonable assurance that the service organization achieved its service commitments
+and system requirements based on the applicable trust services criteria.
+
+•
+
+Testing the operating effectiveness of controls stated in the description to provide reasonable assurance
+that the service organization achieved its service commitments and system requirements based on the
+applicable trust services criteria.
+
+•
+
+Evaluating the overall presentation of the description.
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+•
+
+Our examination also included performing such other procedures as we considered necessary in the circumstances.
+
+-15
+
+Service Auditor’s Independence
+
+25
+
+-10
+
+We are required to be independent and to meet our other ethical responsibilities in accordance with relevant ethical
+requirements relating to the engagement.
+
+20
+
+Inherent Limitations
+
+ne
+ra.
+i
+
+o,
+
+The description is prepared to meet the common needs of a broad range of report users and may not, therefore,
+include every aspect of the system that individual users may consider important to meet their informational needs.
+
+pla
+
+There are inherent limitations in the effectiveness of any system of internal control, including the possibility of human
+error and the circumvention of controls.
+
+Gu
+ze
+w
+
+Description of Test of Controls
+
+icz
+
+,m
+
+ike
+g@
+
+Because of their nature, controls may not always operate effectively to provide reasonable assurance that the
+service organization’s service commitments and system requirements are achieved based on the applicable trust
+services criteria. Also, the projection to the future of any conclusions about the suitability of the design and operating
+effectiveness of controls is subject to the risk that controls may become inadequate because of changes in
+conditions or that the degree of compliance with the policies or procedures may deteriorate.
+
+Opinion
+
+ike
+
+The specific controls we tested, and the nature, timing, and results of those tests are presented in Section 4 of our
+report titled “Testing Matrices.”
+
+M
+
+In our opinion, in all material respects:
+•
+
+the description presents Vercel’s AI Cloud system that was designed and implemented throughout the
+period July 1, 2024, to June 30, 2025, in accordance with the description criteria;
+
+•
+
+the controls stated in the description were suitably designed throughout the period July 1, 2024, to June
+30, 2025, to provide reasonable assurance that Vercel’s service commitments and system requirements
+would be achieved based on the applicable trust services criteria, if its controls operated effectively
+throughout that period and if the subservice organizations applied the complementary controls assumed in
+the design of Vercel’s controls throughout that period; and
+
+•
+
+the controls stated in the description operated effectively throughout the period July 1, 2024, to June 30,
+2025, to provide reasonable assurance that Vercel’s service commitments and system requirements were
+achieved based on the applicable trust services criteria, if complementary subservice organization controls
+assumed in the design of Vercel’s controls operated effectively throughout that period.
+3
+
+Restricted Use
+This report, including the description of tests of controls and results thereof in Section 4, is intended solely for the
+information and use of Vercel, user entities of Vercel’s AI Cloud system during some or all of the period of July 1,
+2024, to June 30, 2025, business partners of Vercel subject to risks arising from interactions with the Vercel AI
+Cloud system, practitioners providing services to such user entities and business partners, prospective user entities
+and business partners, and regulators who have sufficient knowledge and understanding of the following:
+the nature of the service provided by the service organization;
+
+•
+
+how the service organization’s system interacts with user entities, business partners, subservice
+organizations, and other parties;
+
+•
+
+internal control and its limitations;
+
+•
+
+complementary subservice organization controls and how those controls interact with the controls at the
+service organization to achieve the service organization’s service commitments and system requirements;
+
+•
+
+user entity responsibilities and how they may affect the user entity’s ability to effectively use the service
+organization’s services;
+
+•
+
+the applicable trust services criteria; and
+
+•
+
+the risks that may threaten the achievement of the service organization’s service commitments and system
+requirements, and how controls address those risks.
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+•
+
+20
+
+25
+
+-10
+
+This report is not intended to be, and should not be, used by anyone other than these specified parties.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+Tampa, Florida
+July 18, 2025
+
+4
+
+ike
+
+M
+Gu
+ze
+w
+pla
+
+ike
+g@
+
+,m
+
+icz
+
+o,
+
+ne
+ra.
+i
+-10
+
+25
+
+20
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+SECTION 2
+
+MANAGEMENT’S
+ASSERTION
+
+5
+
+MANAGEMENT’S ASSERTION
+
+6:4
+6.7
+09
+Z
+
+We have prepared the accompanying description of Vercel’s AI Cloud system, in Section 3, throughout the period
+July 1, 2024, to June 30, 2025, (the “description”) based on the criteria for a description of a service organization’s
+system in DC section 200, 2018 Description Criteria for a Description of a Service Organization’s System in a SOC
+2® Report (AICPA, Description Criteria), (“description criteria”). The description is intended to provide report users
+with information about the Vercel AI Cloud system that may be useful when assessing the risks arising from
+interactions with Vercel’s system, particularly information about system controls that Vercel has designed,
+implemented, and operated to provide reasonable assurance that its service commitments and system
+requirements were achieved based on the trust services criteria relevant to security, availability, and confidentiality
+(“applicable trust services criteria”) set forth in TSP section 100, Trust Services Criteria for Security, Availability,
+Processing Integrity, Confidentiality, and Privacy (AICPA, Trust Services Criteria).
+
+-10
+
+-15
+
+T2
+2:0
+
+Vercel uses various subservice organizations for cloud hosting services. The description indicates that
+complementary subservice organization controls that are suitably designed and operating effectively are necessary,
+along with controls at Vercel, to achieve Vercel’s service commitments and system requirements based on the
+applicable trust services criteria. The description presents Vercel’s controls, the applicable trust services criteria,
+and the types of complementary subservice organization controls assumed in the design of Vercel’s controls. The
+description does not disclose the actual controls at the subservice organizations.
+
+25
+
+We confirm, to the best of our knowledge and belief, that:
+
+the description presents Vercel’s AI Cloud system that was designed and implemented throughout the
+period July 1, 2024, to June 30, 2025, in accordance with the description criteria;
+
+•
+
+the controls stated in the description were suitably designed throughout the period July 1, 2024, to June
+30, 2025, to provide reasonable assurance that Vercel’s service commitments and system requirements
+would be achieved based on the applicable trust services criteria, if its controls operated effectively
+throughout that period, and if the subservice organizations applied the complementary controls assumed
+in the design of Vercel’s controls throughout that period; and
+
+•
+
+the controls stated in the description operated effectively throughout the period July 1, 2024, to June 30,
+2025, to provide reasonable assurance that Vercel’s service commitments and system requirements were
+achieved based on the applicable trust services criteria if complementary subservice organization controls
+assumed in the design of Vercel’s controls operated effectively throughout that period.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+•
+
+6
+
+ike
+
+M
+Gu
+ze
+w
+pla
+
+ike
+g@
+
+,m
+
+icz
+
+o,
+
+ne
+ra.
+i
+-10
+
+25
+
+20
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+SECTION 3
+
+DESCRIPTION OF THE
+SYSTEM
+
+7
+
+OVERVIEW OF OPERATIONS
+Company Background
+Vercel Inc. (Vercel) is the AI Cloud, offering a fullstack cloud platform for building, deploying, and running web
+experiences, intelligent applications, and the agents behind them. The company provides hosting services,
+serverless technology, developer workflows, and v0, a leading AI web development assistant. Founded in 2015 by
+Guillermo Rauch, Vercel maintains Next.js, AI SDK, and shadcn/ui.
+
+6:4
+6.7
+09
+Z
+
+Description of Services Provided
+
+-15
+
+T2
+2:0
+
+The Vercel AI Cloud platform provides a range of AI-native tools and services for developers, including hosting,
+serverless functions, deployment automation, primitives, and v0, an AI web development assistant. Additionally,
+Vercel provides managed infrastructure features, such as automatic scaling, custom domains, analytics, and
+Content Delivery Network (CDN) support, allowing developers to build frontend, backend, and AI applications that
+can handle large amounts of traffic.
+
+25
+
+-10
+
+PRINCIPAL SERVICE COMMITMENTS AND SYSTEM REQUIREMENTS
+
+20
+
+Principal Service Commitments
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+Vercel designs its processes and procedures related to the AI Cloud to meet its objectives for its services. Those
+objectives are based on the service commitments that Vercel makes to user entities, the laws and regulations that
+govern the provision of Vercel services, and the financial, operational, and compliance requirements that Vercel
+has established for the services. The services of Vercel are subject to the relevant regulatory and industry
+information and data security requirements in which Vercel operates.
+
+,m
+
+ike
+g@
+
+Security, availability, and confidentiality commitments to user entities are documented and communicated in
+Vercel’s Terms of Service (ToS), Data Processing Agreement (DPA), the service level commitments, and other
+publicly available security and support documentation. The principal security, availability, and confidentiality
+commitments are standardized and include the following:
+Vercel operates on a shared responsibility model with customers for providing services related to customer
+data, encryption and data integrity, authentication, and log management. Vercel is responsible for the
+security and availability of the underlying infrastructure used to provide its services, including compute,
+storage, and networking environments.
+
+•
+
+Vercel will implement and maintain technical and organizational security measures designed to protect
+customer data from security incidents and to preserve the security and confidentiality of the customer data.
+
+•
+
+Vercel maintains customer data in an encrypted format at rest using advanced encryption standard (AES256) and in transit (transport layer security (TLS) 1.2 or higher).
+
+•
+
+Vercel monitors access to systems, applications, tools, and resources that process or store customer data,
+including cloud services. Monitoring of security logs is centralized by the security team. Log activities are
+investigated when necessary and escalated appropriately. User activity metrics are available to customers
+within the services.
+
+•
+
+Vercel adheres to a change management process to administer changes to the production environment for
+the services, including changes to its underlying software, applications, and systems. Monitors are in place
+to notify the security team and other relevant stakeholders of changes made to critical infrastructure and
+services that do not adhere to the change management processes.
+
+•
+
+Termination or expiration of the agreement serves as instruction for Vercel to delete customer data within
+a commercially reasonable timeframe.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+•
+
+8
+
+•
+
+Vercel agrees not to use confidential information for any purpose other than the purposes related to the
+customer agreement.
+
+•
+
+Daily backups of customer data are performed, backups are retained redundantly across multiple
+availability zones and encrypted in transit and at rest.
+
+System Requirements
+
+6:4
+6.7
+09
+Z
+
+Such requirements are communicated in Vercel’s policies and procedures, system design documentation, and
+contracts with customers. Information security policies define an organization-wide approach to how systems and
+data are protected. These include policies around how the service is designed and developed, how the system is
+operated, how internal business systems and networks are managed, and how employees are hired, trained, and
+managed. In addition to these policies, standard operating procedures have been documented on how to carry out
+specific manual and automated processes required in the operation and development of the Vercel system.
+
+-15
+
+T2
+2:0
+
+In accordance with Vercel’s assertion, and the description criteria, the aforementioned principal service
+commitments and requirements are those principal service commitments and requirements common to the broad
+base of users of the system and may therefore not fully address the specific principal service commitments and
+requirements made to all system users, in each individual case.
+
+-10
+
+COMPONENTS OF THE SYSTEM USED TO PROVIDE THE SERVICE
+
+20
+
+25
+
+System Boundaries
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+A system is designed, implemented, and operated to achieve specific business objectives in accordance with
+management-specified requirements. The purpose of the system description is to delineate the boundaries of the
+system, which includes the services outlined above and the five components described below: infrastructure,
+software, people, procedures, and data.
+
+ike
+g@
+
+Infrastructure and Software
+
+icz
+
+,m
+
+The production information systems are located at facilities hosted by Amazon Web Services (AWS) and Microsoft
+Azure (Microsoft). A combination of custom developed, externally supported, and wholly purchased applications
+supports the Vercel AI Cloud.
+
+Gu
+ze
+w
+
+The in-scope infrastructure consists of multiple applications, operating system platforms and databases, as shown
+in the table below:
+
+Amazon
+Elastic Kubernetes
+Service (EKS)
+
+M
+
+Production
+Application
+
+ike
+
+Primary Infrastructure
+
+Business Function Description
+
+Operating System
+Platform
+
+Physical
+Location
+
+Cloud-platform providing managed Kubernetes
+service for the deployment and operation of the
+Vercel AI cloud.
+
+AWS Lambda
+
+Server less computing service for running code in
+response to events that automatically manage
+underlying compute resources for the Vercel AI
+cloud.
+
+Amazon
+Relational Database
+Service (RDS)
+
+Flexible relational database to securely store and
+manage data, with built-in backup and
+redundancy.
+
+Amazon AWS
+AWS
+
+Postgres
+
+9
+
+Primary Infrastructure
+Production
+Application
+
+Business Function Description
+
+Operating System
+Platform
+
+Physical
+Location
+
+Microsoft
+Azure Cosmos
+Database (DB)
+
+Fully managed NoSQL and relational database for
+modern application development.
+
+NoSQL
+
+Microsoft
+
+Okta
+
+Vendor provided security identity management to
+manage applications and/or assignments to users
+or groups.
+
+Okta
+
+Okta
+
+6:4
+6.7
+09
+Z
+
+People
+
+Executive Management – responsible for overseeing company-wide activities, establishing, and
+accomplishing goals, and overseeing objectives.
+
+•
+
+People Operations – responsible for Human Resources (HR) policies, practices, and processes with a focus
+on key HR department delivery areas (e.g., talent acquisitions, employee retention, compensation,
+employee benefits, performance management, employee relations and training, and development).
+
+•
+
+Product and Engineering – responsible for developing, implementing, and operating a healthy engineering
+culture, maintaining availability of the product platform, and aligning to technical and security guidance in
+providing a resilient product offering.
+
+•
+
+Information Technology (IT) – responsible for enabling employee access to official Vercel systems,
+supporting employee employment lifecycle in partnership with People Operations.
+
+•
+
+Legal – responsible for procurement lifecycle with regards to customers and services utilized, reviewing
+legal collateral, noting any deviations from standard legal documentation and on-standard contracts.
+
+•
+
+Security – responsible for developing, implementing, and operating appropriate technical security controls,
+supporting overall information security and risk management lifecycle.
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+•
+
+ike
+g@
+
+Procedures
+
+,m
+
+Access, Authentication, and Authorization
+
+Gu
+ze
+w
+
+icz
+
+Access to system information, including confidential data, is protected by authentication and authorization
+mechanisms. A standard build template is in place to guide personnel in commissioning new production systems.
+Additionally, the production environment is segmented from other non-critical environments to help ensure that
+confidential data is isolated from unrelated networks.
+
+M
+
+ike
+
+Users accessing production systems are required to authenticate with a unique user account and enforce minimum
+password requirements. Vercel utilizes Okta for single sign-on (SSO) to authenticate users to the AWS production
+environment with a unique user account and predefined minimum password requirements with multi-factor
+authentication (MFA). The AWS production environment utilizes the identity access management (IAM) console to
+manage the SSO groups to production system resources. Users are added to predefined security groups to help
+ensure role-based access privileges are enforced and access to data is segregated. For Microsoft Azure, security
+keys and MFA are utilized as a means of authentication methods to the Microsoft Azure production environment,
+including the Microsoft Azure Cosmos DB. Pre-defined access groups are utilized within Microsoft Azure to restrict
+access based on pre-defined privileges. Administrative access privileges to the in-scope systems are restricted to
+user accounts accessible by authorized personnel.
+Access Requests and Access Suspension
+Management has established controls to help ensure that access to data is restricted and provisioned based on the
+concept of least privilege. Formal documentation is required for access requests and access suspensions to help
+ensure activities are completed for the addition, modification, and suspension of system and software access
+privileges. When a new employee is hired and has accepted a position at Vercel, user access provisioning and
+10
+
+onboarding requirements are documented as part of a standardized process. New hire access request forms
+include relevant information related to the new employee, such as full name, job title, start date, and employment
+eligibility requirements. Access request forms require approval from system owners for processing. Certain access
+approvals are implicit based upon the job role. With the initiation of a new hire access request form, IT personnel
+will create a corresponding entry in the ticketing system, which includes detailed onboarding activities completed
+(e.g., providing the employee a laptop and e-mail account creation). If an employee requires additional access
+privileges, a request would be submitted with approval from the relevant manager before the additional access
+rights are provisioned to other Vercel systems.
+
+6:4
+6.7
+09
+Z
+
+Upon notification of an employee termination, IT personnel complete a checklist to help ensure that employees do
+not retain system access subsequent to their termination date. IT helps ensure SSO deactivation will occur in
+alignment with the last working day or time provided by People Operations. IT personnel promptly remove any
+corporate and/or production environment access for the terminated employee. In addition, to help ensure access
+privileges are appropriate, a user access review is performed on a quarterly basis, including privileged users, to
+help ensure that access to the in-scope systems and data is restricted to authorized personnel.
+Network Security
+
+T2
+2:0
+
+Security groups serving as virtualized firewall systems are in place to filter unauthorized inbound network traffic
+from the Internet and deny any type of network connection that is not explicitly authorized. The security group rules
+are reviewed on an annual basis to help ensure that only necessary connections are configured within the rulesets.
+
+-15
+
+Change Management
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+Vercel has a process in place to help provide reasonable assurance that unauthorized changes are not made to
+production application systems. Vercel follows a standard change management process across its applications
+and systems. Documented change control policies and procedures are in place to guide personnel in performing
+changes to customer production systems. If a change is necessary to a production system, the engineering team
+will document a change request ticket. Infrastructure and application change requests are tracked within the
+ticketing system. Change details include, but are not limited to, the description of the change, details regarding the
+criticality of the change, the timeframe for the implementation of the change, code review, and final approval.
+Changes to system infrastructure and system / application software are developed and tested in an environment
+separate from production. The testing environment utilizes non-production data. Virtual private clouds (VPCs) are
+utilized to logically segregate the staging and production environments. Vercel also conducts bi-weekly change
+management meetings where discussions are held regarding active product features and developments that are
+underway for the Vercel AI Cloud. Members of the bi-weekly change meeting include team members from Security,
+Engineering, and other key technical and executive leaders within Vercel.
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+Vercel utilizes GitHub version control software to control code versioning and security throughout the code
+development process. Write access privileges to source code libraries and administrative access privileges within
+GitHub are restricted to user accounts accessible by authorized engineering or development personnel. Branch
+protection rules are configured to systematically enforce peer review before a change is merged into the production
+repository. The branch protection configurations are monitored via Datadog and are configured to notify IT security
+personnel via Slack in the event that any of the branch protection configurations are modified.
+
+M
+
+ike
+
+Once the software development standards have been met, code changes are configured to require peer review and
+undergo automated testing procedures prior to being merged into the master branch. Vercel restricts the ability to
+implement changes into the production environment to those individuals who require the ability to implement
+changes as part of their job function. Additionally, a file integrity monitoring (FIM) tool is utilized to monitor changes
+to the production environment and is configured to notify authorized personnel when changes to the production
+environment occur. Administrative access to the FIM tool is restricted to authorized personnel which include highlevel engineering and security team members.
+System Monitoring
+Information resources are continuously monitored by the response team to help ensure secure operation and
+availability of the system. Vercel utilizes cloud-based log management and monitoring systems, including an IDS,
+to monitor the health of production systems, including capacity, availability, and security events. Monitoring
+encompasses the availability and health of the AWS and Microsoft Azure systems (monitored by non-AWS and
+Microsoft Azure resources / tools). This monitoring provides personnel with the awareness if there are any
+11
+
+performance or security incidents, including unauthorized network and security group changes. Event notifications
+are configured to notify personnel when service thresholds are breached. Additionally, the IT security team actively
+monitors the cloud production monitoring applications to help ensure the systems are operating properly. In the
+event that a monitored system exceeds a pre-defined threshold, which is defined by operations, an automated
+notification will be sent to the Response team for investigation. Any security incidents identified are reviewed by
+incident response personnel, and a ticket is created, if necessary, to document the resolution of the security incident.
+The incident management process is utilized to document incidents and resolutions.
+Penetration Testing and Vulnerability Assessments
+
+6:4
+6.7
+09
+Z
+
+Vercel utilizes a third-party vendor to perform annual penetration testing of production systems. Additionally, Vercel
+security personnel utilize a third-party utility to perform a vulnerability scan of the production application on a daily
+basis to identify threats within the production environment as well as to verify compliance with corporate policies.
+Security vulnerabilities that are identified are triaged by security personnel and monitored through resolution.
+Incident Response
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+Incident response and escalation policies and procedures are documented to efficiently and effectively manage
+unexpected incidents impacting the business. Vercel utilizes various communication channels for communicating
+and tracking any identified incidents, including telephone, e-mail, and instant messaging. When an issue is
+reported, an authorized security or engineering team member will examine the issue and determine whether or not
+the incident requires escalation, and if the issue is a security incident, actions are taken to resolve the issue and
+restore normal operations to affected systems. Additionally, postmortem reports that include the incident and impact
+analysis, resolutions, lessons learned, and action items are documented. SEV1 and SEV2 incidents must have a
+post-mortem report, with anything beyond a SEV2 or informational shall be at the discretion of the Incident Captain
+or CISO.
+
+20
+
+Data Replication, Backup, and Disaster Recovery
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+The infrastructure is deployed into two distinct availability regions (with respect to each of the AWS and Microsoft
+Azure platforms) to help ensure redundancy. Vercel maintains defined backup and recovery procedures. AWS’
+and Microsoft Azure’s storage capabilities are utilized for primary data storage as well as backup and redundancy.
+An automated backup of the production data is performed on at least a daily basis, and the data is stored in the
+relevant AWS and Microsoft Azure platforms’ storage with replication across the respective secondary availability
+zones / regions. In addition, AWS backups are encrypted at rest and in transit across the availability zones / regions.
+As part of the cloud hosting services, Microsoft encrypts backups at rest and in transit. Backups of Vercel’s
+production data help ensure systems and data are available for restoration in the event of a system failure or
+disruption. Additionally, security personnel review backup system logs on a continuous basis.
+
+M
+
+Data
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+Vercel has established a disaster recovery (DR) and business continuity plan for the Vercel AI Cloud. The DR plan
+is designed to develop, test, and document a well-structured and easily understood plan which will help Vercel
+personnel recover and restore operations as quickly and effectively as possible from a disaster or emergency
+interruption to information systems and business operations. In addition, on at least an annual basis, Vercel
+personnel perform a disaster recovery test in the form of tabletops, simulations, reenactments, or general company
+impact risk-oriented asynchronous discussions, if a disaster has not occurred.
+
+Customer business data is captured in the Vercel AI Cloud, including names and e-mail addresses. Customer and
+confidential data is classified as restricted data. As such, this is governed by the confidentiality agreements
+executed between Vercel and customers or vendors. Vercel’s data classification and handling requirements are
+defined in the information security and data handling policies. Confidential data requires the highest level of security
+in accordance with relevant security policies, regulations, and contractual requirements.
+Data within the Vercel AI Cloud is generated and uploaded by customers. The transmission of confidential data is
+secured via an Internet connection encrypted with the TLS protocol. Each customer is responsible for administering
+their users and data, which includes the accuracy and timeliness of the data entered into the system. Production
+customer data, including backup data, is stored in an encrypted format at rest utilizing AES-256 encryption. For
+AWS production systems, access to the encryption keys is restricted to the authorized AWS console administrators.
+12
+
+As part of the Microsoft Azure cloud hosting services, Microsoft encrypts Microsoft Azure Cosmos DB’s by default
+and restricts access to the encryption keys.
+The following table describes the information used and supported by the system.
+Data Used and Supported by the System
+Data Description
+
+Data Reporting
+
+User accounts and
+system-recorded information
+
+Classification
+
+Information received from clients in any form for
+processing by Vercel
+
+Restricted
+
+6:4
+6.7
+09
+Z
+
+Information generated by Vercel for use by authorized
+employees, contractors, and business partners
+
+System and audit logs
+
+Significant Changes During the Period
+
+T2
+2:0
+
+There were no significant changes that are likely to affect report users' understanding of how the in-scope system
+is used to provide the services covered by this examination during the period.
+
+-15
+
+Subservice Organizations
+
+-10
+
+The cloud hosting services provided by AWS and Microsoft were not included within the scope of this examination.
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+The following table presents the applicable Trust Services criteria that are intended to be met by controls at AWS
+and Microsoft, alone or in combination with controls at Vercel, and the types of controls expected to be implemented
+at AWS and Microsoft to achieve Vercel’s principal service commitments and system requirements based on the
+applicable trust services criteria.
+Control Activities Expected to be Implemented by
+Subservice Organizations
+
+Applicable Trust
+Services Criteria
+
+CSOC-01
+
+AWS and Microsoft are responsible for implementing controls to manage
+logical access to the underlying network, virtualization management
+software, and storage devices for its cloud hosting services where the Vercel
+systems reside.
+
+CC6.1 – CC6.3,
+CC6.5 – CC6.6
+
+CSOC-02
+
+Microsoft is responsible for ensuring data within Microsoft Azure is encrypted
+in transit and at rest.
+
+CSOC-03
+
+Microsoft is responsible for ensuring access to service managed encryption
+keys is restricted to authorized personnel.
+
+CSOC-04
+
+AWS and Microsoft are responsible for restricting physical access to data
+center facilities, backup media, and other system components including
+firewalls, routers, and servers.
+
+CC6.4, CC6.5
+
+CSOC-05
+
+AWS and Microsoft are responsible for implementing controls for the
+transmission, movement, and removal of the underlying storage devices for
+its cloud hosting services where the Vercel systems reside.
+
+CC6.7
+
+CSOC-06
+
+AWS and Microsoft are responsible for monitoring the logical access control
+systems for the underlying network, virtualization management software, and
+storage devices for its cloud hosting services where the Vercel systems
+reside.
+
+CC7.2
+
+CSOC-07
+
+AWS and Microsoft are responsible for monitoring the capacity demand and
+ensuring capacity resources are available and functioning to meet Vercel’s
+availability commitments and requirements.
+
+A1.1
+
+CC6.1, CC6.7,
+C1.1
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+Ref.
+
+13
+
+Ref.
+
+Control Activities Expected to be Implemented by
+Subservice Organizations
+
+Applicable Trust
+Services Criteria
+
+CSOC-08
+
+AWS and Microsoft are responsible for ensuring the data center facilities are
+equipped with environmental security safeguards and utilizing an
+environmental monitoring application to monitor for environmental events.
+
+A1.2
+
+CONTROL ENVIRONMENT
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+The control environment at Vercel is the foundation for the other areas of internal control. It sets the tone of the
+organization and influences the control consciousness of its personnel. The components of the control environment
+factors include the integrity and ethical values; management’s commitment to competence; its organizational
+structure; the assignment of authority and responsibility; and the oversight and direction provided by the board of
+directors and operations management.
+
+25
+
+-10
+
+-15
+
+The control environment at Vercel is the foundation for the other areas of internal control. It sets the tone of the
+organization and influences the control consciousness of its personnel. The components of the control environment
+factors include the integrity and ethical values, management’s commitment to competence; its organizational
+structure; the assignment of authority and responsibility; and the oversight and direction provided by executive
+management, the board of directors, and operations management.
+
+20
+
+Integrity and Ethical Values
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+The effectiveness of controls cannot rise above the integrity and ethical values of the people who create, administer,
+and monitor them. Integrity and ethical values are essential elements of the control environment, affecting the
+design, administration, and monitoring of other components. Integrity and ethical behavior are the product of
+Vercel’s ethical and behavioral standards, how they are communicated, and how they are reinforced in practices.
+In addition, Vercel communicates values and behavioral standards to personnel through policy statements, codes
+of conduct, and by example. Specific control activities that Vercel has implemented in this area are described
+below:
+Management formally documents the organizational policy statements that communicate entity values and
+behavioral standards to personnel.
+
+•
+
+Employees are required to sign an acknowledgement form upon hire indicating that they have been given
+access to the employee handbook and standards of employee conduct and understand their responsibility
+for adhering to the associated policies and procedures.
+
+•
+
+Background screenings are performed for employees as a component of the hiring process.
+
+•
+
+Employees are required to sign a confidentiality statement upon hire agreeing not to disclose proprietary or
+confidential information, including client information, to unauthorized parties.
+
+•
+
+An employee sanction procedure is in place and documented within the code of conduct communicating
+that an employee may be terminated for noncompliance with a policy and/or procedure.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+•
+
+Executive Management and Board of Directors Oversight
+Vercel’s control awareness is significantly influenced by the board of directors and senior leadership. Attributes
+include the experience and stature of its members, the extent of its involvement and scrutiny of operational activities,
+the degree to which difficult questions are raised and pursued with management, and their interaction with external
+auditors. Specific control activities that Vercel has implemented in this area are described below:
+•
+
+Management provides internal control performance metrics to the board of directors on an annual basis.
+These metrics are formally documented in the internal control performance dashboard for board review.
+14
+
+•
+
+The board of directors has sufficient members who are independent from management and objective in
+evaluations and decision making.
+
+•
+
+Board of directors and committee meetings are held on a quarterly basis to review internal control
+performance.
+
+Organizational Structure and Assignment of Authority and Responsibility
+Vercel’s organizational structure provides the framework within which its activities for achieving entity-wide
+objectives are planned, executed, controlled, and monitored. Establishing a relevant organizational structure
+includes considering key areas of authority and responsibility, as well as lines of reporting.
+
+6:4
+6.7
+09
+Z
+
+Vercel’s general approach is to focus on customer needs and identify efficient delivery on those needs, within the
+constraints of the organizational model. Managers define the organizational structure that best meets their needs.
+Each functional area has defined job responsibilities. Specific control activities that Vercel has implemented in this
+area are described below:
+The organizational structure, reporting lines, and authorities are defined in organizational charts, updated
+on an as-needed basis, and communicated to employees.
+
+•
+
+Documented position descriptions are in place to define the skills, responsibilities, and knowledge levels
+required for particular jobs.
+
+•
+
+Management has assigned the responsibility of the maintenance and enforcement of the entity security
+policies and procedures to the CISO.
+
+•
+
+A security and privacy steering committee comprised of security personnel and executive staff meet on an
+annual basis to guide the company in managing security, availability, and confidentiality risks.
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+•
+
+ne
+ra.
+i
+
+Commitment to Competence
+
+ike
+g@
+
+pla
+
+Vercel management defines competence as the knowledge and skills necessary to accomplish tasks that define
+employees’ roles and responsibilities. As such, commitment to competence includes management’s consideration
+of the competence levels for particular jobs and how those levels translate into requisite skills and knowledge.
+Specific control activities that Vercel has implemented in this area are described below:
+Documented position descriptions are in place to define the skills, responsibilities, and knowledge levels
+required for particular jobs.
+
+•
+
+New employee hiring procedures are in place to guide the hiring process and include verification that
+candidates possess the required qualifications to perform the duties as outlined in the job description.
+
+•
+
+New hire checklists are completed to guide the hiring process to help ensure that newly hired employees
+are compliant with the company’s employment standards and corporate policies and procedures.
+
+•
+
+Employees are required to complete security awareness training, upon hire and annually thereafter, to
+understand their obligations and responsibilities to comply with the corporate and business unit security
+policies.
+
+•
+
+Management monitors compliance with training requirements on a continuous basis.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+•
+
+Accountability
+Management’s viewpoint and operating style encompass a broad range of characteristics. Such characteristics
+may include management’s approach to taking and monitoring business risks, management’s attitudes and actions
+toward financial reporting, and management’s attitudes toward information processing, accounting functions and
+personnel.
+Vercel has established HR policies and practices related to hiring, orientation, training, evaluating, counseling,
+promoting, compensating, and remedial actions. Management establishes accountability by setting a strong tone
+15
+
+at the top and holding those accountable for internal control responsibilities. Management communicates the
+internal control responsibilities and the criteria that employees will be measured against as well as incentives and
+other rewards. Specific control activities that Vercel has implemented in this area are described below:
+The organizational structure, reporting lines, and authorities are defined in organizational charts, updated
+on an as-needed basis, and communicated to employees.
+
+•
+
+Management holds monthly company-wide strategy meetings that discuss and align internal control
+responsibilities, performance measures and incentives with company business objectives.
+
+•
+
+Documented position descriptions are in place to define the skills, responsibilities, and knowledge levels
+required for particular jobs.
+
+•
+
+An employee sanction procedure is in place and documented within the code of conduct communicating
+that an employee may be terminated for noncompliance with a policy and/or procedure.
+
+•
+
+Management formally documents an organization strategy and performance policy to align internal control
+responsibilities, performance measures, and incentives with company business objectives.
+
+•
+
+A security and privacy steering committee comprised of security personnel and executive staff meet on an
+annual basis to guide the company in managing security, availability, and confidentiality risks.
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+•
+
+25
+
+-10
+
+RISK ASSESSMENT
+
+20
+
+Objective Setting
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+Information security risk management is the coordinated management of business operations, technology, and
+intelligence to effectively manage and protect an organization's business information assets and operations from
+information security threats. Information security threats typically occur through malicious external threat sources
+including organized crime, nation states, hacktivists, etc., as well as inadvertent or intentional insider actions, with
+different motives and a variety of attack methods.
+Risk Identification and Analysis
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+Vercel has placed a risk assessment process in operation to identify and manage risks that could affect the
+organization's ability to provide reliable services for its user entities. As part of internal audit activities, Vercel
+conducts quarterly enterprise risk assessments. This process requires management to identify significant risks in
+their areas of responsibility and to implement measures to address those risks. Key members of the executive
+management and operational teams meet on a quarterly basis to identify and review risks to the system. These
+risks are documented within their risk matrix and risk register.
+
+M
+
+ike
+
+Risk analysis is an essential process to the entity’s success. It includes identification of key business processes
+where potential exposures of some consequence exist, as well as significant changes to those processes. Once
+the significance and likelihood of risk have been assessed, management considers how the risk should be
+managed. This involves judgment based on assumptions about the risk and reasonable analysis of costs
+associated with reducing the level of risk.
+Necessary actions are taken to reduce the significance or likelihood of the risk occurring and to identify the control
+activities necessary to mitigate the risk. Management has identified these control activities and documented them
+in the trust services criteria and related control activities section below. Additionally, management reviews the
+assessed risk levels on a quarterly basis and documents the risk assessment in the quarterly risk programs.
+
+16
+
+Risk Factors
+Management considers risks that can arise from both external and internal factors including the following:
+External Factors
+Technological developments
+
+•
+
+Changing customer needs or expectations
+
+•
+
+Competition that could alter marketing or service activities
+
+•
+
+New legislation and regulation that could force changes in policies and strategies
+
+•
+
+Natural catastrophes that could lead to changes in operations or information systems
+
+•
+
+Economic changes that could have an impact on management decisions
+
+6:4
+6.7
+09
+Z
+
+•
+
+Internal Factors
+Significant changes in policies, processes, or personnel
+
+•
+
+Types of fraud, including incentives, pressures, opportunities, and rationalizations to commit fraud
+
+•
+
+A disruption in information systems processing
+
+•
+
+The quality of personnel hired, and methods of training utilized
+
+•
+
+Changes in management responsibilities
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+•
+
+o,
+
+20
+
+Potential for Fraud
+
+pla
+
+ne
+ra.
+i
+
+Management considers the potential for fraud when assessing the risks to the company’s objectives. The potential
+for fraud can occur in both financial and non-financial reporting. Other types of fraud include the misappropriation
+of assets and illegal acts such as violations of governmental laws.
+
+,m
+
+ike
+g@
+
+Management realizes that the potential for fraud can occur when employees are motivated by certain pressures or
+incentivized to commit fraud. The absence of controls, or ineffective controls, provides an opportunity for fraud
+when combined with an incentive to commit fraud. Therefore, management considers fraud factors in each risk
+evaluated during the risk assessment process.
+
+Gu
+ze
+w
+
+icz
+
+Risk Mitigation
+
+M
+
+ike
+
+Risk mitigation strategies include prevention and elimination through the implementation of internal controls and
+transference through commercial, general, and umbrella insurance policies. Management personnel are required
+to identify significant risks relating to their areas of responsibility and implement measures to mitigate those risks.
+The organization has documented policies and procedures to guide personnel throughout this process. The
+quarterly risk assessment and mitigation process also addresses risks arising from potential business disruptions.
+
+TRUST SERVICES CRITERIA AND RELATED CONTROL ACTIVITIES
+Integration with Risk Assessment
+Along with assessing risks, management has identified and put into effect actions needed to address those risks.
+In order to address risks, control activities have been placed into operation to help ensure that the actions are
+carried out properly and efficiently. Control activities serve as mechanisms for managing the achievement of the
+security, availability, and confidentiality categories.
+17
+
+Selection and Development of Control Activities
+The applicable trust services criteria and related control activities are included in Section 4 of this report to eliminate
+the redundancy that would result from listing the items in this section and repeating them in Section 4. Although
+the applicable trust services criteria and related control activities are included in Section 4, they are, nevertheless,
+an integral part of Vercel’s description of the system.
+The description of the service auditor’s tests of operating effectiveness and the results of those tests are also
+presented in Section 4, the Testing Matrices, adjacent to the service organization’s description of controls. The
+description of the tests of operating effectiveness and the results of those tests are the responsibility of the service
+auditor and should be considered information provided by the service auditor.
+
+6:4
+6.7
+09
+Z
+
+Trust Services Criteria Not Applicable to the In-Scope System
+
+T2
+2:0
+
+All criteria within the security, availability, and confidentiality categories are applicable to the Vercel AI Cloud system.
+
+-15
+
+INFORMATION AND COMMUNICATION SYSTEMS
+
+20
+
+25
+
+-10
+
+Information is necessary for Vercel to carry out internal control responsibilities to support the achievement of its
+objectives related to the Vercel AI Cloud. Management obtains or generates and uses relevant and quality
+information from both internal and external sources to support the functioning of internal control. Through the use
+of parameters, the Vercel AI Cloud can be tailored to a client’s unique requirements.
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+Pertinent information must be identified, captured, and communicated in a form and timeframe that enables
+personnel to carry out their responsibilities. Information systems produce reports containing operational, financial,
+and compliance-related information, which make it possible to run and control the business. They deal not only
+with internally-generated data, but also information about external events, activities, and conditions necessary to
+inform business decision-making and external reporting. Effective communication also must occur in a broader
+sense, flowing down, across, and up the organization. Personnel must receive a clear message from top
+management that control responsibilities must be taken seriously. They must understand their own role in the
+internal control system, as well as how individual activities relate to the work of others. They must have a means
+of communicating significant information upstream. There also needs to be effective communication with external
+parties, such as customers, suppliers, regulators, and shareholders.
+
+Gu
+ze
+w
+
+Internal Communications
+
+M
+
+ike
+
+Management communicates and reinforces understanding of employee duties and control responsibilities as
+needed during staff meetings conducted once per week. Management is actively involved in the day-to-day
+activities of the organization, providing informal yet constant communication of duties and control responsibilities to
+employees. Communication takes such forms as policy manuals and internal documentation. Communications
+can also be made electronically, verbally, and through the actions of management. Vercel has implemented various
+methods of communication to help provide assurance that employees understand their individual roles and
+responsibilities and that significant events are communicated. These methods include orientation for new
+employees, training for employees, and the use of Slack and e-mail to communicate time-sensitive information. If
+incidents are detected, personnel follow a documented incident management process, and security related
+incidents additionally follow the security incident response process as needed. Incidents are documented within
+the ticketing system and tracked by management until resolved. Formal procedure changes are distributed to
+management before they are incorporated into the policy and distributed to relevant parties.
+These methods include, but are not limited to, the following:
+•
+
+Documented policies and procedures are in place to guide personnel with regard to the design,
+development, implementation, operation, maintenance, and monitoring of in-scope systems. These
+policies and procedures are communicated to internal personnel via the intranet.
+
+18
+
+Employees are required to complete security awareness training, upon hire and annually thereafter, to
+understand their obligations and responsibilities to comply with the corporate and business unit security
+policies.
+
+•
+
+Management monitors compliance with training requirements on a continuous basis.
+
+•
+
+Documented position descriptions are in place to define the skills, responsibilities, and knowledge levels
+required for particular jobs.
+
+•
+
+Documented escalation procedures for reporting incidents are provided to internal users to guide users in
+identifying and reporting failures, incidents, concerns, and other complaints.
+
+•
+
+Management formally documents an organization strategy and performance policy to align internal control
+responsibilities, performance measures and incentives with company business objectives.
+
+•
+
+Management holds monthly company-wide strategy meetings that discusses and aligns internal control
+responsibilities, performance measures and incentives with company business objectives.
+
+6:4
+6.7
+09
+Z
+
+•
+
+External Communications
+
+T2
+2:0
+
+Vercel has also implemented various methods of communication to help provide assurance that customers
+understand the roles and responsibilities in the use of their services and communication of significant events. These
+methods include, but are not limited to, the following:
+Information regarding the design and operation of the system and its boundaries is communicated to
+external users via the company website.
+
+•
+
+The entity’s security, availability, and confidentiality commitments and the associated system requirements,
+including the security, contractual, and regulatory requirements, are documented in the DPA and TOS
+available on the company website.
+
+•
+
+The security, availability, and confidentiality commitments and obligations of third-party vendors are
+documented and communicated via MSAs or NDAs.
+
+•
+
+Signed agreements of confidentiality and protection are required before sharing information designated as
+confidential with third parties.
+
+•
+
+System alerts, including planned changes to system components, planned outages, and known issues, are
+displayed on the external facing website.
+
+•
+
+Documented escalation procedures for reporting incidents are provided to external users via the company
+website to guide users in identifying and reporting failures, incidents, concerns, and other complaints.
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+•
+
+MONITORING
+
+M
+
+ike
+
+Monitoring is a process that assesses the quality of internal control performance over time. It involves assessing
+the design and operation of controls and taking necessary corrective actions. This process is accomplished through
+ongoing activities, separate evaluation, or a combination of the two. Monitoring activities also include using
+information from communications from external parties such as user entity complaints and regulatory comments
+that may indicate problems or highlight areas in need of improvement. Management has implemented a selfassessment and compliance program to help ensure the controls are consistently applied as designed.
+Ongoing Monitoring
+Monitoring can be done in two ways: through ongoing activities or separate evaluations. The greater the degree
+and effectiveness of ongoing monitoring, the less the need is for separate evaluations. Management determines
+the need for separate evaluations by consideration given to the following: the nature and degree of changes
+occurring and their associated risks; the competence and experience of the people implementing the controls; and
+the results of the ongoing monitoring. Management has implemented a combination of ongoing monitoring and
+separate evaluations, as deemed necessary, to help ensure that the internal control system maintains its
+19
+
+effectiveness over time. Management personnel are involved in the day-to-day functioning of each department and
+provide hands-on training, coaching, and correction. The management team holds meetings on a periodic basis
+within functional departments to discuss changes to the organization, changes to the production environment, and
+incidents or events identified by personnel or user entities. Vercel performs internal vulnerability assessment on a
+daily basis and external penetration testing with a third-party vendor on an annual basis. Security vulnerabilities
+that are detected are triaged by the security team and monitored through remediation.
+Separate Evaluations
+
+6:4
+6.7
+09
+Z
+
+Management has implemented a self-assessment program to evaluate the performance of specific control activities
+and processes over time and confirm that the in-scope controls were consistently applied as designed, including
+whether manual controls were applied by individuals who have the competence and authority. As a result of
+management’s risk analysis process, each control activity within scope has been assigned a risk level associated
+with the assessed level of risk it is intended to mitigate. Controls that serve to mitigate multiple risks are assigned
+the highest level of assessed risk among the pertinent risks.
+
+-15
+
+T2
+2:0
+
+Management has determined that each risk assignment or category, will require structured inquiry, observation,
+inspection, or sample testing, or a combination of the aforementioned, based on the assigned risk level and the
+nature of the control, whether automated or manual, and the frequency of application (e.g., constant, daily, weekly,
+quarterly, etc.). For manual controls, the self-assessment is performed by a secondary individual different from the
+individual that primarily applies the control; additionally, subordinates do not evaluate the application of manual
+controls performed by their supervisors or managers. Specific control activities that Vercel has implemented in this
+area are described below:
+A formal risk assessment is performed on a quarterly basis. Risks that are identified are rated using a risk
+evaluation process that accounts for changes in risk from the prior year, and are formally documented,
+along with mitigation strategies, for management review.
+
+•
+
+Risk owners perform a review of their assigned controls on a quarterly basis during the risk assessment
+process.
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+•
+
+Subservice Organization Monitoring
+
+ike
+g@
+
+pla
+
+Members of the information security team review System and Organization Controls (SOC) 2 reports and/or related
+security policies on an annual basis to help ensure their controls are operating effectively and their security
+infrastructure meets the needs of Vercel.
+
+,m
+
+Evaluating and Communicating Deficiencies
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+The nature, timing and extent of the self-assessment tests and results are documented by the self-assessors in an
+internal tracking tool, for management review. Deviations or deficiencies associated with controls with a level High
+risk assignment are immediately escalated to management for immediate corrective action. Other self-assessment
+results are reviewed within a week of the self-assessment test procedures, and corrective action, if required, is
+assigned to an individual and documented once those required actions are complete. Management reviews the
+deviations and corrective actions during the annual risk assessment meeting. Specific control activities that Vercel
+has implemented in this area are described below:
+•
+
+Management provides internal control performance metrics to the board of directors on an annual basis.
+These metrics are formally documented in the internal control performance dashboard for board review.
+
+•
+
+A security and privacy steering committee comprised of security personnel and executive staff meet on an
+annual basis to guide the company in managing security, availability, and confidentiality risks.
+
+•
+
+Management holds monthly company-wide strategy meetings that discusses and aligns internal control
+responsibilities, performance measures and incentives with company business objectives.
+
+•
+
+Management identifies and assesses changes that could significantly impact the system of internal control
+during the annual risk assessment process.
+
+20
+
+System Incident Disclosures
+No system incidents occurred that were the result of controls that were not suitably designed or operating effectively
+or otherwise resulted in a significant failure of the achievement of one or more of the service commitments and
+systems requirements during the period.
+
+COMPLEMENTARY USER ENTITY CONTROLS
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Vercel’s controls are designed to provide reasonable assurance that the principal service commitments and system
+requirements can be achieved without the implementation of complementary controls at user entities. As a result,
+complementary user entity controls are not required, or significant, to achieve the principal service commitments
+and system requirements based on the applicable trust services criteria.
+
+21
+
+ike
+
+M
+Gu
+ze
+w
+pla
+
+ike
+g@
+
+,m
+
+icz
+
+o,
+
+ne
+ra.
+i
+-10
+
+25
+
+20
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+SECTION 4
+
+TESTING MATRICES
+
+22
+
+TESTS OF OPERATING EFFECTIVENESS AND RESULTS OF TESTS
+Scope of Testing
+This report on the controls relates to the Vercel AI Cloud system provided by Vercel. The scope of the testing was
+restricted to the Vercel AI Cloud system and its boundaries as defined in Section 3. Schellman conducted the
+examination testing over the period July 1, 2024, through June 30, 2025.
+Tests of Operating Effectiveness
+
+6:4
+6.7
+09
+Z
+
+The tests applied to test the operating effectiveness of controls are listed alongside each of the respective control
+activities within the Testing Matrices. Such tests were considered necessary to evaluate whether the controls were
+sufficient to provide reasonable, but not absolute, assurance that the applicable trust services criteria were achieved
+during the period. In selecting the tests of controls, Schellman considered various factors including, but not limited
+to, the following:
+the nature of the control and the frequency with which it operates;
+
+•
+
+the control risk mitigated by the control;
+
+•
+
+the effectiveness of entity-level controls, especially controls that monitor other controls;
+
+•
+
+the degree to which the control relies on the effectiveness of other controls; and
+
+•
+
+whether the control is manually performed or automated.
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+•
+
+ne
+ra.
+i
+
+o,
+
+The types of tests performed with respect to the operational effectiveness of the control activities detailed in this
+section are briefly described below:
+Description
+
+Inquiry
+
+Inquired of relevant personnel with the requisite knowledge and experience regarding
+the performance and application of the related control activity. This included in-person
+interviews, telephone calls, e-mails, web-based conferences, or a combination of the
+preceding.
+
+Observation
+
+Observed the relevant processes or procedures during fieldwork. This included, but
+was not limited to, witnessing the performance of controls or evidence of control
+performance with relevant personnel, systems, or locations relevant to the
+performance of control policies and procedures.
+
+Inspection
+
+Inspected the relevant audit records. This included, but was not limited to, documents,
+system configurations and settings, or the existence of sampling attributes, such as
+signatures, approvals, or logged events. In some cases, inspection testing involved
+tracing events forward to consequent system documentation or processes (e.g.,
+resolution, detailed documentation, alarms, etc.) or vouching backwards for
+prerequisite events (e.g., approvals, authorizations, etc.).
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+Test Approach
+
+Sampling
+Consistent with American Institute of Certified Public Accountants (AICPA) authoritative literature, Schellman
+utilizes professional judgment to consider the tolerable deviation rate, the expected deviation rate, the audit risk,
+the characteristics of the population, and other factors, in order to determine the number of items to be selected in
+a sample for a particular test. Schellman, in accordance with AICPA authoritative literature, selected samples in
+such a way that the samples were expected to be representative of the population. This included judgmental
+selection methods, where applicable, to ensure representative samples were obtained.
+
+23
+
+System-generated population listings were obtained whenever possible to ensure completeness prior to selecting
+samples. In some instances, full populations were tested in cases including but not limited to, the uniqueness of
+the event or low overall population size.
+Reliability of Information Provided by the Service Organization
+Observation and inspection procedures were performed related to certain system-generated reports, listings, and
+queries to assess the accuracy and completeness (reliability) of the information used in the performance of our
+testing of the controls.
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+The results of each test applied are listed alongside each respective test applied within the Testing Matrices. Test
+results not deemed as control deviations are noted by the phrase “No exceptions noted.” in the test result column
+of the Testing Matrices. Any phrase other than the aforementioned, constitutes either a test result that is the result
+of non-occurrence, a change in the application of the control activity, or a deficiency in the operating effectiveness
+of the control activity. Testing deviations identified within the Testing Matrices are not necessarily weaknesses in
+the total system of controls, as this determination can only be made after consideration of controls in place at user
+entities and subservice organizations, if applicable, and other factors. Control considerations that should be
+implemented by subservice organizations in order to complement the control activities and achieve the applicable
+trust services criteria are presented in the “Subservice Organizations” section within Section 3.
+
+Test Applied by
+the Service Auditor
+
+ike
+g@
+
+Control Environment
+
+ne
+ra.
+i
+
+Control Activity Specified
+by the Service Organization
+
+pla
+
+Control #
+
+o,
+
+SECURITY CATEGORY
+
+Test Results
+
+CC1.1 – COSO Principle 1: The entity demonstrates a commitment to integrity and ethical values.
+Management formally documents
+the organizational policy
+statements that communicate
+entity values and behavioral
+standards to personnel.
+
+Inspected the code of conduct to
+determine that management
+formally documented the
+organizational policy statements
+that communicated entity values
+and behavioral standards to
+personnel.
+
+No exceptions noted.
+
+CC1.1.2
+
+Employees are required to sign an
+acknowledgment form upon hire
+indicating that they have been
+given access to the employee
+handbook and standards of
+employee conduct and
+understand their responsibility for
+adhering to the associated
+policies and procedures.
+
+Inspected the employee
+handbook and signed
+acknowledgment form for a
+sample of employees hired during
+the period to determine that each
+employee sampled signed an
+acknowledgment form upon hire
+indicating that they had been
+given access to the employee
+handbook and standards of
+employee conduct and
+understood their responsibility for
+adhering to the associated
+policies and procedures.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+CC1.1.1
+
+24
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC1.1.3
+
+Background screenings are
+performed for employees as a
+component of the hiring process.
+
+Inspected the completed
+background screening
+documentation for a sample of
+employees hired during the period
+to determine that background
+screenings were performed as a
+component of the hiring process
+for each employee sampled.
+
+No exceptions noted.
+
+CC1.1.4
+
+Employees are required to sign a
+confidentiality statement upon hire
+agreeing not to disclose
+proprietary or confidential
+information, including client
+information, to unauthorized
+parties.
+
+Inspected the signed
+confidentiality agreement for a
+sample of employees hired during
+the period to determine that each
+employee sampled signed a
+confidentiality statement upon hire
+agreeing not to disclose
+proprietary or confidential
+information, including client
+information, to unauthorized
+parties.
+
+No exceptions noted.
+
+CC1.1.5
+
+Employees are required to
+complete security awareness
+training, upon hire and annually
+thereafter, to understand their
+obligations and responsibilities to
+comply with the corporate and
+business unit security policies.
+
+Inspected the security awareness
+training materials and the security
+awareness training completion
+records for a sample of current
+employees to determine that each
+current employee sampled
+completed security awareness
+training during the period to
+understand their obligations and
+responsibilities to comply with the
+corporate and business unit
+security policies.
+
+No exceptions noted.
+
+Inspected the security awareness
+training materials and the security
+awareness training completion
+records for a sample of
+employees hired during the period
+to determine that each employee
+sampled completed security
+awareness training upon hire to
+understand their obligations and
+responsibilities to comply with the
+corporate and business unit
+security policies.
+
+pla
+
+The test of the control activity
+disclosed that security awareness
+training was not completed for two
+of 25 employees sampled.
+
+Inquired of the privacy and
+compliance specialist regarding
+training requirements to determine
+that management monitored
+compliance with training
+requirements on a continuous
+basis.
+
+No exceptions noted.
+
+Inspected the most recent security
+training monitoring documentation
+to determine that management
+monitored compliance with
+training requirements during the
+period on a continuous basis.
+
+No exceptions noted.
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+ike
+
+Management monitors
+compliance with training
+requirements on a continuous
+basis.
+
+M
+
+CC1.1.6
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+ne
+ra.
+i
+
+o,
+
+Control #
+
+25
+
+Control #
+CC1.1.7
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+An employee sanction procedure
+is in place and documented within
+the code of conduct
+communicating that an employee
+may be terminated for
+noncompliance with a policy
+and/or procedure.
+
+Inspected the code of conduct to
+determine that an employee
+sanction policy was documented
+within the code of conduct
+communicating that an employee
+may be terminated for
+noncompliance with a policy
+and/or procedure.
+
+Test Results
+No exceptions noted.
+
+CC1.2 – COSO Principle 2: The board of directors demonstrates independence from management and exercises oversight
+of the development and performance of internal control.
+Management provides internal
+control performance metrics to the
+board of directors on an annual
+basis. These metrics are formally
+documented in the internal control
+performance dashboard for board
+review.
+
+Inspected the board of directors
+meeting agenda and minutes for
+the most recent internal control
+performance review to determine
+that management provided
+internal control performance
+metrics to the board of directors
+and that the metrics were formally
+documented in the internal control
+performance dashboard for board
+review during the period.
+
+No exceptions noted.
+
+CC1.2.2
+
+The board of directors has
+sufficient members who are
+independent from management
+and objective in evaluations and
+decision making.
+
+Inspected the listing of board of
+directors’ members to determine
+that the board of directors had
+sufficient members who were
+independent from management
+and objective in evaluations and
+decision making.
+
+No exceptions noted.
+
+CC1.2.3
+
+Board of directors and committee
+meetings are held on a quarterly
+basis to review internal control
+performance.
+
+Inspected the board of directors
+meeting slide deck and the
+meeting invite for a sample of
+quarters during the period to
+determine that board of directors
+and committee meetings were
+held to review internal control
+performance for each quarter
+sampled.
+
+No exceptions noted.
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC1.2.1
+
+Gu
+ze
+w
+
+CC1.3 – COSO Principle 3: Management establishes, with board oversight, structures, reporting lines, and appropriate
+authorities and responsibilities in the pursuit of objectives.
+The organizational structure,
+reporting lines, and authorities are
+defined in organizational charts,
+updated on an as-needed basis,
+and communicated to employees.
+
+Inspected the company
+organizational charts on the
+company document management
+system to determine that
+organizational structure, reporting
+lines, and authorities were defined
+in organizational charts and
+communicated to employees.
+
+No exceptions noted.
+
+CC1.3.2
+
+Documented position descriptions
+are in place to define the skills,
+responsibilities, and knowledge
+levels required for particular jobs.
+
+Inspected the documented
+position descriptions for a sample
+of employment positions to
+determine that documented
+position descriptions were in place
+to define the skills and knowledge
+levels required for the
+competence levels of particular
+jobs for each employment position
+sampled.
+
+No exceptions noted.
+
+M
+
+ike
+
+CC1.3.1
+
+26
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC1.3.3
+
+Management has assigned the
+responsibility of the maintenance
+and enforcement of the entity
+security policies and procedures
+to the CISO.
+
+Inspected the information security
+policy to determine that
+management had assigned the
+responsibility of the maintenance
+and enforcement of the entity
+security policies and procedures
+to the CISO.
+
+No exceptions noted.
+
+CC1.3.4
+
+A security and privacy steering
+committee comprised of security
+personnel and executive staff
+meet on a quarterly basis to guide
+the company in managing
+security, availability, and
+confidentiality risks.
+
+Inspected the security and privacy
+steering committee meeting
+minutes for a sample of quarters
+to determine that a security and
+privacy steering committee
+comprised of security personnel
+and executive staff met during the
+period to guide the company in
+managing security, availability,
+and confidentiality risks for each
+quarter sampled.
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+T2
+2:0
+
+Control #
+
+Documented position descriptions
+are in place to define the skills,
+responsibilities, and knowledge
+levels required for particular jobs.
+
+Inspected the documented
+position descriptions for a sample
+of employment positions to
+determine that documented
+position descriptions were in place
+to define the skills and knowledge
+levels required for the
+competence levels of particular
+jobs for each employment position
+sampled.
+
+No exceptions noted.
+
+CC1.4.2
+
+New employee hiring procedures
+are in place to guide the hiring
+process and include verification
+that candidates possess the
+required qualifications to perform
+the duties as outlined in the job
+description.
+
+Inspected the new employee
+hiring policies and procedures to
+determine that new employee
+hiring procedures were in place to
+guide the hiring process and
+included verification that
+candidates possessed the
+required qualifications to perform
+the duties as outlined in the job
+description.
+
+No exceptions noted.
+
+CC1.4.3
+
+New hire checklists are completed
+to guide the hiring process to help
+ensure that newly hired
+employees are compliant with the
+company’s employment standards
+and corporate policies and
+procedures.
+
+Inspected the completed new hire
+checklist for a sample of
+employees hired during the period
+to determine that new employee
+checklists were completed to
+guide the hiring process to ensure
+that newly hired employees were
+compliant with the company’s
+employment standards and
+corporate policies and procedures
+for each employee sampled.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+CC1.4.1
+
+pla
+
+-15
+
+CC1.4 – COSO Principle 4: The entity demonstrates a commitment to attract, develop, and retain competent individuals in
+alignment with objectives.
+
+27
+
+Control #
+
+Test Applied by
+the Service Auditor
+
+Employees are required to
+complete security awareness
+training, upon hire and annually
+thereafter, to understand their
+obligations and responsibilities to
+comply with the corporate and
+business unit security policies.
+
+Inspected the security awareness
+training materials and the security
+awareness training completion
+records for a sample of current
+employees to determine that each
+current employee sampled
+completed security awareness
+training during the period to
+understand their obligations and
+responsibilities to comply with the
+corporate and business unit
+security policies.
+
+No exceptions noted.
+
+Inspected the security awareness
+training materials and the security
+awareness training completion
+records for a sample of
+employees hired during the period
+to determine that each employee
+sampled completed security
+awareness training upon hire to
+understand their obligations and
+responsibilities to comply with the
+corporate and business unit
+security policies.
+
+The test of the control activity
+disclosed that security awareness
+training was not completed for two
+of 25 employees sampled.
+
+Test Results
+
+Inquired of the privacy and
+compliance specialist regarding
+training requirements to determine
+that management monitored
+compliance with training
+requirements on a continuous
+basis.
+
+No exceptions noted.
+
+No exceptions noted.
+
+ne
+ra.
+i
+
+o,
+
+20
+
+Management monitors
+compliance with training
+requirements on a continuous
+basis.
+
+pla
+
+CC1.4.5
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC1.4.4
+
+Control Activity Specified
+by the Service Organization
+
+,m
+
+ike
+g@
+
+Inspected the most recent security
+training monitoring documentation
+to determine that management
+monitored compliance with
+training requirements during the
+period on a continuous basis.
+
+Gu
+ze
+w
+
+icz
+
+CC1.5 – COSO Principle 5: The entity holds individuals accountable for their internal control responsibilities in the pursuit of
+objectives.
+The organizational structure,
+reporting lines, and authorities are
+defined in organizational charts,
+updated on an as-needed basis,
+and communicated to employees.
+
+CC1.5.2
+
+Management holds monthly
+company-wide strategy meetings
+that discuss and align internal
+control responsibilities,
+performance measures and
+incentives with company business
+objectives.
+
+M
+
+ike
+
+CC1.5.1
+
+Inspected the company
+organizational charts on the
+company document management
+system to determine that
+organizational structure, reporting
+lines, and authorities were defined
+in organizational charts and
+communicated to employees.
+
+No exceptions noted.
+
+Inspected the calendar invite and
+the meeting agenda for a sample
+of months during the period to
+determine that management held
+monthly company-wide strategy
+meeting that discussed and
+aligned internal control
+responsibilities, performance
+measures and incentives with
+company business objectives for
+each month sampled.
+
+No exceptions noted.
+
+28
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC1.5.3
+
+Documented position descriptions
+are in place to define the skills,
+responsibilities, and knowledge
+levels required for particular jobs.
+
+Inspected the documented
+position descriptions for a sample
+of employment positions to
+determine that documented
+position descriptions were in place
+to define the skills and knowledge
+levels required for the
+competence levels of particular
+jobs for each employment position
+sampled.
+
+No exceptions noted.
+
+CC1.5.4
+
+An employee sanction procedure
+is in place and documented within
+the code of conduct
+communicating that an employee
+may be terminated for
+noncompliance with a policy
+and/or procedure.
+
+Inspected the code of conduct to
+determine that an employee
+sanction policy was documented
+within the code of conduct
+communicating that an employee
+may be terminated for
+noncompliance with a policy
+and/or procedure.
+
+No exceptions noted.
+
+CC1.5.5
+
+Management formally documents
+an organization strategy and
+performance policy to align
+internal control responsibilities,
+performance measures, and
+incentives with company business
+objectives.
+
+Inspected the information security
+policy and the code of conduct to
+determine that management
+formally documented an
+organization strategy and
+performance policy to align
+internal control responsibilities,
+performance measures, and
+incentives with company business
+objectives.
+
+No exceptions noted.
+
+CC1.5.6
+
+A security and privacy steering
+committee comprised of security
+personnel and executive staff
+meet on a quarterly basis to guide
+the company in managing
+security, availability, and
+confidentiality risks.
+
+Inspected the security and privacy
+steering committee meeting
+minutes for a sample of quarters
+to determine that a security and
+privacy steering committee
+comprised of security personnel
+and executive staff met during the
+period to guide the company in
+managing security, availability,
+and confidentiality risks for each
+quarter sampled.
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+No exceptions noted.
+
+Gu
+ze
+w
+
+Communication and Information
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+Control #
+
+CC2.1 – COSO Principle 13: The entity obtains or generates and uses relevant, quality information to support the
+functioning of internal control.
+
+ike
+
+An information security policy is
+formally documented and
+reviewed on an annual basis that
+identifies information required to
+support the functioning of internal
+control and achievement of
+objectives and associated
+protection, access rights, and
+retention requirements.
+
+M
+
+CC2.1.1
+
+Inspected the information security
+policy to determine that an
+information security policy was
+formally documented and
+reviewed during the period that
+identified information required to
+support the functioning of internal
+control and achievement of
+objectives and associated
+protection, access rights, and
+retention requirements.
+
+No exceptions noted.
+
+29
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC2.1.2
+
+Logging and monitoring software
+is configured to collect data from
+system infrastructure components
+and endpoint systems to monitor
+system performance, potential
+security vulnerabilities, and
+resource utilization and to alert
+the information security team
+upon detection of unusual system
+activity or service requests.
+
+Inspected the logging and
+monitoring configurations and
+example alerts generated during
+the period to determine that
+logging and monitoring software
+was configured to collect data
+from system infrastructure
+components and endpoint
+systems to monitor system
+performance, potential security
+vulnerabilities, and resource
+utilization and to alert the
+information security team upon
+detection of unusual system
+activity or service requests.
+
+No exceptions noted.
+
+CC2.1.3
+
+Penetration testing is performed
+by a third-party vendor on an
+annual basis to identify threats
+and assess their potential impacts
+to the system. Security
+vulnerabilities that are identified
+are triaged by the IT security team
+and monitored through
+remediation.
+
+Inspected the most recent
+penetration testing report and an
+example penetration test
+remediation ticket created during
+the period to determine that
+penetration testing was performed
+by a third-party vendor during the
+period to identify threats and
+assess their potential impacts to
+the system and that security
+vulnerabilities that were identified
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC2.1.4
+
+A third-party utility is configured to
+perform internal vulnerability
+assessments on a daily basis.
+Security vulnerabilities that are
+detected are triaged by the IT
+security team and monitored
+through remediation.
+
+Inspected the vulnerability
+scanning tool configurations, an
+example vulnerability scan log,
+and an example vulnerability
+ticket created during the period to
+determine that a third-party utility
+was configured to perform internal
+vulnerability assessments on a
+daily basis and that security
+vulnerabilities that were detected
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC2.1.5
+
+The entity’s information
+technology security group
+monitors the security impact of
+emerging technologies and the
+impact of changes to applicable
+laws or regulations are considered
+by senior management.
+
+Inspected an example security
+update generated during the
+period to determine that the
+entity’s information technology
+security group monitored the
+security impact of emerging
+technologies and the impact of
+changes to applicable laws or
+regulations were considered by
+senior management.
+
+No exceptions noted.
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+Control #
+
+30
+
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+CC2.2 – COSO Principle 14: The entity internally communicates information, including objectives and responsibilities for
+internal control, necessary to support the functioning of internal control.
+Documented policies and
+procedures are in place to guide
+personnel with regard to the
+design, development,
+implementation, operation,
+maintenance, and monitoring of
+in-scope systems. These policies
+and procedures are
+communicated to internal
+personnel via the intranet
+
+Inspected the information security
+policies and procedures on the
+company intranet to determine
+that documented policies and
+procedures were in place to guide
+personnel with regard to the
+design, development,
+implementation, operation,
+maintenance, and monitoring of
+in-scope systems and that these
+policies and procedures were
+communicated to internal
+personnel via the intranet.
+
+No exceptions noted.
+
+CC2.2.2
+
+Employees are required to
+complete security awareness
+training, upon hire and annually
+thereafter, to understand their
+obligations and responsibilities to
+comply with the corporate and
+business unit security policies.
+
+Inspected the security awareness
+training materials and the security
+awareness training completion
+records for a sample of current
+employees to determine that each
+current employee sampled
+completed security awareness
+training during the period to
+understand their obligations and
+responsibilities to comply with the
+corporate and business unit
+security policies.
+
+No exceptions noted.
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC2.2.1
+
+The test of the control activity
+disclosed that security awareness
+training was not completed for two
+of 25 employees sampled.
+
+Inquired of the privacy and
+compliance specialist regarding
+training requirements to determine
+that management monitored
+compliance with training
+requirements on a continuous
+basis.
+
+No exceptions noted.
+
+Inspected the most recent security
+training monitoring documentation
+to determine that management
+monitored compliance with
+training requirements during the
+period on a continuous basis.
+
+No exceptions noted.
+
+ike
+
+Gu
+ze
+w
+
+Management monitors
+compliance with training
+requirements on a continuous
+basis.
+
+M
+
+CC2.2.3
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+Inspected the security awareness
+training materials and the security
+awareness training completion
+records for a sample of
+employees hired during the period
+to determine that each employee
+sampled completed security
+awareness training upon hire to
+understand their obligations and
+responsibilities to comply with the
+corporate and business unit
+security policies.
+
+31
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC2.2.4
+
+Documented position descriptions
+are in place to define the skills,
+responsibilities, and knowledge
+levels required for particular jobs.
+
+Inspected the documented
+position descriptions for a sample
+of employment positions to
+determine that documented
+position descriptions were in place
+to define the skills and knowledge
+levels required for the
+competence levels of particular
+jobs for each employment position
+sampled.
+
+No exceptions noted.
+
+CC2.2.5
+
+Documented escalation
+procedures for reporting incidents
+are provided to internal users to
+guide users in identifying and
+reporting failures, incidents,
+concerns, and other complaints.
+
+Inspected the incident response
+policies and procedures to
+determine that documented
+escalation procedures for
+reporting incidents were provided
+to internal users to guide users in
+identifying and reporting failures,
+incidents, concerns, and other
+complaints.
+
+No exceptions noted.
+
+CC2.2.6
+
+Management formally documents
+an organization strategy and
+performance policy to align
+internal control responsibilities,
+performance measures, and
+incentives with company business
+objectives.
+
+Inspected the information security
+policy and the code of conduct to
+determine that management
+formally documented an
+organization strategy and
+performance policy to align
+internal control responsibilities,
+performance measures, and
+incentives with company business
+objectives.
+
+No exceptions noted.
+
+CC2.2.7
+
+Management holds monthly
+company-wide strategy meetings
+that discuss and align internal
+control responsibilities,
+performance measures and
+incentives with company business
+objectives.
+
+Inspected the calendar invite and
+the meeting agenda for a sample
+of months during the period to
+determine that management held
+monthly company-wide strategy
+meeting that discussed and
+aligned internal control
+responsibilities, performance
+measures and incentives with
+company business objectives for
+each month sampled.
+
+No exceptions noted.
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+Control #
+
+CC2.3 – COSO Principle 15: The entity communicates with external parties regarding matters affecting the functioning of
+internal control.
+
+ike
+
+Information regarding the design
+and operation of the system and
+its boundaries is communicated to
+external users via the company
+website.
+
+M
+
+CC2.3.1
+
+Inspected the system description
+on the company website to
+determine that information
+regarding the design and
+operations of the system and its
+boundaries was communicated to
+external users via the company
+website.
+
+No exceptions noted.
+
+32
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC2.3.2
+
+The entity's security, availability,
+and confidentiality commitments
+and the associated system
+requirements, including the
+security, contractual, and
+regulatory requirements, are
+documented in the DPA and TOS
+available on the company
+website.
+
+Inspected the DPA and TOS
+agreements to determine that the
+entity’s security, availability, and
+confidentiality commitments and
+the associated system
+requirements, including the
+security, contractual, and
+regulatory requirements, were
+documented in the DPA and TOS
+available on the public facing
+website.
+
+No exceptions noted.
+
+CC2.3.3
+
+The security, availability, and
+confidentiality commitments and
+obligations of third-party vendors
+are documented and
+communicated via MSAs or
+NDAs.
+
+Inspected the signed agreement
+for a sample of third-party vendors
+to determine that the security,
+availability, and confidentiality
+commitments and obligations of
+vendors were documented and
+communicated via MSAs or NDAs
+for each third-party vendor
+sampled.
+
+No exceptions noted.
+
+CC2.3.4
+
+Signed agreements of
+confidentiality and protection are
+required before sharing
+information designated as
+confidential with third parties.
+
+Inspected the MSA for a sample
+of in-scope third-party service
+providers to determine that each
+in-scope third-party service
+provider sampled and customers
+signed agreements of
+confidentiality and protection
+before information designated as
+confidential could be shared with
+third parties.
+
+No exceptions noted.
+
+CC2.3.5
+
+System alerts, including planned
+changes to system components,
+planned outages, and known
+issues, are displayed on the
+external-facing website.
+
+Inspected the company website to
+determine that system alerts,
+including planned changes to
+system components, planned
+outages, and known issues were
+displayed on the external-facing
+website.
+
+No exceptions noted.
+
+CC2.3.6
+
+Documented escalation
+procedures for reporting incidents
+are provided to external users via
+the company website to guide
+users in identifying and reporting
+failures, incidents, concerns, and
+other complaints.
+
+Inspected the company website to
+determine that documented
+escalation procedures for
+reporting incidents were provided
+to external users via the company
+website to guide users in
+identifying and reporting failures,
+incidents, concerns, and other
+complaints.
+
+No exceptions noted.
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+Control #
+
+33
+
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Risk Assessment
+CC3.1 – COSO Principle 6: The entity specifies objectives with sufficient clarity to enable the identification and assessment
+of risks relating to objectives.
+Management formally documents
+an organization strategy and
+performance policy to align
+internal control responsibilities,
+performance measures, and
+incentives with company business
+objectives.
+
+Inspected the information security
+policy and the code of conduct to
+determine that management
+formally documented an
+organization strategy and
+performance policy to align
+internal control responsibilities,
+performance measures, and
+incentives with company business
+objectives.
+
+No exceptions noted.
+
+CC3.1.2
+
+Management holds monthly
+company-wide strategy meetings
+that discuss and align internal
+control responsibilities,
+performance measures and
+incentives with company business
+objectives.
+
+Inspected the calendar invite and
+the meeting agenda for a sample
+of months during the period to
+determine that management held
+monthly company-wide strategy
+meeting that discussed and
+aligned internal control
+responsibilities, performance
+measures and incentives with
+company business objectives for
+each month sampled.
+
+No exceptions noted.
+
+CC3.1.3
+
+Management formally documents
+and reviews the company’s
+commitments and the operational,
+reporting, and compliance
+objectives to help ensure they
+align with the company’s mission
+and are utilized as part of the
+quarterly risk assessment
+process.
+
+Inspected the risk assessment
+policy and the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that
+management formally
+documented and reviewed the
+company’s commitments and the
+operational, reporting, and
+compliance objectives during the
+period to ensure they aligned with
+the company’s mission and were
+utilized as part of the risk
+assessment process for each
+quarter sampled.
+
+No exceptions noted.
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC3.1.1
+
+CC3.2 – COSO Principle 7: The entity identifies risks to the achievement of its objectives across the entity and analyzes
+risks as a basis for determining how the risks should be managed.
+
+ike
+
+Documented policies and
+procedures are in place to guide
+personnel in identifying business
+objective risks, assessing
+changes to the system, and
+developing risk management
+strategies as a part of the risk
+assessment process.
+
+M
+
+CC3.2.1
+
+Inspected the risk assessment
+policy to determine that
+documented policies and
+procedures were in place to guide
+personnel in identifying business
+objective risks, assessing
+changes to the system, and
+developing risk management
+strategies as part of the risk
+assessment process.
+
+No exceptions noted.
+
+34
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC3.2.2
+
+A formal risk assessment is
+performed on a quarterly basis.
+Risks that are identified are rated
+using a risk evaluation process
+that accounts for changes in risk
+from the prior quarter, and are
+formally documented, along with
+mitigation strategies, for
+management review.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that a formal
+risk assessment was performed
+on a quarterly basis using a risk
+evaluation process that accounted
+for changes in risk from the prior
+quarter and that identified risks
+were formally documented, along
+with mitigation strategies, for
+management review for each
+quarter sampled.
+
+No exceptions noted.
+
+CC3.2.3
+
+Risk identification includes both
+internal and external factors and
+their impact on objectives.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that risk
+identification included both
+internal and external factors and
+their impact on objectives for each
+quarter sampled.
+
+No exceptions noted.
+
+CC3.2.4
+
+Penetration testing is performed
+by a third-party vendor on an
+annual basis to identify threats
+and assess their potential impacts
+to the system. Security
+vulnerabilities that are identified
+are triaged by the IT security team
+and monitored through
+remediation.
+
+Inspected the most recent
+penetration testing report and an
+example penetration test
+remediation ticket created during
+the period to determine that
+penetration testing was performed
+by a third-party vendor during the
+period to identify threats and
+assess their potential impacts to
+the system and that security
+vulnerabilities that were identified
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC3.2.5
+
+A third-party utility is configured to
+perform internal vulnerability
+assessments on a daily basis.
+Security vulnerabilities that are
+detected are triaged by the IT
+security team and monitored
+through remediation.
+
+Inspected the vulnerability
+scanning tool configurations, an
+example vulnerability scan log,
+and an example vulnerability
+ticket created during the period to
+determine that a third-party utility
+was configured to perform internal
+vulnerability assessments on a
+daily basis and that security
+vulnerabilities that were detected
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+Control #
+
+CC3.3 – COSO Principle 8: The entity considers the potential for fraud in assessing risks to the achievement of objectives.
+CC3.3.1
+
+Documented policies and
+procedures are in place to guide
+personnel in identifying the
+potential for fraud as part of the
+risk assessment process.
+
+Inspected the risk assessment
+policy to determine that
+documented policies and
+procedures were in place to guide
+personnel in identifying the
+potential for fraud as part of the
+risk assessment process.
+
+No exceptions noted.
+
+35
+
+Control #
+
+Test Applied by
+the Service Auditor
+
+A formal risk assessment is
+performed on a quarterly basis.
+Risks that are identified include a
+consideration of fraud factors and
+are rated using a risk evaluation
+process that accounts for changes
+in fraud risk from the prior quarter,
+and are formally documented,
+along with mitigation strategies,
+for management review.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that a formal
+risk assessment was performed
+on a quarterly basis and that risks
+that were identified included a
+consideration of fraud factors and
+were rated using a risk evaluation
+process that accounts for changes
+in fraud risk from the prior quarter,
+and were formally documented,
+along with mitigation strategies,
+for management review for each
+quarter sampled.
+
+Test Results
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+CC3.3.2
+
+Control Activity Specified
+by the Service Organization
+
+T2
+2:0
+
+CC3.4 – COSO Principle 9: The entity identifies and assesses changes that could significantly impact the system of internal
+control.
+CC3.4.1
+
+The entity’s information
+technology security group
+monitors the security impact of
+emerging technologies and the
+impact of changes to applicable
+laws or regulations are considered
+by senior management.
+
+Inspected an example security
+update generated during the
+period to determine that the
+entity’s information technology
+security group monitored the
+security impact of emerging
+technologies and the impact of
+changes to applicable laws or
+regulations were considered by
+senior management.
+
+CC3.4.2
+
+A formal risk assessment is
+performed on a quarterly basis
+that considers the impact of
+changes to the system. Risks that
+are identified are rated using a
+risk evaluation process that
+accounts for changes in risk from
+the prior quarter, and are formally
+documented, along with mitigation
+strategies, for management
+review.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that a formal
+risk assessment was performed
+on a quarterly basis that
+considered the impact of changes
+to the system and that risks that
+were identified were rated using a
+risk evaluation process that
+accounted for changes in risk
+from the prior quarter and were
+formally documented, along with
+mitigation strategies, for
+management review for each
+quarter sampled.
+
+No exceptions noted.
+
+CC3.4.3
+
+The compliance team reviews
+changes to third-party vendors
+along with their completed audit
+reports on at least an annual
+basis and determines the impact
+of any changes in relation to the
+organization’s objectives and the
+impact to internal control.
+
+Inspected the most recent
+compliance report review
+documentation for a sample of
+third-party vendors to determine
+that the compliance team
+reviewed changes to third-party
+vendors along with their
+completed audit reports during the
+period and determined the impact
+of any changes in relation to the
+organization’s objectives and the
+impact to internal control for each
+third-party vendor sampled.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+No exceptions noted.
+
+36
+
+Control #
+CC3.4.4
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Management identifies and
+assesses changes that could
+significantly impact the system of
+internal control during the
+quarterly risk assessment
+process.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that
+management identified and
+assessed changes that could
+significantly impact the system of
+internal control as part of the risk
+assessment process for each
+quarter sampled.
+
+Test Results
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Monitoring Activities
+CC4.1 – COSO Principle 16: The entity selects, develops, and performs ongoing and/or separate evaluations to ascertain
+whether the components of internal control are present and functioning.
+Penetration testing is performed
+by a third-party vendor on an
+annual basis to identify threats
+and assess their potential impacts
+to the system. Security
+vulnerabilities that are identified
+are triaged by the IT security team
+and monitored through
+remediation.
+
+Inspected the most recent
+penetration testing report and an
+example penetration test
+remediation ticket created during
+the period to determine that
+penetration testing was performed
+by a third-party vendor during the
+period to identify threats and
+assess their potential impacts to
+the system and that security
+vulnerabilities that were identified
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC4.1.2
+
+A third-party utility is configured to
+perform internal vulnerability
+assessments on a daily basis.
+Security vulnerabilities that are
+detected are triaged by the IT
+security team and monitored
+through remediation.
+
+Inspected the vulnerability
+scanning tool configurations, an
+example vulnerability scan log,
+and an example vulnerability
+ticket created during the period to
+determine that a third-party utility
+was configured to perform internal
+vulnerability assessments on a
+daily basis and that security
+vulnerabilities that were detected
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC4.1.3
+
+Internal audits of the organization
+are performed on an annual basis
+utilizing a formal methodology and
+audit procedures. The audit
+results are documented and
+reviewed by management.
+
+Inspected the most recent internal
+audit documentation and the
+internal audit policy to determine
+that internal audits of the
+organization were performed
+during the period utilizing a formal
+methodology and audit
+procedures and that the audit
+results were documented and
+reviewed by management.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+CC4.1.1
+
+37
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC4.1.4
+
+A formal risk assessment is
+performed on a quarterly basis.
+Risks that are identified are rated
+using a risk evaluation process
+that accounts for changes in risk
+from the prior quarter, and are
+formally documented, along with
+mitigation strategies, for
+management review.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that a formal
+risk assessment was performed
+on a quarterly basis using a risk
+evaluation process that accounted
+for changes in risk from the prior
+quarter and that identified risks
+were formally documented, along
+with mitigation strategies, for
+management review for each
+quarter sampled.
+
+No exceptions noted.
+
+CC4.1.5
+
+Risk owners perform a review of
+their assigned controls on a
+quarterly basis during the risk
+assessment process.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that risk
+owners performed a review of
+their assigned controls on a
+quarterly basis as part of the risk
+assessment process for each
+quarter sampled.
+
+No exceptions noted.
+
+CC4.1.6
+
+The compliance team reviews
+changes to third-party vendors
+along with their completed audit
+reports on at least an annual
+basis and determines the impact
+of any changes in relation to the
+organization’s objectives and the
+impact to internal control.
+
+Inspected the most recent
+compliance report review
+documentation for a sample of
+third-party vendors to determine
+that the compliance team
+reviewed changes to third-party
+vendors along with their
+completed audit reports during the
+period and determined the impact
+of any changes in relation to the
+organization’s objectives and the
+impact to internal control for each
+third-party vendor sampled.
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+Control #
+
+icz
+
+,m
+
+CC4.2 – COSO Principle 17: The entity evaluates and communicates internal control deficiencies in a timely manner to
+those parties responsible for taking corrective action, including senior management and the board of directors, as
+appropriate.
+Management provides internal
+control performance metrics to the
+board of directors on an annual
+basis. These metrics are formally
+documented in the internal control
+performance dashboard for board
+review.
+
+CC4.2.2
+
+Risk identification includes both
+internal and external factors and
+their impact on objectives.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+CC4.2.1
+
+Inspected the board of directors
+meeting agenda and minutes for
+the most recent internal control
+performance review to determine
+that management provided
+internal control performance
+metrics to the board of directors
+and that the metrics were formally
+documented in the internal control
+performance dashboard for board
+review during the period.
+
+No exceptions noted.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that risk
+identification included both
+internal and external factors and
+their impact on objectives for each
+quarter sampled.
+
+No exceptions noted.
+
+38
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC4.2.3
+
+A security and privacy steering
+committee comprised of security
+personnel and executive staff
+meet on a quarterly basis to guide
+the company in managing
+security, availability, and
+confidentiality risks.
+
+Inspected the security and privacy
+steering committee meeting
+minutes for a sample of quarters
+to determine that a security and
+privacy steering committee
+comprised of security personnel
+and executive staff met during the
+period to guide the company in
+managing security, availability,
+and confidentiality risks for each
+quarter sampled.
+
+No exceptions noted.
+
+CC4.2.4
+
+Management holds monthly
+company-wide strategy meetings
+that discuss and align internal
+control responsibilities,
+performance measures and
+incentives with company business
+objectives.
+
+Inspected the calendar invite and
+the meeting agenda for a sample
+of months during the period to
+determine that management held
+monthly company-wide strategy
+meeting that discussed and
+aligned internal control
+responsibilities, performance
+measures and incentives with
+company business objectives for
+each month sampled.
+
+No exceptions noted.
+
+CC4.2.5
+
+Management identifies and
+assesses changes that could
+significantly impact the system of
+internal control during the
+quarterly risk assessment
+process.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that
+management identified and
+assessed changes that could
+significantly impact the system of
+internal control as part of the risk
+assessment process for each
+quarter sampled.
+
+No exceptions noted.
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+pla
+
+ne
+ra.
+i
+
+Control #
+
+ike
+g@
+
+Control Activities
+
+CC5.1 – COSO Principle 10: The entity selects and develops control activities that contribute to the mitigation of risks to the
+achievement of objectives to acceptable levels.
+Risk mitigation policies and
+procedures are in place to guide
+personnel in the development and
+deployment of risk mitigation
+strategies.
+
+Inspected the risk assessment
+policy to determine that risk
+mitigation policies and procedures
+were in place to guide personnel
+in the development and
+deployment of risk mitigation
+strategies.
+
+No exceptions noted.
+
+CC5.1.2
+
+Security stakeholders perform a
+risk assessment on a quarterly
+basis that includes an analysis of
+risk mitigation control activities.
+The analysis considers how the
+environment, complexity, nature,
+and scope of its operations, as
+well as the specific characteristics
+of its organization, affect the
+selection and development of
+control activities.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that security
+stakeholders performed a risk
+assessment on a quarterly basis
+that included an analysis of risk
+mitigation control activities and
+that the analysis considered how
+the environment, complexity,
+nature, and scope of its
+operations, as well as the specific
+characteristics of its organization,
+affected the selection and
+development of control activities
+for each quarter sampled.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+CC5.1.1
+
+39
+
+CC5.1.3
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Assigned risk owners select and
+develop control activities to
+mitigate the risks identified during
+the quarterly risk assessment
+process. The control activities are
+documented within the mitigation
+plans that are created by the risk
+owners for risks above the
+tolerable threshold.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that assigned
+risk owners selected and
+developed control activities to
+mitigate the risks identified during
+the quarterly risk assessment
+process and that the control
+activities were documented within
+the mitigation plans that were
+created by the risk owners for
+risks above the tolerable threshold
+for each quarter sampled.
+
+Test Results
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Control #
+
+CC5.2 – COSO Principle 11: The entity also selects and develops general control activities over technology to support the
+achievement of objectives.
+No exceptions noted.
+
+-10
+
+-15
+
+T2
+2:0
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that assigned
+risk owners selected and
+developed control activities to
+mitigate the risks identified during
+the quarterly risk assessment
+process and that the control
+activities were documented within
+the mitigation plans that were
+created by the risk owners for
+risks above the tolerable threshold
+for each quarter sampled.
+
+25
+
+Assigned risk owners select and
+develop control activities to
+mitigate the risks identified during
+the quarterly risk assessment
+process. The control activities are
+documented within the mitigation
+plans that are created by the risk
+owners for risks above the
+tolerable threshold.
+
+ne
+ra.
+i
+
+o,
+
+20
+
+CC5.2.1
+
+Documented policies and
+procedures are in place to guide
+personnel with regard to the
+design, development,
+implementation, operation,
+maintenance, and monitoring of
+in-scope systems. These policies
+and procedures are
+communicated to internal
+personnel via the intranet
+
+CC5.3.2
+
+An information security policy is
+formally documented and
+reviewed on an annual basis that
+identifies information required to
+support the functioning of internal
+control and achievement of
+objectives and associated
+protection, access rights, and
+retention requirements.
+
+Inspected the information security
+policies and procedures on the
+company intranet to determine
+that documented policies and
+procedures were in place to guide
+personnel with regard to the
+design, development,
+implementation, operation,
+maintenance, and monitoring of
+in-scope systems and that these
+policies and procedures were
+communicated to internal
+personnel via the intranet.
+
+No exceptions noted.
+
+Inspected the information security
+policy to determine that an
+information security policy was
+formally documented and
+reviewed during the period that
+identified information required to
+support the functioning of internal
+control and achievement of
+objectives and associated
+protection, access rights, and
+retention requirements.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+CC5.3.1
+
+pla
+
+CC5.3 – COSO Principle 12: The entity deploys control activities through policies that establish what is expected and in
+procedures that put policies into action.
+
+40
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC5.3.3
+
+Documented escalation
+procedures for reporting incidents
+are provided to internal users to
+guide users in identifying and
+reporting failures, incidents,
+concerns, and other complaints.
+
+Inspected the incident response
+policies and procedures to
+determine that documented
+escalation procedures for
+reporting incidents were provided
+to internal users to guide users in
+identifying and reporting failures,
+incidents, concerns, and other
+complaints.
+
+No exceptions noted.
+
+CC5.3.4
+
+An employee sanction procedure
+is in place and documented within
+the code of conduct
+communicating that an employee
+may be terminated for
+noncompliance with a policy
+and/or procedure.
+
+Inspected the code of conduct to
+determine that an employee
+sanction policy was documented
+within the code of conduct
+communicating that an employee
+may be terminated for
+noncompliance with a policy
+and/or procedure.
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+T2
+2:0
+
+Control #
+
+Logical and Physical Access Controls
+
+-15
+
+CC6.1 – The entity implements logical access security software, infrastructure, and architectures over protected information
+assets to protect them from security events to meet the entity's objectives.
+The engineering team has
+formally documented standard
+build procedures for installation
+and maintenance of production
+systems that includes the
+requirement for access control
+systems to enforce logical access.
+
+Inspected the standard build
+procedures to determine that the
+engineering team had formally
+documented standard build
+procedures for installation and
+maintenance of production
+systems that included the
+requirement for access control
+systems to enforce logical access.
+
+No exceptions noted.
+
+CC6.1.2
+
+The in-scope systems are
+configured to authenticate users
+with a unique user account and
+enforce predefined user account
+and minimum password
+requirements with MFA or SSH
+public key authentication.
+
+Inspected the user account
+listings and minimum password
+requirements for a sample of inscope systems to determine that
+the following sampled in-scope
+systems were configured to
+authenticate users with a unique
+user account and enforce
+predefined user account and
+minimum password requirements
+with MFA or SSH public key
+authentication:
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+CC6.1.1
+
+•
+
+Identity management service
+
+•
+
+Production containers
+
+•
+
+Production databases
+
+•
+
+Infrastructure management
+console
+
+41
+
+Predefined security groups are
+utilized to assign role-based
+access privileges and segregate
+access to data to the in-scope
+systems.
+
+Inspected the administrator user
+account listings for a sample of inscope systems to determine that
+predefined security groups were
+utilized to assign role-based
+access privileges and to
+segregate access to data for the
+following sampled in-scope
+systems:
+
+Administrative access privileges
+to the in-scope systems are
+restricted to user accounts
+accessible by authorized
+personnel.
+
+Test Results
+
+•
+
+Identity management service
+
+•
+
+Production containers
+
+•
+
+Production databases
+
+•
+
+Infrastructure management
+console
+
+No exceptions noted.
+
+Inspected the administrator user
+account listings for a sample of inscope systems with the
+assistance of the head of security
+to determine that administrative
+access privileges to the following
+sampled in-scope systems were
+restricted to user accounts
+accessible by authorized
+personnel:
+
+No exceptions noted.
+
+Identity management service
+
+•
+
+Production containers
+
+•
+
+Production databases
+
+o,
+
+ne
+ra.
+i
+
+pla
+
+Infrastructure management
+console
+
+Inquired of the head of security
+regarding the segregation of
+environments to determine that
+the production environment was
+logically segmented from
+development and test
+environments.
+
+No exceptions noted.
+
+Inspected the network
+segmentation configurations to
+determine that the production
+environment was logically
+segmented from the staging
+environment.
+
+No exceptions noted.
+
+Inspected the database
+encryption configurations for a
+sample of production databases
+and the listing of user accounts
+with access to encryption settings
+with the assistance of the head of
+security to determine that
+customer data, including backup
+data was stored in an encrypted
+format and that access to the
+encryption settings was restricted
+to user accounts accessible by
+authorized personnel for each
+production database sampled.
+
+No exceptions noted.
+
+Customer data, including backup
+data, is stored in an encrypted
+format. Access to the encryption
+settings is restricted to user
+accounts accessible by authorized
+personnel.
+
+M
+
+CC6.1.6
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+The production environment is
+logically segmented from
+development and test
+environments.
+
+20
+
+•
+
+•
+CC6.1.5
+
+25
+
+-10
+
+-15
+
+CC6.1.4
+
+Test Applied by
+the Service Auditor
+
+6:4
+6.7
+09
+Z
+
+CC6.1.3
+
+Control Activity Specified
+by the Service Organization
+
+T2
+2:0
+
+Control #
+
+42
+
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+CSOC-01
+
+AWS and Microsoft are responsible for implementing controls to manage logical access to the underlying
+network, virtualization management software, and storage devices for its cloud hosting services where the
+Vercel systems reside.
+
+CSOC-02
+
+Microsoft is responsible for ensuring data within Microsoft Azure is encrypted in transit and at rest.
+
+CSOC-03
+
+Microsoft is responsible for ensuring access to service managed encryption keys is restricted to authorized
+personnel.
+
+CC6.2 – Prior to issuing system credentials and granting system access, the entity registers and authorizes new internal
+and external users whose access is administered by the entity. For those users whose access is administered by the entity,
+user system credentials are removed when user access is no longer authorized.
+Internal user access requests are
+tracked through an automated
+ticketing system and require the
+approval of the system owner.
+
+Inspected the access request
+ticketing documentation for a
+sample of user access requests
+during the period to determine
+that each internal user access
+request sampled was tracked
+through an automated ticketing
+system and approved by the
+system owner.
+
+No exceptions noted.
+
+CC6.2.2
+
+Termination checklists are
+completed, and system access is
+suspended for employees as a
+component of the employee
+termination process.
+
+Inspected the termination ticketing
+documentation and user account
+listings for a sample of employees
+terminated during the period and
+in-scope systems to determine
+that termination checklists were
+completed, and system access
+was suspended to each of the
+following in-scope systems for
+each terminated employee
+sampled:
+
+No exceptions noted.
+
+Identity management service
+
+pla
+
+•
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC6.2.1
+
+Production containers
+
+•
+•
+
+Production databases
+Infrastructure management
+console
+
+,m
+
+ike
+g@
+
+•
+
+User access reviews, including
+privileged users, are performed by
+management on a quarterly basis
+to help ensure that access to data
+is restricted and authorized.
+Accounts identified as
+inappropriate are investigated and
+resolved.
+
+CSOC-01
+
+AWS and Microsoft are responsible for implementing controls to manage logical access to the underlying
+network, virtualization management software, and storage devices for its cloud hosting services where the
+Vercel systems reside.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+CC6.2.3
+
+Inspected the completed user
+access review for a sample of
+quarters during the period to
+determine that user access
+reviews, including privileged
+users, were performed by
+management to ensure that
+access to data was restricted and
+authorized and that accounts
+identified as inappropriate were
+investigated and resolved for each
+quarter sampled.
+
+No exceptions noted.
+
+43
+
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+CC6.3 – The entity authorizes, modifies, or removes access to data, software, functions, and other protected information
+assets based on roles, responsibilities, or the system design and changes, giving consideration to the concepts of least
+privilege and segregation of duties, to meet the entity's objectives.
+Internal user access requests are
+tracked through an automated
+ticketing system and require the
+approval of the system owner.
+
+Inspected the access request
+ticketing documentation for a
+sample of user access requests
+during the period to determine
+that each internal user access
+request sampled was tracked
+through an automated ticketing
+system and approved by the
+system owner.
+
+No exceptions noted.
+
+CC6.3.2
+
+Termination checklists are
+completed, and system access is
+suspended for employees as a
+component of the employee
+termination process.
+
+Inspected the termination ticketing
+documentation and user account
+listings for a sample of employees
+terminated during the period and
+in-scope systems to determine
+that termination checklists were
+completed, and system access
+was suspended to each of the
+following in-scope systems for
+each terminated employee
+sampled:
+
+No exceptions noted.
+
+•
+
+Production containers
+
+•
+•
+
+Production databases
+Infrastructure management
+console
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+Identity management service
+
+No exceptions noted.
+
+pla
+
+Inspected the administrator user
+account listings for a sample of inscope systems to determine that
+predefined security groups were
+utilized to assign role-based
+access privileges and to
+segregate access to data for the
+following sampled in-scope
+systems:
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+Predefined security groups are
+utilized to assign role-based
+access privileges and segregate
+access to data to the in-scope
+systems.
+
+•
+
+•
+
+Identity management service
+
+•
+
+Production containers
+
+•
+•
+
+Production databases
+Infrastructure management
+console
+
+M
+
+CC6.3.3
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC6.3.1
+
+44
+
+CC6.3.4
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Administrative access privileges
+to the in-scope systems are
+restricted to user accounts
+accessible by authorized
+personnel.
+
+Inspected the administrator user
+account listings for a sample of inscope systems with the
+assistance of the head of security
+to determine that administrative
+access privileges to the following
+sampled in-scope systems were
+restricted to user accounts
+accessible by authorized
+personnel:
+
+Test Results
+
+•
+
+Identity management service
+
+•
+
+Production containers
+
+•
+
+Production databases
+
+•
+
+Infrastructure management
+console
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Control #
+
+CC6.3.5
+
+User access reviews, including
+privileged users, are performed by
+management on a quarterly basis
+to help ensure that access to data
+is restricted and authorized.
+Accounts identified as
+inappropriate are investigated and
+resolved.
+
+CSOC-01
+
+AWS and Microsoft are responsible for implementing controls to manage logical access to the underlying
+network, virtualization management software, and storage devices for its cloud hosting services where the
+Vercel systems reside.
+
+No exceptions noted.
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+Inspected the completed user
+access review for a sample of
+quarters during the period to
+determine that user access
+reviews, including privileged
+users, were performed by
+management to ensure that
+access to data was restricted and
+authorized and that accounts
+identified as inappropriate were
+investigated and resolved for each
+quarter sampled.
+
+AWS and Microsoft are responsible for restricting physical access to data center facilities, backup media,
+and other system components including firewalls, routers, and servers.
+
+,m
+
+CSOC-04
+
+ike
+g@
+
+CC6.4 – The entity restricts physical access to facilities and protected information assets (for example, data center facilities,
+backup media storage, and other sensitive locations) to authorized personnel to meet the entity's objectives.
+
+icz
+
+CC6.5 – The entity discontinues logical and physical protections over physical assets only after the ability to read or recover
+data and software from those assets has been diminished and is no longer required to meet the entity's objectives.
+Media handling and disposal
+procedures are in place to guide
+personnel in performing
+sanitization procedures on
+instances where production data
+resides to help ensure data and
+software is unrecoverable prior to
+retiring the virtual asset.
+
+CSOC-01
+
+AWS and Microsoft are responsible for implementing controls to manage logical access to the underlying
+network, virtualization management software, and storage devices for its cloud hosting services where the
+Vercel systems reside.
+
+CSOC-04
+
+AWS and Microsoft are responsible for restricting physical access to data center facilities, backup media,
+and other system components including firewalls, routers, and servers.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+CC6.5.1
+
+Inspected the asset management
+policy to determine that media
+handling and disposal procedures
+were in place to guide personnel
+in performing sanitization
+procedures on instances where
+production data resided to ensure
+data and software was
+unrecoverable prior to retiring the
+virtual asset.
+
+No exceptions noted.
+
+45
+
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+CC6.6 – The entity implements logical access security measures to protect against threats from sources outside its system
+boundaries.
+Security groups are in place to
+filter unauthorized inbound and
+outbound network traffic from the
+Internet.
+
+Inspected the security group
+configurations to determine that
+security groups were in place to
+filter unauthorized inbound and
+outbound network traffic from the
+Internet.
+
+No exceptions noted.
+
+CC6.6.2
+
+Web servers utilize TLS
+encryption for web communication
+sessions.
+
+Inspected the web server
+encryption configurations to
+determine that web servers
+utilized TLS encryption for web
+communication sessions.
+
+No exceptions noted.
+
+CC6.6.3
+
+Security group rulesets are
+reviewed on an annual basis to
+help ensure that only necessary
+connections are configured.
+
+Inspected the most recent security
+group ruleset review to determine
+that firewall rulesets were
+reviewed to ensure that only
+necessary connections were
+configured within the firewall
+systems during the period.
+
+No exceptions noted.
+
+CC6.6.4
+
+Logging and monitoring software
+is configured to collect data from
+system infrastructure components
+and endpoint systems to monitor
+system performance, potential
+security vulnerabilities, and
+resource utilization and to alert
+the information security team
+upon detection of unusual system
+activity or service requests.
+
+Inspected the logging and
+monitoring configurations and
+example alerts generated during
+the period to determine that
+logging and monitoring software
+was configured to collect data
+from system infrastructure
+components and endpoint
+systems to monitor system
+performance, potential security
+vulnerabilities, and resource
+utilization and to alert the
+information security team upon
+detection of unusual system
+activity or service requests.
+
+No exceptions noted.
+
+CC6.6.5
+
+Penetration testing is performed
+by a third-party vendor on an
+annual basis to identify threats
+and assess their potential impacts
+to the system. Security
+vulnerabilities that are identified
+are triaged by the IT security team
+and monitored through
+remediation.
+
+Inspected the most recent
+penetration testing report and an
+example penetration test
+remediation ticket created during
+the period to determine that
+penetration testing was performed
+by a third-party vendor during the
+period to identify threats and
+assess their potential impacts to
+the system and that security
+vulnerabilities that were identified
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC6.6.1
+
+46
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC6.6.6
+
+A third-party utility is configured to
+perform internal vulnerability
+assessments on a daily basis.
+Security vulnerabilities that are
+detected are triaged by the IT
+security team and monitored
+through remediation.
+
+Inspected the vulnerability
+scanning tool configurations, an
+example vulnerability scan log,
+and an example vulnerability
+ticket created during the period to
+determine that a third-party utility
+was configured to perform internal
+vulnerability assessments on a
+daily basis and that security
+vulnerabilities that were detected
+were triaged by the IT security
+team and monitored through
+remediation.
+
+CSOC-01
+
+AWS and Microsoft are responsible for implementing controls to manage logical access to the underlying
+network, virtualization management software, and storage devices for its cloud hosting services where the
+Vercel systems reside.
+
+Test Results
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Control #
+
+T2
+2:0
+
+CC6.7 – The entity restricts the transmission, movement, and removal of information to authorized internal and external
+users and processes, and protects it during transmission, movement, or removal to meet the entity's objectives.
+CC6.7.1
+
+Web servers utilize TLS
+encryption for web communication
+sessions.
+
+Inspected the web server
+encryption configurations to
+determine that web servers
+utilized TLS encryption for web
+communication sessions.
+
+CC6.7.2
+
+Customer data, including backup
+data, is stored in an encrypted
+format. Access to the encryption
+settings is restricted to user
+accounts accessible by authorized
+personnel.
+
+Inspected the database
+encryption configurations for a
+sample of production databases
+and the listing of user accounts
+with access to encryption settings
+with the assistance of the head of
+security to determine that
+customer data, including backup
+data was stored in an encrypted
+format and that access to the
+encryption settings was restricted
+to user accounts accessible by
+authorized personnel for each
+production database sampled.
+
+No exceptions noted.
+
+CC6.7.3
+
+Documented policies and
+procedures were in place to guide
+personnel in the handling and
+encryption of data in transit.
+
+Inspected the cryptographic and
+key management policy to
+determine that documented
+policies and procedures were in
+place to guide personnel in the
+handling and encryption of data in
+transit.
+
+No exceptions noted.
+
+CC6.7.4
+
+Backup data is replicated to a
+separate availability zone under
+the same connection to help
+ensure backup data is not taken
+beyond the boundaries of the
+system.
+
+Inspected the replication
+configurations for a sample of
+production databases to
+determine that backup data was
+replicated to a separate
+availability zone under the same
+connection to ensure backup data
+was not taken beyond the
+boundaries of the system for each
+production database sampled.
+
+No exceptions noted.
+
+CSOC-02
+
+Microsoft is responsible for
+ensuring data within Microsoft
+Azure is encrypted in transit and
+at rest.
+
+Microsoft is responsible for ensuring data within Microsoft Azure is
+stored in an encrypted at rest format.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+No exceptions noted.
+
+47
+
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+CSOC-03
+
+Microsoft is responsible for ensuring access to service managed encryption keys is restricted to authorized
+personnel.
+
+CSOC-05
+
+AWS and Microsoft are responsible for implementing controls for the transmission, movement, and removal
+of the underlying storage devices for its cloud hosting services where the Vercel systems reside.
+
+CC6.8 – The entity implements controls to prevent or detect and act upon the introduction of unauthorized or malicious
+software to meet the entity's objectives.
+An endpoint protection solution is
+configured on workstations to
+provide real-time protection
+against the presence of malicious
+software.
+
+Inspected the endpoint protection
+solution configurations and listing
+of monitored workstations to
+determine that an endpoint
+protection solution was configured
+on workstations to provide realtime protection against the
+presence of malicious software.
+
+No exceptions noted.
+
+CC6.8.2
+
+Penetration testing is performed
+by a third-party vendor on an
+annual basis to identify threats
+and assess their potential impacts
+to the system. Security
+vulnerabilities that are identified
+are triaged by the IT security team
+and monitored through
+remediation.
+
+Inspected the most recent
+penetration testing report and an
+example penetration test
+remediation ticket created during
+the period to determine that
+penetration testing was performed
+by a third-party vendor during the
+period to identify threats and
+assess their potential impacts to
+the system and that security
+vulnerabilities that were identified
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC6.8.3
+
+A third-party utility is configured to
+perform internal vulnerability
+assessments on a daily basis.
+Security vulnerabilities that are
+detected are triaged by the IT
+security team and monitored
+through remediation.
+
+Inspected the vulnerability
+scanning tool configurations, an
+example vulnerability scan log,
+and an example vulnerability
+ticket created during the period to
+determine that a third-party utility
+was configured to perform internal
+vulnerability assessments on a
+daily basis and that security
+vulnerabilities that were detected
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC6.8.4
+
+A FIM tool is utilized to monitor for
+changes to the production
+environment and is configured to
+notify engineering personnel when
+changes to the production
+environment occur.
+
+Inspected the FIM tool
+configurations and an example
+alert generated during the period
+to determine that a FIM tool was
+utilized to monitor for changes to
+the production environment and
+was configured to notify
+engineering personnel when
+changes to the production
+environment occurred.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC6.8.1
+
+48
+
+Control #
+CC6.8.5
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Administrative access to the FIM
+tool is restricted to user accounts
+accessible by authorized
+personnel.
+
+Inspected the FIM administrator
+user account listings with the
+assistance of the head of security
+to determine that administrative
+access to the FIM tool was
+restricted to user accounts
+accessible by authorized
+personnel.
+
+Test Results
+No exceptions noted.
+
+System Operations
+
+6:4
+6.7
+09
+Z
+
+CC7.1 – To meet its objectives, the entity uses detection and monitoring procedures to identify (1) changes to
+configurations that result in the introduction of new vulnerabilities, and (2) susceptibilities to newly discovered vulnerabilities.
+The engineering team has
+formally documented standard
+build procedures for installation
+and maintenance of production
+systems that includes the
+requirement for access control
+systems to enforce logical access.
+
+Inspected the standard build
+procedures to determine that the
+engineering team had formally
+documented standard build
+procedures for installation and
+maintenance of production
+systems that included the
+requirement for access control
+systems to enforce logical access.
+
+No exceptions noted.
+
+CC7.1.2
+
+Penetration testing is performed
+by a third-party vendor on an
+annual basis to identify threats
+and assess their potential impacts
+to the system. Security
+vulnerabilities that are identified
+are triaged by the IT security team
+and monitored through
+remediation.
+
+Inspected the most recent
+penetration testing report and an
+example penetration test
+remediation ticket created during
+the period to determine that
+penetration testing was performed
+by a third-party vendor during the
+period to identify threats and
+assess their potential impacts to
+the system and that security
+vulnerabilities that were identified
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC7.1.3
+
+A third-party utility is configured to
+perform internal vulnerability
+assessments on a daily basis.
+Security vulnerabilities that are
+detected are triaged by the IT
+security team and monitored
+through remediation.
+
+Inspected the vulnerability
+scanning tool configurations, an
+example vulnerability scan log,
+and an example vulnerability
+ticket created during the period to
+determine that a third-party utility
+was configured to perform internal
+vulnerability assessments on a
+daily basis and that security
+vulnerabilities that were detected
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+CC7.1.1
+
+49
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Production system scans were
+configured to run on a daily basis
+to verify compliance with
+corporate policies that include, but
+are not limited to, the following:
+
+Inspected the vulnerability scan
+configurations, an example
+vulnerability scan log generated
+during the period, and an example
+vulnerability remediation ticket
+generated during the period to
+determine that production system
+scans were configured to run on a
+daily basis to verify compliance
+with corporate policies that
+included the following and that
+compromised systems were
+removed from the network until
+investigated and remedied by
+security personnel for:
+
+Unauthorized applications /
+software
+Compromised systems are
+removed from the network until
+investigated and remedied by
+security personnel.
+
+Security group rulesets are
+reviewed on an annual basis to
+help ensure that only necessary
+connections are configured.
+
+•
+
+Patches
+
+•
+
+Unauthorized applications /
+software
+
+Inspected the most recent security
+group ruleset review to determine
+that firewall rulesets were
+reviewed to ensure that only
+necessary connections were
+configured within the firewall
+systems during the period.
+
+No exceptions noted.
+
+20
+
+25
+
+CC7.1.5
+
+6:4
+6.7
+09
+Z
+
+Patches
+
+•
+
+T2
+2:0
+
+•
+
+No exceptions noted.
+
+-15
+
+CC7.1.4
+
+Test Results
+
+-10
+
+Control #
+
+CC7.2.2
+
+Enterprise monitoring applications
+are configured to monitor the inscope systems’ capacity levels
+and alert the security team when
+predefined thresholds have been
+met.
+
+Inspected the logging and
+monitoring configurations and
+example alerts generated during
+the period to determine that
+logging and monitoring software
+was configured to collect data
+from system infrastructure
+components and endpoint
+systems to monitor system
+performance, potential security
+vulnerabilities, and resource
+utilization and to alert the
+information security team upon
+detection of unusual system
+activity or service requests.
+
+No exceptions noted.
+
+Inspected the enterprise
+monitoring application
+configurations and an example email notification generated during
+the period to determine that
+enterprise monitoring applications
+were configured to monitor the inscope systems’ capacity levels
+and alert the security team when
+predefined thresholds were met.
+
+No exceptions noted.
+
+pla
+
+Logging and monitoring software
+is configured to collect data from
+system infrastructure components
+and endpoint systems to monitor
+system performance, potential
+security vulnerabilities, and
+resource utilization and to alert
+the information security team
+upon detection of unusual system
+activity or service requests.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+CC7.2.1
+
+ne
+ra.
+i
+
+o,
+
+CC7.2 – The entity monitors system components and the operation of those components for anomalies that are indicative of
+malicious acts, natural disasters, and errors affecting the entity's ability to meet its objectives; anomalies are analyzed to
+determine whether they represent security events.
+
+50
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC7.2.3
+
+Penetration testing is performed
+by a third-party vendor on an
+annual basis to identify threats
+and assess their potential impacts
+to the system. Security
+vulnerabilities that are identified
+are triaged by the IT security team
+and monitored through
+remediation.
+
+Inspected the most recent
+penetration testing report and an
+example penetration test
+remediation ticket created during
+the period to determine that
+penetration testing was performed
+by a third-party vendor during the
+period to identify threats and
+assess their potential impacts to
+the system and that security
+vulnerabilities that were identified
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CC7.2.4
+
+A third-party utility is configured to
+perform internal vulnerability
+assessments on a daily basis.
+Security vulnerabilities that are
+detected are triaged by the IT
+security team and monitored
+through remediation.
+
+Inspected the vulnerability
+scanning tool configurations, an
+example vulnerability scan log,
+and an example vulnerability
+ticket created during the period to
+determine that a third-party utility
+was configured to perform internal
+vulnerability assessments on a
+daily basis and that security
+vulnerabilities that were detected
+were triaged by the IT security
+team and monitored through
+remediation.
+
+No exceptions noted.
+
+CSOC-06
+
+AWS and Microsoft are responsible for monitoring the logical access control systems for the underlying
+network, virtualization management software, and storage devices for its cloud hosting services where the
+Vercel systems reside.
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+Control #
+
+Incident response procedures are
+in place that outline the response
+procedures to security events and
+include lessons learned to
+evaluate the effectiveness of the
+procedures. The procedures are
+reviewed on an annual basis to
+help ensure that they are
+effectively meeting the business
+objectives.
+
+CC7.3.2
+
+Security committee meetings are
+held on at least a quarterly basis
+to discuss the effect of identified
+security vulnerabilities on the
+ability to meet business objectives
+and to identify corrective
+measures.
+
+Inspected the incident response
+policies and procedures to
+determine that incident response
+procedures were in place that
+outlined the response procedures
+to security events and included
+lessons learned to evaluate the
+effectiveness of the procedures
+and that the procedures were
+reviewed during the period to
+ensure that they were effectively
+meeting the business objectives.
+
+No exceptions noted.
+
+Inspected the security committee
+meeting minutes for a sample of
+quarters during the period to
+determine that security committee
+meetings were held on at least a
+quarterly basis to discuss the
+effect of identified security
+vulnerabilities on the ability to
+meet business objectives and to
+identify corrective measures for
+each quarter sampled.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+CC7.3.1
+
+pla
+
+CC7.3 – The entity evaluates security events to determine whether they could or have resulted in a failure of the entity to
+meet its objectives (security incidents) and, if so, takes actions to prevent or address such failures.
+
+51
+
+Control #
+CC7.3.3
+
+Control Activity Specified
+by the Service Organization
+The security team utilizes an
+automated ticketing system to
+document security violations,
+responses, and resolutions.
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Inspected the incident ticketing
+documentation for a sample of
+incidents during the period to
+determine that the security team
+utilized an automated ticketing
+system to document security
+violations, responses, and
+resolutions for each incident
+sampled.
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+CC7.4 - The entity responds to identified security incidents by executing a defined incident-response program to
+understand, contain, remediate, and communicate security incidents, as appropriate.
+Incident response procedures are
+in place that outline the response
+procedures to security events and
+include lessons learned to
+evaluate the effectiveness of the
+procedures. The procedures are
+reviewed on an annual basis to
+help ensure that they are
+effectively meeting the business
+objectives.
+
+Inspected the incident response
+policies and procedures to
+determine that incident response
+procedures were in place that
+outlined the response procedures
+to security events and included
+lessons learned to evaluate the
+effectiveness of the procedures
+and that the procedures were
+reviewed during the period to
+ensure that they were effectively
+meeting the business objectives.
+
+No exceptions noted.
+
+CC7.4.2
+
+Security committee meetings are
+held on at least a quarterly basis
+to discuss the effect of identified
+security vulnerabilities on the
+ability to meet business objectives
+and to identify corrective
+measures.
+
+Inspected the security committee
+meeting minutes for a sample of
+quarters during the period to
+determine that security committee
+meetings were held on at least a
+quarterly basis to discuss the
+effect of identified security
+vulnerabilities on the ability to
+meet business objectives and to
+identify corrective measures for
+each quarter sampled.
+
+No exceptions noted.
+
+CC7.4.3
+
+The security team utilizes an
+automated ticketing system to
+document security violations,
+responses, and resolutions.
+
+Inspected the incident ticketing
+documentation for a sample of
+incidents during the period to
+determine that the security team
+utilized an automated ticketing
+system to document security
+violations, responses, and
+resolutions for each incident
+sampled.
+
+No exceptions noted.
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+CC7.4.1
+
+CC7.5.1
+
+M
+
+CC7.5 – The entity identifies, develops, and implements activities to recover from identified security incidents.
+Documented incident response
+procedures are in place to guide
+personnel in understanding,
+containing, remediating, and
+communicating security incidents.
+
+Inspected the incident response
+plan to determine that
+documented incident response
+procedures were in place to guide
+personnel in understanding,
+containing, remediating, and
+communicating security incidents.
+
+No exceptions noted.
+
+52
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC7.5.2
+
+Security committee meetings are
+held on at least a quarterly basis
+to discuss the effect of identified
+security vulnerabilities on the
+ability to meet business objectives
+and to identify corrective
+measures.
+
+Inspected the security committee
+meeting minutes for a sample of
+quarters during the period to
+determine that security committee
+meetings were held on at least a
+quarterly basis to discuss the
+effect of identified security
+vulnerabilities on the ability to
+meet business objectives and to
+identify corrective measures for
+each quarter sampled.
+
+No exceptions noted.
+
+CC7.5.3
+
+The security team complete
+incident postmortem reports that
+include the incident and impact
+analysis, resolutions, lessons
+learned, and action items.
+
+Inspected the incident ticket
+documentation for a sample of
+incidents during the period to
+determine that the security team
+completed incident postmortem
+reports that included the incident
+and impact analysis, resolutions,
+lessons learned, and action items
+for each change sampled.
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+T2
+2:0
+
+Control #
+
+-15
+
+Change Management
+
+Changes made to in-scope
+systems are authorized, tested,
+and approved prior to
+implementation.
+
+No exceptions noted.
+
+Inquired of the privacy and
+compliance specialist regarding
+the change management process
+to determine that changes made
+to in-scope systems were
+authorized, tested, and approved
+prior to implementation.
+
+No exceptions noted.
+
+20
+
+CC8.1.3
+
+Inspected the change
+management meeting minutes for
+a sample of weeks during the
+period to determine that change
+management meetings were held
+to discuss and communicate the
+ongoing and upcoming projects
+that affected the system for each
+week sampled.
+
+o,
+
+A change management meeting is
+held on a bi-weekly basis to
+discuss and communicate the
+ongoing and upcoming projects
+that affect the system.
+
+No exceptions noted.
+
+ne
+ra.
+i
+
+CC8.1.2
+
+Inspected the change
+management policies and
+procedures to determine that
+change management policies and
+procedures were in place to guide
+personnel in the request,
+documentation, testing, and
+approval of changes, and that the
+policies and procedures also
+outlined the requirement for
+segregation of duties such that
+authorization, development,
+testing, and implementation were
+segmented functions within the
+process.
+
+pla
+
+Change management policies and
+procedures are in place to guide
+personnel in the request,
+documentation, testing, and
+approval of changes. The policies
+and procedures also outline the
+requirement for segregation of
+duties such that authorization,
+development, testing, and
+implementation are segmented
+functions within the process.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+CC8.1.1
+
+25
+
+-10
+
+CC8.1 – The entity authorizes, designs, develops or acquires, configures, documents, tests, approves, and implements
+changes to infrastructure, data, software, and procedures to meet its objectives.
+
+53
+
+The production environment is
+logically segmented from
+development and test
+environments.
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Inspected the change ticketing
+documentation for a sample of
+changes implemented during the
+period to determine that changes
+made to the in-scope systems
+were authorized, tested, and
+approved for each change
+sampled.
+
+No exceptions noted.
+
+Inquired of the head of security
+regarding the segregation of
+environments to determine that
+the production environment was
+logically segmented from
+development and test
+environments.
+
+No exceptions noted.
+
+Inspected the network
+segmentation configurations to
+determine that the production
+environment was logically
+segmented from the staging
+environment.
+
+No exceptions noted.
+
+-15
+
+T2
+2:0
+
+CC8.1.4
+
+Control Activity Specified
+by the Service Organization
+
+6:4
+6.7
+09
+Z
+
+Control #
+
+Version control software is utilized
+to control access to source code
+and maintain record of the history
+of source code changes to
+provide rollback capabilities.
+
+Inspected the version control
+software configurations to
+determine that version control
+software was utilized to control
+access and maintain record of the
+history of source code changes to
+provide rollback capabilities.
+
+No exceptions noted.
+
+CC8.1.6
+
+Write access to the version
+control software is restricted to
+user accounts accessible by
+authorized personnel.
+
+Inspected the version control
+software user account listing with
+the assistance of the privacy and
+compliance specialist to
+determine that write access to the
+version control software was
+restricted to user accounts
+accessible by authorized
+personnel.
+
+No exceptions noted.
+
+CC8.1.7
+
+The version control software is
+configured to restrict users from
+merging code to in-scope source
+code repositories without peer
+approval, thus preventing any
+user from both developing and
+implementing code to the
+production environment.
+
+Inspected the version control
+software configurations for the inscope source code repositories to
+determine that the version control
+software was configured to restrict
+users from merging code to inscope source code repositories
+without peer approval, thus
+preventing any user from both
+developing and implementing
+code to the production
+environment.
+
+No exceptions noted.
+
+CC8.1.8
+
+Monitoring tools are configured to
+notify IT security personnel for
+changes to the version control
+software peer review
+configurations.
+
+Inspected the monitoring tools
+and configurations with the
+assistance of the head of security
+to determine that monitoring tools
+were configured to notify IT
+security personnel for changes to
+the version control software peer
+review configurations.
+
+No exceptions noted.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+CC8.1.5
+
+54
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC8.1.9
+
+Administrative access privileges
+within the version control software
+are restricted to user accounts
+accessible by authorized
+personnel.
+
+Inspected the version control
+software administrator account
+listings with the assistance of the
+head of security to determine that
+administrative access privileges
+within the version control software
+were restricted to user accounts
+accessible by authorized
+personnel.
+
+No exceptions noted.
+
+CC8.1.10
+
+Access privileges to promote
+changes into the production
+environment are restricted to user
+accounts accessible by authorized
+personnel.
+
+Inquired of the head of security
+regarding access privileges to
+promote changes into the
+production environment to
+determine that access privileges
+to promote changes into the
+production environment were
+restricted to user accounts
+accessible by authorized
+personnel.
+
+No exceptions noted.
+
+Inspected the production system
+and version control user account
+listings with the assistance of the
+head of security to determine that
+access privileges to promote
+changes into the production
+environment were restricted to
+user accounts accessible by
+authorized personnel.
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+CC8.1.12
+
+Administrative access to the FIM
+tool is restricted to user accounts
+accessible by authorized
+personnel.
+
+CC8.1.13
+
+Production customer level data is
+not used for testing in Vercel’s
+non-production environments.
+
+Inspected the FIM tool
+configurations and an example
+alert generated during the period
+to determine that a FIM tool was
+utilized to monitor for changes to
+the production environment and
+was configured to notify
+engineering personnel when
+changes to the production
+environment occurred.
+
+No exceptions noted.
+
+Inspected the FIM administrator
+user account listings with the
+assistance of the head of security
+to determine that administrative
+access to the FIM tool was
+restricted to user accounts
+accessible by authorized
+personnel.
+
+No exceptions noted.
+
+Inspected example data used for
+testing to determine that
+production customer data was not
+used for testing in Vercel’s nonproduction environments.
+
+No exceptions noted.
+
+pla
+
+A FIM tool is utilized to monitor for
+changes to the production
+environment and is configured to
+notify engineering personnel when
+changes to the production
+environment occur.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+CC8.1.11
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+Control #
+
+55
+
+Control Activity Specified
+by the Service Organization
+
+Control #
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Risk Mitigation
+CC9.1 – The entity identifies, selects, and develops risk mitigation activities for risks arising from potential business
+disruptions.
+Documented policies and
+procedures are in place to guide
+personnel in identifying business
+objective risks, assessing
+changes to the system, and
+developing risk management
+strategies as a part of the risk
+assessment process.
+
+Inspected the risk assessment
+policy to determine that
+documented policies and
+procedures were in place to guide
+personnel in identifying business
+objective risks, assessing
+changes to the system, and
+developing risk management
+strategies as part of the risk
+assessment process.
+
+No exceptions noted.
+
+CC9.1.2
+
+Security stakeholders perform a
+risk assessment on a quarterly
+basis that includes an evaluation
+of risk mitigation control activities
+for risks arising from potential
+business disruptions.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that security
+stakeholders performed a risk
+assessment on a quarterly basis
+that included an evaluation of risk
+mitigation control activities for
+risks arising from potential
+business disruptions during the
+period for each quarter sampled.
+
+No exceptions noted.
+
+CC9.1.3
+
+Business continuity and disaster
+recovery plans are in place to
+guide personnel in procedures to
+protect against disruptions caused
+by an unexpected event. The
+plans are reviewed, updated, and
+approved on an annual basis.
+
+Inspected the business continuity
+and disaster recovery plans to
+determine that business continuity
+and disaster recovery plans were
+in place to guide personnel in
+procedures to protect against
+disruptions caused by an
+unexpected event and that the
+plans were reviewed, updated,
+and approved during the period.
+
+No exceptions noted.
+
+CC9.1.4
+
+Disaster recovery plans, which
+include data restoration testing,
+are tested on an annual basis to
+help ensure the production
+environment can be recovered in
+the event of a disaster.
+
+Inspected the most recent
+disaster recovery testing
+documentation to determine that
+disaster recovery plans, which
+included data restoration testing,
+were tested during the period to
+ensure the production
+environment can be recovered in
+the event of a disaster.
+
+No exceptions noted.
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+CC9.1.1
+
+CC9.2.1
+
+M
+
+CC9.2 – The entity assesses and manages risks associated with vendors and business partners.
+Documented vendor management
+policies and procedures are in
+place to guide personnel in
+assessing and managing risks
+associated with third parties and
+are updated on an annual basis.
+
+Inspected the vendor
+management policy to determine
+that documented vendor
+management policies and
+procedures were in place to guide
+personnel in assessing and
+managing risks associated with
+third parties and were updated
+during the period.
+
+No exceptions noted.
+
+56
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+CC9.2.2
+
+The quarterly risk assessment
+process includes the analysis of
+potential threats and
+vulnerabilities introduced from
+doing business with vendors /
+business partners.
+
+Inspected the completed risk
+assessment documentation for a
+sample of quarters during the
+period to determine that the
+quarterly risk assessment process
+included the analysis of potential
+threats and vulnerabilities
+introduced from doing business
+with vendors / business partners
+for each quarter sampled.
+
+No exceptions noted.
+
+CC9.2.3
+
+Signed agreements of
+confidentiality and protection are
+required before sharing
+information designated as
+confidential with third parties.
+
+Inspected the MSA for a sample
+of in-scope third-party service
+providers to determine that each
+in-scope third-party service
+provider sampled and customers
+signed agreements of
+confidentiality and protection
+before information designated as
+confidential could be shared with
+third parties.
+
+No exceptions noted.
+
+CC9.2.4
+
+The compliance team reviews
+changes to third-party vendors
+along with their completed audit
+reports on at least an annual
+basis and determines the impact
+of any changes in relation to the
+organization’s objectives and the
+impact to internal control.
+
+Inspected the most recent
+compliance report review
+documentation for a sample of
+third-party vendors to determine
+that the compliance team
+reviewed changes to third-party
+vendors along with their
+completed audit reports during the
+period and determined the impact
+of any changes in relation to the
+organization’s objectives and the
+impact to internal control for each
+third-party vendor sampled.
+
+No exceptions noted.
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+Test Results
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+Control #
+
+Control #
+
+Gu
+ze
+w
+
+icz
+
+ADDITIONAL CRITERIA FOR AVAILABILITY
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+A1.1.1
+
+CSOC-07
+
+M
+
+ike
+
+A1.1 - The entity maintains, monitors, and evaluates current processing capacity and use of system components
+(infrastructure, data, and software) to manage capacity demand and to enable the implementation of additional capacity to
+help meet its objectives.
+Enterprise monitoring applications
+are configured to monitor the inscope systems’ capacity levels
+and alert the security team when
+predefined thresholds have been
+met.
+
+Inspected the enterprise
+monitoring application
+configurations and an example email notification generated during
+the period to determine that
+enterprise monitoring applications
+were configured to monitor the inscope systems’ capacity levels
+and alert the security team when
+predefined thresholds were met.
+
+No exceptions noted.
+
+AWS and Microsoft are responsible for monitoring the capacity demand and ensuring capacity resources are
+available and functioning to meet Vercel’s availability commitments and requirements.
+
+57
+
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+A1.2 - The entity authorizes, designs, develops or acquires, implements, operates, approves, maintains, and monitors
+environmental protections, software, data backup processes, and recovery infrastructure to meet its objectives.
+A1.2.1
+
+Automated backup systems are in
+place to perform scheduled
+backups of production data and
+systems at predefined times.
+
+Inspected the backup
+configurations for a sample of
+production databases to
+determine that automated backup
+systems were in place to perform
+scheduled backups of production
+data and systems at predefined
+times for each production
+database sampled.
+
+A1.2.2
+
+Backup data is replicated to a
+separate availability zone under
+the same connection to help
+ensure backup data is not taken
+beyond the boundaries of the
+system.
+
+Inspected the replication
+configurations for a sample of
+production databases to
+determine that backup data was
+replicated to a separate
+availability zone under the same
+connection to ensure backup data
+was not taken beyond the
+boundaries of the system for each
+production database sampled.
+
+No exceptions noted.
+
+A1.2.3
+
+Documented policies and
+procedures are in place that
+address recovering and
+continuing service in accordance
+with documented customer
+commitments or other
+agreements.
+
+Inspected the disaster recovery
+and business continuity policies
+and procedures to determine that
+documented policies and
+procedures were in place that
+addressed recovering and
+continuing service in accordance
+with documented customer
+commitments or other
+agreements.
+
+No exceptions noted.
+
+6:4
+6.7
+09
+Z
+
+T2
+2:0
+
+-15
+
+-10
+
+25
+
+20
+
+o,
+
+ne
+ra.
+i
+
+pla
+
+AWS and Microsoft are responsible for ensuring the data center facilities are equipped with environmental
+security safeguards and utilizing an environmental monitoring application to monitor for environmental
+events.
+
+ike
+g@
+
+CSOC-08
+
+No exceptions noted.
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+Disaster recovery plans, which
+include data restoration testing,
+are tested on an annual basis to
+help ensure the production
+environment can be recovered in
+the event of a disaster.
+
+M
+
+A1.3.1
+
+,m
+
+A1.3 - The entity tests recovery plan procedures supporting system recovery to meet its objectives.
+Inspected the most recent
+disaster recovery testing
+documentation to determine that
+disaster recovery plans, which
+included data restoration testing,
+were tested during the period to
+ensure the production
+environment can be recovered in
+the event of a disaster.
+
+No exceptions noted.
+
+58
+
+ADDITIONAL CRITERIA FOR CONFIDENTIALITY
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+C1.1 - The entity identifies and maintains confidential information to meet the entity's objectives related to confidentiality.
+Documented data classification
+and retention policies are in place
+to help ensure that confidential
+data is properly maintained,
+restricted, to authorized
+personnel, and prohibited from
+being used or stored outside of
+company approved methods.
+
+Inspected the data classification
+and retention policies and to
+determine that documented data
+classification and retention
+policies were in place to ensure
+that confidential data is properly
+maintained, restricted, to
+authorized personnel, and
+prohibited from being used or
+stored outside of company
+approved methods.
+
+No exceptions noted.
+
+C1.1.2
+
+Production customer level data is
+not used for testing in Vercel’s
+non-production environments.
+
+Inspected example data used for
+testing to determine that
+production customer data was not
+used for testing in Vercel’s nonproduction environments.
+
+No exceptions noted.
+
+C1.1.3
+
+Administrative access privileges
+to the in-scope systems are
+restricted to user accounts
+accessible by authorized
+personnel.
+
+Inspected the administrator user
+account listings for a sample of inscope systems with the
+assistance of the head of security
+to determine that administrative
+access privileges to the following
+sampled in-scope systems were
+restricted to user accounts
+accessible by authorized
+personnel:
+
+No exceptions noted.
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+C1.1.1
+
+Identity management service
+
+Production containers
+
+•
+
+Production databases
+
+•
+
+Infrastructure management
+console
+
+icz
+
+,m
+
+ike
+g@
+
+•
+
+•
+
+Customer data, including backup
+data, is stored in an encrypted
+format. Access to the encryption
+settings is restricted to user
+accounts accessible by authorized
+personnel.
+
+CSOC-02
+
+Microsoft is responsible for
+ensuring data within Microsoft
+Azure is encrypted in transit and
+at rest.
+
+CSOC-03
+
+Microsoft is responsible for ensuring access to service managed encryption keys is restricted to authorized
+personnel.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+C1.1.4
+
+Inspected the database
+encryption configurations for a
+sample of production databases
+and the listing of user accounts
+with access to encryption settings
+with the assistance of the head of
+security to determine that
+customer data, including backup
+data was stored in an encrypted
+format and that access to the
+encryption settings was restricted
+to user accounts accessible by
+authorized personnel for each
+production database sampled.
+
+No exceptions noted.
+
+Microsoft is responsible for ensuring data within Microsoft Azure is
+stored in an encrypted at rest format.
+
+59
+
+Control #
+
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Documented data disposal
+policies are in place to guide
+personnel in the procedures for
+disposal of data.
+
+Inspected the data disposal
+policies and procedures to
+determine that documented data
+disposal policies were in place to
+guide personnel in the procedures
+for disposal of data.
+
+No exceptions noted.
+
+C1.2.2
+
+The entity’s confidential
+information disposal principal
+service commitments are
+documented and communicated
+in the DPA.
+
+Inspected the cloud and support
+security addendum to determine
+that the entity’s confidential
+information disposal principal
+service commitments were
+documented and communicated
+in the DPA.
+
+No exceptions noted.
+
+C1.2.3
+
+Procedures are in place to
+securely dispose of customer data
+upon termination of the services
+provided to the customer in
+accordance with the disposal
+commitments.
+
+Inquired of the privacy and
+compliance specialist regarding
+disposal of customer data to
+determine that procedures were in
+place to securely dispose of
+customer data upon termination of
+the services provided to the
+customer in accordance with the
+disposal commitments.
+
+No exceptions noted.
+
+No exceptions noted.
+
+-10
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+C1.2.1
+
+25
+
+C1.2 - The entity disposes of confidential information to meet the entity's objectives related to confidentiality.
+
+M
+
+ike
+
+Gu
+ze
+w
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+Inspected the data disposal
+procedures and evidence of
+deletion for a sample of
+customers who terminated service
+during the period to determine
+that procedures were in place to
+securely dispose of customer data
+upon termination of the services
+provided to the customer in
+accordance with the disposal
+commitments for each data
+deletion request and terminated
+customer sampled.
+
+60
+
+ike
+
+M
+Gu
+ze
+w
+pla
+
+ike
+g@
+
+,m
+
+icz
+
+o,
+
+ne
+ra.
+i
+-10
+
+25
+
+20
+
+-15
+
+T2
+2:0
+
+6:4
+6.7
+09
+Z
+
+SECTION 5
+
+OTHER INFORMATION
+PROVIDED BY
+MANAGEMENT
+
+61
+
+MANAGEMENT’S RESPONSE TO TESTING EXCEPTIONS
+Control Activity Specified
+by the Service Organization
+
+Test Applied by
+the Service Auditor
+
+Employees are required to
+complete security awareness
+training, upon hire and annually
+thereafter, to understand their
+obligations and responsibilities to
+comply with the corporate and
+business unit security policies.
+
+Inspected the security awareness
+training materials and the security
+awareness training completion
+records for a sample of
+employees hired during the period
+to determine that each employee
+sampled completed security
+awareness training upon hire to
+understand their obligations and
+responsibilities to comply with the
+corporate and business unit
+security policies.
+
+6:4
+6.7
+09
+Z
+
+icz
+
+,m
+
+ike
+g@
+
+pla
+
+ne
+ra.
+i
+
+o,
+
+20
+
+25
+
+-10
+
+-15
+
+T2
+2:0
+
+Management has enhanced training monitoring given limitations with LMS (Docebo) reporting
+capabilities to ensure new hire employees and annually required trainings are completed properly.
+Management has enabled additional automated notifications to personnel to complete trainings, in
+addition to manual steps to elevate visibility to people managers. Further, the team is exploring
+alternative LMS providers with more comprehensive reporting and notification functionality.
+
+Gu
+ze
+w
+
+Management’s
+Response:
+
+The test of the control activity
+disclosed that security awareness
+training was not completed for two
+of 25 employees sampled.
+
+ike
+
+CC1.1.5
+CC1.4.4
+CC2.2.2
+
+Test Results
+
+M
+
+Control #
+
+62
+
+

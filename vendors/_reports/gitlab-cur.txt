@@ -1,0 +1,4617 @@
+GITLAB, INC.
+SOC 2 REPORT
+FOR
+GITLAB.COM SOFTWARE AS A SERVICE (SAAS) PLATFORM
+A TYPE 2 INDEPENDENT SERVICE AUDITOR’S REPORT ON CONTROLS
+RELEVANT TO SECURITY, AVAILABILITY, AND CONFIDENTIALITY
+NOVEMBER 1, 2024, TO OCTOBER 31, 2025
+
+Attestation and Compliance Services
+
+Proprietary & Confidential
+Unauthorized use, reproduction, or distribution of this report, in whole or in part, is strictly prohibited.
+
+This report is intended solely for use by the management of GitLab, Inc., user entities of GitLab, Inc.’s
+services, and other parties who have sufficient knowledge and understanding of GitLab, Inc.’s services
+covered by this report (each referred to herein as a “specified user”).
+If the report recipient is not a specified user (herein referred to as a "non-specified user"), use of this
+report is the non-specified user's sole responsibility and at the non-specified user's sole and exclusive
+risk. Non-specified users may not rely on this report and do not acquire any rights against Schellman &
+Company, LLC as a result of such access. Further, Schellman & Company, LLC does not assume any
+duties or obligations to any non-specified user who obtains this report and/or has access to it.
+Unauthorized use, reproduction, or distribution of this report, in whole or in part, is strictly prohibited.
+
+TABLE OF
+CONTENTS
+SECTION 1 INDEPENDENT SERVICE AUDITOR’S
+REPORT .................................................... 1
+SECTION 2 MANAGEMENT’S ASSERTION .................. 5
+SECTION 3 DESCRIPTION OF THE SYSTEM ................ 7
+SECTION 4 TESTING MATRICES ............................... 30
+
+SECTION 1
+INDEPENDENT SERVICE
+AUDITOR’S REPORT
+
+1
+
+INDEPENDENT SERVICE AUDITOR’S REPORT
+To GitLab, Inc.:
+Scope
+We have examined GitLab, Inc.’s (“GitLab” or the “service organization”) accompanying description of its
+GitLab.com multi-tenant software-as-a-service (SaaS) offering (“GitLab.com”), in Section 3, throughout the period
+November 1, 2024, to October 31, 2025, (the “description”), based on the criteria for a description of a service
+organization’s system in DC section 200, 2018 Description Criteria for a Description of a Service Organization’s
+System in a SOC 2® Report (AICPA, Description Criteria) (“description criteria”), and the suitability of the design
+and operating effectiveness of controls stated in the description throughout the period November 1, 2024, to October
+31, 2025, to provide reasonable assurance that GitLab’s service commitments and system requirements were
+achieved based on the trust services criteria relevant to security, availability, and confidentiality (“applicable trust
+services criteria”) set forth in TSP section 100, Trust Services Criteria for Security, Availability, Processing Integrity,
+Confidentiality, and Privacy (AICPA, Trust Services Criteria).
+GitLab uses various subservice organizations for cloud hosting and AI processing services. The description
+indicates that complementary subservice organization controls that are suitably designed and operating effectively
+are necessary, along with controls at GitLab, to achieve GitLab’s service commitments and system requirements
+based on the applicable trust services criteria. The description presents GitLab’s controls, the applicable trust
+services criteria, and the types of complementary subservice organization controls assumed in the design of
+GitLab’s controls. The description does not disclose the actual controls at the subservice organizations. Our
+examination did not include the services provided by the subservice organizations, and we have not evaluated the
+suitability of the design or operating effectiveness of such complementary subservice organization controls.
+The description indicates that complementary user entity controls that are suitably designed and operating
+effectively are necessary, along with controls at GitLab, to achieve GitLab’s service commitments and system
+requirements based on the applicable trust services criteria. The description presents GitLab’s controls, the
+applicable trust services criteria, and the complementary user entity controls assumed in the design of GitLab’s
+controls. Our examination did not include such complementary user entity controls and we have not evaluated the
+suitability of the design or operating effectiveness of such controls.
+Service Organization’s Responsibilities
+GitLab is responsible for its service commitments and system requirements and for designing, implementing, and
+operating effective controls within the system to provide reasonable assurance that GitLab’s service commitments
+and system requirements were achieved. GitLab has provided the accompanying assertion, in Section 2,
+(“assertion”) about the description and the suitability of design and operating effectiveness of controls stated therein.
+GitLab is also responsible for preparing the description and assertion, including the completeness, accuracy, and
+method of presentation of the description and assertion; providing the services covered by the description; selecting
+the applicable trust services criteria and stating the related controls in the description; and identifying the risks that
+threaten the achievement of the service organization’s service commitments and system requirements.
+Service Auditor’s Responsibilities
+Our responsibility is to express an opinion on the description and on the suitability of design and operating
+effectiveness of controls stated in the description based on our examination. Our examination was conducted in
+accordance with attestation standards established by the American Institute of Certified Public Accountants (AICPA)
+and in accordance with International Standard on Assurance Engagements 3000 (Revised), Assurance
+Engagements Other Than Audits or Reviews of Historical Financial Information, issued by the International Auditing
+and Assurance Standards Board. Those standards require that we plan and perform our examination to obtain
+reasonable assurance about whether, in all material respects, the description is presented in accordance with the
+description criteria and the controls stated therein were suitably designed and operated effectively to provide
+reasonable assurance that the service organization’s service commitments and system requirements were
+2
+
+achieved based on the applicable trust services criteria. We believe that the evidence we obtained is sufficient and
+appropriate to provide a reasonable basis for our opinion.
+An examination of the description of a service organization’s system and the suitability of the design and operating
+effectiveness of controls involves the following:
+•
+
+Obtaining an understanding of the system and the service organization’s service commitments and system
+requirements.
+
+•
+
+Assessing the risks that the description is not presented in accordance with the description criteria and that
+controls were not suitably designed or did not operate effectively.
+
+•
+
+Performing procedures to obtain evidence about whether the description is presented in accordance with
+the description criteria.
+
+•
+
+Performing procedures to obtain evidence about whether controls stated in the description were suitably
+designed to provide reasonable assurance that the service organization achieved its service commitments
+and system requirements based on the applicable trust services criteria.
+
+•
+
+Testing the operating effectiveness of controls stated in the description to provide reasonable assurance
+that the service organization achieved its service commitments and system requirements based on the
+applicable trust services criteria.
+
+•
+
+Evaluating the overall presentation of the description.
+
+Our examination also included performing such other procedures as we considered necessary in the circumstances.
+Service Auditor’s Independence and Quality Control
+We are required to be independent and to meet our other ethical responsibilities in accordance with relevant ethical
+requirements relating to the engagement, including the Code of Professional Conduct established by the AICPA
+and the International Ethics Standards Board for Accountants’ Code of Ethics for Professional Accountants.
+We applied the Statements on Quality Control Standards established by the AICPA and, accordingly, maintain a
+comprehensive system of quality control.
+Inherent Limitations
+The description is prepared to meet the common needs of a broad range of report users and may not, therefore,
+include every aspect of the system that individual users may consider important to meet their informational needs.
+There are inherent limitations in the effectiveness of any system of internal control, including the possibility of human
+error and the circumvention of controls.
+Because of their nature, controls may not always operate effectively to provide reasonable assurance that the
+service organization’s service commitments and system requirements are achieved based on the applicable trust
+services criteria. Also, the projection to the future of any conclusions about the suitability of the design and operating
+effectiveness of controls is subject to the risk that controls may become inadequate because of changes in
+conditions or that the degree of compliance with the policies or procedures may deteriorate.
+Description of Test of Controls
+The specific controls we tested, and the nature, timing, and results of those tests are presented in Section 4 of our
+report titled “Testing Matrices.”
+Opinion
+In our opinion, in all material respects:
+•
+
+the description presents GitLab’s GitLab.com system that was designed and implemented throughout the
+period November 1, 2024, to October 31, 2025, in accordance with the description criteria;
+
+•
+
+the controls stated in the description were suitably designed throughout the period November 1, 2024, to
+October 31, 2025, to provide reasonable assurance that GitLab’s service commitments and system
+3
+
+requirements would be achieved based on the applicable trust services criteria, if its controls operated
+effectively throughout that period and if the subservice organizations and the user entities applied the
+complementary controls assumed in the design of GitLab’s controls throughout that period; and
+•
+
+the controls stated in the description operated effectively throughout the period November 1, 2024, to
+October 31, 2025, to provide reasonable assurance that GitLab’s service commitments and system
+requirements were achieved based on the applicable trust services criteria, if complementary subservice
+organization controls and user entity controls assumed in the design of GitLab’s controls operated
+effectively throughout that period.
+
+Restricted Use
+This report, including the description of tests of controls and results thereof in Section 4, is intended solely for the
+information and use of GitLab, user entities of GitLab’s GitLab.com system during some or all of the period of
+November 1, 2024, to October 31, 2025, business partners of GitLab subject to risks arising from interactions with
+the GitLab.com system, practitioners providing services to such user entities and business partners, prospective
+user entities and business partners, and regulators who have sufficient knowledge and understanding of the
+following:
+•
+
+the nature of the service provided by the service organization;
+
+•
+
+how the service organization’s system interacts with user entities, business partners, subservice
+organizations, and other parties;
+
+•
+
+internal control and its limitations;
+
+•
+
+complementary user entity controls and subservice organization controls and how those controls interact
+with the controls at the service organization to achieve the service organization’s service commitments and
+system requirements;
+
+•
+
+user entity responsibilities and how they may affect the user entity’s ability to effectively use the service
+organization’s services;
+
+•
+
+the applicable trust services criteria; and
+
+•
+
+the risks that may threaten the achievement of the service organization’s service commitments and system
+requirements, and how controls address those risks.
+
+This report is not intended to be, and should not be, used by anyone other than these specified parties.
+
+Tampa, Florida
+December 2, 2025
+
+4
+
+SECTION 2
+MANAGEMENT’S
+ASSERTION
+
+5
+
+MANAGEMENT’S ASSERTION
+We have prepared the accompanying description of GitLab’s GitLab.com system, in Section 3, throughout the
+period November 1, 2024, to October 31, 2025, (the “description”) based on the criteria for a description of a service
+organization’s system in DC section 200, 2018 Description Criteria for a Description of a Service Organization’s
+System in a SOC 2® Report (AICPA, Description Criteria), (“description criteria”). The description is intended to
+provide report users with information about the GitLab.com system that may be useful when assessing the risks
+arising from interactions with GitLab’s system, particularly information about system controls that GitLab has
+designed, implemented, and operated to provide reasonable assurance that its service commitments and system
+requirements were achieved based on the trust services criteria relevant to security, availability, and confidentiality
+(“applicable trust services criteria”) set forth in TSP section 100, Trust Services Criteria for Security, Availability,
+Processing Integrity, Confidentiality, and Privacy (AICPA, Trust Services Criteria).
+GitLab uses various subservice organizations for cloud hosting and AI processing services. The description
+indicates that complementary subservice organization controls that are suitably designed and operating effectively
+are necessary, along with controls at GitLab, to achieve GitLab’s service commitments and system requirements
+based on the applicable trust services criteria. The description presents GitLab’s controls, the applicable trust
+services criteria, and the types of complementary subservice organization controls assumed in the design of
+GitLab’s controls. The description does not disclose the actual controls at the subservice organizations.
+The description indicates that complementary user entity controls that are suitably designed and operating
+effectively are necessary, along with controls at GitLab, to achieve GitLab’s service commitments and system
+requirements based on the applicable trust services criteria. The description presents GitLab’s controls, the
+applicable trust services criteria, and the complementary user entity controls assumed in the design of GitLab’s
+controls.
+We confirm, to the best of our knowledge and belief, that:
+•
+
+the description presents GitLab’s GitLab.com system that was designed and implemented throughout the
+period November 1, 2024, to October 31, 2025, in accordance with the description criteria;
+
+•
+
+the controls stated in the description were suitably designed throughout the period November 1, 2024, to
+October 31, 2025, to provide reasonable assurance that GitLab’s service commitments and system
+requirements would be achieved based on the applicable trust services criteria, if its controls operated
+effectively throughout that period, and if the subservice organizations and the user entities applied the
+complementary controls assumed in the design of GitLab’s controls throughout that period; and
+
+•
+
+the controls stated in the description operated effectively throughout the period November 1, 2024, to
+October 31, 2025, to provide reasonable assurance that GitLab’s service commitments and system
+requirements were achieved based on the applicable trust services criteria if complementary subservice
+organization controls and user entity controls assumed in the design of GitLab’s controls operated
+effectively throughout that period.
+
+6
+
+SECTION 3
+DESCRIPTION OF THE
+SYSTEM
+
+7
+
+OVERVIEW OF OPERATIONS
+Company Background
+Founded in 2011, GitLab is an all-remote company with over 2,500 team members in more than 60 countries.
+GitLab is an open core company which develops software for the software development lifecycle used by more than
+100,000 organizations, 50 million estimated registered users, and has an active community of more than 3,000
+contributors. GitLab openly shares information and is public by default, meaning projects, strategy, direction, and
+metrics are discussed openly and can be found within https://about.gitlab.com. GitLab’s core values are
+Collaboration, Results, Efficiency, Diversity, Inclusion & Belonging, Iteration, and Transparency (CREDIT) and
+these form the company’s culture.
+GitLab’s mission is to enable everyone to contribute and to co-create the software that powers our world.
+Description of Services Provided
+Service
+GitLab.com
+
+Description
+GitLab is a comprehensive, intelligent DevSecOps platform.
+With Secure Source Code Management, Advanced continuous integration (CI) /
+continuous deployment (CD), and enhanced Developer Experience features, GitLab
+enables development, quality assurance (QA), security, and operations teams to
+collaborate on a single platform and deliver secure software faster.
+GitLab.com is the multi-tenant Software as a Service (SaaS) version of GitLab that
+users can access directly through their web browser without needing to install or
+maintain any infrastructure.
+GitLab.com is available in three tiers, free, Premium and Ultimate, and licensed on a
+per user basis.
+
+GitLab Duo
+
+GitLab Duo is GitLab's artificial intelligence (AI)-powered assistant integrated
+throughout the GitLab platform to help accelerate software development and
+operations workflows.
+It includes key features such as code suggestions and chat, test generation, review
+summaries, vulnerability resolution, and code refactoring capabilities.
+GitLab Duo aims to make developers more productive by providing AI assistance for
+routine tasks, allowing them to focus on more complex, creative problem-solving
+work.
+GitLab Duo core AI capabilities are included in GitLab Premium and Ultimate, and
+advanced AI capabilities are offered in GitLab Duo Pro and Enterprise.
+
+8
+
+Service
+GitLab Duo Agent
+Platform
+
+Description
+GitLab Duo Agent Platform (DAP) is GitLab's next-generation AI orchestration system
+that enables both human developers and AI agents to collaborate throughout the
+entire DevSecOps lifecycle.
+Duo Agent Platform enables autonomous task execution, customizable AI agents,
+and agentic workflows. It provides extensibility and integration with existing tools
+using standard protocols such as Model Context Protocol (MCP). By utilizing GitLab’s
+unified datastore, Duo Agent Platform has superior contextual understanding and
+aims to deliver 10x productivity gains by scaling teams with hundreds of AI agents
+that can automate routine tasks across the software development lifecycle.
+Duo Agent Platform features use consumption-based pricing using GitLab Credits.
+
+PRINCIPAL SERVICE COMMITMENTS AND SYSTEM REQUIREMENTS
+GitLab designs its processes and procedures related to GitLab.com to meet its objectives. Those objectives are
+based on the service commitments that GitLab makes to customers, applicable laws, and regulations, and the
+financial, operational, and compliance requirements that GitLab has established for its services.
+Security, availability, and confidentiality commitments to user entities are documented and communicated in
+GitLab’s privacy and terms of service, as well as in the description of the service offering provided on GitLab’s
+website. The principal security, availability, and confidentiality commitments are standardized and include the
+following:
+•
+
+maintain commercially reasonable administrative, technical, and organizational measures that are designed
+to protect customer data;
+
+•
+
+establish escalation procedures with customers;
+
+•
+
+encryption of data at rest and in transit;
+
+•
+
+encrypt confidential data stored within the database utilizing advanced encryption standard (AES)
+encryption;
+
+•
+
+maintain security procedures that are consistent with applicable industry standards;
+
+•
+
+notify customers of new releases and patches applied to production environments via release notes;
+
+•
+
+not use confidential information for any purpose other than the purposes related to the customer agreement;
+
+•
+
+not disclose, make public or authorize any disclosure or publication of confidential information, except as
+expressly agreed to in the confidentiality agreement or otherwise in writing by the disclosing party;
+
+•
+
+document and enforce confidentiality agreements with third parties prior to sharing any confidential data;
+
+•
+
+review documentation from third-party providers to help ensure that they are in compliance with security
+and confidentiality policies;
+
+•
+
+maintain procedures to support account deletion requests;
+
+•
+
+maintain a business continuity and disaster recovery program;
+
+•
+
+restrict system access to authorized personnel only;
+
+•
+
+regularly assess security programs and processes;
+
+•
+
+identification and remediation of security incidents / events;
+
+9
+
+•
+
+regularly update systems;
+
+•
+
+maintain the security of the information system from unauthorized access, use, modification, disclosure,
+destruction, threats, or hazards;
+
+•
+
+develop, implement, and maintain an information security program designed to protect the security,
+integrity, and confidentiality of the system and its information;
+
+•
+
+enable timely, reliable, and continuous access to, and use of, information and systems to support
+operations;
+
+•
+
+provide customers with access to technical support engineers for assistance in the proper installation and
+use of the software, and help resolve software problems;
+
+•
+
+availability of Gitlab.com will be measured, monitored, and reported on; and
+
+•
+
+maintain reasonable resiliency for data, compute, and network services.
+
+System Requirements
+GitLab’s operational requirements that support the achievement of service commitments are communicated in
+GitLab’s policies and procedures and agreements with user entities. GitLab’s policies and procedures define an
+organization-wide approach to how the system and data is protected. These include policies around how the service
+is designed and developed, how the system is operated, how the internal business systems and networks are
+managed, and how team members are hired and trained. In addition to these policies, standard operating
+procedures have been documented on how to carry out specific manual and automated processes required in the
+operation and development of GitLab.com.
+In accordance with GitLab’s assertion, and the description criteria, the aforementioned service commitments and
+requirements are those principal service commitments and requirements common to the broad base of users of the
+system and may therefore not fully address the specific service commitments and requirements made to all system
+users, in each individual case.
+
+COMPONENTS OF THE SYSTEM USED TO PROVIDE THE SERVICE
+System Boundaries
+A system is designed, implemented, and operated to achieve specific business objectives in accordance with
+management-specified requirements. The purpose of the system description is to delineate the boundaries of the
+system, which includes the services outlined above and the five components described below: infrastructure,
+software, people, procedures, and data.
+Infrastructure and Software
+GitLab.com is based on a multi-tenant, multi-user SaaS architecture built on the Google Cloud Platform (GCP) and
+is designed to integrate with multiple DevSecOps toolchains. GitLab does not own or maintain the hardware located
+in GCP data centers and operates under a shared security responsibility model. GCP is responsible for the security
+of the underlying cloud infrastructure (e.g., physical infrastructure, geographical regions, availability zones, edge
+locations), and GitLab is responsible for securing the platform deployed in GCP (e.g., customer data, applications,
+identity access management, operating system and network firewall configuration, network traffic, server-side
+encryption).
+At its core, GitLab.com is largely deployed via Google Kubernetes Engine (GKE) using the GitLab.com Cloud Native
+Helm Chart, virtual machines, and datastore services managed with Terraform. GitLab utilizes GCP firewall rules
+to allow or deny traffic to and from their virtual machine instances based on configurations specified by GitLab.com.
+GCP firewall rules are created and managed through Chef. GitLab utilizes Cloudflare for web application firewall
+services to filter hypertext transfer protocol (HTTP) specific traffic. Additionally, GitLab Duo / DAP’s AI capabilities
+10
+
+are provided and hosted by GCP Vertex, Anthropic, Fireworks.ai, and OpenAI. Below is a graphical representation
+of GitLab.com Architecture.
+
+The in-scope infrastructure consists of multiple applications, operating system platforms, and databases, as shown
+in the table below:
+Primary Infrastructure
+Production
+Application
+
+Business Function Description
+
+Compute
+Engine
+
+Resizable compute capacity through virtual
+machines.
+
+GKE
+
+Container orchestration and management.
+
+PostgreSQL
+
+Production database supporting Gitlab.com.
+
+Cloud Storage
+
+Scalable data storage, backup, and redundancy.
+
+Cloud Identity
+
+Secure user and resource management, enabling
+controlled access to GCP services.
+
+Okta
+
+Identity management, authentication, and user
+authorization for accessing the production
+environment.
+
+Operating System
+Platform
+
+Physical
+Location
+
+GCP
+
+GCP
+(us-east1)
+
+Okta
+
+Okta
+
+11
+
+Supporting Software
+The following secondary infrastructure and supporting software is utilized in support of the delivery of GitLab.com
+or in the performance of controls included in this report:
+•
+
+ops.gitlab.net - repositories for managing GitLab.com infrastructure and operational tasks
+
+•
+
+Bastion Hosts - gateways allowing administrators to securely manage infrastructure
+
+•
+
+GitLab Runners - hosted agents that execute GitLab CI / CD jobs in a pipeline
+
+•
+
+Chef - configuration management solution utilized to provision, configure, and manage production
+infrastructure
+
+•
+
+Teleport - access management platform for temporary access to the rails or database consoles
+
+•
+
+Devo - security event monitoring for the production environment and provides automated alerts
+
+•
+
+Prometheus - capacity metrics and monitoring for the production environment
+
+•
+
+Grafana / Mimir - availability and performance metrics and monitoring for the production environment
+
+•
+
+AlertManager - tool that processes availability, performance, and capacity alerts
+
+•
+
+PagerDuty - alerting system utilized to deliver alerts to on-call personnel when predefined events occur
+
+•
+
+Incident.io - availability, performance, and capacity related incidents management tool
+
+•
+
+Pingdom - uptime monitoring of the production environment
+
+•
+
+Wiz.io - cloud-based platform utilized to conduct automated continuous vulnerability scanning and malicious
+activity monitoring of the production environment
+
+•
+
+Terraform - infrastructure as code to deploy, monitor, and maintain production infrastructure (Kubernetes)
+
+•
+
+Cloudflare - host of Domain Name Service (DNS) and Web Application Firewall (WAF)
+
+•
+
+CrowdStrike - endpoint detection and response
+
+•
+
+SentinelOne - endpoint detection and response (for EU Work Council country team members)
+
+•
+
+Jamf - endpoint management for MacOS devices
+
+•
+
+Fleet - endpoint management for Linux and Windows devices
+
+•
+
+AI Gateway - serves as an AI abstraction layer and a unified integration for Duo and the third-party Large
+Language Models (LLMs) utilized
+
+•
+
+Redis - High availability/temporary caching database supporting PostgreSQL databases
+
+•
+
+Patroni - Management layer that ensures PostgreSQL databases stay highly available
+
+People
+GitLab is an all-remote company with team members located in more than 60 countries around the world. This
+geographic diversity allows fault tolerance resistance to disruptions in business continuity.
+The following GitLab departments are in-scope for this report:
+•
+
+Executive and management – responsible for the overall operation of GitLab.com. Direct and oversee the
+operation, maintenance, implementation, development, and monitoring of the system.
+
+•
+
+Security – responsible for the security of GitLab.com, including the triaging and responding to security
+incidents.
+
+•
+
+Infrastructure – responsible for the availability, reliability, performance, and scalability of GitLab.com.
+
+•
+
+Engineering – responsible for building new features for the GitLab.com application.
+
+12
+
+•
+
+Business Technology – responsible for creating new processes, workflows, systems, and documentation
+for various interdepartmental groups. Responsible for guiding systems, workflows, and processes as well
+as being a singular reference point for corporate operational management.
+
+•
+
+People Group – responsible for team-member satisfaction, benefits, code of conduct, and the overall hiring
+processes and procedures, including onboarding, offboarding, and role changes.
+
+•
+
+Security Assurance – responsible for the assessment of the effectiveness of security risk management,
+control, and governance processes, and to provide insight and recommendations that can enhance these
+processes. Responsible for GitLab’s operational risk management program, including risk identification,
+escalation, and treatment plans.
+
+•
+
+Legal – responsible for ensuring that GitLab remains in compliance with regulatory requirements, including
+requirements related to confidentiality and privacy of customer data.
+
+Procedures
+Access, Authentication, and Authorization
+Documented information security policies and procedures defining key roles and responsibilities, risk management
+governing principles, and design principles to protect systems and data are in place and enforced by GitLab.
+The Physical Security Standard for Company Assets is established as part of the controlled document process to
+define requirements for protecting assets in remote environments. The standard encompasses endpoint protection
+through system configurations, device security practices, and travel security requirements to ensure comprehensive
+physical asset protection across GitLab's distributed workforce.
+Access to production resources is controlled using permissions associated with GitLab staff and strictly controlled
+system accounts. Chef and Terraform are utilized as the infrastructure management and configuration management
+tools to help ensure security hardening and baseline configuration standards have been established on production
+servers. Infrastructure user accounts are propagated to the production servers, based on role, using Chef. Just-intime access to production servers for users outside of the infrastructure team is granted via Teleport. Furthermore,
+the Chef client running on production servers are configured to check in with the Chef server every 30-minutes to
+help ensure that server configurations are up to date with the latest approved Chef cookbooks and recipes.
+In order to access the production environment from the back end, users are required to authenticate into one of the
+bastion hosts, which are load-balanced for redundancy, via a secure shell (SSH) connection and multi-factor
+authentication. Once authenticated to a bastion host, users can initiate an SSH session to the production servers
+as well as the production databases.
+In order to access the production environment from the front-end via the GCP console, multi-factor authentication
+is required for users through Okta utilizing their Okta credentials, as well as entering either a one-time generated
+security code or WebAuthn / FIDO2 biometric verification. GitLab requires unique identifiers for identification and
+authorization purposes to the production environment. Authentication to production systems is protected by
+passwords that comply with GitLab's password standards.
+GitLab utilizes role-based access privileges to assign and segregate access to data in the production systems.
+Administrator access to the production systems is granted based on job roles and responsibilities and limited to
+user accounts accessible by authorized personnel.
+Access Requests, Revocations, and Reviews
+GitLab operates its access management under the principle of least privilege, wherein a team member should only
+be granted the minimum necessary access to perform their function. Baseline role-based entitlement access
+runbooks and issue templates are utilized for access management. For certain roles, role-based entitlement
+templates have been established and are used during the onboarding process. If team members require additional
+access to production systems outside of their role-based entitlement templates, an access request issue is
+submitted, reviewed by the system owner, and approved by management before access is granted. If a team
+member already has access to production systems and requires different access, an access modification request
+issue is submitted, reviewed, and approved prior to being provisioned.
+13
+
+In the event of a termination or a job transfer of an information system user, the people operation management
+system sends a notification to relevant personnel, or systems. As a component of the team member termination
+process, production system access is revoked for team members upon termination when their Okta access is
+removed. All system access will be revoked within 5 business days of termination. Laptops are securely wiped
+through authorized tools during the termination process to ensure confidential data cannot be recovered. All wipes
+are performed by authorized IT team members on or before the employee's last day of employment and
+documented in a termination issue.
+GitLab performs account and access reviews of in-scope systems on a quarterly basis depending on system risk.
+Corrective action is taken where applicable.
+Change Management
+A Change Management Policy is established as part of the controlled document process to define requirements
+addressing the documentation, testing, review, approval, and implementation of changes to systems and supporting
+infrastructure. GitLab utilizes a continuous delivery model for software development and documented policies and
+procedures are in place to guide personnel in change control practices. Prior to introducing changes into production,
+approval from authorized personnel is required based on the change description, impact of change, and test results.
+GitLab.com version control software is utilized to manage source code and provide rollback capabilities. Approval
+settings are configured on projects to require independent review prior to merging code, preventing users from both
+developing and implementing code to the production environment. Access to modify source code is restricted to
+user accounts accessible by authorized personnel.
+GitLab.com’s change tracking system is in place to centrally maintain, manage, and monitor application and
+infrastructure changes from development through implementation. Upon initiation of a merge request, GitLab.com
+is configured to require code review and approval from at least one individual independent of the individual who
+initiated the merge request. Various QA / smoke testing and source code security checks are performed by
+GitLab.com’s continuous integration tool prior to merging the code commits within the merge request. Configuration
+settings enforcing change approval workflows are monitored for unauthorized changes and corrective actions are
+taken to restore security controls when deviations are detected.
+Separate environments exist for development, staging, and production. Development and testing activities are
+performed in distinct environments that are logically separate from production to help ensure that changes made
+within the development and staging environments do not affect the production environment.
+Major software releases are developed using the DevSecOps Lifecycle (plan, create, verify, package, secure, and
+release). Each phase is followed prior to introducing changes into the production environment. Release notes are
+available and communicated to internal and external system users through the GitLab handbook.
+Data Backup and Disaster Recovery
+A business continuity plan is established as part of the controlled document process to define procedures for
+maintaining critical operations during disruptions and recovering from unexpected events. Tabletop exercises are
+performed to evaluate business continuity procedures and response readiness on an annual basis. GitLab.com
+backups are securely stored in an alternate location from source data. Production backup data is replicated to
+multiple regions to help ensure redundancy and availability. Automated restoration testing of backup files is
+performed through the CI / CD pipeline on a daily basis. A disaster recovery simulation is conducted annually to
+evaluate recovery procedures and response readiness, with results documented.
+Incident Response
+Security incidents are defined as any violation, or threat of violation, of GitLab security, acceptable use, or other
+relevant policies. Infrastructure incidents are anomalous conditions that result in, or may lead to, service degradation
+or outages. These events often require human intervention to avert disruptions or restore service to operational
+status
+
+14
+
+Documented incident response procedures for reporting incidents are provided to guide users in identifying and
+reporting system failures, incidents, concerns, and other complaints. The procedures define the types of incidents
+that need to be managed, tracked, and reported, including:
+•
+
+Procedures for the identification and management of incidents
+
+•
+
+Procedures for the resolution of confirmed incidents
+
+•
+
+Key incident response systems
+
+•
+
+Incident coordination and communication strategy
+
+•
+
+Contact method for internal and external parties to report incidents
+
+•
+
+Support team contact information
+
+•
+
+Notification to relevant management in the event of a security breach
+
+•
+
+Provisions for updating and communicating the plan
+
+•
+
+Provisions for training of support team
+
+•
+
+Preservation of incident information
+
+•
+
+Timeline of incident
+
+•
+
+Action items
+
+•
+
+Lessons learned
+
+•
+
+Management review and approval, annually, or when major changes to the organization occur
+
+Confirmed incidents are tracked in GitLab.com, assigned a priority level and managed to resolution. If applicable,
+GitLab coordinates the incident response with business contingency activities. Security personnel complete incident
+summary issues for confirmed severity 1 security incidents that include the incident timeline, action items, and
+lessons learned. Corrective measures or changes that occur as a result of incidents and identified deficiencies
+follow the incident management process phases. If a production change is required, the standard change
+management process is followed.
+Data
+Data within GitLab.com is generated and uploaded by GitLab customers who submit information through
+GitLab.com. Data at rest and in transit over public networks is encrypted according to GitLab policy. A record
+retention and disposal policy defines practices to ensure data, including customer records, is properly stored and
+erased when no longer needed, and is reviewed annually.
+Customers have the ability to retrieve reports related to their respective environments through GitLab.com. If an
+error is identified, customers contact customer support and provide feedback to correct and resolve the issues.
+Significant events and conditions are captured in the system and application logs. GitLab.com is configured to allow
+customers to delete their own data when no longer needed. Additionally, procedures are in place to support account
+deletion requests.
+GitLab Duo and DAP relies on subservice organizations Anthropic, Vertex AI (GCP), Fireworks.ai, and OpenAI for
+its LLMs. Integration services were built for all providers, and they are contractually obligated to have zero data
+retention with the exception of Fireworks.ai prompt caching which can be opted out of. All connections to LLM
+providers are secured with transport layer security (TLS) / HTTPS encryption according to GitLab policy to ensure
+data in transit is encrypted over public networks.
+GitLab.com data is categorized according to the data classification standard and is protected according to its
+classification. The standard defines requirements to properly secure and restrict data to authorized personnel based
+on classification, and is reviewed annually. The policy has four categories:
+•
+
+Red – restricted and must remain confidential.
+
+•
+
+Orange – data subject to laws and regulation that should not be made generally available.
+15
+
+•
+
+Yellow – data and information that should not be made publicly available that is created and used in the
+normal course of business.
+
+•
+
+Green – data that is publicly shareable and does not expose GitLab or its customers to any harm or material
+impact.
+
+The following table describes the information used and supported by the system.
+Data Used and Supported by the System
+Data Description
+
+Data Reporting
+
+Classification
+
+GitLab customer data
+
+Available through GitLab.com
+
+Non-public data: Red
+
+Metrics for NGINX, Gitaly, Postgres,
+Rails-app, Registry, and service
+platform
+
+Internally available through
+monitoring dashboards
+
+Yellow
+
+GitLab corporate data
+
+Available through GitLab.com
+
+Non-public data: Red, Orange,
+and Yellow
+Public data: Green
+
+Customer data is appropriately segregated, ensuring customers only have access to their own data. GitLab.com
+implements logical access controls and multi-tenant architecture isolation through a namespace-based segregation
+model where each customer is assigned a unique top-level group (namespace) upon onboarding. All customer
+projects, subgroups, and data elements are associated with their respective Namespace ID, creating logical
+boundaries that separate one customer's data from another. Authorization checks are performed at the application
+level to verify user access permissions before granting access to any data, ensuring complete data isolation
+between customers.
+Significant Changes During the Period
+Change
+
+Description of Change
+
+Subservice Organization
+
+Two new subservice organizations were added to the scope of the examination.
+GitLab Duo / DAP began leveraging Fireworks.ai as of December 4, 2024, and
+OpenAI as of September 26, 2025, as subservice organizations for its LLMs.
+
+Subservice Organizations
+The cloud hosting services provided by GCP and AI processing services provided by Anthropic, GCP Vertex,
+Fireworks.ai, and OpenAI were not included within the scope of this examination.
+The following tables presents the applicable trust services criteria that are intended to be met by controls at GCP,
+GCP Vertex AI, Anthropic, Fireworks.ai, and OpenAI alone or in combination with controls at GitLab, and the types
+of controls expected to be implemented at GCP, GCP Vertex AI, Anthropic, Fireworks.ai, and OpenAI to achieve
+GitLab’s principal service commitments and system requirements based on the applicable trust services criteria.
+Ref
+
+Control Activities Expected to be Implemented by GCP and Vertex AI
+(covered in GCP’s SOC 2 Type 2 Report)
+
+Applicable Trust
+Services Criteria
+
+CSOC.01
+
+GCP is responsible for ensuring access to Cloud Storage server-side
+encryption keys is restricted to authorized personnel.
+
+CC6.1, C1.1
+
+CSOC.02
+
+GCP is responsible for ensuring data within GCP is stored in an encrypted
+at rest format.
+
+CC6.1, C1.1
+
+16
+
+Ref
+
+Control Activities Expected to be Implemented by GCP and Vertex AI
+(covered in GCP’s SOC 2 Type 2 Report)
+
+Applicable Trust
+Services Criteria
+
+CSOC.03
+
+GCP is responsible for implementing controls to manage logical access to
+the underlying network and virtualization management software for its
+cloud hosting services, and AI platforms where GitLab systems reside.
+
+CC6.1 – CC6.3,
+CC6.6
+
+CSOC.04
+
+GCP is responsible for restricting physical access to data center facilities,
+backup media, and other system components including firewalls, routers,
+and servers.
+
+CC6.4 – CC6.5
+
+CSOC.05
+
+GCP is responsible for implementing controls for the transmission,
+movement, and removal of the underlying storage devices for its cloud
+hosting services.
+
+CC6.7
+
+CSOC.06
+
+GCP is responsible for managing logical access to the underlying network,
+virtualization management, and storage devices for its cloud hosting
+services where the system resides.
+
+CC7.2
+
+CSOC.07
+
+GCP is responsible for ensuring capacity demand controls are in place to
+meet GitLab’s availability commitments and requirements.
+
+A1.1
+
+CSOC.08
+
+GCP is responsible for ensuring environmental protection controls are in
+place to meet GitLab’s availability commitments and requirements.
+
+A1.2
+
+Ref.
+
+Control Activities Expected to be Implemented by Anthropic
+
+Applicable Trust
+Services Criteria
+
+CSOC.09
+
+Anthropic is responsible for ensuring data within Anthropic is stored in an
+encrypted at rest format.
+
+CC6.1, C1.1
+
+CSOC.10
+
+Anthropic is responsible for implementing controls to manage logical
+access to their AI platforms where GitLab data resides.
+
+CC6.1 – CC6.3,
+CC6.6
+
+CSOC.11
+
+Anthropic is responsible for restricting physical access to data center
+facilities, backup media, and other system components including firewalls,
+routers, and servers.
+
+CC6.4 – CC6.5
+
+CSOC.12
+
+Anthropic is responsible for implementing controls for the transmission,
+movement, and removal of the underlying storage devices for their cloud
+hosting services.
+
+CC6.7
+
+CSOC.13
+
+Anthropic is responsible for managing logical access to the underlying
+network, virtualization management, and storage devices for their cloud
+hosting services where the system resides.
+
+CC7.2
+
+CSOC.14
+
+Anthropic is responsible for ensuring capacity demand controls are in place
+to meet GitLab’s availability commitments and requirements.
+
+A1.1
+
+CSOC.15
+
+Anthropic is responsible for ensuring environmental protection controls are
+in place to meet GitLab’s availability commitments and requirements.
+
+A1.2
+
+Ref.
+
+Control Activities Expected to be Implemented by Fireworks.ai
+
+Applicable Trust
+Services Criteria
+
+CSOC.16
+
+Fireworks.ai is responsible for ensuring data within Fireworks.ai is stored in
+an encrypted at rest format.
+
+CC6.1, C1.1
+
+CSOC.17
+
+Fireworks.ai is responsible for implementing controls to manage logical
+access to their AI platforms where GitLab data resides.
+
+CC6.1 – CC6.3,
+CC6.6
+
+CSOC.18
+
+Fireworks.ai is responsible for restricting physical access to data center
+facilities, backup media, and other system components including firewalls,
+routers, and servers.
+
+CC6.4 – CC6.5
+
+17
+
+Ref.
+
+Control Activities Expected to be Implemented by Fireworks.ai
+
+Applicable Trust
+Services Criteria
+
+CSOC.19
+
+Fireworks.ai is responsible for implementing controls for the transmission,
+movement, and removal of the underlying storage devices for their cloud
+hosting services.
+
+CC6.7
+
+CSOC.20
+
+Fireworks.ai is responsible for managing logical access to the underlying
+network, virtualization management, and storage devices for their cloud
+hosting services where the system resides.
+
+CC7.2
+
+CSOC.21
+
+Fireworks.ai is responsible for ensuring capacity demand controls are in
+place to meet GitLab’s availability commitments and requirements.
+
+A1.1
+
+CSOC.22
+
+Fireworks.ai is responsible for ensuring environmental protection controls
+are in place to meet GitLab’s availability commitments and requirements.
+
+A1.2
+
+Ref.
+
+Control Activities Expected to be Implemented by OpenAI
+
+Applicable Trust
+Services Criteria
+
+CSOC.23
+
+OpenAI is responsible for ensuring data within OpenAI is stored in an
+encrypted at rest format.
+
+CSOC.24
+
+OpenAI is responsible for implementing controls to manage logical access
+to their AI platforms where GitLab data resides.
+
+CC6.1 – CC6.3,
+CC6.6
+
+CSOC.25
+
+OpenAI is responsible for restricting physical access to data center
+facilities, backup media, and other system components including firewalls,
+routers, and servers.
+
+CC6.4 – CC6.5
+
+CSOC.26
+
+OpenAI is responsible for implementing controls for the transmission,
+movement, and removal of the underlying storage devices for their cloud
+hosting services.
+
+CC6.7
+
+CSOC.27
+
+OpenAI is responsible for managing logical access to the underlying
+network, virtualization management, and storage devices for their cloud
+hosting services where the system resides.
+
+CC7.2
+
+CSOC.28
+
+OpenAI is responsible for ensuring capacity demand controls are in place
+to meet GitLab’s availability commitments and requirements.
+
+A1.1
+
+CSOC.29
+
+OpenAI is responsible for ensuring environmental protection controls are in
+place to meet GitLab’s availability commitments and requirements.
+
+A1.2
+
+CC6.1, C1.1
+
+CONTROL ENVIRONMENT
+The control environment at GitLab is the foundation for the other areas of internal control. It sets the tone of the
+organization and influences the control consciousness of its personnel. The components of the control environment
+factors include the integrity and ethical values; management’s commitment to competence; its organizational
+structure; the assignment of authority and responsibility; and the oversight and direction provided by the board of
+directors and operations management.
+Integrity and Ethical Values
+The effectiveness of controls cannot rise above the integrity and ethical values of the people who create, administer,
+and monitor them. Integrity and ethical values are essential elements of GitLab’s control environment, affecting the
+design, development, administration, and monitoring of other components. Integrity and ethical behavior are the
+18
+
+product of GitLab’s ethical and behavioral standards, how they are communicated, and how they are reinforced in
+practices.
+They include management’s actions to remove or reduce incentives and temptations that might prompt personnel
+to engage in dishonest, illegal, or unethical acts. They also include the communication of entity values and
+behavioral standards to personnel through policy statements and codes of conduct as well as by example. Specific
+control activities that GitLab has implemented in this area are described below:
+•
+
+Executive leadership develops and communicates a strategic plan that defines organizational objectives
+and priorities on an annual basis. Departments align their activities to support achievement of these
+common business goals.
+
+•
+
+The code of business conduct and ethics is signed upon hire and acknowledged annually thereafter.
+
+•
+
+A proprietary information and assignment agreement is signed upon hire containing obligations not to
+disclose confidential information, including client information, to unauthorized parties.
+
+•
+
+Background checks are performed as a component of the hiring process.
+
+•
+
+Ethics and compliance reporting channels, including a hotline, dedicated e-mail address, and website, are
+accessible internally for reporting suspected violations.
+
+•
+
+The code of business conduct and ethics includes a sanctions policy for personnel who violate the code,
+including potential termination for noncompliance.
+
+Board of Directors and Audit Committee Oversight
+GitLab’s control consciousness is influenced by the board of directors. Attributes include the board of directors’
+independence from management, the experience and stature of its members, the extent of its involvement and
+scrutiny of activities, the appropriateness of its actions, and the degree to which difficult questions are raised and
+pursued with management.
+The board of directors establishes and maintains a set of bylaws which describes their responsibilities and oversight
+of management's system of internal control.
+The audit committee performs oversight functions and meets quarterly with members of management to review the
+company’s business and operations, including effectiveness of internal controls, operations, risk assessments, and
+fraud or other matters requested by the board or suggested by management.
+Organizational Structure and Assignment of Authority and Responsibility
+The organizational structure of GitLab, which provides the overall framework for planning, directing, controlling, and
+implementing the company's operations, is divided into functional business units. This structure assigns roles and
+responsibilities for efficient operations, staffing, and segregation of duties where applicable. GitLab operates under
+the general direction and supervision of its board of directors.
+GitLab’s assignment of authority and responsibility includes factors such as how authority and responsibility for
+operating activities are assigned and how reporting relationships and authorization hierarchies are established. It
+also includes policies relating to business practices, knowledge and experience of key personnel, and resources
+provided for carrying out duties. In addition, it includes policies and communications directed at ensuring that
+personnel understand the entity’s objectives, know how their individual actions interrelate and contribute to those
+objectives, and recognize how and for what they will be held accountable. Specific control activities that GitLab has
+implemented in this area are described below:
+•
+
+A formal organizational structure is established to communicate defined key areas of authority,
+responsibility, and lines of reporting to support security, availability, and confidentiality commitments.
+
+•
+
+Defined roles and responsibilities are established for specific job families.
+
+19
+
+•
+
+A Security Operational Risk Management Program is established as part of the controlled document
+process to define requirements for identifying, analyzing, treating, monitoring, and reporting on security
+risks that affect business objectives.
+
+Commitment to Competence
+GitLab’s management defines competence as the knowledge and skills necessary to accomplish tasks that define
+team members’ roles and responsibilities. GitLab’s commitment to competence includes management’s
+consideration of the competence levels for particular jobs and how those levels translate into requisite skills and
+knowledge. Specific control activities that GitLab has implemented in this area are described below:
+•
+
+Security awareness training is required to be completed upon hire and on an annual basis thereafter for
+GitLab team members. The training covers topics including organizational security policies, industry
+security best practices, and relevant threat landscapes applicable to job responsibilities.
+
+•
+
+Adherence to security awareness training requirements is evaluated on an annual basis.
+
+•
+
+Performance evaluations are conducted annually to review job performance against responsibilities and
+requirements for the role.
+
+•
+
+The security division monitors the security impact of emerging technologies and the impact of changes to
+applicable laws and regulations through memberships in relevant communities and security organizations.
+
+RISK ASSESSMENT
+Objective Setting
+The risk assessment program involves a dynamic process that includes identification and analysis of risks that pose
+a threat to the organization’s ability to perform the in-scope services. The process first starts with determining the
+organization’s objectives as these objectives are key to understanding the risks and allows identification and
+analysis of those risks relative to the objectives. Executive leadership develops and communicates the strategic
+plan that outlines the organization's objectives and updates the plan annually. Departments then align their activities
+to support achievement of these common business goals with the key organizational risks taken into consideration.
+Risk Identification and Analysis
+A Security Operational Risk Management Program is established as part of the controlled document process to
+define requirements for identifying, analyzing, treating, monitoring, and reporting on security risks that affect
+business objectives.
+GitLab has considered significant interactions between itself and relevant external parties and risks that could affect
+the organization's ability to provide secure and reliable service to its user entities. GitLab performs a risk assessment
+of GitLab's technical environment at least annually and shares these results with Security Leadership. Treatment
+of identified risks is prioritized or accepted based on risk rating.
+Risk analysis is an essential process to GitLab’s success. It includes identification of key business processes where
+potential exposures of some consequence exist, as well as significant changes to those processes. GitLab has
+implemented a process whereby the likelihood and impact of various risks to the in-scope services have been
+assessed, as it relates to organizational output, brand reputation, business continuity, customers and stakeholders,
+legal, regulatory, and financial impact. Once the significance and likelihood of risk have been assessed, GitLab
+considers how the risk should be managed. This involves judgment based on assumptions about the risk, impact
+to confidentiality, integrity and availability, and reasonable analysis of costs associated with reducing the level of
+risk. GitLab assigns risk levels to the identified risks, according to the following three categories: Low, Moderate,
+and High.
+20
+
+Necessary actions are taken to reduce the significance or likelihood of the risk occurring, and identification of the
+control activities necessary to mitigate the risk. Specific control activities that GitLab has implemented in this area
+are described below:
+•
+
+Both adversarial threat sources, such as fraud and insider threats, and non-adversarial threat sources, such
+as errors and omissions and natural disasters, are considered as part of the risk assessment process.
+
+•
+
+Third-party security risk assessments are completed during the procurement process for new and existing
+vendors following the documented third-party risk management procedures.
+
+•
+
+Third-party attestation reports are reviewed on an annual basis for critical service providers to assess if
+vendors align with the organization's security, availability, and confidentiality commitments.
+
+•
+
+Vulnerability scans are performed to identify threats and assess their potential impact to the system on a
+continuous basis. Results are evaluated and remediated according to severity level.
+
+•
+
+Penetration testing is performed by an independent third-party to identify threats and assess their potential
+impact on an annual basis. Results are evaluated and remediated according to severity level.
+
+Risk Factors
+Management considers risks that can arise from both external and internal factors including the following:
+External Factors
+•
+
+Technological developments
+
+•
+
+Changing customer needs or expectations
+
+•
+
+Competition that could alter marketing or service activities
+
+•
+
+New legislation and regulation that could force changes in policies and strategies
+
+•
+
+Natural catastrophes that could lead to changes in operations or information systems
+
+•
+
+Economic changes that could have an impact on management decisions
+
+Internal Factors
+•
+
+Significant changes in policies, processes, or personnel
+
+•
+
+Types of fraud, fraud incentives, pressures, opportunities, attitudes, and rationalizations for team members
+
+•
+
+A disruption in information systems processing
+
+•
+
+The quality of personnel hired, and methods of training utilized
+
+•
+
+Changes in management responsibilities
+
+Potential for Fraud
+Management considers the potential for fraud when assessing the risks to the company’s objectives and realizes
+that the potential for fraud can occur when team members are motivated by certain pressures or incentivized to
+commit fraud. The absence of controls, or ineffective controls, provides an opportunity for fraud when combined
+with an incentive to commit fraud; therefore, documented policies and procedures are in place to guide personnel
+in identifying the potential for fraud as part of the risk assessment process.
+Risk Mitigation
+Risk mitigation activities include the ability to identify, select, and develop activities that sufficiently meet the
+identified risks. However, the relative costs versus benefits are also to be considered when determining the risk
+mitigation activities.
+21
+
+The organization has documented policies and procedures to guide personnel throughout this process. The risk
+assessment and mitigation activities also address the risks arising from potential business disruptions.
+GitLab also has insurance policies in place to offset financial impact in the event of business disruption or loss.
+
+TRUST SERVICES CRITERIA AND RELATED CONTROL ACTIVITIES
+Integration with Risk Assessment
+Along with assessing risks, management has identified and put into effect actions needed to address those risks.
+In order to address risks, control activities have been placed into operation to help ensure that the actions are
+carried out properly and efficiently. Control activities serve as mechanisms for managing the achievement of the
+security, availability, and confidentiality categories.
+Selection and Development of Control Activities
+The applicable trust services criteria and related control activities are included in Section 4 of this report to eliminate
+the redundancy that would result from listing the items in this section and repeating them in Section 4. Although the
+applicable trust services criteria and related control activities are included in Section 4, they are, nevertheless, an
+integral part of GitLab’s description of the system.
+The description of the service auditor’s tests of operating effectiveness and the results of those tests are also
+presented in Section 4, the Testing Matrices, adjacent to the service organization’s description of controls. The
+description of the tests of operating effectiveness and the results of those tests are the responsibility of the service
+auditor and should be considered information provided by the service auditor.
+Trust Services Criteria Not Applicable to the In-Scope System
+All criteria within the security, availability, and confidentiality categories are applicable to the GitLab.com system.
+
+INFORMATION AND COMMUNICATION SYSTEMS
+Pertinent information must be identified, captured, and communicated in a form and timeframe that enable people
+to carry out their responsibilities. Information systems produce reports containing operational, financial, and
+compliance-related information, which make it possible to run and control the business. They deal not only with
+internally generated data, but also information about external events, activities, and conditions necessary to inform
+business decision-making and external reporting. Effective communication also must occur in a broader sense,
+flowing down, across, and up the organization. Personnel must receive a clear message from top management that
+control responsibilities must be taken seriously. They must understand their own role in the internal control system,
+as well as how individual activities relate to the work of others. They must have a means of communicating
+significant information upstream. There also needs to be effective communication with external parties, such as
+customers, suppliers, and regulators.
+Internal and External Communications
+GitLab has implemented various methods communicating information internally to team members and with external
+parties as well, including objectives and responsibilities for internal control, necessary to support the functioning of
+internal control.
+
+22
+
+These methods include, but are not limited to, the following:
+•
+
+Policies, standards, and procedures are developed, reviewed, approved, and maintained according to the
+Controlled Document Process. All controlled documents are reviewed on an annual basis and made
+available to team members through the GitLab Handbook.
+
+•
+
+Executive leadership develops and communicates a strategic plan that defines organizational objectives
+and priorities on an annual basis. Departments align their activities to support achievement of these
+common business goals.
+
+•
+
+System alerts, including planned changes to system components, planned outages, and known issues, are
+communicated through the Gitlab.com platform system status page.
+
+•
+
+Release notes are available and communicated to internal and external system users through the GitLab
+handbook.
+
+•
+
+Documentation of system services and key aspects of its functionality are communicated to external users
+through the GitLab.com docs.
+
+•
+
+New customers sign a legal document which communicates security, availability, and confidentiality
+commitments.
+
+•
+
+New customers must agree to terms of service which define the scope of services being provided, including
+security, availability, and confidentiality requirements.
+
+•
+
+The security, availability, and confidentiality commitments and obligations of vendors are documented and
+communicated via service agreements.
+
+•
+
+A contact method is provided for external parties to submit complaints and inquiries and report incidents.
+
+MONITORING
+Monitoring is a process that assesses the quality of internal control performance over time. It involves assessing
+the design and operation of controls and taking necessary corrective actions. This process is accomplished through
+ongoing activities, separate evaluations, or a combination of the two. Monitoring activities also include using
+information from communications from external parties such as user entity complaints and regulatory comments
+that may indicate problems or highlight areas in need of improvement. Management has implemented a selfassessment and compliance program to help ensure the controls are consistently applied as designed.
+Ongoing Monitoring
+GitLab, Inc. selects, develops, and performs ongoing monitoring to ascertain whether the components of internal
+control are present and functioning. Aspects of the ongoing monitoring procedures include the following:
+•
+
+Risk-based control monitoring is performed throughout the year. The testing results are documented and
+reviewed, including remediation plans for identified observations for timely remediation.
+
+•
+
+Audit events are logged including but not limited to privileged operations, authorized access, and
+unauthorized access attempts.
+
+•
+
+Systems are monitored in accordance with predefined security criteria and alerts are sent to the security
+incident response team.
+
+•
+
+Production infrastructure configurations are automatically synchronized to match established baseline
+configurations every 30 minutes.
+
+•
+
+Monitoring solutions are utilized to measure performance and availability and configured to send automated
+alerts when predefined thresholds have been exceeded.
+
+•
+
+Monitoring solutions are configured to evaluate capacity levels and alert appropriate personnel when
+predefined thresholds have been exceeded.
+23
+
+•
+
+Infrastructure reviews are conducted on a weekly basis to evaluate availability trends and forecasts as
+compared to operational commitments.
+
+•
+
+A monitoring solution is configured to track and alert appropriate personnel in the event of network security
+configuration changes.
+
+•
+
+Threat detection and response software is installed and regularly updated on laptops to monitor, detect,
+and respond to malicious code.
+
+•
+
+Threat detection and response software is installed on infrastructure to monitor, detect, and respond to
+malicious code.
+
+•
+
+Configuration settings enforcing change approval workflows are monitored for unauthorized changes and
+corrective actions are taken to restore security controls when deviations are detected.
+
+Subservice Organization Monitoring
+The services provided by GCP (including Vertex AI), Anthropic, Fireworks.ai, and OpenAI are monitored on a
+regular basis as part of the day-to-day operations. On an annual basis, GitLab’s personnel receive and review
+documentation (System and Organization Controls (SOC) reports and/or security certifications) provided by GCP
+(including Vertex AI), Anthropic, Fireworks.ai, and OpenAI to help ensure security practices are being followed.
+Evaluating and Communicating Deficiencies
+Deficiencies in management’s internal control system may surface from many sources, including the company’s
+ongoing monitoring procedures, separate evaluations of the internal control system, and external parties.
+Management has developed protocols to help ensure findings of internal control deficiencies are reported not only
+to the individual responsible for the function or activity involved, who is in the position to take corrective action, but
+also to at least one level of management above the directly responsible individual. This process enables that
+individual to provide needed support or oversight for taking corrective action, and to communicate with others in the
+organization whose activities may be affected. Management evaluates the specific facts and circumstances related
+to deficiencies in internal control procedures and makes the decision for addressing deficiencies based on whether
+the incident was isolated or requires a change in the company’s procedures or personnel.
+System Incident Disclosures
+No system incidents occurred that were the result of controls that were not suitably designed or operating effectively
+or otherwise resulted in a significant failure of the achievement of one or more of the service commitments and
+systems requirements during the period.
+
+COMPLEMENTARY USER ENTITY CONTROLS
+GitLab’s services are designed with the assumption that certain controls will be implemented by user entities. Such
+controls are called complementary user entity controls. It is not feasible for all of the principal service commitments
+and system requirements related to GitLab’s services to be solely achieved by GitLab’s control procedures.
+Accordingly, user entities, in conjunction with the GitLab.com Software as a Service (SaaS) Platform system and
+related services, should establish their own internal controls or procedures to complement those of GitLab.
+The following complementary user entity controls should be implemented by user entities to provide additional
+assurance that GitLab’s principal service commitments and system requirements are achieved.
+
+24
+
+As these items represent only a part of the control considerations that might be pertinent to user entities, user
+entities should exercise judgment in selecting and reviewing these complementary user entity controls.
+Ref.
+
+Control Activities Expected to be Implemented at User Entities
+
+Related Applicable
+Trust Services Criteria
+
+CUEC.01
+
+User entities are responsible for adherence to their contractual
+security, availability, and confidentiality commitments.
+
+CUEC.02
+
+User entities are responsible for configuring authentication settings
+for end users for their GitLab.com subscription.
+
+CUEC.03
+
+User entities are responsible for controlling end-user access
+management for their GitLab.com subscription.
+
+CC6.1 – CC6.3, CC6.6
+
+CUEC.04
+
+User entities are responsible for understanding and implementing
+GitLab.com security hardening recommendations according to their
+internal risk tolerance.
+
+CC6.1 – CC6.2, CC6.6
+
+CUEC.05
+
+User entities are responsible for protecting and controlling access to
+tokens and other secrets they create within GitLab.com.
+
+CC6.2
+
+CUEC.06
+
+User entities are responsible for notification of actual or suspected
+information security breaches affecting GitLab.com to GitLab.
+
+CC2.2 – CC2.3, CC7.3
+
+CUEC.07
+
+User entities are responsible for monitoring activity and consuming
+audit events within their Gitlab.com instance to detect potential
+security events.
+
+CC7.2
+
+CUEC.08
+
+User entities are responsible for notification of system failures or
+upload failures affecting GitLab.com to GitLab.
+
+CC7.3 – CC7.4
+
+CUEC.09
+
+User entities are responsible for enabling or disabling Duo/DAP
+features for groups, projects, or instances.
+
+CC6.1 – CC6.3, CC6.6
+
+CUEC.10
+
+User entities are responsible for assigning seats to users for certain
+Duo/DAP features.
+
+CUEC.11
+
+User entities are responsible for leveraging security scanning and
+code quality scanning for any AI generated code.
+
+CC6.1, CC6.8
+
+CUEC.12
+
+User entities are responsible for disabling Fireworks AI prompt
+caching for true “zero-day data retention” with the LLMs utilized by
+Gitlab Duo/DAP.
+
+CC6.1 – CC6.3, CC6.6
+
+CUEC.13
+
+User entities are responsible for selecting and configuring LLM
+models for GitLab Duo features if non-default models are preferred.
+
+CC6.1
+
+CC1.1, CC2.3
+CC6.1
+
+GITLAB CONTROLS MAPPING TO SECURITY, AVAILABILITY, AND
+CONFIDENTIALITY CATEGORY CRITERIA
+Trust Services
+Category
+Criteria No.
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+GitLab’s Control
+No(s). (See
+Section 4)
+
+COSO Principle 1: The entity demonstrates a commitment to integrity
+and ethical values.
+
+GPM-7, PSM-3,
+PSM-4, PSM-7
+
+Control Environment
+CC1.1
+
+25
+
+Trust Services
+Category
+Criteria No.
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+GitLab’s Control
+No(s). (See
+Section 4)
+
+CC1.2
+
+COSO Principle 2: The board of directors demonstrates
+independence from management and exercises oversight of the
+development and performance of internal control.
+
+GPM-9, GPM-10,
+GPM-11
+
+CC1.3
+
+COSO Principle 3: Management establishes, with board oversight,
+structures, reporting lines, and appropriate authorities and
+responsibilities in the pursuit of objectives.
+
+GPM-5, GPM-6,
+GPM-7
+
+CC1.4
+
+COSO Principle 4: The entity demonstrates a commitment to attract,
+develop, and retain competent individuals in alignment with
+objectives.
+
+GPM-6, PSM-2,
+PSM-6, PSM-10
+
+CC1.5
+
+COSO Principle 5: The entity holds individuals accountable for their
+internal control responsibilities in the pursuit of objectives.
+
+GPM-5, GPM-7,
+PSM-10
+
+Communication and Information
+CC2.1
+
+COSO Principle 13: The entity obtains or generates and uses
+relevant, quality information to support the functioning of internal
+control.
+
+AAM-2, AAM-3,
+BCA-10,GPM-1,
+TVM-3, TVM-4
+
+CC2.2
+
+COSO Principle 14: The entity internally communicates information,
+including objectives and responsibilities for internal control, necessary
+to support the functioning of internal control.
+
+GPM-1, GPM-7,
+GPM-12, INC-2,
+PSM-6, PSM-7
+
+CC2.3
+
+COSO Principle 15: The entity communicates with external parties
+regarding matters affecting the functioning of internal control.
+
+CSR-2, CSR-3,
+CSR-4, CSR-5,
+CSR-6, CSR-7,
+TPR-2
+
+Risk Management and Design and Implementation of Controls
+CC3.1
+
+COSO Principle 6: The entity specifies objectives with sufficient
+clarity to enable the identification and assessment of risks relating to
+objectives.
+
+GPM-7, SRM-1,
+SRM-2
+
+CC3.2
+
+COSO Principle 7: The entity identifies risks to the achievement of its
+objectives across the entity and analyzes risks as a basis for
+determining how the risks should be managed.
+
+SRM-1, SRM-2,
+TVM-3
+
+CC3.3
+
+COSO Principle 8: The entity considers the potential for fraud in
+assessing risks to the achievement of objectives.
+
+GPM-16, SRM-1,
+SRM-2
+
+CC3.4
+
+COSO Principle 9: The entity identifies and assesses changes that
+could significantly impact the system of internal control.
+
+SRM-1, SRM-2,
+TPR-3, TVM-2,
+TVM-4
+
+Monitoring Activities
+CC4.1
+
+COSO Principle 16: The entity selects, develops, and performs
+ongoing and/or separate evaluations to ascertain whether the
+components of internal control are present and functioning.
+
+GPM-14, TPR-3,
+TPR-4, TVM-2
+
+CC4.2
+
+COSO Principle 17: The entity evaluates and communicates internal
+control deficiencies in a timely manner to those parties responsible
+for taking corrective action, including senior management and the
+board of directors, as appropriate.
+
+GPM-11, GPM-14,
+GPM-7
+
+26
+
+Trust Services
+Category
+Criteria No.
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+GitLab’s Control
+No(s). (See
+Section 4)
+
+CC5.1
+
+COSO Principle 10: The entity selects and develops control activities
+that contribute to the mitigation of risks to the achievement of
+objectives to acceptable levels.
+
+GPM-14, SRM-1,
+SRM-2
+
+CC5.2
+
+COSO Principle 11: The entity also selects and develops general
+control activities over technology to support the achievement of
+objectives.
+
+GPM-14, SRM-1,
+SRM-2
+
+CC5.3
+
+COSO Principle 12: The entity deploys control activities through
+policies that establish what is expected and in procedures that put
+policies into action.
+
+GPM-1, PSM-3,
+PSM-4, PSM-5
+
+Control Activities
+
+Logical and Physical Access Controls
+
+CC6.1
+
+The entity implements logical access security software, infrastructure,
+and architectures over protected information assets to protect them
+from security events to meet the entity's objectives.
+
+DPM-4, DPM-9,
+IAM-10, IAM-11,
+IAM-4, IAM-7,
+IAM-8, IAM-9,
+ISM-3, ISM-9
+
+CC6.2
+
+Prior to issuing system credentials and granting system access, the
+entity registers and authorizes new internal and external users whose
+access is administered by the entity. For those users whose access is
+administered by the entity, user system credentials are removed
+when user access is no longer authorized.
+
+IAM-2, IAM-3,
+IAM-5, IAM-6
+
+CC6.3
+
+The entity authorizes, modifies, or removes access to data, software,
+functions, and other protected information assets based on roles,
+responsibilities, or the system design and changes, giving
+consideration to the concepts of least privilege and segregation of
+duties, to meet the entity’s objectives.
+
+IAM-2, IAM-3,
+IAM-4, IAM-5,
+IAM-6, IAM-7
+
+CC6.4
+
+The entity restricts physical access to facilities and protected
+information assets (for example, data center facilities, back-up media
+storage, and other sensitive locations) to authorized personnel to
+meet the entity’s objectives.
+
+Refer to
+“Subservice
+Organizations”
+section above.
+
+CC6.5
+
+The entity discontinues logical and physical protections over physical
+assets only after the ability to read or recover data and software from
+those assets has been diminished and is no longer required to meet
+the entity’s objectives.
+
+DPM-2, EPM-1,
+EPM-9
+
+CC6.6
+
+The entity implements logical access security measures to protect
+against threats from sources outside its system boundaries.
+
+IAM-11, ISM-6,
+ISM-7
+
+CC6.7
+
+The entity restricts the transmission, movement, and removal of
+information to authorized internal and external users and processes,
+and protects it during transmission, movement, or removal to meet
+the entity’s objectives.
+
+DPM-1, DPM-5
+
+CC6.8
+
+The entity implements controls to prevent or detect and act upon the
+introduction of unauthorized or malicious software to meet the entity’s
+objectives.
+
+AAM-3, CHM-8,
+EPM-6, ISM-10,
+ISM-3, ISM-4
+
+27
+
+Trust Services
+Category
+Criteria No.
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+GitLab’s Control
+No(s). (See
+Section 4)
+
+CC7.1
+
+To meet its objectives, the entity uses detection and monitoring
+procedures to identify (1) changes to configurations that result in the
+introduction of new vulnerabilities, and (2) susceptibilities to newly
+discovered vulnerabilities.
+
+CHM-8, ISM-3,
+ISM-4, ISM-7,
+TVM-2
+
+CC7.2
+
+The entity monitors system components and the operation of those
+components for anomalies that are indicative of malicious acts,
+natural disasters, and errors affecting the entity's ability to meet its
+objectives; anomalies are analyzed to determine whether they
+represent security events.
+
+AAM-2, AAM-3,
+INC-5
+
+CC7.3
+
+The entity evaluates security events to determine whether they could
+or have resulted in a failure of the entity to meet its objectives
+(security incidents) and, if so, takes actions to prevent or address
+such failures.
+
+INC-1, INC-3,
+INC-4
+
+CC.7.4
+
+The entity responds to identified security incidents by executing a
+defined incident response program to understand, contain, remediate,
+and communicate security incidents, as appropriate.
+
+INC-1, INC-3,
+INC-4
+
+CC7.5
+
+The entity identifies, develops, and implements activities to recover
+from identified security incidents.
+
+INC-1, INC-3,
+INC-4, INC-5
+
+System Operation
+
+Change Management
+The entity authorizes, designs, develops, or acquires, configures,
+documents, tests, approves, and implements changes to
+infrastructure, data, software, and procedures to meet its objectives.
+
+CHM-1, CHM-2,
+CHM-3, CHM-4,
+CHM-5, CHM-6,
+CHM-7, CHM-8,
+IAM-4, ISM-4,
+SDL-2
+
+CC9.1
+
+The entity identifies, selects, and develops risk mitigation activities for
+risks arising from potential business disruptions.
+
+BCA-2, BCA-3,
+BCA-4, BCA-5,
+BCA-6, BCA-8,
+GPM-16, SRM-1,
+SRM-3
+
+CC9.2
+
+The entity assesses and manages risks associated with vendors and
+business partners.
+
+CSR-3, TPR-2,
+TPR-3, TPR-4
+
+CC8.1
+
+Risk Mitigation
+
+Additional Criteria for Availability
+A1.1
+
+The entity maintains, monitors, and evaluates current processing
+capacity and use of system components (infrastructure, data, and
+software) to manage capacity demand and to enable the
+implementation of additional capacity to help meet its objectives.
+
+BCA-9, BCA-10,
+BCA-11
+
+A1.2
+
+The entity authorizes, designs, develops, or acquires, implements,
+operates, approves, maintains, and monitors environmental
+protections, software, data back-up processes, and recovery
+infrastructure to meet its objectives.
+
+BCA-2, BCA-3,
+BCA-4, BCA-5,
+BCA-6, BCA-7,
+BCA-8, BCA-9
+
+A1.3
+
+The entity tests recovery plan procedures supporting system recovery
+to meet its objectives.
+
+BCA-2, BCA-3,
+BCA-4, BCA-8
+
+28
+
+Trust Services
+Category
+Criteria No.
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+GitLab’s Control
+No(s). (See
+Section 4)
+
+Additional Criteria for Confidentiality
+C1.1
+
+The entity identifies and maintains confidential information to meet
+the entity’s objectives related to confidentiality.
+
+CSR-3, DPM-1,
+DPM-2, DPM-4,
+IAM-4
+
+C1.2
+
+The entity disposes of confidential information to meet the entity’s
+objectives related to confidentiality.
+
+DPM-2, DPM-7,
+DPM-8
+
+29
+
+SECTION 4
+TESTING MATRICES
+
+30
+
+TESTS OF OPERATING EFFECTIVENESS AND RESULTS OF TESTS
+Scope of Testing
+This report on the controls relates to the GitLab.com system provided by GitLab. The scope of the testing was
+restricted to the GitLab.com system and its boundaries as defined in Section 3. Schellman conducted the
+examination testing over the period November 1, 2024, through October 31, 2025.
+Tests of Operating Effectiveness
+The tests applied to test the operating effectiveness of controls are listed alongside each of the respective control
+activities within the Testing Matrices. Such tests were considered necessary to evaluate whether the controls were
+sufficient to provide reasonable, but not absolute, assurance that the applicable trust services criteria were achieved
+during the period. In selecting the tests of controls, Schellman considered various factors including, but not limited
+to, the following:
+•
+
+the nature of the control and the frequency with which it operates;
+
+•
+
+the control risk mitigated by the control;
+
+•
+
+the effectiveness of entity-level controls, especially controls that monitor other controls;
+
+•
+
+the degree to which the control relies on the effectiveness of other controls; and
+
+•
+
+whether the control is manually performed or automated.
+
+The types of tests performed with respect to the operational effectiveness of the control activities detailed in this
+section are briefly described below:
+Test Approach
+
+Description
+
+Inquiry
+
+Inquired of relevant personnel with the requisite knowledge and experience regarding
+the performance and application of the related control activity. This included in-person
+interviews, telephone calls, e-mails, web-based conferences, or a combination of the
+preceding.
+
+Observation
+
+Observed the relevant processes or procedures during fieldwork. This included, but
+was not limited to, witnessing the performance of controls or evidence of control
+performance with relevant personnel, systems, or locations relevant to the
+performance of control policies and procedures.
+
+Inspection
+
+Inspected the relevant audit records. This included, but was not limited to, documents,
+system configurations and settings, or the existence of sampling attributes, such as
+signatures, approvals, or logged events. In some cases, inspection testing involved
+tracing events forward to consequent system documentation or processes (e.g.,
+resolution, detailed documentation, alarms, etc.) or vouching backwards for
+prerequisite events (e.g., approvals, authorizations, etc.).
+
+Sampling
+Consistent with American Institute of Certified Public Accountants (AICPA) authoritative literature, Schellman
+utilizes professional judgment to consider the tolerable deviation rate, the expected deviation rate, the audit risk,
+the characteristics of the population, and other factors, in order to determine the number of items to be selected in
+a sample for a particular test. Schellman, in accordance with AICPA authoritative literature, selected samples in
+such a way that the samples were expected to be representative of the population. This included judgmental
+selection methods, where applicable, to ensure representative samples were obtained.
+
+31
+
+System-generated population listings were obtained whenever possible to ensure completeness prior to selecting
+samples. In some instances, full populations were tested in cases including but not limited to, the uniqueness of the
+event or low overall population size.
+Reliability of Information Provided by the Service Organization
+Observation and inspection procedures were performed related to certain system-generated reports, listings, and
+queries to assess the accuracy and completeness (reliability) of the information used in the performance of our
+testing of the controls.
+Test Results
+The results of each test applied are listed alongside each respective test applied within the Testing Matrices. Test
+results not deemed as control deviations are noted by the phrase “No exceptions noted.” in the test result column
+of the Testing Matrices. Any phrase other than the aforementioned, constitutes either a test result that is the result
+of non-occurrence, a change in the application of the control activity, or a deficiency in the operating effectiveness
+of the control activity. Testing deviations identified within the Testing Matrices are not necessarily weaknesses in
+the total system of controls, as this determination can only be made after consideration of controls in place at user
+entities and subservice organizations, if applicable, and other factors. Control considerations that should be
+implemented by user entities and subservice organizations, in order to complement the control activities and
+achieve the service commitments and system requirements, are presented in the “Complementary Controls at User
+Entities” and “Subservice Organizations” sections, respectively, within Section 3.
+
+GITLAB’S CONTROLS
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+AAM-2
+
+Audit events are logged including
+but not limited to privileged
+operations, authorized access, and
+unauthorized access attempts.
+
+CC2.1,
+CC7.2
+
+Inspected the logging
+dashboard, configurations,
+and an example log
+generated during the period
+to determine that audit
+events were logged
+including privileged
+operations, authorized
+access, and unauthorized
+access attempts.
+
+No exceptions noted.
+
+AAM-3
+
+Systems are monitored in
+accordance with predefined
+security criteria and alerts are sent
+to the security incident response
+team.
+
+CC2.1,
+CC6.8,
+CC7.2
+
+Inspected the monitoring
+application configurations,
+example monitoring
+dashboards and alerts
+generated during the period,
+and an example remediation
+issue generated during the
+period to determine that
+systems were monitored in
+accordance with predefined
+security criteria and alerts
+were sent to the security
+incident response team.
+
+No exceptions noted.
+
+Test Results
+
+32
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+BCA-2
+
+A Business Continuity Plan is
+established as part of the controlled
+document process to define
+procedures for maintaining critical
+operations during disruptions and
+recovering from unexpected events.
+
+CC9.1,
+A1.2,
+A1.3
+
+Inspected the business
+continuity plan to determine
+that a Business Continuity
+Plan was established as part
+of the controlled document
+process to define
+procedures for maintaining
+critical operations during
+disruptions and recovering
+from unexpected events.
+
+No exceptions noted.
+
+BCA-3
+
+Tabletop exercises are performed
+to evaluate business continuity
+procedures and response
+readiness on an annual basis.
+
+CC9.1,
+A1.2,
+A1.3
+
+Inspected the most recent
+tabletop exercise
+documentation to determine
+that tabletop exercises were
+performed to evaluate
+business continuity
+procedures and response
+readiness during the period.
+
+No exceptions noted.
+
+BCA-4
+
+A disaster recovery simulation is
+conducted annually to evaluate
+recovery procedures and response
+readiness, with results
+documented.
+
+CC9.1,
+A1.2,
+A1.3
+
+Inspected the most recent
+disaster recovery test
+documentation to determine
+that a disaster recovery
+simulation was conducted
+during the period to evaluate
+recovery procedures and
+response readiness, with
+results documented.
+
+No exceptions noted.
+
+BCA-5
+
+Redundant systems are
+implemented and data backups are
+configured according to defined
+schedules to ensure operational
+continuity following system failures.
+
+CC9.1,
+A1.2
+
+Inspected the system and
+backup configurations for a
+sample of in-scope
+databases to determine that
+redundant systems were
+implemented and data
+backups were configured
+according to defined
+schedules to ensure
+operational continuity
+following system failures for
+each in-scope database
+sampled.
+
+No exceptions noted.
+
+BCA-6
+
+Backup data is replicated to
+multiple regions to help ensure
+redundancy and availability.
+
+CC9.1,
+A1.2
+
+Inspected the replication
+configurations for a sample
+of in-scope databases to
+determine that backup data
+was replicated to multiple
+regions to ensure
+redundancy and availability
+for each in-scope database
+sampled.
+
+No exceptions noted.
+
+BCA-7
+
+Backups are securely stored in an
+alternate location from source data.
+
+A1.2
+
+Inspected the replication
+configurations for a sample
+of in-scope databases to
+determine that backups
+were securely stored in an
+alternate location from
+source data for each inscope database sampled.
+
+No exceptions noted.
+
+Test Results
+
+33
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+BCA-8
+
+Automated restoration testing of
+backup files is performed through
+the CI / CD pipeline on a daily
+basis.
+
+CC9.1,
+A1.2,
+A1.3
+
+Inspected the backup
+restoration configurations
+and an example restoration
+log generated during the
+period to determine that
+automated restoration
+testing of backup files was
+performed through the CI /
+CD pipeline on a daily basis.
+
+No exceptions noted.
+
+BCA-9
+
+Monitoring solutions are utilized to
+measure performance and
+availability and configured to send
+automated alerts when predefined
+thresholds have been exceeded.
+Alerts are reviewed by security
+personnel and tracked through
+resolution.
+
+A1.1,
+A1.2
+
+Inspected the monitoring
+configurations, an example
+alert generated during the
+period and its related
+remediation issue to
+determine that monitoring
+solutions were used to
+measure performance and
+availability, configured to
+send automated alerts when
+predefined thresholds had
+been exceeded, and that
+alerts were reviewed by
+security personnel and
+tracked through resolution.
+
+No exceptions noted.
+
+BCA-10
+
+Monitoring solutions are configured
+to evaluate capacity levels and alert
+appropriate personnel when
+predefined thresholds have been
+exceeded. Alerts are reviewed by
+security personnel and tracked
+through resolution.
+
+CC2.1,
+A1.1
+
+Inspected the monitoring
+configurations, an example
+alert generated during the
+period and its related
+remediation issue to
+determine that monitoring
+solutions were configured to
+evaluate capacity levels,
+alert appropriate personnel
+when predefined thresholds
+had been exceeded, and
+that alerts were reviewed by
+security personnel and
+tracked through resolution.
+
+No exceptions noted.
+
+BCA-11
+
+Infrastructure reviews are
+conducted on a weekly basis to
+evaluate availability trends and
+forecasts as compared to
+operational commitments.
+
+A1.1
+
+Inspected the recurring
+availability meeting invite
+and agenda for a sample of
+weeks during the period to
+determine that infrastructure
+reviews were conducted to
+evaluate availability trends
+and forecasts as compared
+to operational commitments
+for each week sampled.
+
+No exceptions noted.
+
+Test Results
+
+34
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+CHM-1
+
+A Change Management Policy is
+established as part of the controlled
+document process to define
+requirements addressing the
+documentation, testing, review,
+approval, and implementation of
+changes to systems and supporting
+infrastructure.
+
+CC8.1
+
+Inspected the change
+management policy to
+determine that a Change
+Management Policy was
+established as part of the
+controlled document process
+to define requirements
+addressing the
+documentation, testing,
+review, approval, and
+implementation of changes
+to systems and supporting
+infrastructure.
+
+No exceptions noted.
+
+CHM-2
+
+A change tracking system is in
+place to centrally maintain,
+manage, and monitor changes from
+development through
+implementation.
+
+CC8.1
+
+Inspected the change issue
+and supporting
+documentation for a sample
+of application and
+infrastructure changes
+implemented during the
+period to determine that an
+issue tracking system was in
+place to centrally maintain,
+manage, and monitor
+application and
+infrastructure changes from
+development through
+implementation for each
+application and
+infrastructure change
+sampled.
+
+No exceptions noted.
+
+CHM-3
+
+Prior to introducing changes into
+production, approval from
+authorized personnel is required
+based on the change description,
+impact of change, and test results.
+
+CC8.1
+
+Inspected the change issue
+and supporting
+documentation for a sample
+of application and
+infrastructure changes
+implemented during the
+period to determine that
+prior to introducing changes
+into production, approval
+from authorized personnel
+was required based on the
+change description, impact
+of change, and test results
+for each application and
+infrastructure change
+sampled.
+
+No exceptions noted.
+
+Test Results
+
+35
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+CHM-4
+
+Emergency changes follow the
+same change control workflow as
+standard changes. Approval can
+be retroactively applied depending
+on the urgency of the change.
+
+CC8.1
+
+Inspected the emergency
+change issue and supporting
+documentation for a sample
+of emergency changes
+implemented during the
+period to determine that
+emergency changes
+followed the same change
+control workflow as standard
+changes and that approval
+was retroactively applied
+depending on the urgency of
+the change for each
+emergency change
+sampled.
+
+No exceptions noted.
+
+CHM-5
+
+Version control software is utilized
+to manage source code and
+provide rollback capabilities.
+
+CC8.1
+
+Inspected example prior
+versions available for
+rollback during the period to
+determine that version
+control software was utilized
+to manage source code and
+provide rollback capabilities.
+
+No exceptions noted.
+
+CHM-6
+
+Access to modify source code is
+restricted to user accounts
+accessible by authorized personnel.
+
+CC8.1
+
+Inspected the version control
+software user account listing
+with the assistance of senior
+security assurance engineer
+to determine that access to
+modify source code was
+restricted to authorized
+personnel.
+
+No exceptions noted.
+
+CHM-7
+
+Approval settings are configured on
+projects to require independent
+review prior to merging code,
+preventing users from both
+developing and implementing code
+to the production environment.
+
+CC8.1
+
+Inspected the merge request
+approval settings for the inscope projects to determine
+that approval settings were
+configured on projects to
+require independent review
+prior to merging code,
+preventing users from both
+developing and
+implementing code to the
+production environment.
+
+No exceptions noted.
+
+CHM-8
+
+Configuration settings enforcing
+change approval workflows are
+monitored for unauthorized
+changes and corrective actions are
+taken to restore security controls
+when deviations are detected.
+
+CC6.8,
+CC7.1,
+CC8.1
+
+Inspected the configuration
+settings for the in-scope
+projects and an example
+alert generated during the
+period to determine that
+configuration settings
+enforcing change approval
+workflows were monitored
+for unauthorized changes
+and corrective actions were
+taken to restore security
+controls when deviations
+were detected.
+
+No exceptions noted.
+
+Test Results
+
+36
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+CSR-2
+
+New customers must agree to
+terms of service which define the
+scope of services being provided,
+including security, availability, and
+confidentiality requirements.
+
+CC2.3
+
+Inspected the terms of use
+and evidence of client
+agreement for a sample of
+customers onboarded during
+the period to determine that
+each new customer sampled
+agreed to terms of service
+which defined the scope of
+services being provided,
+including security,
+availability, and
+confidentiality requirements.
+
+No exceptions noted.
+
+CSR-3
+
+New customers sign a legal
+document which communicates
+security, availability, and
+confidentiality commitments.
+
+CC2.3,
+CC9.2,
+C1.1
+
+Inspected the signed
+contract for a sample of
+customers onboarded during
+the period to determine that
+each sampled new customer
+signed a legal document
+which communicated
+security, availability, and
+confidentiality commitments.
+
+No exceptions noted.
+
+CSR-4
+
+A contact method is provided for
+external parties to submit
+complaints and inquiries and report
+incidents.
+
+CC2.3
+
+Inspected the contact
+method made available on
+the GitLab support site
+during the period to
+determine that a contact
+method was provided for
+external parties to submit
+complaints and inquiries and
+report incidents.
+
+No exceptions noted.
+
+CSR-5
+
+Documentation of system services
+and key aspects of functionality are
+communicated to external users
+through the GitLab docs.
+
+CC2.3
+
+Inspected the GitLab docs
+on the externally facing
+website to determine that
+documentation of system
+services and key aspects of
+functionality were available
+to external users.
+
+No exceptions noted.
+
+CSR-6
+
+Release notes are available and
+communicated to internal and
+external system users through the
+GitLab handbook.
+
+CC2.3
+
+Inspected the release notes
+for a sample of releases
+during the period to
+determine that release notes
+were available and
+communicated to internal
+and external system users
+through the GitLab
+handbook for each release
+sampled.
+
+No exceptions noted.
+
+CSR-7
+
+System alerts, including planned
+changes to system components,
+planned outages, and known
+issues, are communicated through
+the GitLab.com system status
+page.
+
+CC2.3
+
+Inspected the GitLab system
+status page and an example
+system alert generated
+during the period to
+determine that system alerts,
+including planned changes
+to system components,
+planned outages, and known
+issues, were communicated
+through the GitLab.com
+system status page.
+
+No exceptions noted.
+
+Test Results
+
+37
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+DPM-1
+
+A Data Classification Standard is
+established as part of the controlled
+document process to define
+requirements addressing the proper
+security and restriction of data to
+authorized personnel based on
+classification.
+
+CC6.7,
+C1.1
+
+Inspected the data
+classification standard
+document to determine that
+a Data Classification
+Standard was established as
+part of the controlled
+document process to define
+requirements addressing the
+proper security and
+restriction of data to
+authorized personnel based
+on classification.
+
+No exceptions noted.
+
+DPM-2
+
+A Records Retention and Disposal
+Policy is established as part of the
+controlled document process to
+define requirements addressing the
+proper storage, retention periods,
+and secure disposal of
+organizational data, including
+customer records.
+
+CC6.5,
+C1.1,
+C1.2
+
+Inspected the record
+retention and disposal policy
+to determine that a Records
+Retention and Disposal
+Policy was established as
+part of the controlled
+document process to define
+requirements addressing the
+proper storage, retention
+periods, and secure disposal
+of organizational data,
+including customer records.
+
+No exceptions noted.
+
+DPM-4
+
+Data at rest is encrypted.
+
+CC6.1,
+C1.1
+
+Inspected the data
+classification and encryption
+policy and the encryption
+configurations for a sample
+of in-scope databases to
+determine that data at rest
+was encrypted for each inscope database sampled.
+
+No exceptions noted.
+
+DPM-5
+
+Data in transit is encrypted over
+public networks.
+
+CC6.7
+
+Inspected the data
+classification and encryption
+policy and the TLS
+certificate to determine that
+data in transit was encrypted
+over public networks.
+
+No exceptions noted.
+
+DPM-7
+
+Customers are able to delete their
+own data through provided
+interfaces when no longer needed.
+
+C1.2
+
+Inspected the data deletion
+configurations for an
+example customer to
+determine that customers
+were able to delete their own
+data through provided
+interfaces when no longer
+needed.
+
+No exceptions noted.
+
+DPM-8
+
+Procedures are in place to support
+account deletion requests.
+
+C1.2
+
+Inspected the customer data
+deletion issues for a sample
+of customers that requested
+data deletion during the
+period to determine that
+procedures were in place to
+support account deletion
+requests for each customer
+request sampled.
+
+No exceptions noted.
+
+Test Results
+
+38
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+DPM-9
+
+Customer data is appropriately
+segregated, ensuring customers
+only have access to their own data.
+
+CC6.1,
+CC6.7
+
+Inspected the data
+segmentation configurations
+to determine that customer
+data was appropriately
+segregated, ensuring
+customers only had access
+to their own data.
+
+No exceptions noted.
+
+EPM-1
+
+The Physical Security Standard for
+Company Assets is established as
+part of the controlled document
+process to define requirements for
+protecting assets in remote
+environments.
+
+CC6.5
+
+Inspected the physical
+security standard document
+to determine that the
+Physical Security Standard
+for Company Assets was
+established as part of the
+controlled document process
+to define requirements for
+protecting assets in remote
+environments.
+
+No exceptions noted.
+
+EPM-6
+
+Threat detection and response
+software is installed and regularly
+updated on laptops to monitor,
+detect, and respond to malicious
+code.
+
+CC6.8
+
+Inspected the endpoint
+detection and response
+software configurations, the
+registered device listing, and
+an example employee laptop
+during the period to
+determine that threat
+detection and response
+software was installed and
+regularly updated on laptops
+to monitor, detect, and
+respond to malicious code.
+
+No exceptions noted.
+
+EPM-9
+
+Laptops are securely wiped through
+authorized tools during the
+termination process.
+
+CC6.5
+
+Inspected the offboarding
+issue for a sample of
+employees and contractors
+terminated during the period
+to determine that laptops
+were securely wiped through
+authorized tools during the
+termination process for each
+employee and contractor
+sampled.
+
+No exceptions noted.
+
+GPM-1
+
+Policies, standards, and procedures
+are developed, reviewed, approved,
+and maintained according to the
+Controlled Document Process. All
+controlled documents are reviewed
+on an annual basis and made
+available to team members through
+the GitLab Handbook.
+
+CC2.1,
+CC2.2,
+CC5.3
+
+Inspected the policies and
+standards within the GitLab
+handbook on the company
+website to determine that
+policies, standards, and
+procedures were developed,
+reviewed, approved, and
+maintained according to the
+Controlled Document
+Process and that controlled
+documents were reviewed
+during the period and made
+available to team members
+through the GitLab
+Handbook.
+
+No exceptions noted.
+
+Test Results
+
+39
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+GPM-5
+
+A formal organizational structure is
+established to communicate
+defined key areas of authority,
+responsibility, and lines of reporting
+to support security, availability, and
+confidentiality commitments.
+
+CC1.3,
+CC1.5
+
+Inspected the organizational
+chart on the HR system to
+determine that a formal
+organizational structure was
+established to communicate
+defined key areas of
+authority, responsibility, and
+lines of reporting to support
+security, availability, and
+confidentiality commitments.
+
+No exceptions noted.
+
+GPM-6
+
+Defined roles and responsibilities
+are established for specific job
+families.
+
+CC1.4,
+CC1.3
+
+Inspected the documented
+job description for a sample
+of employment positions to
+determine that defined roles
+and responsibilities were
+established for specific job
+families for each
+employment position
+sampled.
+
+No exceptions noted.
+
+GPM-7
+
+Executive leadership develops and
+communicates a strategic plan that
+defines organizational objectives
+and priorities on an annual basis.
+Departments align their activities to
+support achievement of these
+common business goals.
+
+CC1.5,
+CC2.2,
+CC4.2,
+CC3.1,
+CC1.3,
+CC1.1
+
+Inspected the most recent
+leadership meeting invitation
+and the meeting agenda to
+determine that executive
+leadership developed and
+communicated a strategic
+plan that defined
+organizational objectives
+and priorities during the
+period and that departments
+aligned their activities to
+support achievement of
+those common business
+goals.
+
+No exceptions noted.
+
+GPM-9
+
+The board of directors establishes
+and maintains a set of bylaws
+which describes their
+responsibilities and oversight of
+management's system of internal
+control.
+
+CC1.2
+
+Inspected the board of
+directors’ charter and bylaws
+to determine that the board
+of directors established and
+maintained a set of bylaws
+which described their
+responsibilities and
+oversight of management’s
+system of internal control.
+
+No exceptions noted.
+
+GPM-10
+
+The board of directors has
+members who are independent
+from the organization and objective
+in evaluations and decision making.
+
+CC1.2
+
+Inspected the listing of board
+of directors’ members and
+the current team member
+listing to determine that the
+board of directors had
+members who were
+independent from the
+organization and objective in
+evaluations and decision
+making.
+
+No exceptions noted.
+
+Test Results
+
+40
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+GPM-11
+
+The Audit Committee meets on a
+quarterly basis. Topics of
+discussion include but are not
+limited to effectiveness of internal
+controls, operations, risk
+assessments, and fraud.
+
+CC1.2,
+CC4.2
+
+Inspected the audit
+committee meeting invitation
+and the meeting agenda for
+a sample of quarters during
+the period to determine that
+the Audit Committee met
+and that topics of discussion
+included but were not limited
+to effectiveness of internal
+controls, operations, risk
+assessments, and fraud for
+each quarter sampled.
+
+No exceptions noted.
+
+GPM-12
+
+Ethics and compliance reporting
+channels, including a hotline,
+dedicated e-mail address, and
+website, are accessible internally
+for reporting suspected violations.
+
+CC2.2
+
+Inspected the ethics and
+compliance hotline page to
+determine that ethics and
+compliance reporting
+channels, including a
+hotline, dedicated e-mail
+address, and website, were
+accessible internally for
+reporting suspected
+violations.
+
+No exceptions noted.
+
+GPM-14
+
+Risk-based control monitoring is
+performed on a quarterly basis. The
+testing results are documented and
+reviewed, including remediation
+plans for identified observations for
+timely remediation.
+
+CC5.1,
+CC4.1,
+CC4.2,
+CC5.2
+
+Inspected the internal audit
+schedule and evidence of
+control monitoring and
+testing for a sample of
+quarters during the period to
+determine that risk-based
+control monitoring was
+performed and that the
+testing results were
+documented and reviewed,
+including remediation plans
+for identified observations
+for timely remediation for
+each quarter sampled.
+
+No exceptions noted.
+
+GPM-16
+
+Both adversarial threat sources,
+such as fraud and insider threats,
+and non-adversarial threat sources,
+such as errors and omissions and
+natural disasters, are considered as
+part of the risk assessment
+process.
+
+CC3.3,
+CC9.1
+
+Inspected the most recent
+risk assessment to
+determine that both
+adversarial threat sources,
+such as fraud and insider
+threats, and non-adversarial
+threat sources, such as
+errors and omissions and
+natural disasters, were
+considered as part of the
+risk assessment process
+during the period.
+
+No exceptions noted.
+
+IAM-2
+
+Access provisioning requests are
+documented and approved by
+designated personnel.
+
+CC6.3,
+CC6.2
+
+Inspected the request issue
+for a sample of access
+provisioning requests during
+the period to determine that
+access provisioning
+requests were documented
+and approved by designated
+personnel for each request
+sampled.
+
+No exceptions noted.
+
+Test Results
+
+41
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+IAM-3
+
+Access modification requests are
+documented and approved by
+designated personnel.
+
+CC6.3,
+CC6.2
+
+Inspected the request issue
+for a sample of access
+modification requests during
+the period to determine that
+access modification
+requests were documented
+and approved by designated
+personnel for each access
+modification request
+sampled.
+
+No exceptions noted.
+
+IAM-4
+
+Administrator access is granted
+based on job roles and
+responsibilities and limited
+authorized personnel.
+
+CC8.1,
+CC6.1,
+CC6.3,
+C1.1
+
+With the assistance of the
+senior security assurance
+engineer, inspected
+administrator user account
+listings for a sample of inscope systems to determine
+that administrator access
+was granted based on job
+roles and responsibilities
+and limited to authorized
+personnel for each in-scopesystem sampled.
+
+No exceptions noted.
+
+IAM-5
+
+Access is revoked for personnel
+within 5 business days of
+termination.
+
+CC6.3,
+CC6.2
+
+For a sample of terminated
+team members during the
+period, inspected the
+offboarding issue and user
+account listings for a sample
+of in-scope systems to
+determine that access was
+revoked within 5 business
+days of termination for each
+in-scope system sampled.
+
+No exceptions noted.
+
+IAM-6
+
+Account and access reviews are
+performed on a quarterly basis.
+Corrective action is taken where
+applicable.
+
+CC6.3,
+CC6.2
+
+Inspected the user access
+review of each in-scope
+system for a sample of
+quarters during the period to
+determine that account and
+access reviews were
+performed and that
+corrective action was taken
+where applicable for each
+quarter sampled.
+
+No exceptions noted.
+
+IAM-7
+
+Role-based privileges are
+established to limit access
+according to defined
+responsibilities.
+
+CC6.1,
+CC6.3
+
+Inspected the role-based
+access listings for a sample
+of in-scope systems to
+determine that role-based
+privileges were established
+to limit access according to
+defined responsibilities to
+each sampled in-scope
+system.
+
+No exceptions noted.
+
+Test Results
+
+42
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+IAM-8
+
+Unique identifiers are required for
+identification and authorization
+purposes.
+
+CC6.1
+
+Inspected the user account
+listings and authentication
+configurations for a sample
+of in-scope systems to
+determine that unique
+identifiers were required for
+identification and
+authorization purposes to
+each sampled in-scope
+system.
+
+No exceptions noted.
+
+IAM-9
+
+User and device authentication is
+protected by passwords that meet
+established password standards.
+
+CC6.1
+
+Inspected the password
+standard, user account
+listings, and minimum
+password configurations for
+a sample of in-scope
+systems to determine that
+user and device
+authentication was protected
+by passwords that met
+established password
+standards to each sampled
+in-scope system.
+
+No exceptions noted.
+
+IAM-10
+
+Multi-factor authentication is
+required for user verification.
+
+CC6.1
+
+Inspected the multi-factor
+authentication configurations
+for a sample of in-scope
+systems to determine that
+multi-factor was required for
+user verification to each
+sampled in-scope system.
+
+No exceptions noted.
+
+IAM-11
+
+Remote infrastructure management
+requires secure protocols and multifactor authentication methods.
+
+CC6.1,
+CC6.6
+
+Inspected the authentication
+configurations and multifactor authentication
+methods for a sample of inscope systems to determine
+that remote infrastructure
+management required
+secure protocols and multifactor authentication
+methods to each sampled
+in-scope system.
+
+No exceptions noted.
+
+INC-1
+
+An Incident Response Procedure is
+established as part of the controlled
+document process to detail
+requirements for security event
+responses, root cause analysis,
+and effectiveness evaluations.
+
+CC7.3,
+CC7.5,
+CC7.4
+
+Inspected the incident
+response procedures to
+determine that an Incident
+Response Procedure was
+established as part of the
+controlled document process
+to detail requirements for
+security event responses,
+root cause analysis, and
+effectiveness evaluations.
+
+No exceptions noted.
+
+Test Results
+
+43
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+INC-2
+
+An Incident Communication Plan is
+established as part of the controlled
+document process to outline
+requirements for reporting
+incidents, failures, concerns, and
+escalation to relevant authorities.
+
+CC2.2
+
+Inspected the incident
+response procedures to
+determine that an Incident
+Communication Plan was
+established as part of the
+controlled document process
+to outline requirements for
+reporting incidents, failures,
+concerns, and escalation to
+relevant authorities.
+
+No exceptions noted.
+
+INC-3
+
+Confirmed incidents are detected,
+analyzed, contained, and managed
+to resolution. If applicable,
+eradication and/or incident
+response is coordinated with
+business contingency activities.
+
+CC7.3,
+CC7.5,
+CC7.4
+
+Inspected the incident issue
+for a sample of security
+incidents closed during the
+period to determine that
+confirmed incidents were
+detected, analyzed,
+contained, and managed to
+resolution and that if
+applicable, eradication
+and/or incident response
+was coordinated with
+business contingency
+activities for each incident
+sampled.
+
+No exceptions noted.
+
+INC-4
+
+Corrective measures or changes
+that occur as a result of incidents
+and identified deficiencies follow
+the incident management process
+phases. If a change is required, the
+standard change management
+process is followed.
+
+CC7.3,
+CC7.5,
+CC7.4
+
+Inspected the incident issue
+for a sample of security
+incidents closed during the
+period to determine the
+following for each security
+incident sampled:
+
+No exceptions noted.
+
+INC-5
+
+Security personnel complete
+incident summary reports for
+confirmed high-severity security
+incidents that include the incident
+timeline, action items, and lessons
+learned.
+
+CC7.5,
+CC7.2
+
+•
+
+corrective measures or
+changes that occurred
+as a result of the
+incident;
+
+•
+
+identified deficiencies
+followed incident
+management process;
+
+•
+
+and if a change was
+required, the standard
+change management
+process was triggered.
+
+Inspected the incident issue
+for a sample of confirmed
+high-severity security
+incidents that occurred
+during the period to
+determine that security
+personnel completed
+incident summary reports
+including the incident
+timeline, action items, and
+lessons learned for each
+security incident sampled.
+
+Test Results
+
+No exceptions noted.
+
+44
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+ISM-3
+
+Production infrastructure
+configurations are automatically
+synchronized to match established
+baseline configurations every 30
+minutes.
+
+CC6.1,
+CC6.8,
+CC7.1
+
+Inspected the infrastructure
+management tool
+configurations for a sample
+of in-scope systems to
+determine that production
+infrastructure configurations
+were automatically
+synchronized to match
+established baseline
+configurations every 30
+minutes for each in-scope
+system sampled.
+
+No exceptions noted.
+
+ISM-4
+
+Security hardening and baseline
+configuration standards have been
+documented and established.
+
+CC8.1,
+CC6.8,
+CC7.1
+
+Inspected the configuration
+management tool
+configurations for a sample
+of in-scope systems to
+determine that security
+hardening and baseline
+configuration standards had
+been documented and
+established for each inscope system sampled.
+
+No exceptions noted.
+
+ISM-6
+
+Network security configurations are
+implemented to prevent
+unauthorized traffic to and from
+systems.
+
+CC6.6
+
+Inspected the network
+diagram and the firewall
+system ruleset
+configurations to determine
+that network security
+configurations were
+implemented to prevent
+unauthorized traffic to and
+from systems.
+
+No exceptions noted.
+
+ISM-7
+
+A monitoring solution is configured
+to track and alert appropriate
+personnel in the event of network
+security configuration changes.
+
+CC6.6,
+CC7.1
+
+Inspected the firewall
+monitoring configurations
+and an example alert
+generated during the period
+to determine that a
+monitoring solution was
+configured to track and alert
+appropriate personnel in the
+event of network security
+configuration changes.
+
+No exceptions noted.
+
+ISM-9
+
+Production and non-production
+environments are segregated to
+maintain appropriate access
+boundaries.
+
+CC6.1
+
+Inspected evidence of
+environment segmentation
+to determine that production
+and non-production
+environments were
+segregated to maintain
+appropriate access
+boundaries.
+
+No exceptions noted.
+
+Test Results
+
+45
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+ISM-10
+
+Threat detection and response
+software is installed on
+infrastructure to monitor, detect,
+and respond to malicious code.
+
+CC6.8
+
+Inspected the cloud
+detection response software
+configurations and an
+example alert generated
+during the period to
+determine that threat
+detection and response
+software was installed on
+infrastructure to monitor,
+detect, and respond to
+malicious code.
+
+No exceptions noted.
+
+PSM-2
+
+Background checks are performed
+as a component of the hiring
+process.
+
+CC1.4
+
+Inspected the completed
+background checks for a
+sample of team members
+hired during the period to
+determine that background
+checks were performed as a
+component of the hiring
+process for each team
+member sampled.
+
+No exceptions noted.
+
+PSM-3
+
+A proprietary information and
+assignment agreement is signed
+upon hire containing obligations not
+to disclose confidential information,
+including client information, to
+unauthorized parties.
+
+CC5.3,
+CC1.1
+
+Inspected the signed
+proprietary information and
+assignment agreement for a
+sample of team members
+hired during the period to
+determine that each team
+member sampled signed a
+proprietary information and
+assignment agreement upon
+hire which contained
+obligations to not disclose
+confidential information,
+including client information,
+to unauthorized parties.
+
+No exceptions noted.
+
+PSM-4
+
+The code of business conduct and
+ethics is signed upon hire and
+acknowledged annually thereafter.
+
+CC5.3,
+CC1.1
+
+Inspected the code of
+business conduct and ethics
+training completion record
+for a sample of team
+members hired during the
+period to determine that the
+code of business conduct
+and ethics was signed by
+upon hire for each team
+member sampled.
+
+No exceptions noted.
+
+PSM-5
+
+The code of business conduct and
+ethics includes a sanctions policy
+for personnel who violate the code,
+including potential termination for
+noncompliance.
+
+CC5.3
+
+Inspected the code of
+business conduct and ethics
+document to determine that
+the code of business
+conduct and ethics included
+a sanctions policy for
+personnel who violated the
+code, including potential
+termination for
+noncompliance.
+
+No exceptions noted.
+
+46
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+PSM-6
+
+Security awareness training is
+required to be completed upon hire
+and on an annual basis thereafter
+for GitLab team members. The
+training covers topics including
+organizational security policies,
+industry security best practices, and
+relevant threat landscapes
+applicable to job responsibilities.
+
+CC1.4,
+CC2.2
+
+Inspected the security
+awareness training materials
+and the completion record
+for a sample of current team
+members and team
+members hired during the
+period to determine that
+each GitLab team member
+sampled completed security
+awareness training during
+the period and that the
+training covered topics
+including organizational
+security policies, industry
+security best practices, and
+relevant threat landscapes
+applicable to job
+responsibilities.
+
+No exceptions noted.
+
+PSM-7
+
+Adherence to security awareness
+training requirements is evaluated
+on an annual basis.
+
+CC2.2,
+CC1.1
+
+Inspected the security
+awareness training
+completion status dashboard
+to determine that adherence
+to security awareness
+training requirements was
+evaluated during the period.
+
+No exceptions noted.
+
+PSM-10
+
+Performance evaluations are
+conducted annually to review job
+performance against
+responsibilities and requirements
+for the role.
+
+CC1.5,
+CC1.4
+
+Inspected the most recent
+performance evaluation for a
+sample of current team
+members to determine that
+performance evaluations
+were conducted to review
+job performance against
+responsibilities and
+requirements for the role
+during the period for each
+team member sampled.
+
+No exceptions noted.
+
+SDL-2
+
+Software releases are developed
+using a structured development
+lifecycle (plan, create, verify,
+package, secure, and release).
+Each phase is followed prior to
+introducing changes into
+production.
+
+CC8.1
+
+Inspected the software
+release documentation for a
+sample of software releases
+during the period to
+determine that software
+releases were developed
+using a structured
+development lifecycle (plan,
+create, verify, package,
+secure, and release) and
+that each phase was
+followed prior to introducing
+changes into production for
+each software release
+sampled.
+
+No exceptions noted.
+
+Test Results
+
+47
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+SRM-1
+
+A Security Operational Risk
+Management Program is
+established as part of the controlled
+document process to define
+requirements for identifying,
+analyzing, treating, monitoring, and
+reporting on security risks that
+affect business objectives.
+
+CC3.4,
+CC5.1,
+CC3.3,
+CC9.1,
+CC5.2,
+CC3.1,
+CC3.2
+
+Inspected the security and
+technology operational risk
+management program and
+procedures to determine that
+a Security Operational Risk
+Management Program was
+established as part of the
+controlled document process
+to define requirements for
+identifying, analyzing,
+treating, monitoring, and
+reporting on security risks
+that affect business
+objectives.
+
+No exceptions noted.
+
+SRM-2
+
+A risk assessment of the technical
+environment is performed on a
+quarterly basis and results are
+shared with appropriate leadership.
+Treatment of identified risks is
+prioritized or accepted based on
+risk rating.
+
+CC3.4,
+CC5.1,
+CC3.3,
+CC5.2,
+CC3.1,
+CC3.2
+
+Inspected the risk
+assessment documentation
+for a sample of quarters
+during the period to
+determine that a risk
+assessment of the technical
+environment was performed,
+results were shared with
+appropriate leadership, and
+treatment of identified risks
+was prioritized or accepted
+based on risk rating for each
+quarter sampled.
+
+No exceptions noted.
+
+SRM-3
+
+Insurance policies are maintained
+as a risk transfer measure to offset
+financial impact in the event of
+business disruption or loss.
+
+CC9.1
+
+Inspected the insurance
+policy covering the period to
+determine that insurance
+policies were maintained as
+a risk transfer measure to
+offset financial impact in the
+event of business disruption
+or loss.
+
+No exceptions noted.
+
+TPR-2
+
+The security, availability, and
+confidentiality commitments and
+obligations of vendors are
+documented and communicated via
+service agreements.
+
+CC2.3,
+CC9.2
+
+Inspected the master service
+agreement for a sample of
+current in-scope vendors
+and in-scope vendors
+onboarded during the period
+to determine that the
+security, availability, and
+confidentiality commitments
+and obligations of vendors
+were documented and
+communicated via service
+agreements for each inscope current and new
+vendor sampled.
+
+No exceptions noted.
+
+Test Results
+
+48
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+TPR-3
+
+Third-party security risk
+assessments are completed during
+the procurement process for new
+and existing vendors following the
+documented third-party risk
+management procedures.
+
+CC9.2,
+CC3.4,
+CC4.1
+
+Inspected the completed
+vendor risk assessment
+documentation for a sample
+of new and existing in-scope
+vendors to determine that
+third-party security risk
+assessments were
+completed following the
+documented third-party
+security risk management
+program procedures for
+each new and existing inscope vendor sampled.
+
+No exceptions noted.
+
+TPR-4
+
+Third-party attestation reports are
+reviewed on an annual basis for
+critical service providers to assess if
+vendors align with the
+organization's security, availability,
+and confidentiality commitments.
+
+CC9.2,
+CC4.1
+
+Inspected the annual vendor
+reviews for critical service
+providers to determine that
+third-party attestation reports
+were reviewed to assess if
+vendors aligned with the
+organization's security,
+availability, and
+confidentiality commitments
+during the period for each
+critical service provider
+sampled.
+
+No exceptions noted.
+
+TVM-2
+
+Vulnerability scans are performed
+to identify threats and assess their
+potential impact to the system on a
+continuous basis. Results are
+evaluated and remediated
+according to severity level.
+
+CC3.4,
+CC4.1,
+CC7.1
+
+Inspected the vulnerability
+scan tool dashboard,
+scanning configurations, and
+an example remediation
+issue generated during the
+period to determine that
+vulnerability scans were
+performed to identify threats
+and assess their potential
+impact to the system on a
+continuous basis and that
+results were evaluated and
+remediated according to
+severity level.
+
+No exceptions noted.
+
+TVM-3
+
+Penetration testing is performed by
+an independent third-party to
+identify threats and assess their
+potential impact on an annual
+basis. Results are evaluated and
+remediated according to severity
+level.
+
+CC2.1,
+CC3.2
+
+Inspected the most recent
+penetration testing
+documentation and an
+example remediation issue
+generated during the period
+to determine that penetration
+testing was performed by an
+independent third-party to
+identify threats and assess
+their potential impact and
+that results were evaluated
+and remediated according to
+severity level.
+
+No exceptions noted.
+
+Test Results
+
+49
+
+GitLab
+Control #
+
+Control Activity
+Specified by GitLab
+
+TSC
+Mapping
+
+Test Applied by
+the Service Auditor
+
+TVM-4
+
+The security division monitors the
+security impact of emerging
+technologies and the impact of
+changes to applicable laws and
+regulations through memberships in
+relevant communities and security
+organizations.
+
+CC2.1,
+CC3.4
+
+Inspected the GitLab bug
+bounty program project and
+the GitLab events website
+during the period to
+determine that the security
+division monitored the
+security impact of emerging
+technologies and the impact
+of changes to applicable
+laws and regulations through
+memberships in relevant
+communities and security
+organizations.
+
+Test Results
+No exceptions noted.
+
+50
+
+

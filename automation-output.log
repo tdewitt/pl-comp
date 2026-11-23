@@ -1,0 +1,36 @@
+=== DRY RUN MODE (no submissions) ===
+
+Skipping R-101 (action: update_assessment, approved: false)
+Skipping R-104 (action: update_assessment, approved: false)
+Skipping R-1 (action: update_assessment, approved: false)
+Skipping R-60 (action: update_assessment, approved: false)
+Skipping R-68 (completed reference)
+Skipping R-109 (action: update_assessment, approved: false)
+Skipping R-46 (action: update_assessment, approved: false)
+Skipping R-72 (action: update_assessment, approved: false)
+Skipping R-3 (action: update_assessment, approved: false)
+Skipping R-84 (action: update_assessment, approved: false)
+Found 34 records to process
+
+Checking authentication...
+
+=== MANUAL LOGIN REQUIRED ===
+A browser window should now be open.
+Please log in to Secureframe in that window.
+Once logged in, the script will detect it and continue.
+
+Waiting for login (check browser window)...
+
+page.waitForSelector: Target page, context or browser has been closed
+Call log:
+[2m  - waiting for locator('nav, [role="navigation"], .sidebar, [data-testid="main-nav"]') to be visible[22m
+[2m    - waiting for" https://accounts.youtube.com/accounts/SetSID?ssdc=1&sidt=ALWU2ct6ZWhINmc0%2BW3PL5YWGBuT6IMrSKPJ%2BSNc18C4tP3jKU0WapVXs6bmlfToUk8D6I%2B3YefkQo2nkzSd9TXbyqmcGOISbrZl9InF79PM%2B/N0l5Xc1K4sO3U%2Bnfx1oIve…" navigation to finish...[22m
+[2m    - navigated to "https://accounts.youtube.com/accounts/SetSID?ssdc=1&sidt=ALWU2ct6ZWhINmc0%2BW3PL5YWGBuT6IMrSKPJ%2BSNc18C4tP3jKU0WapVXs6bmlfToUk8D6I%2B3YefkQo2nkzSd9TXbyqmcGOISbrZl9InF79PM%2B/N0l5Xc1K4sO3U%2Bnfx1oIve…"[22m
+
+    at main (/Users/tucker/compliance/secureframe-playwright-automation.js:58:16) {
+  log: [
+    `  - waiting for locator('nav, [role="navigation"], .sidebar, [data-testid="main-nav"]') to be visible`,
+    '    - waiting for" https://accounts.youtube.com/accounts/SetSID?ssdc=1&sidt=ALWU2ct6ZWhINmc0%2BW3PL5YWGBuT6IMrSKPJ%2BSNc18C4tP3jKU0WapVXs6bmlfToUk8D6I%2B3YefkQo2nkzSd9TXbyqmcGOISbrZl9InF79PM%2B/N0l5Xc1K4sO3U%2Bnfx1oIve…" navigation to finish...',
+    '    - navigated to "https://accounts.youtube.com/accounts/SetSID?ssdc=1&sidt=ALWU2ct6ZWhINmc0%2BW3PL5YWGBuT6IMrSKPJ%2BSNc18C4tP3jKU0WapVXs6bmlfToUk8D6I%2B3YefkQo2nkzSd9TXbyqmcGOISbrZl9InF79PM%2B/N0l5Xc1K4sO3U%2Bnfx1oIve…"'
+  ]
+}

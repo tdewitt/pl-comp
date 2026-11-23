@@ -1,0 +1,1286 @@
+{
+  "retrieved_on": "2026-10-27",
+  "scope": "Secureframe risk and control metadata used for local reassessment; dashboard status does not prove operating effectiveness.",
+  "risks": [
+    {
+      "id": "R-19",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:12:26.898Z"
+    },
+    {
+      "id": "R-106",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:08:26.692Z"
+    },
+    {
+      "id": "R-34",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-10-27T20:18:12.783Z"
+    },
+    {
+      "id": "R-76",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:12:30.302Z"
+    },
+    {
+      "id": "R-71",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:08:31.853Z"
+    },
+    {
+      "id": "R-16",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:08:24.067Z"
+    },
+    {
+      "id": "R-67",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:07:55.912Z"
+    },
+    {
+      "id": "R-69",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:08:09.392Z"
+    },
+    {
+      "id": "R-101",
+      "status": "completed",
+      "impact": 3,
+      "likelihood": 1,
+      "residual_impact": 2,
+      "residual_likelihood": 1,
+      "treatment": "mitigate",
+      "owner_assigned": true,
+      "updated_at": "2025-07-29T18:15:52.589Z"
+    },
+    {
+      "id": "R-14",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:09:07.841Z"
+    },
+    {
+      "id": "R-12",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:12:04.172Z"
+    },
+    {
+      "id": "R-26",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:07:47.894Z"
+    },
+    {
+      "id": "R-72",
+      "status": "completed",
+      "impact": 2,
+      "likelihood": 2,
+      "residual_impact": 2,
+      "residual_likelihood": 2,
+      "treatment": "accept",
+      "owner_assigned": true,
+      "updated_at": "2025-07-29T18:12:48.975Z"
+    },
+    {
+      "id": "R-51",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:07:58.491Z"
+    },
+    {
+      "id": "R-22",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:08:58.576Z"
+    },
+    {
+      "id": "R-107",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:08:29.239Z"
+    },
+    {
+      "id": "R-65",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:08:46.721Z"
+    },
+    {
+      "id": "R-54",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:12:13.223Z"
+    },
+    {
+      "id": "R-83",
+      "status": "draft",
+      "impact": null,
+      "likelihood": null,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:08:15.967Z"
+    },
+    {
+      "id": "R-1",
+      "status": "completed",
+      "impact": 4,
+      "likelihood": 3,
+      "residual_impact": 2,
+      "residual_likelihood": 2,
+      "treatment": "mitigate",
+      "owner_assigned": true,
+      "updated_at": "2026-10-27T20:17:43.087Z"
+    },
+    {
+      "id": "R-109",
+      "status": "completed",
+      "impact": 4,
+      "likelihood": 2,
+      "residual_impact": 4,
+      "residual_likelihood": 2,
+      "treatment": "accept",
+      "owner_assigned": true,
+      "updated_at": "2025-11-13T20:13:22.499Z"
+    },
+    {
+      "id": "R-24",
+      "status": "draft",
+      "impact": 4,
+      "likelihood": 4,
+      "residual_impact": null,
+      "residual_likelihood": null,
+      "treatment": null,
+      "owner_assigned": false,
+      "updated_at": "2026-08-07T02:04:24.549Z"
+    }
+  ],
+  "controls": [
+    {
+      "key": "NET-03-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:57.378Z",
+      "enabled": true
+    },
+    {
+      "key": "IR-01-7",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.644Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-04-8",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:59.246Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-06",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-14T02:35:40.449Z",
+      "enabled": true
+    },
+    {
+      "key": "RA-01",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:36:32.655Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-11",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-14T02:36:06.236Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:31:53.074Z",
+      "enabled": true
+    },
+    {
+      "key": "GDPR-15",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-21T22:44:43.253Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-17",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:32:47.346Z",
+      "enabled": true
+    },
+    {
+      "key": "PHYS-02",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-01T21:07:38.062Z",
+      "enabled": false
+    },
+    {
+      "key": "COM-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:33:23.744Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-11",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2025-05-22T17:51:29.093Z",
+      "enabled": true
+    },
+    {
+      "key": "P-05",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:19:56.709Z",
+      "enabled": false
+    },
+    {
+      "key": "ORG-02",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:33:55.372Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-03",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:34:18.697Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-01-1",
+      "health_status": "not_tested",
+      "implementation_status": "implemented",
+      "updated_at": "2025-05-22T17:51:35.509Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-11",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.641Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-05",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:37:01.122Z",
+      "enabled": true
+    },
+    {
+      "key": "PHYS-03",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-01T21:07:38.415Z",
+      "enabled": false
+    },
+    {
+      "key": "PHYS-06",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-01T21:07:38.742Z",
+      "enabled": false
+    },
+    {
+      "key": "PI-04-2",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:34.785Z",
+      "enabled": false
+    },
+    {
+      "key": "PI-01-4",
+      "health_status": "not_tested",
+      "implementation_status": "implemented",
+      "updated_at": "2025-05-22T17:51:43.774Z",
+      "enabled": true
+    },
+    {
+      "key": "COM-04-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:59:00.591Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-04-1",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:34.798Z",
+      "enabled": false
+    },
+    {
+      "key": "IR-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:34:47.875Z",
+      "enabled": true
+    },
+    {
+      "key": "PHYS-04",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-01T21:07:39.044Z",
+      "enabled": false
+    },
+    {
+      "key": "PI-01-5",
+      "health_status": "not_tested",
+      "implementation_status": "implemented",
+      "updated_at": "2025-05-22T17:51:47.170Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-08",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:35:24.060Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-15",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:35:44.618Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-10",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:37:23.591Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-13T01:40:08.073Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-05",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:36:06.791Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-06-14",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:54.728Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-07",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:38:25.541Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-11",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-13T01:39:29.351Z",
+      "enabled": true
+    },
+    {
+      "key": "CCPA-05",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:54.886Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:38:51.730Z",
+      "enabled": true
+    },
+    {
+      "key": "AVA-06",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:36:25.442Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-04-2",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:57.533Z",
+      "enabled": true
+    },
+    {
+      "key": "P-13",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:19:57.202Z",
+      "enabled": false
+    },
+    {
+      "key": "AC-01-13",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-23T00:11:35.662Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-10",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:36:48.431Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-11-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.642Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-07",
+      "health_status": "unhealthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:39:07.690Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-18",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:37:21.802Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-03",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:38:01.021Z",
+      "enabled": true
+    },
+    {
+      "key": "P-12",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:19:57.840Z",
+      "enabled": false
+    },
+    {
+      "key": "ORG-16",
+      "health_status": "unhealthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:39:22.396Z",
+      "enabled": true
+    },
+    {
+      "key": "C-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:39:41.740Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:38:17.348Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-07-4",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:57.440Z",
+      "enabled": true
+    },
+    {
+      "key": "C-05",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:40:12.443Z",
+      "enabled": true
+    },
+    {
+      "key": "VM-02-6",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-21T22:44:43.173Z",
+      "enabled": true
+    },
+    {
+      "key": "AVA-01",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-21T00:07:38.371Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-09",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:38:37.009Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-01",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-13T01:39:01.813Z",
+      "enabled": true
+    },
+    {
+      "key": "RA-06",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:39:00.665Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-12-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:58.790Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-08",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:39:57.234Z",
+      "enabled": true
+    },
+    {
+      "key": "GDPR-06",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-09T16:33:49.712Z",
+      "enabled": false
+    },
+    {
+      "key": "AC-02-7",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-21T08:28:30.176Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-03-3",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:12.372Z",
+      "enabled": true
+    },
+    {
+      "key": "AVA-02",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-21T00:09:51.435Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-14",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-13T01:39:49.441Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-09",
+      "health_status": "unhealthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:39:16.629Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-12",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:40:27.167Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-02",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:39:50.226Z",
+      "enabled": true
+    },
+    {
+      "key": "P-10",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:20:58.413Z",
+      "enabled": false
+    },
+    {
+      "key": "CM-01",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:40:19.964Z",
+      "enabled": true
+    },
+    {
+      "key": "RA-03",
+      "health_status": "unhealthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:40:41.309Z",
+      "enabled": true
+    },
+    {
+      "key": "COM-03",
+      "health_status": "not_tested",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-21T00:10:03.645Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-01-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-21T22:19:00.654Z",
+      "enabled": true
+    },
+    {
+      "key": "COM-05",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:41:03.629Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-03",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:41:22.077Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-06",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:40:40.739Z",
+      "enabled": true
+    },
+    {
+      "key": "RA-05",
+      "health_status": "at_risk",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:40:55.305Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-01",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:42:08.031Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-40",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:59:00.194Z",
+      "enabled": true
+    },
+    {
+      "key": "C-02",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-21T00:10:16.985Z",
+      "enabled": true
+    },
+    {
+      "key": "GDPR-39",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:57.476Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-04-3",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:55.037Z",
+      "enabled": true
+    },
+    {
+      "key": "P-11",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:51.831Z",
+      "enabled": false
+    },
+    {
+      "key": "AC-05",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:41:11.586Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-07",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:42:46.495Z",
+      "enabled": true
+    },
+    {
+      "key": "RA-02",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:43:09.004Z",
+      "enabled": true
+    },
+    {
+      "key": "P-14",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:19:58.383Z",
+      "enabled": false
+    },
+    {
+      "key": "AVA-05",
+      "health_status": "not_tested",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-21T00:10:28.907Z",
+      "enabled": true
+    },
+    {
+      "key": "COM-02",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:41:30.471Z",
+      "enabled": true
+    },
+    {
+      "key": "GDPR-35",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:59:00.070Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-07-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:58.752Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-01-3",
+      "health_status": "not_tested",
+      "implementation_status": "implemented",
+      "updated_at": "2025-05-22T17:51:53.883Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-05",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:46:38.455Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-02-1",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:43.558Z",
+      "enabled": false
+    },
+    {
+      "key": "COM-01",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:47:04.311Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-03-3",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:43.544Z",
+      "enabled": false
+    },
+    {
+      "key": "IR-03-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.646Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-03-6",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:55.054Z",
+      "enabled": true
+    },
+    {
+      "key": "CM-03-6",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-21T22:44:43.233Z",
+      "enabled": true
+    },
+    {
+      "key": "PHYS-01",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-01T21:05:51.154Z",
+      "enabled": false
+    },
+    {
+      "key": "ORG-58",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2025-05-22T17:51:59.625Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-07-13",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:58.655Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-03",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:47:24.291Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-28",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:58.949Z",
+      "enabled": true
+    },
+    {
+      "key": "IR-03",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:47:50.996Z",
+      "enabled": true
+    },
+    {
+      "key": "IR-02",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:48:14.051Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-08",
+      "health_status": "unhealthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-13T01:43:01.831Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-02-2",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:43.544Z",
+      "enabled": false
+    },
+    {
+      "key": "CM-03-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:59:00.768Z",
+      "enabled": true
+    },
+    {
+      "key": "VM-02",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:48:34.919Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-01-2",
+      "health_status": "not_tested",
+      "implementation_status": "implemented",
+      "updated_at": "2025-05-22T17:52:05.196Z",
+      "enabled": true
+    },
+    {
+      "key": "C-03",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-21T00:10:38.543Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-06",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:49:05.126Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-16-15",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.646Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-07-3",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:56.669Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-02",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:49:24.199Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-01-2",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-23T00:11:35.691Z",
+      "enabled": true
+    },
+    {
+      "key": "VM-05",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.648Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-01-6",
+      "health_status": "not_tested",
+      "implementation_status": "implemented",
+      "updated_at": "2025-05-22T17:52:11.737Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-03-4",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:43.544Z",
+      "enabled": false
+    },
+    {
+      "key": "VM-02-9",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.639Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-06",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:41:50.222Z",
+      "enabled": true
+    },
+    {
+      "key": "PHYS-05-2",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-01T21:07:39.371Z",
+      "enabled": false
+    },
+    {
+      "key": "VM-01",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:42:11.928Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-12",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:42:31.639Z",
+      "enabled": true
+    },
+    {
+      "key": "RA-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:49:40.151Z",
+      "enabled": true
+    },
+    {
+      "key": "AVA-03",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-21T00:10:46.801Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-03-2",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:43.532Z",
+      "enabled": false
+    },
+    {
+      "key": "PHYS-05",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-01T21:07:39.557Z",
+      "enabled": false
+    },
+    {
+      "key": "AC-02",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:42:47.843Z",
+      "enabled": true
+    },
+    {
+      "key": "GOV-04",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.642Z",
+      "enabled": true
+    },
+    {
+      "key": "VM-02-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:58.167Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-04-7",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.644Z",
+      "enabled": true
+    },
+    {
+      "key": "PHYS-05-1",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-01T21:07:39.890Z",
+      "enabled": false
+    },
+    {
+      "key": "NET-04-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:58.572Z",
+      "enabled": true
+    },
+    {
+      "key": "COM-06",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:43:05.527Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-03-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:54.968Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-05-1",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:54.832Z",
+      "enabled": true
+    },
+    {
+      "key": "AC-01",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:43:20.834Z",
+      "enabled": true
+    },
+    {
+      "key": "ORG-21",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:58.760Z",
+      "enabled": true
+    },
+    {
+      "key": "NET-06-5",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-20T11:58:57.430Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-04-3",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:34.783Z",
+      "enabled": false
+    },
+    {
+      "key": "ORG-13",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-03-13T01:41:01.807Z",
+      "enabled": true
+    },
+    {
+      "key": "C-01",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-21T00:09:39.542Z",
+      "enabled": true
+    },
+    {
+      "key": "AVA-04",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:43:38.033Z",
+      "enabled": true
+    },
+    {
+      "key": "PI-04-4",
+      "health_status": "not_applicable",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-10T16:18:34.781Z",
+      "enabled": false
+    },
+    {
+      "key": "RA-13",
+      "health_status": "unmapped",
+      "implementation_status": "implemented",
+      "updated_at": "2024-02-19T15:40:04.638Z",
+      "enabled": true
+    },
+    {
+      "key": "VM-03",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T21:49:57.426Z",
+      "enabled": true
+    },
+    {
+      "key": "IR-01",
+      "health_status": "healthy",
+      "implementation_status": "implemented",
+      "updated_at": "2024-05-20T23:43:54.121Z",
+      "enabled": true
+    }
+  ]
+}

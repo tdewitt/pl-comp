@@ -1,0 +1,3194 @@
+SLACK TECHNOLOGIES, LLC.
+SOC 2 REPORT
+FOR
+TEAM COLLABORATION PLATFORM
+A TYPE 2 INDEPENDENT SERVICE AUDITOR’S REPORT ON CONTROLS
+RELEVANT TO SECURITY, AVAILABILITY, AND CONFIDENTIALITY
+NOVEMBER 1, 2023, TO OCTOBER 31, 2024
+
+Attestation and Compliance Services
+
+Proprietary & Confidential
+Unauthorized use, reproduction, or distribution of this report, in whole or in part, is strictly prohibited.
+
+Slack Confidential Information
+
+This report is intended solely for use by the management of Slack Technologies, LLC., user entities of
+Slack Technologies, LLC.’s services, and other parties who have sufficient knowledge and understanding
+of Slack Technologies, LLC.’s services covered by this report (each referred to herein as a “specified
+user”).
+If the report recipient is not a specified user (herein referred to as a "non-specified user"), use of this
+report is the non-specified user's sole responsibility and at the non-specified user's sole and exclusive
+risk. Non-specified users may not rely on this report and do not acquire any rights against Schellman &
+Company, LLC as a result of such access. Further, Schellman & Company, LLC does not assume any
+duties or obligations to any non-specified user who obtains this report and/or has access to it.
+Unauthorized use, reproduction, or distribution of this report, in whole or in part, is strictly prohibited.
+Slack Confidential Information
+
+TABLE OF
+CONTENTS
+SECTION 1 INDEPENDENT SERVICE AUDITOR’S
+REPORT .................................................... 1
+SECTION 2 MANAGEMENT’S ASSERTION .................. 5
+SECTION 3 DESCRIPTION OF THE SYSTEM ................ 7
+SECTION 4 TESTING MATRICES ............................... 24
+SECTION 5 OTHER INFORMATION PROVIDED BY
+SLACK ..................................................... 39
+
+Slack Confidential Information
+
+SECTION 1
+INDEPENDENT SERVICE
+AUDITOR’S REPORT
+
+Slack Confidential Information
+
+1
+
+INDEPENDENT SERVICE AUDITOR’S REPORT
+To Slack Technologies, LLC.:
+Scope
+We have examined Slack Technologies, LLC.’s (“Slack” or the “service organization”) accompanying description of
+its Team Collaboration Platform system, in Section 3, throughout the period November 1, 2023, to October 31,
+2024, (the “description”), based on the criteria for a description of a service organization’s system in DC section
+200, 2018 Description Criteria for a Description of a Service Organization’s System in a SOC 2® Report (AICPA,
+Description Criteria) (“description criteria”), and the suitability of the design and operating effectiveness of controls
+stated in the description throughout the period November 1, 2023, to October 31, 2024, to provide reasonable
+assurance that Slack’s service commitments and system requirements were achieved based on the trust services
+criteria relevant to security, availability, and confidentiality (“applicable trust services criteria”) set forth in TSP
+section 100, Trust Services Criteria for Security, Availability, Processing Integrity, Confidentiality, and Privacy
+(AICPA, Trust Services Criteria).
+Slack uses various subservice organizations for cloud hosting services, service management services, and board
+of directors’ oversight, HR functions, vendor management, and endpoint management services. The description
+indicates that complementary subservice organization controls that are suitably designed and operating effectively
+are necessary, along with controls at Slack, to achieve Slack’s service commitments and system requirements
+based on the applicable trust services criteria. The description presents Slack’s controls, the applicable trust
+services criteria, and the types of complementary subservice organization controls assumed in the design of Slack’s
+controls. The description does not disclose the actual controls at the subservice organizations. Our examination
+did not include the services provided by the subservice organizations, and we have not evaluated the suitability of
+the design or operating effectiveness of such complementary subservice organization controls.
+The description indicates that complementary user entity controls that are suitably designed and operating
+effectively are necessary, along with controls at Slack, to achieve Slack’s service commitments and system
+requirements based on the applicable trust services criteria. The description presents Slack’s controls, the
+applicable trust services criteria, and the complementary user entity controls assumed in the design of Slack’s
+controls. Our examination did not include such complementary user entity controls and we have not evaluated the
+suitability of the design or operating effectiveness of such controls.
+The information included in Section 5, “Other Information Provided by Slack” is presented by Slack management to
+provide additional information and is not a part of the description. Information about Slack’s physical security
+processes has not been subjected to the procedures applied in the examination of the description, the suitability of
+the design of controls, and the operating effectiveness of the controls to achieve Slack’s service commitments and
+system requirements based on the applicable trust services criteria.
+Service Organization’s Responsibilities
+Slack is responsible for its service commitments and system requirements and for designing, implementing, and
+operating effective controls within the system to provide reasonable assurance that Slack’s service commitments
+and system requirements were achieved. Slack has provided the accompanying assertion, in Section 2,
+(“assertion”) about the description and the suitability of design and operating effectiveness of controls stated therein.
+Slack is also responsible for preparing the description and assertion, including the completeness, accuracy, and
+method of presentation of the description and assertion; providing the services covered by the description; selecting
+the applicable trust services criteria and stating the related controls in the description; and identifying the risks that
+threaten the achievement of the service organization’s service commitments and system requirements.
+Service Auditor’s Responsibilities
+Our responsibility is to express an opinion on the description and on the suitability of design and operating
+effectiveness of controls stated in the description based on our examination. Our examination was conducted in
+accordance with attestation standards established by the American Institute of Certified Public Accountants (AICPA)
+Slack Confidential Information
+
+2
+
+and in accordance with International Standard on Assurance Engagements 3000 (Revised), Assurance
+Engagements Other Than Audits or Reviews of Historical Financial Information, issued by the International Auditing
+and Assurance Standards Board. Those standards require that we plan and perform our examination to obtain
+reasonable assurance about whether, in all material respects, the description is presented in accordance with the
+description criteria and the controls stated therein were suitably designed and operated effectively to provide
+reasonable assurance that the service organization’s service commitments and system requirements were
+achieved based on the applicable trust services criteria. We believe that the evidence we obtained is sufficient and
+appropriate to provide a reasonable basis for our opinion.
+An examination of the description of a service organization’s system and the suitability of the design and operating
+effectiveness of controls involves the following:
+•
+
+Obtaining an understanding of the system and the service organization’s service commitments and system
+requirements.
+
+•
+
+Assessing the risks that the description is not presented in accordance with the description criteria and that
+controls were not suitably designed or did not operate effectively.
+
+•
+
+Performing procedures to obtain evidence about whether the description is presented in accordance with
+the description criteria.
+
+•
+
+Performing procedures to obtain evidence about whether controls stated in the description were suitably
+designed to provide reasonable assurance that the service organization achieved its service commitments
+and system requirements based on the applicable trust services criteria.
+
+•
+
+Testing the operating effectiveness of controls stated in the description to provide reasonable assurance
+that the service organization achieved its service commitments and system requirements based on the
+applicable trust services criteria.
+
+•
+
+Evaluating the overall presentation of the description.
+
+Our examination also included performing such other procedures as we considered necessary in the circumstances.
+Service Auditor’s Independence and Quality Control
+We are required to be independent and to meet our other ethical responsibilities in accordance with relevant ethical
+requirements relating to the engagement, including the Code of Professional Conduct established by the AICPA
+and the International Ethics Standards Board for Accountants’ Code of Ethics for Professional Accountants.
+We applied the Statements on Quality Control Standards established by the AICPA and, accordingly, maintain a
+comprehensive system of quality control.
+Inherent Limitations
+The description is prepared to meet the common needs of a broad range of report users and may not, therefore,
+include every aspect of the system that individual users may consider important to meet their informational needs.
+There are inherent limitations in the effectiveness of any system of internal control, including the possibility of human
+error and the circumvention of controls.
+Because of their nature, controls may not always operate effectively to provide reasonable assurance that the
+service organization’s service commitments and system requirements are achieved based on the applicable trust
+services criteria. Also, the projection to the future of any conclusions about the suitability of the design and operating
+effectiveness of controls is subject to the risk that controls may become inadequate because of changes in
+conditions or that the degree of compliance with the policies or procedures may deteriorate.
+Description of Test of Controls
+The specific controls we tested, and the nature, timing, and results of those tests are presented in Section 4 of our
+report titled “Testing Matrices.”
+
+Slack Confidential Information
+
+3
+
+Opinion
+In our opinion, in all material respects:
+•
+
+the description presents Slack’s Team Collaboration Platform system that was designed and implemented
+throughout the period November 1, 2023, to October 31, 2024, in accordance with the description criteria;
+
+•
+
+the controls stated in the description were suitably designed throughout the period November 1, 2023, to
+October 31, 2024, to provide reasonable assurance that Slack’s service commitments and system
+requirements would be achieved based on the applicable trust services criteria, if its controls operated
+effectively throughout that period and if the subservice organizations and the user entities applied the
+complementary controls assumed in the design of Slack’s controls throughout that period; and
+
+•
+
+the controls stated in the description operated effectively throughout the period November 1, 2023, to
+October 31, 2024, to provide reasonable assurance that Slack’s service commitments and system
+requirements were achieved based on the applicable trust services criteria, if complementary subservice
+organization controls and user entity controls assumed in the design of Slack’s controls operated effectively
+throughout that period.
+
+Restricted Use
+This report, including the description of tests of controls and results thereof in Section 4, is intended solely for the
+information and use of Slack; user entities of Slack’s Team Collaboration Platform system during some or all of the
+period of November 1, 2023, to October 31, 2024, business partners of Slack subject to risks arising from
+interactions with the Team Collaboration Platform system, practitioners providing services to such user entities and
+business partners, prospective user entities and business partners, and regulators who have sufficient knowledge
+and understanding of the following:
+•
+
+the nature of the service provided by the service organization;
+
+•
+
+how the service organization’s system interacts with user entities, business partners, subservice
+organizations, and other parties;
+
+•
+
+internal control and its limitations;
+
+•
+
+complementary user entity controls and subservice organization controls and how those controls interact
+with the controls at the service organization to achieve the service organization’s service commitments and
+system requirements;
+
+•
+
+user entity responsibilities and how they may affect the user entity’s ability to effectively use the service
+organization’s services;
+
+•
+
+the applicable trust services criteria; and
+
+•
+
+the risks that may threaten the achievement of the service organization’s service commitments and system
+requirements, and how controls address those risks.
+
+This report is not intended to be, and should not be, used by anyone other than these specified parties.
+
+Tampa, Florida
+December 17, 2024
+
+Slack Confidential Information
+
+4
+
+SECTION 2
+MANAGEMENT’S
+ASSERTION
+
+Slack Confidential Information
+
+5
+
+MANAGEMENT’S ASSERTION
+We have prepared the accompanying description of Slack’s Team Collaboration Platform system, in Section 3,
+throughout the period November 1, 2023, to October 31, 2024, (the “description”) based on the criteria for a
+description of a service organization’s system in DC section 200, 2018 Description Criteria for a Description of a
+Service Organization’s System in a SOC 2® Report (AICPA, Description Criteria), (“description criteria”). The
+description is intended to provide report users with information about the Team Collaboration Platform system that
+may be useful when assessing the risks arising from interactions with Slack’s system, particularly information about
+system controls that Slack has designed, implemented, and operated to provide reasonable assurance that its
+service commitments and system requirements were achieved based on the trust services criteria relevant to
+security, availability, and confidentiality (“applicable trust services criteria”) set forth in TSP section 100, Trust
+Services Criteria for Security, Availability, Processing Integrity, Confidentiality, and Privacy (AICPA, Trust Services
+Criteria).
+Slack uses various subservice organizations for cloud hosting services, service management services, and board
+of directors’ oversight, HR functions, vendor management, and endpoint management services. The description
+indicates that complementary subservice organization controls that are suitably designed and operating effectively
+are necessary, along with controls at Slack, to achieve Slack’s service commitments and system requirements
+based on the applicable trust services criteria. The description presents Slack’s controls, the applicable trust
+services criteria, and the types of complementary subservice organization controls assumed in the design of Slack’s
+controls. The description does not disclose the actual controls at the subservice organizations.
+The description indicates that complementary user entity controls that are suitably designed and operating
+effectively are necessary, along with controls at Slack, to achieve Slack’s service commitments and system
+requirements based on the applicable trust services criteria. The description presents Slack’s controls, the
+applicable trust services criteria, and the complementary user entity controls assumed in the design of Slack’s
+controls.
+We confirm, to the best of our knowledge and belief, that:
+•
+
+the description presents Slack’s Team Collaboration Platform system that was designed and implemented
+throughout the period November 1, 2023, to October 31, 2024, in accordance with the description criteria;
+
+•
+
+the controls stated in the description were suitably designed throughout the period November 1, 2023, to
+October 31, 2024, to provide reasonable assurance that Slack’s service commitments and system
+requirements would be achieved based on the applicable trust services criteria, if its controls operated
+effectively throughout that period, and if the subservice organizations and the user entities applied the
+complementary controls assumed in the design of Slack’s controls throughout that period; and
+
+•
+
+the controls stated in the description operated effectively throughout the period November 1, 2023, to
+October 31, 2024, to provide reasonable assurance that Slack’s service commitments and system
+requirements were achieved based on the applicable trust services criteria if complementary subservice
+organization controls and user entity controls assumed in the design of Slack’s controls operated effectively
+throughout that period.
+
+Slack Confidential Information
+
+6
+
+SECTION 3
+DESCRIPTION OF THE
+SYSTEM
+
+Slack Confidential Information
+
+7
+
+OVERVIEW OF OPERATIONS AND DESCRIPTION OF SERVICES PROVIDED
+Since 2014, Slack Technologies, LLC (“Slack Technologies”, “Slack”, or the “Company”) has provided the Team
+Collaboration Platform called “Slack” (the “System”) to businesses and organizations (“user entities”), designed to
+ensure the right people are always in the loop and key information is always at their fingertips.
+Collectively, the Slack Team Collaboration Platform (“Slack”) consists of:
+•
+
+Slack Native Client Applications
+
+•
+
+Slack Web Applications and Services
+
+•
+
+Slack Application Programming Interfaces (APIs)
+
+•
+
+Slack Application Hosting Services and Developer Tools
+
+With Slack, users join a secure instance called a “Workspace” (“Slack Workspace”) where members can message
+each other in real time individually or in groups across multiple device types. Discussions can be organized into
+different topics (called “channels”) or different groups of Workspace members, as desired. Slack Workspaces can
+connect to one another, and all members within an organization share a directory. As a collaboration hub, Slack
+allows other services to connect into the different discussions, providing updates and notifications directly into Slack.
+Slack provides a valuable repository of information by capturing all communication and content in one archive that
+is searchable.
+Slack integrates with a large number of third-party services and supports community-built integrations. Slack
+provides mobile apps for iOS and Android in addition to their web browser client and electron desktop clients for
+macOS, Windows, and Linux (beta). Slack has been used for organizational communication, as well as a
+community platform.
+Slack offers a set of development tools to help customers integrate third-party services and build custom workflow
+automations. Using Slack APIs, developers can build custom applications with tools like the Slack CLI and SDK
+and have the option to host their applications on Slack's infrastructure. Users can create workflows using Workflow
+Builder, a no-code automation tool built natively into Slack.
+Additional detail is posted on the Company’s website and made available to internal and external users.
+
+PRINCIPAL SERVICE COMMITMENTS AND SYSTEM REQUIREMENTS
+Principal Service Commitments
+Slack makes the following security, availability, and confidentiality commitments to their customers:
+commitments are made available to the public on Slack’s website (https://slack.com/security-practices).
+
+These
+
+•
+
+Slack will make the services available 99.99% of the time, except for maintenance or as otherwise provided
+in service level agreement (SLA) described in the service contract.
+
+•
+
+Production cloud infrastructure hosted within multiple geographically diverse availability zones / regions.
+
+•
+
+Encrypt data in transmission using transport layer security (TLS) or other technologies over public networks.
+
+•
+
+Maintain commercially reasonable administrative, technical, organizational, and physical measures to
+protect the security of customer data against anticipated threats or hazards.
+
+•
+
+Confidential data stored within the production services utilize advanced encryption standard (AES)
+encryption.
+
+Slack Confidential Information
+
+8
+
+•
+
+Confidential data stored within the production services is retained per customer defined retention policies.
+
+•
+
+Disaster recovery (DR) plans are in place and tested at least once per year.
+
+System Requirements
+Slack has put into place a set of policies and procedures, inclusive of technology-based controls and automation,
+to help ensure that security, availability, and confidentiality commitments are met.
+Slack’s commitments to security, availability, and confidentiality are described in the standard service agreement
+contracts for contracted customers. Customers are required to sign the Terms of Service (ToS) agreement prior to
+receiving Slack’s services. These agreements describe the technical and organizational controls that Slack is
+responsible for maintaining for their customers.
+In accordance with Slack’s assertion, and the description criteria, the aforementioned service commitments and
+requirements are those principal service commitments and requirements common to the broad base of users of the
+system and may therefore not fully address the specific service commitments and requirements made to all system
+users, in each individual case.
+
+COMPONENTS OF THE SYSTEM USED TO PROVIDE THE SERVICE
+System Boundaries
+A system is designed, implemented, and operated to achieve specific business objectives in accordance with
+management-specified requirements. The purpose of the system description is to delineate the boundaries of the
+system, which includes the services outlined above and the five components described below: infrastructure,
+software, people, procedures, and data.
+Infrastructure
+The System production environment is hosted by infrastructure subprocessors. The Company maintains the list of
+current subprocessors here: https://slack.com/slack-subprocessors, which included Amazon Web Services (AWS)
+among others during the period covered by this report. Development occurs on systems in environments that are
+separate from the production environment.
+Customer data is processed by and stored in hosted infrastructure compute services (such as AWS Elastic Compute
+Cloud (EC2) instances and hosted infrastructure storage services (such as AWS Simple Storage Service (S3).
+AWS S3 is also utilized to store backup copies of customer data. AWS Simple E-mail Service (SES) is also utilized
+to send and receive e-mail-based communication with users.
+Software
+The System is implemented using Linux, Apache, Hypertext Processor (PHP), and MySQL technologies with wellunderstood performance, scalability, and security properties. The System’s real-time service is implemented in
+Java using the WebSocket protocol.
+People
+The Company’s control environment is implemented, maintained, and supported by Infrastructure Engineering,
+Security, Customer Experience, People Operations (People Ops), Business Technology (BizTech), Quality
+Assurance (QA), Legal, Product Development, and Executive Management. All of the Company’s personnel are
+recruited and managed according to policies and procedures which are described in the Summary of Control
+Activities section below.
+Slack Confidential Information
+
+9
+
+Procedures
+Device and Network Security
+Devices issued to Company personnel must meet minimum security criteria that include being locked when
+unattended, employing full-disk encryption, and being kept up-to-date with security patches from the operating
+system vendor. Company laptops and workstations running Windows, Mac OS, or Linux are required to run
+antivirus software with up-to-date virus definitions.
+Development and production servers are configured to a baseline via configuration management tools, such as
+Chef, and to automatically apply security patches made available by the operating system vendor daily. Office
+networks grant no elevated access to the development or production environments. The development and
+production environments use firewalls and multi-factor authentication to isolate themselves from the Internet.
+Additional security measures are undertaken in accordance with the risk management program described above.
+Vulnerability management, automated scanning, penetration tests, a ‘bug bounty’ program, restrictive firewalls, and
+strong encryption of data transmitted over the public Internet are among the security measures employed by the
+Company.
+Access to Internal Systems
+Access to internal systems, including web-based tools and the development and production environments, is
+granted based upon job responsibilities, and revoked upon termination. Access to the System production
+environment and source code is reviewed quarterly by management.
+Company personnel must pass background checks before starting work and attend security training during the
+onboarding period and annually thereafter.
+Two-factor authentication is required to access the production environment, source code, hosting provider
+interfaces, the Company’s internal administrative website, and the System itself.
+Access to User Data
+Access to sensitive customer data is restricted to Service Engineering personnel with credentials to access such
+data. All access by non-Service Engineering personnel requires management authorization or explicit customer
+approval. Company personnel are not authorized to store customer data on laptops, phones, universal serial bus
+(USB) drives, or any other device or portable media outside of the Company’s data center. Instead, non-sensitive
+user data is accessed via web-based tools. Access to these tools is managed centrally and may be revoked at any
+time.
+Data
+The following table describes the information used and supported by the system.
+Data Used and Supported by the System
+Data Description
+
+Data Reporting
+
+Classification
+
+Customer Data
+
+Data available to customers in their
+designated Workspace via the
+desktop, web, or mobile
+applications.
+
+Confidential and Private to
+the Customer
+
+The system stores and processes all information provided by user entities without inspection; all such information
+is maintained as confidential and private to that user entity. This confidential and private information is available
+only to members of the user entity’s Slack Workspace. Each user entity has designated administrators who
+authorize member access to information stored in their Slack Workspace.
+
+Slack Confidential Information
+
+10
+
+As described below in the “Summary of Control Activities” section, access to customer data by Company personnel
+is restricted to authorized personnel. Additional access to customer data by Company personnel requires
+management authorization or explicit approval from the user entity.
+Significant Changes During the Period
+There were no significant changes that are likely to affect report users’ understanding of how the in-scope system
+is used to provide the services covered by this examination during the period.
+Subservice Organizations
+The cloud hosting services provided by AWS; the service management services provided by ZenDesk; and the
+board of directors’ oversight, HR functions, vendor management, and endpoint management services provided by
+Salesforce were not included within the scope of this examination.
+Salesforce
+The Company utilizes Salesforce for entity level control activities such as board of director’s oversight, HR functions,
+vendor management, and endpoint management. Salesforce is responsible for maintaining an effective control
+environment which oversees various Slack processes. Salesforce is examined annually in accordance with the
+American Institute of Certified Public Accountants (AICPA) Guide, Reporting on Controls at a Service Organization
+Relevant to Security, Availability, Processing Integrity, Confidentiality or Privacy (System and Organization Controls
+(SOC) 2®). This description includes only the controls of the System and does not include any of the controls
+expected to be implemented at Salesforce.
+It is expected that Salesforce has implemented the following types of controls to support achievement of the
+associated criteria:
+Controls expected to be implemented at Salesforce
+Applicable Trust
+Services Criteria
+
+Complementary Subservice Organization Controls (CSOCs)
+
+CC1.1, CC1.4
+
+Salesforce is responsible for implementing controls for new employee hiring policies
+and procedures; employment candidate screening and onboarding procedures;
+evaluating the competency of existing personnel; the employee handbook, and the
+code of conduct; defining job descriptions; and other HR functions that may relate to
+the stated criterion.
+
+CC1.2
+
+Salesforce is responsible for implementing controls that ensures the board of directors
+demonstrates independence from management and exercises oversight of the
+development and performance of internal control.
+
+CC1.3
+
+Salesforce is responsible for implementing controls for defining job descriptions;
+communicating the defined lines of reporting to personnel; and other HR functions that
+establish authorities and responsibilities of personnel.
+
+CC1.5
+
+Salesforce is responsible for implementing controls for defining job descriptions; the
+employee sanction process; communication of performance metrics to the board of
+directors; and other corporate entity functions that may relate to the stated criterion.
+
+CC2.1
+
+Salesforce is responsible for implementing controls for providing security awareness
+training to employees and contractors and ensuring personnel certify acceptance of
+responsibilities upon completion of training.
+
+CC2.2
+
+Salesforce is responsible for implementing controls for new employee hiring policies
+and procedures; employment candidate screening and onboarding procedures;
+defining job descriptions; and other HR functions that may relate to the stated criterion.
+
+Slack Confidential Information
+
+11
+
+Controls expected to be implemented at Salesforce
+Applicable Trust
+Services Criteria
+
+Complementary Subservice Organization Controls (CSOCs)
+
+CC2.3, C1.1
+
+Salesforce is responsible for implementing controls communicating its security, privacy,
+and architecture documentation to Customers via the Trust website, which includes
+commitments to security, availability, and confidentiality.
+
+CC3.4, CC9.2
+
+Salesforce is responsible for implementing controls to evaluate data center hosting
+providers and sub-processers.
+
+AWS
+The Company utilizes services from AWS, such as EC2 for infrastructure hosting and S3 for data storage and AWS
+SES to send and receive e-mail-based communication with users. AWS is responsible for operating, managing,
+and controlling the components from the host operating system and virtualization layer and storage, down to the
+physical security and environmental controls over the facilities in which the services operate. AWS is examined
+annually in accordance with the AICPA Guide, Reporting on Controls at a Service Organization Relevant to Security,
+Availability, Processing Integrity, Confidentiality or Privacy (SOC 2®). This description includes only the controls of
+the System and does not include any of the controls expected to be implemented at AWS.
+It is expected that AWS has implemented the following types of controls to support achievement of the associated
+criteria:
+Controls expected to be implemented at AWS
+Applicable Trust
+Services Criteria
+
+CSOCs
+
+CC3.2, CC3.3
+
+Procedures are established and implemented to identify, analyze, and remediate
+potential security, availability, and confidentiality threats and/or risks.
+
+CC4.1, CC4.2
+
+Procedures are established and implemented to evaluate the designs and operating
+effectiveness of controls as they relate to security, availability, and/or confidentiality
+commitments, as well as to identify and track to resolution the corrective actions for
+control deficiencies.
+Logical security has been implemented to authenticate authorized users, restrict
+access, prevent, and detect unauthorized access.
+
+CC6.1
+
+The systems are configured to identify and authenticate internal and external users with
+appropriate valid credentials.
+Security measures are implemented to prevent unauthorized disclosure, usage, and/or
+access to confidential information.
+
+CC6.2
+
+Procedures are implemented to provision and de-provision user access to systems and
+applications based on appropriate authorization.
+
+CC6.3
+
+Logical access to the software and physical access to the software hosting datacenter
+facilities are provisioned to authorized personnel and revoked upon termination or
+when access is no longer needed.
+
+CC6.4, CC6.5
+
+Physical access to the datacenter facilities is restricted to authorized personnel.
+
+CC6.6
+
+Logical security measures have been implemented to protect and detect external
+threats.
+
+CC6.7
+
+Logical security measures have been implemented to secure the transmission,
+movement, and removal of information, as well as restricting users with the ability to do
+so.
+
+CC6.8
+
+Antivirus and/or malware software have been implemented to prevent or detect the
+introduction of unauthorized or malicious software.
+Slack Confidential Information
+
+12
+
+Controls expected to be implemented at AWS
+Applicable Trust
+Services Criteria
+CC7.2
+CC7.3, 7.4, 7.5
+
+CSOCs
+Vulnerability scans and penetration testing are performed periodically to identify
+vulnerabilities threatening the systems.
+Incident Response Procedures are established and implemented to identify, analyze,
+and remediate potential security, availability, and confidentiality events and/or
+incidents.
+Software development lifecycle (SDLC) has been established and implemented to
+ensure system changes are authorized, tested, and approved prior to production
+deployment.
+
+CC8.1
+
+Policies and procedures for SDLC or infrastructure changes have been established and
+reviewed and are updated periodically.
+Procedures are established and implemented to ensure changes to systems are
+authorized, designed, developed, configured, documented, tested, and approved prior
+to production deployment.
+Procedures are implemented to ensure confidential information is protected during
+systems change management processes.
+
+CC9.2
+
+Confidential information is only obtained in accordance with the defined commitments
+or agreements.
+
+A1.1
+
+Monitoring tools are implemented to monitor and manage the systems’ capacity and
+availability.
+
+A1.2
+
+Environmental protections, data backup processes, recovery infrastructure, and
+monitoring and alarming mechanisms have been implemented to adequately address
+availability requirements.
+
+A1.3
+
+Business continuity / disaster recovery procedures are tested periodically.
+
+ZenDesk
+The Company utilizes Zendesk for receiving, managing, and resolving requests for assistance from its users.
+Zendesk is responsible for collecting and storing customer-submitted requests and providing help desk functionality
+for the Company’s Customer Experience Department. Zendesk is examined annually in accordance with the AICPA
+Guide, Reporting on Controls at a Service Organization Relevant to Security, Availability, Processing Integrity,
+Confidentiality or Privacy (SOC 2®). This description includes only the controls of the System and does not include
+any of the controls expected to be implemented at Zendesk.
+It is expected that Zendesk has implemented the following types of controls to support achievement of the
+associated criteria:
+Controls expected to be implemented at Zendesk
+Applicable Trust
+Services Criteria
+
+CSOCs
+
+CC3.2, CC3.3
+
+Procedures are established and implemented to identify, analyze, and remediate
+potential security, availability, and confidentiality threats and/or risks.
+
+CC4.1, CC4.2
+
+Procedures are established and implemented to evaluate the designs and operating
+effectiveness of controls as they relate to security, availability, and/or confidentiality
+commitments, as well as to identify and track to resolution the corrective actions for
+control deficiencies.
+
+CC6.1
+
+Logical security has been implemented to authenticate authorized users, restrict
+access, prevent, and detect unauthorized access.
+Slack Confidential Information
+
+13
+
+Controls expected to be implemented at Zendesk
+Applicable Trust
+Services Criteria
+
+CSOCs
+
+CC6.1
+
+The systems are configured to identify and authenticate internal and external users with
+appropriate valid credentials.
+
+CC6.2
+
+Procedures are implemented to provision and de-provision user access to systems and
+applications based on appropriate authorization.
+
+CC6.3
+
+Logical access to the software and physical access to the software hosting datacenter
+facilities are provisioned to authorized personnel and revoked upon termination or
+when access is no longer needed.
+
+CC6.6
+
+Logical security measures have been implemented to protect and detect external
+threats.
+
+CC6.7
+
+Logical security measures have been implemented to secure the transmission,
+movement, and removal of information, as well as restricting users with the ability to do
+so.
+
+CC6.8
+
+Antivirus and/or malware software have been implemented to prevent or detect the
+introduction of unauthorized or malicious software.
+
+CC7.2
+
+Vulnerability scans and penetration testing are performed periodically to identify
+vulnerabilities threatening the systems.
+
+CC7.3, 7.4, 7.5
+
+Incident Response Procedures are established and implemented to identify, analyze,
+and remediate potential security, availability, and confidentiality events and/or
+incidents.
+SDLC has been established and implemented to ensure system changes are
+authorized, tested, and approved prior to production deployment.
+
+CC8.1
+
+Policies and procedures for SDLC or infrastructure changes have been established and
+reviewed and are updated periodically.
+Procedures are implemented to identify deficiencies in the system and to ensure
+secured change management procedures are tracked and monitored.
+
+CONTROL ENVIRONMENT
+The control environment at Slack is the foundation for the other areas of internal control. It sets the tone of the
+organization and influences the control consciousness of its personnel. The components of the control environment
+factors include the integrity and ethical values, management’s commitment to competence, its organizational
+structure, the assignment of authority and responsibility, and the oversight and direction provided by the board of
+directors and operations management.
+Integrity and Ethical Values
+The effectiveness of controls cannot rise above the integrity and ethical values of the people who create, administer,
+and monitor them. Integrity and ethical values are essential elements of Slack’s control environment, affecting the
+design, administration, and monitoring of other components. Integrity and ethical behavior are the product of Slack’s
+ethical and behavioral standards, how they are communicated, and how they are reinforced in practices. They
+include management’s actions to remove or reduce incentives that might prompt personnel to engage in dishonest,
+illegal, or unethical acts. They also include the communication of entity values and behavioral standards through
+policy statements and codes of conduct. Furthermore, when a full-time employee is terminated, People Operations
+
+Slack Confidential Information
+
+14
+
+personnel will complete a termination checklist that is used for offboarding personnel. The checklist includes
+information about collecting the Company’s assets (i.e., laptops, badges, mobile devices, etc.) and communicate
+the continuation of information security responsibilities and duties that remained, as per the contractual agreement
+signed, upon termination.
+Salesforce is responsible for implementing controls for new employee hiring policies and procedures; employment
+candidate screening and onboarding procedures; evaluating the competency of existing personnel; the employee
+handbook, and the code of conduct; defining job descriptions; and other HR functions that may relate to the stated
+criterion.
+Board of Directors and Audit Committee Oversight
+The Company’s controls are influenced significantly by its senior executive management team. Attributes that
+define the entity’s “tone at the top” are established by executive management to the extent of its involvement and
+scrutiny of activities, the appropriateness of its actions, the degree to which difficult questions are raised and
+pursued with management. The senior executive management team meets on a periodic basis to oversee
+operations management activities and to discuss and monitor related issues.
+Organizational Structure and Assignment of Authority and Responsibility
+Salesforce communicates the defined key areas of authority responsibility and lines of reporting to personnel related
+to the design, development, implementation, operation, maintenance, and monitoring of the system. Please refer
+to the Salesforce Inc. SOC 2 report for additional details.
+Commitment to Competence
+As a business unit of Salesforce, Slack’s management defines competence as the knowledge and skills necessary
+to accomplish tasks that define employees’ roles and responsibilities. Slack’s commitment to competence includes
+management’s consideration of the competence levels for particular jobs and how those levels translate into
+requisite skills and knowledge. Salesforce has considered the competence levels for jobs and translated required
+skills and knowledge levels into written position requirements. Please refer to the Salesforce Inc. SOC 2 report for
+additional details.
+Accountability
+Slack’s management philosophy and operating style encompasses a broad range of characteristics. Such
+characteristics include management’s approach to taking and monitoring business risks; and management’s
+attitudes toward information processing, accounting functions and personnel. Slack Technologies (the "Company")
+has a documented Information Security Policy that is communicated to Company personnel (employees and
+contractors). Roles and responsibilities along with disciplinary processes are documented in the policy.
+
+RISK ASSESSMENT
+The Company has defined a risk management framework. Management identifies risks in their respective areas of
+responsibility, assesses the severity of those risks, and implements appropriate and timely solutions to address
+those risks. The risk management framework, identifiable risks, and appropriate mitigation strategies are assessed
+on an annual basis to ensure changes to the control environment are considered. Ongoing monitoring procedures
+are built into the Company’s internal controls to ensure risks are consistently managed.
+
+Slack Confidential Information
+
+15
+
+TRUST SERVICES CRITERIA AND RELATED CONTROL ACTIVITIES
+Control activities are designed to address the risks identified by management’s assessment of security risk and
+include both detective and preventive control activities. Detailed descriptions of Control Activities are in the following
+Summary of Control Activities section. The control activities follow policies and procedures that instruct employees
+and contractors in their day-to-day security program-related responsibilities. The Company policies address:
+Acceptable Use, Access Control, Asset Management, Authorized Devices, Business Continuity Response and
+Recovery, Change Control, Data Encryption, Incident Response, Information Classification, Information Labeling &
+Handling, Infrastructure Security, Malicious Code Prevention, People Ops, Records Retention, Security
+Assessments, System Audit and Monitoring, Systems Development Lifecycle, Third-Party Relationships, and
+Vulnerability Management.
+The Chief Security Officer (CSO) annually reviews and updates the Company’s security policy and associated
+controls and ensures compliance across the Company.
+Salesforce is responsible for implementing controls for new employee hiring policies and procedures; employment
+candidate screening and onboarding procedures; evaluating the competency of existing personnel; the code of
+conduct; defining job descriptions; and other HR functions that may relate to the stated criterion. Additionally,
+Salesforce is responsible for obtaining confidentiality commitments that are consistent with the Company’s
+confidentiality requirements from vendors and other third parties whose products and services comprise part of the
+system or have access to confidential information and evaluating them as part of the Vendor Audit Program (VAP).
+Trust Services Criteria Not Applicable to the In-Scope System
+All criteria within the security, availability, and confidentiality categories are applicable to the Team Collaboration
+Platform system.
+Summary of Control Activities
+The Company’s detailed description of related control activities is included in Section 4 in order to eliminate the
+redundancy that would result from listing them in two sections. Although the related control activities are listed in
+Section 4, they are, nevertheless, an integral part of the Company’s description of the System as presented herein.
+The controls and procedures implemented by the Company to ensure the security, availability, and confidentiality
+of the System are described in the Information Security Policy and summarized below.
+Physical Security
+Subprocessors hosting Slack’s production infrastructure (‘hosting providers’) manage the physical security of the
+facilities that host the development and production environments. Each hosting provider’s SOC 2 report details the
+security measures in place; the Company’s management reviews these reports annually. Further, physical security
+is enforced at the Company's corporate office. Personnel are required to show proof of identity to enter the office
+building and entrances to the office are locked and require authorized badge for entry after close of business.
+Device and Network Security
+Development and production servers are configured to a baseline via configuration management tools, such as
+Chef, and to automatically apply security patches made available by the operating system vendor daily. Office
+networks grant no elevated access to the development or production environments. The development and
+production environments use firewalls and multi-factor authentication to isolate themselves from the Internet.
+Additional security measures are undertaken in accordance with the risk management program described above.
+Vulnerability management, automated scanning, penetration tests, a ‘bug bounty’ program, restrictive firewalls, and
+strong encryption of data transmitted over the public Internet are among the security measures employed by the
+Company.
+
+Slack Confidential Information
+
+16
+
+Salesforce is responsible for implement controls ensuring devices issued to Company personnel must meet
+minimum security criteria that include being locked when unattended, employing full-disk encryption, and being kept
+up to date with security patches from the operating system vendor. Company laptops and workstations running
+Windows, Mac OS, or Linux are required to run antivirus software with up-to-date virus definitions.
+Access to Internal Systems
+Access to internal systems, including web-based tools and the development and production environments, is
+granted based upon job responsibilities, and revoked upon termination. Access to the System production
+environment and source code is reviewed quarterly by management.
+Two-factor authentication is required to access the production environment, source code, hosting provider
+interfaces, the Company’s internal administrative website, and the System itself.
+Salesforce is responsible for ensuring company personnel must pass background checks before starting work and
+attend security training during the onboarding period and annually thereafter.
+Access to User Data
+Access to sensitive customer data is restricted to select Infrastructure Engineering personnel with credentials to
+access such data. All access by non-Infrastructure Engineering personnel requires management authorization or
+explicit customer approval. Company personnel are not authorized to store customer data on laptops, phones,
+USB drives, or any other device or portable media outside of the Company’s data center. Instead, sensitive user
+data is accessed via web-based tools. Access to these tools is managed centrally and may be revoked at any time.
+Change Management
+Code changes are tested in the development environment, committed to a source code management system that
+logs all changes in perpetuity, and reviewed through automated testing and by peers. Major releases are tested by
+QA before deployment.
+Incident Response
+An incident response plan defines roles, responsibilities, escalation paths, and communication requirements in case
+of incidents that affect the security, availability, or confidentiality of the System. Incidents impacting availability are
+communicated externally via https://status.slack.com. Incidents impacting security and confidentiality of customer
+data are communicated to the impacted customers as per the ToS, pertinent contractual obligations, and Security
+policies published on the Company’s website.
+DR and Data Backup
+The Company values reliability and simplicity in its infrastructure. The System is hosted in multiple availability
+zones. Availability zones are designed to fail independently, thus allowing the System to remain available when
+any single availability zone fails.
+Additionally, at least every 90 days, the Company practices recovery from backup, as would occur in the case of a
+complete failure and a requirement to move the System to a different region altogether.
+
+INFORMATION AND COMMUNICATION SYSTEMS
+Internal Communications
+Various methods of communication are made available internally to Company personnel to ensure awareness of
+individual roles and responsibilities and to communicate significant events in a timely manner. The Company
+utilizes the System to communicate with all of its personnel worldwide. The System allows management and the
+Security Department to provide timely updates to the entire Company, to announce new policies, and to notify when
+changes are made. Personnel similarly acknowledge receipt and acceptance of policies.
+Slack Confidential Information
+
+17
+
+External Communications
+External communication is primarily through the Company’s website and the System. User entities can check on
+the status of the System at https://status.slack.com or https://twitter.com/SlackStatus.
+In addition, the Company has implemented various help features for external users to report incidents within the
+System. User entities can contact the Company’s Customer Experience Department through the Company website
+or the System to submit inquiries and report system issues. Such inquiries are tracked in a ticketing system to
+ensure resolution.
+
+MONITORING
+Monitoring is a process that assesses the quality of internal control performance over time. It involves assessing
+the design and operation of controls and taking necessary corrective actions. This process is accomplished through
+ongoing activities, separate evaluation, or a combination of the two.
+Company management performs monitoring activities designed to ensure the effectiveness of the control
+environment and implements corrective actions to address deviations from its documented policies. At least
+annually, the Company's Risk and Compliance Department evaluates the design and operating effectiveness of
+controls to ensure compliance with System requirements and commitments. Remediation actions relating to
+identified deficiencies are tracked to resolution.
+Additional monitoring of controls, as defined in the System’s environment, include quarterly audits of access to the
+production environment and source code.
+Ongoing Monitoring
+The Service Engineering Department continuously monitors the health of the System from internal and external
+points to ensure the Company’s availability and capacity and is alerted immediately when problems are detected.
+Members of the Security and Service Engineering departments are on-call 24 hours a day, 7 days a week (24/7) to
+respond to security and confidentiality, or availability issues, respectively. Incidents are documented and discussed
+after being resolved in order to improve the Company’s response to incidents that affect the security, availability, or
+confidentiality of the System.
+The Company engages third-party organizations to perform penetration tests and other analyses that regularly test
+the security of the System and identify exploitable vulnerabilities. The Company maintains a ‘bug bounty’ program
+that encourages other parties to submit reports of potential vulnerabilities to the System’s security.
+Separate Evaluations
+The Company has implemented a self-assessment program to evaluate the performance of specific control activities
+and processes over time and confirm that the in-scope controls were consistently applied as designed and operating
+effectively.
+Based on the nature of the controls and the frequency of the application processes (e.g., real time, daily, weekly,
+quarterly, etc.), self-assessment methodology was communicated to management, including structured inquiry,
+observation, inspection, or sample testing, or a combination of the aforementioned. To ensure independence, selfassessment is performed by a competent individual different from the individuals that implemented the controls.
+The nature, timing and extent of the self-assessment tests and results are documented, tracked, and communicated
+to management and the control owners. Senior executive management team reviews the deviations and corrective
+actions during periodic meetings.
+
+Slack Confidential Information
+
+18
+
+Subservice Organization Monitoring
+The Company performs annual reviews of subservice organization independent assessor’s report(s) or security
+questionnaire(s) to evaluate the security, availability, and confidentiality controls relevant to the Company’s
+commitments.
+Evaluating and Communicating Deficiencies
+The nature, timing and extent of the self-assessment tests and results are documented by the self-assessors in an
+internal tracking tool, for management review. Deviations or deficiencies associated with controls with a level High
+risk assignment are immediately escalated to management for immediate corrective action. Other self-assessment
+results are reviewed within a week of the self-assessment test procedures, and corrective action, if required, is
+assigned to an individual and documented once those required actions are complete. Management reviews the
+deviations and corrective actions during the quarterly risk assessment meeting.
+
+COMPLEMENTARY CONTROLS AT USER ENTITIES
+Slack’s services are designed with the assumption that certain controls will be implemented by user entities. Such
+controls are called complementary user entity controls. It is not feasible for all of the principal service commitments
+and system requirements related to Slack’s services to be solely achieved by Slack’s control procedures.
+Accordingly, user entities, in conjunction with the Team Collaboration Platform system and related services, should
+establish their own internal controls or procedures to complement those of Slack.
+The following complementary user entities controls should be implemented by user entities to provide additional
+assurance that Slack’s principal service commitments and system requirements are achieved. As these items
+represent only a part of the control considerations that might be pertinent to user entities, user entities should
+exercise judgment in selecting and reviewing these complementary user entity controls.
+Ref.
+
+Control Activities Expected to be Implemented at User Entities
+
+Related Applicable
+Trust Services Criteria
+
+1
+
+User entities are responsible for informing Slack of any regulatory
+issues that may affect the services provided by the System.
+
+CC6.1; A1.2
+
+2
+
+User entities are responsible for understanding and complying with
+their contractual obligations to Slack.
+
+CC2.2 – CC2.3, CC6.1,
+A1.2
+
+3
+
+User entities are responsible for keeping the technical, billing, and
+administrative contact information on file with Slack up to date.
+
+CC2.2 – CC2.3
+
+4
+
+User entities are responsible for developing their own disaster
+recovery and business continuity plans that address the inability to
+access or utilize the System.
+
+A1.2 – A1.3
+
+5
+
+User entities are responsible for configuring the System security
+settings appropriately for the user entity.
+
+CC6.1, CC6.3, CC6.6
+
+6
+
+User entities are responsible for ensuring the confidentiality of any
+user accounts and passwords assigned to them for use with the
+System.
+
+CC6.1, CC6.3, CC6.6
+
+7
+
+User entities are responsible for inviting new users to sign up for an
+account in the System, as well as removing terminated user
+accounts from the System.
+
+CC6.1, CC6.3, CC6.6
+
+8
+
+User entities are responsible for ensuring that entity profile
+information stored by the System is accurate and complete.
+
+CC6.1, CC6.3, CC6.6
+
+Slack Confidential Information
+
+19
+
+Ref.
+
+Control Activities Expected to be Implemented at User Entities
+
+Related Applicable
+Trust Services Criteria
+
+9
+
+User entities are responsible for immediately notifying Slack of any
+actual or suspected information security breaches, including
+compromised user accounts.
+
+CC7.3 – CC7.5
+
+10
+
+User entities are responsible for ensuring the appropriateness of
+designated Slack Workspace owner(s) and administrator(s).
+
+CC6.1, CC6.3, CC6.6
+
+11
+
+User entities are responsible for providing accurate and complete
+contact information to Slack for end users to be provisioned.
+
+CC6.1, CC6.3, CC6.6
+
+12
+
+User entities are responsible for accepting the terms and
+agreement for utilizing Slack’s services.
+
+CC2.2 – CC2.3
+
+13
+
+User entities are responsible for monitoring and enforcing
+organizational compliance to Slack’s terms and agreements.
+
+CC2.2 – CC2.3
+
+14
+
+User entities are responsible for configuring the message retention
+settings appropriately for the organization.
+
+CC6.1, C1.1 – C1.2
+
+15
+
+User entities are responsible for developing and implementing their
+own information classification policies to govern sharing Personally
+Identifiable Information (PII) and other sensitive data in the System.
+
+CC6.1, CC8.1
+
+SLACK’S CONTROLS MAPPING TO SECURITY, AVAILABILITY, AND
+CONFIDENTIALITY CATEGORY CRITERIA
+Trust Services
+Category Criteria No.
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+Slack’s Control No(s).
+(See Section 4)
+
+CC1.1
+
+COSO Principle 1: The entity demonstrates a commitment to integrity
+and ethical values.
+
+1.03
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+CC1.2
+
+COSO Principle 2: The board of directors demonstrates independence
+from management and exercises oversight of the development and
+performance of internal control.
+
+1.09, 1.10
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+CC1.3
+
+COSO Principle 3: Management establishes, with board oversight,
+structures, reporting lines, and appropriate authorities and
+responsibilities in the pursuit of objectives.
+
+1.03
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+CC1.4
+
+COSO Principle 4: The entity demonstrates a commitment to attract,
+develop, and retain competent individuals in alignment with objectives.
+
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+Control Environment
+
+Slack Confidential Information
+
+20
+
+Trust Services
+Category Criteria No.
+
+CC1.5
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+Slack’s Control No(s).
+(See Section 4)
+
+COSO Principle 5: The entity holds individuals accountable for their
+internal control responsibilities in the pursuit of objectives.
+
+1.03
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+Communication and Information
+
+CC2.1
+
+CC2.2
+
+CC2.3
+
+COSO Principle 13: The entity obtains or generates and uses relevant,
+quality information to support the functioning of internal control.
+
+2.03, 2.04, 2.05, 2.06,
+2.07, 5.01
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+COSO Principle 14: The entity internally communicates information,
+including objectives and responsibilities for internal control, necessary
+to support the functioning of internal control.
+
+1.03, 2.03,
+2.04, 2.05
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+COSO Principle 15: The entity communicates with external parties
+regarding matters affecting the functioning of internal control.
+
+2.03, 2.04, 2.06, 2.07,
+10.05
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+Common Criteria Related to Risk Management and Design and Implementation of Controls
+CC3.1
+
+COSO Principle 6: The entity specifies objectives with sufficient clarity
+to enable the identification and assessment of risks relating to
+objectives.
+
+3.01, 3.02, 3.03
+
+CC3.2
+
+COSO Principle 7: The entity identifies risks to the achievement of its
+objectives across the entity and analyzes risks as a basis for
+determining how the risks should be managed.
+
+3.01, 3.02, 3.03
+
+CC3.3
+
+COSO Principle 8: The entity considers the potential for fraud in
+assessing risks to the achievement of objectives.
+
+3.01
+
+COSO Principle 9: The entity identifies and assesses changes that
+could significantly impact the system of internal control.
+
+1.12, 3.01,
+4.04, 10.05
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+CC3.4
+
+Monitoring Activities
+CC4.1
+
+COSO Principle 16: The entity selects, develops, and performs
+ongoing and/or separate evaluations to ascertain whether the
+components of internal control are present and functioning.
+
+CC4.2
+
+COSO Principle 17: The entity evaluates and communicates internal
+control deficiencies in a timely manner to those parties responsible for
+taking corrective action, including senior management and the board
+of directors, as appropriate.
+
+1.10, 5.01
+
+COSO Principle 10: The entity selects and develops control activities
+that contribute to the mitigation of risks to the achievement of
+objectives to acceptable levels.
+
+3.01, 5.01, 5.02
+
+1.12, 3.02, 3.03, 4.02,
+4.03, 4.04, 5.01, 5.02
+
+Control Activities
+CC5.1
+
+Slack Confidential Information
+
+21
+
+Trust Services
+Category Criteria No.
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+Slack’s Control No(s).
+(See Section 4)
+
+CC5.2
+
+COSO Principle 11: The entity also selects and develops general
+control activities over technology to support the achievement of
+objectives.
+
+1.03, 3.01,
+5.01, 5.02
+
+CC5.3
+
+COSO Principle 12: The entity deploys control activities through
+policies that establish what is expected and in procedures that put
+policies into action.
+
+1.03, 5.01
+
+Logical and Physical Access Controls
+
+CC6.1
+
+The entity implements logical access security software, infrastructure,
+and architectures over protected information assets to protect them
+from security events to meet the entity's objectives.
+
+6.01, 6.02,
+6.03, 7.03
+Control Activity
+Expected to be
+Implemented by AWS
+
+CC6.2
+
+Prior to issuing system credentials and granting system access, the
+entity registers and authorizes new internal and external users whose
+access is administered by the entity. For those users whose access is
+administered by the entity, user system credentials are removed when
+user access is no longer authorized.
+
+6.01, 6.02,
+6.03, 6.05
+
+CC6.3
+
+The entity authorizes, modifies, or removes access to data, software,
+functions, and other protected information assets based on roles,
+responsibilities, or the system design and changes, giving
+consideration to the concepts of least privilege and segregation of
+duties, to meet the entity’s objectives.
+
+6.01, 6.02,
+6.03, 6.05
+
+CC6.4
+
+The entity restricts physical access to facilities and protected
+information assets (for example, data center facilities, back-up media
+storage, and other sensitive locations) to authorized personnel to meet
+the entity’s objectives.
+
+Control Activity
+Expected to be
+Implemented by AWS
+and Salesforce
+
+CC6.5
+
+The entity discontinues logical and physical protections over physical
+assets only after the ability to read or recover data and software from
+those assets has been diminished and is no longer required to meet
+the entity’s objectives.
+
+6.09
+
+CC6.6
+
+The entity implements logical access security measures to protect
+against threats from sources outside its system boundaries.
+
+3.02, 3.03,
+4.02, 6.04
+
+CC6.7
+
+The entity restricts the transmission, movement, and removal of
+information to authorized internal and external users and processes,
+and protects it during transmission, movement, or removal to meet the
+entity’s objectives.
+
+6.06, 6.07,
+6.10, 7.03
+
+CC6.8
+
+The entity implements controls to prevent or detect and act upon the
+introduction of unauthorized or malicious software to meet the entity’s
+objectives.
+
+4.02, 6.02,
+7.03, 7.05, 7.06
+
+CC7.1
+
+To meet its objectives, the entity uses detection and monitoring
+procedures to identify (1) changes to configurations that result in the
+introduction of new vulnerabilities, and (2) susceptibilities to newly
+discovered vulnerabilities.
+
+3.02, 3.03,
+4.02, 7.03
+Control Activity
+Expected to be
+Implemented by AWS
+
+CC7.2
+
+The entity monitors system components and the operation of those
+components for anomalies that are indicative of malicious acts, natural
+disasters, and errors affecting the entity's ability to meet its objectives;
+anomalies are analyzed to determine whether they represent security
+events.
+
+3.02, 3.03,
+4.02, 4.03
+Control Activity
+Expected to be
+Implemented by AWS
+
+Systems Operation
+
+Slack Confidential Information
+
+22
+
+Trust Services
+Category Criteria No.
+
+Criteria Common to Security, Availability, and
+Confidentiality Categories
+
+Slack’s Control No(s).
+(See Section 4)
+
+CC7.3
+
+The entity evaluates security events to determine whether they could
+or have resulted in a failure of the entity to meet its objectives (security
+incidents) and, if so, takes actions to prevent or address such failures.
+
+2.04, 4.02, 7.01, 7.02
+
+CC7.4
+
+The entity responds to identified security incidents by executing a
+defined incident response program to understand, contain, remediate,
+and communicate security incidents, as appropriate.
+
+2.04, 7.01, 7.02
+
+CC7.5
+
+The entity identifies, develops, and implements activities to recover
+from identified security incidents.
+
+2.04, 7.01, 7.02
+
+The entity authorizes, designs, develops, or acquires, configures,
+documents, tests, approves, and implements changes to
+infrastructure, data, software, and procedures to meet its objectives.
+
+6.02, 6.04, 8.01, 8.02,
+8.03, 8.04, 8.05, 10.01
+
+The entity identifies, selects, and develops risk mitigation activities for
+risks arising from potential business disruptions.
+
+3.01, 9.02, 9.05
+
+The entity assesses and manages risks associated with vendors and
+business partners.
+
+1.12
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+
+Change Management
+CC8.1
+Risk Mitigation
+CC9.1
+
+CC9.2
+
+Additional Criteria for Availability
+A1.1
+
+The entity maintains, monitors, and evaluates current processing
+capacity and use of system components (infrastructure, data, and
+software) to manage capacity demand and to enable the
+implementation of additional capacity to help meet its objectives.
+
+2.03, 2.06, 4.03
+
+A1.2
+
+The entity authorizes, designs, develops, or acquires, implements,
+operates, approves, maintains, and monitors environmental
+protections, software, data back-up processes, and recovery
+infrastructure to meet its objectives.
+
+9.01, 9.02,
+9.03, 9.05
+Control Activity
+Expected to be
+Implemented by AWS
+
+A1.3
+
+The entity tests recovery plan procedures supporting system recovery
+to meet its objectives.
+
+9.03, 9.05
+
+Additional Criteria for Confidentiality
+
+C1.1
+
+The entity identifies and maintains confidential information to meet the
+entity’s objectives related to confidentiality.
+
+C1.2
+
+The entity disposes of confidential information to meet the entity’s
+objectives related to confidentiality.
+
+6.02, 6.07, 6.10, 9.04,
+9.06, 10.01, 10.02,
+10.03, 10.05, 10.06
+Control Activity
+Expected to be
+Implemented by
+Salesforce
+10.06, 10.07
+
+Slack Confidential Information
+
+23
+
+SECTION 4
+TESTING MATRICES
+
+Slack Confidential Information
+
+24
+
+TESTS OF OPERATING EFFECTIVENESS AND RESULTS OF TESTS
+Scope of Testing
+This report on the controls relates to the Team Collaboration Platform system provided by Slack. The scope of the
+testing was restricted to the Team Collaboration Platform system and its boundaries as defined in Section 3.
+Schellman conducted the examination testing over the period November 1, 2023, through October 31, 2024.
+Tests of Operating Effectiveness
+The tests applied to test the operating effectiveness of controls are listed alongside each of the respective control
+activities within the Testing Matrices. Such tests were considered necessary to evaluate whether the controls were
+sufficient to provide reasonable, but not absolute, assurance that the applicable trust services criteria were achieved
+during the period. In selecting the tests of controls, Schellman considered various factors including, but not limited
+to, the following:
+•
+
+the nature of the control and the frequency with which it operates;
+
+•
+
+the control risk mitigated by the control;
+
+•
+
+the effectiveness of entity-level controls, especially controls that monitor other controls;
+
+•
+
+the degree to which the control relies on the effectiveness of other controls; and
+
+•
+
+whether the control is manually performed or automated.
+
+The types of tests performed with respect to the operational effectiveness of the control activities detailed in this
+section are briefly described below:
+Test Approach
+
+Description
+
+Inquiry
+
+Inquired of relevant personnel with the requisite knowledge and experience regarding
+the performance and application of the related control activity. This included in-person
+interviews, telephone calls, e-mails, web-based conferences, or a combination of the
+preceding.
+
+Observation
+
+Observed the relevant processes or procedures during fieldwork. This included, but
+was not limited to, witnessing the performance of controls or evidence of control
+performance with relevant personnel, systems, or locations relevant to the
+performance of control policies and procedures.
+
+Inspection
+
+Inspected the relevant audit records. This included, but was not limited to, documents,
+system configurations and settings, or the existence of sampling attributes, such as
+signatures, approvals, or logged events. In some cases, inspection testing involved
+tracing events forward to consequent system documentation or processes (e.g.,
+resolution, detailed documentation, alarms, etc.) or vouching backwards for
+prerequisite events (e.g., approvals, authorizations, etc.).
+
+Sampling
+Consistent with American Institute of Certified Public Accountants (AICPA) authoritative literature, Schellman
+utilizes professional judgment to consider the tolerable deviation rate, the expected deviation rate, the audit risk,
+the characteristics of the population, and other factors, in order to determine the number of items to be selected in
+a sample for a particular test. Schellman, in accordance with AICPA authoritative literature, selected samples in
+such a way that the samples were expected to be representative of the population. This included judgmental
+selection methods, where applicable, to ensure representative samples were obtained.
+
+Slack Confidential Information
+
+25
+
+System-generated population listings were obtained whenever possible to ensure completeness prior to selecting
+samples. In some instances, full populations were tested in cases including but not limited to, the uniqueness of
+the event or low overall population size.
+Reliability of Information Provided by the Service Organization
+Observation and inspection procedures were performed related to certain system-generated reports, listings, and
+queries to assess the accuracy and completeness (reliability) of the information used in the performance of our
+testing of the controls.
+Test Results
+The results of each test applied are listed alongside each respective test applied within the Testing Matrices. Test
+results not deemed as control deviations are noted by the phrase “No exceptions noted.” in the test result column
+of the Testing Matrices. Any phrase other than the aforementioned, constitutes either a test result that is the result
+of non-occurrence, a change in the application of the control activity, or a deficiency in the operating effectiveness
+of the control activity. Testing deviations identified within the Testing Matrices are not necessarily weaknesses in
+the total system of controls, as this determination can only be made after consideration of controls in place at user
+entities and subservice organizations, if applicable, and other factors. Control considerations that should be
+implemented by user entities and subservice organizations, in order to complement the control activities and
+achieve the applicable trust services criteria are presented in the “Complementary Controls at User Entities” and
+“Subservice Organizations” sections, respectively, within Section 3.
+
+SECURITY CATEGORY
+Slack
+Technologies
+Control #
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Control Environment
+1.03
+
+The CSO or designee reviews
+and approves relevant security
+standards and guidances at least
+annually and communicates
+material changes to personnel
+(employees and contractors).
+
+Inspected the information
+security and other relevant
+security policies and standards
+and evidence of review to
+determine that the CSO or
+designee reviewed and approved
+relevant security policies and
+standards and communicated
+material changes to personnel
+(employees and contractors)
+during the period.
+
+No exceptions noted.
+
+1.09
+
+An Executive Risk Committee
+(ERC) Charter has been
+established to define the
+responsibilities of the ERC
+members. The Charter is
+reviewed, updated if necessary,
+and approved on an annual basis
+and made available to relevant
+personnel.
+
+Inspected the ERC charter to
+determine that an ERC charter
+had been established to define
+the responsibilities of the ERC
+members and that the charter
+was reviewed, updated
+approved, and made available to
+relevant personnel during the
+period.
+
+No exceptions noted.
+
+Slack Confidential Information
+
+26
+
+Slack
+Technologies
+Control #
+1.10
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+The ERC Committee meets on a
+quarterly basis to review and
+evaluate the following, but not
+limited to:
+
+Inspected the ERC meeting
+minutes for a sample of quarters
+during the period to determine
+that the ERC met to review and
+evaluate the following topics for
+each quarter sampled:
+
+•
+
+•
+
+any opportunities for
+improvements
+
+•
+
+the remediation and/or
+corrective actions taken on
+identified risks, findings,
+issues, etc.
+
+•
+
+•
+
+1.12
+
+the alignment of the
+Company's policies and
+procedures with the
+established compliance
+frameworks
+
+approve any subsequent
+changes made to the highlevel information security
+policies
+resources and budget
+needs, if necessary, to
+implement, sustain, and
+continuously improve the
+information security and
+compliance frameworks
+
+Slack reviews Salesforce’s
+SOC2 report on an annual basis
+to ensure that Salesforce
+corporate controls that Slack
+relies on are operating
+effectively.
+
+•
+
+the alignment of the
+Company's policies and
+procedures with the
+established compliance
+frameworks
+
+•
+
+any opportunities for
+improvements
+
+•
+
+the remediation and/or
+corrective actions taken on
+identified risks, findings,
+issues, etc.
+
+•
+
+approve any subsequent
+changes made to the highlevel information security
+policies
+
+•
+
+resources and budget
+needs, if necessary, to
+implement, sustain, and
+continuously improve the
+information security and
+compliance frameworks
+
+Inspected the most recently
+completed Salesforce SOC2
+review documentation to
+determine that Slack reviewed
+Salesforce’s SOC2 report to
+ensure that Salesforce corporate
+controls that Slack relies on were
+operating effectively during the
+period.
+
+Test Results
+No exceptions noted.
+
+No exceptions noted.
+
+Salesforce is responsible for implementing controls for new employee hiring policies and procedures;
+employment candidate screening and onboarding procedures; evaluating the competency of existing
+personnel; the employee handbook, and the code of conduct; defining job descriptions; and other HR
+functions that may relate to the stated criterion.
+Salesforce is responsible for implementing controls that ensures the board of directors demonstrates
+independence from management and exercises oversight of the development and performance of internal
+control.
+Salesforce is responsible for implementing controls for defining job descriptions; communicating the
+defined lines of reporting to personnel; and other HR functions that establish authorities and
+responsibilities of personnel.
+Salesforce is responsible for implementing controls for defining job descriptions; the employee sanction
+process; communication of performance metrics to the board of directors; and other corporate entity
+functions that may relate to the stated criterion.
+Salesforce is responsible for implementing controls for providing security awareness training to
+employees and contractors and ensuring personnel certify acceptance of responsibilities upon completion
+of training.
+
+Slack Confidential Information
+
+27
+
+Slack
+Technologies
+Control #
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Communication and Information
+2.03
+
+The Company has implemented
+means for internal and external
+users to report incidents utilizing
+Slack's "help" feature. Tickets
+are automatically generated, and
+issues are tracked to resolution.
+
+Inspected the incident reporting
+feature and an example incident
+ticket generated during the
+period to determine that the
+Company implemented means
+for internal and external users to
+report incidents utilizing Slack’s
+“help” feature and that tickets
+were automatically generated,
+and issues were tracked to
+resolution.
+
+No exceptions noted.
+
+2.04
+
+The incident response process
+defining roles, responsibilities,
+escalation paths, and
+communication requirements in
+case of incidents that affect the
+security, availability, or
+confidentiality of the System is
+documented and available to
+personnel (employees and
+contractors). The incident
+response process is tested, at
+least, on an annual basis.
+
+Inspected the incident response
+procedures, evidence of
+communication to personnel, and
+evidence of the most recent
+incident response test to
+determine that the incident
+response process defined roles,
+responsibilities, escalation paths,
+and communication requirements
+in case of incidents that affected
+the security, availability, or
+confidentiality of the System was
+documented and available to
+personnel (employees and
+contractors) and was tested
+during the period.
+
+No exceptions noted.
+
+2.05
+
+Product releases are
+communicated to external users
+via publicly available release
+notes.
+
+Inspected the release notes for a
+sample of product releases
+during the period to determine
+that product releases were
+communicated to external users
+via publicly available release
+notes for each product release
+sampled.
+
+No exceptions noted.
+
+2.06
+
+Incidents impacting availability
+are communicated to customers
+within 24 hours.
+
+Inspected the customer incident
+notification for a sample of
+availability incidents during the
+period to determine that incidents
+impacting availability were
+communicated to customers
+within 24 hours for each
+availability incident sampled.
+
+No exceptions noted.
+
+2.07
+
+Incidents impacting security
+and/or confidentiality are
+communicated to impacted
+customers, as per the ToS and
+Security Policies published on
+the Company's website.
+
+Inspected the customer
+notification ticket for a sample of
+incidents requiring customer
+notification during the period to
+determine that each incident
+impacting security and/or
+confidentiality sampled was
+communicated to impacted
+customers, as per the ToS and
+Security Policies published on
+the Company’s website.
+
+No exceptions noted.
+
+Slack Confidential Information
+
+28
+
+Slack
+Technologies
+Control #
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Salesforce is responsible for implementing controls for providing security awareness training to
+employees and contractors and ensuring personnel certify acceptance of responsibilities upon completion
+of training.
+Salesforce is responsible for implementing controls for new employee hiring policies and procedures;
+employment candidate screening and onboarding procedures; defining job descriptions; and other HR
+functions that may relate to the stated criterion.
+Salesforce is responsible for implementing controls communicating its security, privacy, and architecture
+documentation to Customers via the Trust website, which includes commitments to security, availability,
+and confidentiality.
+Common Criteria Related to Risk Management and Design and Implementation of Controls
+3.01
+
+The Company has defined a risk
+management process, which
+includes the review of the
+company’s commitments and the
+operational, reporting, and
+compliance objectives to ensure
+they align with company’s
+mission. On an annual basis,
+management performs a risk
+assessment to identify and
+evaluate potential threats,
+including the potential for fraud,
+to the effectiveness of the control
+environment. Mitigation
+strategies are defined for
+identified risks.
+
+Inspected the risk management
+policy and the most recently
+completed risk assessment
+documentation to determine that
+the Company had defined a risk
+management process, which
+included the review of the
+company’s commitments and the
+operational, reporting, and
+compliance objectives to ensure
+they align with company’s
+mission and performed a risk
+assessment during the period to
+identify and evaluate potential
+threats, including the potential for
+fraud, to the effectiveness of the
+control environment at that
+mitigation strategies were
+defined for identified risks.
+
+No exceptions noted.
+
+3.02
+
+The Company engages third
+parties or the internal security
+team to conduct penetration tests
+of the production environment at
+least annually. Results are
+reviewed by management and
+high priority findings are tracked
+to resolution.
+
+Inspected the most recently
+completed penetration test report
+and an example remediation
+ticket during the period to
+determine that the Company
+engaged third parties or the
+internal security team to conduct
+penetration tests of the
+production environment during
+the period and that results were
+reviewed by management and
+high priority findings were
+tracked to resolution.
+
+No exceptions noted.
+
+3.03
+
+The Company manages a bug
+bounty program through which
+vulnerabilities are discovered
+and responsibly disclosed to the
+Company by external parties on
+an ongoing basis. Vulnerabilities
+are tracked to resolution.
+
+Inspected the remediation ticket
+for a sample of vulnerabilities
+identified during the period to
+determine that the Company
+managed a bug bounty program
+through which vulnerabilities
+were discovered and responsibly
+disclosed to the Company by
+external parties during the period
+and that each vulnerability
+sampled was tracked to
+resolution.
+
+No exceptions noted.
+
+Salesforce is responsible for implementing controls to evaluate data center hosting providers and subprocessers.
+
+Slack Confidential Information
+
+29
+
+Slack
+Technologies
+Control #
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Monitoring Activities
+4.02
+
+Logs are aggregated centrally
+and monitored for indicators of
+compromise. Alerts are
+generated on suspicious activity
+and reviewed in accordance with
+the Security Monitoring and
+Auditing Standards.
+
+Inspected the Security
+Monitoring and Auditing
+Standards, the enterprise
+security monitoring and alerting
+configurations, and example
+alerts generated during the
+period to determine that logs
+were aggregated centrally and
+monitored for indicators of
+compromise and that alerts were
+generated on suspicious activity
+and reviewed in accordance with
+the Security Monitoring and
+Auditing Standards.
+
+No exceptions noted.
+
+4.03
+
+Management has implemented
+automated tools to monitor
+demands and to provision
+additional capacity.
+
+Inspected the enterprise
+monitoring application's
+monitoring and alerting
+configurations, an example alert
+generated during the period, and
+the automated scaling
+configurations to determine that
+management implemented
+automated tools to monitor
+demands and to provision
+additional capacity.
+
+No exceptions noted.
+
+4.04
+
+The Legal Team identifies,
+documents, and tracks relevant
+legislative, regulatory, and
+contractual requirements that
+apply to Slack. Slack shall
+engage and maintain contact
+with experts (i.e., outside
+Counsel) as necessary.
+
+Inspected evidence of
+requirement tracking performed
+by the Legal Team during the
+period to determine that the
+Legal Team identified,
+documented, and tracked
+relevant legislative, regulatory,
+and contractual requirements
+that applied to Slack, and that
+Slack engaged and maintained
+contact with experts as
+necessary.
+
+No exceptions noted.
+
+Control Activities
+5.01
+
+An internal control assessment is
+executed in accordance with the
+Security Program Assessment
+Standard.
+
+Inspected the Security Program
+Assessment Standard and the
+most recently completed internal
+control assessment report to
+determine that an internal control
+assessment was executed in
+accordance with the Security
+Program Assessment Standard
+during the period.
+
+No exceptions noted.
+
+5.02
+
+The Head of Risk & Compliance
+at Slack reviews and approves
+the list of control activities on an
+annual basis.
+
+Inspected the internal control
+matrix and the most recently
+completed review of control
+activities to determine that the
+Head of Risk & Compliance at
+Slack reviewed and approved the
+list of control activities during the
+period.
+
+No exceptions noted.
+
+Slack Confidential Information
+
+30
+
+Slack
+Technologies
+Control #
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+Logical and Physical Access Controls
+6.01
+
+Management performs a
+quarterly review of access,
+including privileged access to
+sensitive customer data, to the
+production environment to
+identify unauthorized or
+terminated users. Any
+discrepancies are tracked to
+resolution.
+
+Inspected the user access review
+ticket and an example
+remediation ticket for a sample of
+quarters during the period to
+determine that management
+performed a review of access,
+including privileged access to
+sensitive customer data, to the
+production environment to
+identify unauthorized or
+terminated users and that any
+discrepancies were tracked to
+resolution for each quarter
+sampled.
+
+No exceptions noted.
+
+6.02
+
+Access to the production
+environment and source code is
+restricted to appropriate users
+based on job responsibility.
+Unique accounts are required to
+access the production
+environment.
+
+Inspected the user account
+listing and administrator user
+account listing for a sample of inscope systems with the
+assistance of the senior software
+engineer, risk & compliance to
+determine that access to the
+following sampled in-scope
+systems was restricted to
+appropriate users based on job
+responsibility and that unique
+accounts were utilized to access
+the production environment:
+
+No exceptions noted.
+
+•
+
+Identity management service
+
+•
+
+Infrastructure management
+console
+
+•
+
+Configuration management
+tool
+
+•
+
+Bastion host
+
+•
+
+Production application and
+database servers
+
+•
+
+Production databases
+
+•
+
+Version control software
+
+Slack Confidential Information
+
+31
+
+Slack
+Technologies
+Control #
+6.03
+
+6.04
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Access to the production
+environment and source code is
+restricted via public key
+authentication or username and
+password; all require two-factor
+authentication.
+
+Inspected the user account
+listings and the authentication
+configurations for a sample of inscope systems to determine that
+access to the following sampled
+in-scope systems was restricted
+via public key authentication or
+username and password and
+enforced two-factor
+authentication:
+
+Inbound network traffic to the
+production environment is
+restricted in accordance with
+defined security requirements.
+Any changes to firewall
+configurations adhere to Slack's
+Change Control Policy.
+
+•
+
+Identity management service
+
+•
+
+Infrastructure management
+console
+
+•
+
+Configuration management
+tool
+
+•
+
+Bastion host
+
+•
+
+Production application and
+database servers
+
+•
+
+Production databases
+
+•
+
+Version control software
+
+Test Results
+No exceptions noted.
+
+Inquired of the senior software
+engineer, risk and compliance
+regarding firewall configurations
+to determine that any changes to
+firewall configurations adhered to
+Slack's Change Control Policy.
+
+No exceptions noted.
+
+Inspected the change control
+policy, the firewall configurations,
+and an example firewall
+configuration change ticket from
+during the period to determine
+that inbound network traffic to the
+production environment was
+restricted in accordance with
+defined security requirements
+and that changes to firewall
+configuration adhered to Slack’s
+Change Control Policy.
+
+No exceptions noted.
+
+Slack Confidential Information
+
+32
+
+Slack
+Technologies
+Control #
+6.05
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Accounts for personnel who have
+been terminated or no longer
+require access to the production
+environment and/or source code
+are disabled within twenty-four
+(24) hours.
+
+Inspected the access removal
+notification and the user account
+listing for a sample of in-scope
+systems and employees and
+contractors terminated during the
+period to determine that
+accounts for personnel who had
+been terminated or no longer
+required access to the production
+environment and/or source code
+were disabled within 24 hours for
+each terminated employee
+sampled for each of the following
+in-scope systems:
+•
+
+Identity management service
+
+•
+
+Infrastructure management
+console
+
+•
+
+Configuration management
+tool
+
+•
+
+Bastion host
+
+•
+
+Production application and
+database servers
+
+•
+
+Production databases
+
+•
+
+Version control software
+
+Test Results
+No exceptions noted.
+
+6.06
+
+Data transmitted between the
+public Internet and production
+servers is encrypted.
+
+Inspected the TLS certificate to
+determine that data transmitted
+between the public Internet and
+production servers were
+encrypted.
+
+No exceptions noted.
+
+6.07
+
+Sensitive customer data is
+encrypted at rest.
+
+Inspected the centrally managed
+production server and object
+storage system encryption
+configurations to determine that
+sensitive customer data was
+encrypted at rest.
+
+No exceptions noted.
+
+6.09
+
+Disposal procedures are in place
+to guide personnel in performing
+sanitization procedures on
+instances where production data
+resides to ensure data and
+software is unrecoverable prior to
+retiring the virtual asset.
+
+Inspected the disposal and
+media sanitization procedures to
+determine that disposal
+procedures were in place to
+guide personnel in performing
+sanitization procedures on
+instances where production data
+resided to ensure data and
+software was unrecoverable prior
+to retiring the virtual asset.
+
+No exceptions noted.
+
+6.10
+
+Enterprise key management
+(EKM) customer message and
+file data is encrypted at rest with
+Customer's encryption keys.
+
+Inspected the EKM customer
+message and file data encryption
+configurations and example
+encrypted file data to determine
+that customer message and file
+data was encrypted at rest with
+Customer’s encryption keys.
+
+No exceptions noted.
+
+AWS is responsible for implementing controls to manage logical access to the underlying network and
+virtualization management software for its cloud hosting services where Slack systems reside.
+
+Slack Confidential Information
+
+33
+
+Slack
+Technologies
+Control #
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+AWS is responsible for restricting physical access to data center facilities, backup media, and other
+system components including firewalls, routers, and servers.
+System Operations
+7.01
+
+Reported security incidents are
+tracked and triaged in
+accordance with Slack's Incident
+Response Standard. The
+standard includes procedures for
+collecting and preserving
+information that can serve as
+evidence.
+
+Inspected the incident response
+procedure and the incident ticket
+for a sample of incidents during
+the period to determine that each
+reported security incident
+sampled was tracked and triaged
+in accordance with Slack’s
+Incident Response Standard and
+that the standard included
+procedures for collecting and
+preserving information that could
+serve as evidence.
+
+No exceptions noted.
+
+7.02
+
+Post-mortem meetings are
+conducted for security incidents
+according to the Incident
+Response Standard to discuss
+the root causes, remediation
+steps, and lessons learned. A
+post-mortem report is
+documented and archived.
+
+Inspected the post-mortem
+meeting minutes and the postmortem report for a sample of
+incidents during the period to
+determine that post-mortem
+meetings were conducted for
+security incidents according to
+the Incident Response Standard
+to discuss the root causes,
+remediation steps, and lessons
+learned and that a post-mortem
+report was documented and
+archived for each incident
+sampled.
+
+No exceptions noted.
+
+7.03
+
+The Company has established
+baseline configuration standards
+for the production servers. The
+configuration management tool is
+run at least every three (3) days
+to detect and restore server
+configuration deviations from the
+standards.
+
+Inspected the configuration
+management tool configurations
+and example job logs from during
+the period to determine that the
+Company established baseline
+configuration standards for the
+production servers and that the
+configuration management tool
+was set to run at least every
+three (3) days to detect and
+restore server configuration
+deviations from the standard.
+
+No exceptions noted.
+
+7.05
+
+Session timeout to the
+production environment
+terminates after 30 minutes of
+idle time.
+
+Inspected the configuration
+management tool configurations
+and the timeout configurations
+for an example production server
+to determine that session timeout
+to the production environment
+terminated after 30 minutes of
+idle time.
+
+No exceptions noted.
+
+Slack Confidential Information
+
+34
+
+Slack
+Technologies
+Control #
+7.06
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Necessary security updates
+and/or patches are identified and
+tracked to resolution with Slack’s
+vulnerability management policy.
+
+Inspected the vulnerability
+management policy and the
+security update ticket for a
+sample of security updates and
+patched deployed during the
+period to determine that
+necessary security updates
+and/or patches were identified
+and tracked to resolution with
+Slack’s vulnerability
+management policy, for each
+security update and patch
+sampled.
+
+Test Results
+No exceptions noted.
+
+AWS is responsible for monitoring any changes to the logical access controls system for the underlying
+network, virtualization management, and storage devices where the Slack systems reside.
+AWS is responsible for monitoring physical access to data center facilities, backup media, and other
+system components including firewalls, routers, and servers.
+Change Management
+8.01
+
+A code review process is defined
+to ensure changes maintain the
+security, availability, and
+confidentiality of the System.
+
+Inspected the change control
+policy to determine that a code
+review process was defined to
+ensure changes maintained the
+security, availability, and
+confidentiality of the System.
+
+No exceptions noted.
+
+8.02
+
+Independent code review and
+approval is required prior to
+deployment.
+
+Inspected the source code
+software configurations and an
+example pull request from during
+the period to determine that an
+independent code review was
+completed and approval was
+obtained prior to deployment.
+
+No exceptions noted.
+
+8.03
+
+Major releases are tested prior to
+being released.
+
+Inspected the change ticket for a
+sample of major releases
+implemented during the period to
+determine that major releases
+were tested prior to being
+released for each major release
+sampled.
+
+No exceptions noted.
+
+8.04
+
+Production and non-production
+environments are segregated.
+
+Inspected the production and
+development server
+configurations to determine that
+production and non-production
+environments were segregated.
+
+No exceptions noted.
+
+8.05
+
+Source code changes are
+logged, time-stamped, and
+attributed to their author in a
+source code management tool.
+
+Inspected the source code
+management tool configurations
+and example logs generated
+during the period to determine
+that source code changes were
+logged, time-stamped, and
+attributed to their author in a
+source code management tool.
+
+No exceptions noted.
+
+Salesforce is responsible for implementing controls to evaluate data center hosting providers and subprocessers.
+
+Slack Confidential Information
+
+35
+
+ADDITIONAL CRITERIA FOR AVAILABILITY
+Slack
+Technologies
+Control #
+9.01
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+User data is automatically
+replicated in real-time between
+two database instances and
+backed up on a nightly basis.
+Operations is alerted of backup
+failures. Failures that impact
+backups of both database
+instances are resolved.
+
+Inspected the centrally managed
+replication and backup
+configurations, the replication
+and backup configurations for an
+example production database
+server, and an example backup
+log generated during the period
+to determine that user data was
+automatically replicated in realtime between two database
+instances and backed up on a
+nightly basis.
+
+No exceptions noted.
+
+Inspected the centrally managed
+backup failure monitoring
+configurations and an example
+resolved backup failure alert
+generated during the period to
+determine that Operations was
+alerted of backup failures and
+that failures that impacted
+backups of both database
+instances were resolved.
+
+No exceptions noted.
+
+Test Results
+
+9.02
+
+User data is stored redundantly
+in at least two locations to ensure
+availability in case of datacenter
+failure.
+
+Inspected the centrally managed
+replication configurations and the
+replication configurations for an
+example production database
+server to determine that user
+data was stored redundantly in at
+least two locations to ensure
+availability in case of datacenter
+failure for each production
+database.
+
+No exceptions noted.
+
+9.03
+
+Backups are restored at least
+every ninety (90) days to confirm
+processes and tools function as
+expected.
+
+Inspected evidence of backup
+restoration for a sample of
+quarters during the period to
+determine that backups were
+restored at least every ninety
+(90) days to confirm processes
+and tools functioned as expected
+for each quarter sampled.
+
+No exceptions noted.
+
+9.04
+
+A DR Plan has been
+documented. The DR Plan is
+reviewed, tested, and updated as
+necessary, on an annual basis.
+
+Inspected the DR Plan and the
+most recently completed DR
+Plan test report to determine that
+a DR Plan was documented and
+that the DR Plan was reviewed,
+tested, and updated as
+necessary, during the period.
+
+No exceptions noted.
+
+AWS is responsible for ensuring the data center facilities are equipped with environmental security
+safeguards and utilizing an environmental monitoring application to monitor for environmental events.
+
+Slack Confidential Information
+
+36
+
+ADDITIONAL CRITERIA FOR CONFIDENTIALITY
+Slack
+Technologies
+Control #
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+Test Results
+
+10.01
+
+Management has established
+procedures to ensure that
+customer data is not used for
+testing.
+
+Inspected the change control
+policy and evidence of test data
+during the period to determine
+that management established
+procedures to ensure that
+customer data was not used for
+testing.
+
+No exceptions noted.
+
+10.02
+
+Access to sensitive customer
+data is restricted to appropriate
+personnel with credentials to
+access such data.
+
+Inspected the user account
+listing and administrator user
+account listing for a sample of inscope systems with access to
+customer data with the
+assistance of the senior software
+engineer, risk & compliance to
+determine that access to
+sensitive customer data was
+restricted to appropriate
+personnel with credentials to
+access such data.
+
+No exceptions noted.
+
+10.03
+
+The application is designed to
+prevent customers from
+accessing the data of other
+customers.
+
+Inspected the multi-tenant
+architecture configurations to
+determine that the application
+was designed to prevent
+customers from accessing the
+data of other customers.
+
+No exceptions noted.
+
+10.04
+
+Monitoring and alerting controls
+are implemented to ensure that
+compliance with customer
+commitments related to data
+retention are met.
+
+Inspected security monitoring
+and auditing standards, the
+monitoring and alerting
+configurations, an example
+restoration log, and an example
+alert generated during the period
+to determine that monitoring and
+alerting controls were
+implemented to ensure that
+compliance with customer
+commitments related to data
+retention were met.
+
+No exceptions noted.
+
+10.05
+
+The Company communicates its
+Privacy Policy and ToS through
+the Company’s website. Material
+changes to the Privacy Policy or
+ToS are communicated through
+the Slack communication
+channel or e-mail messages.
+
+Inspected the Privacy Policy and
+the ToS to determine that the
+Company communicated its
+privacy Policy and ToS through
+the Company’s website.
+
+No exceptions noted.
+
+Inspected the Privacy Policy and
+ToS with the assistance of the
+senior software engineer, risk
+and compliance, and determined
+that no material changes were
+applied to the Privacy Policy or
+ToS during the period.
+
+No testing of operating
+effectiveness was performed.
+
+Slack Confidential Information
+
+37
+
+Slack
+Technologies
+Control #
+10.06
+
+Control Activity Specified
+by Slack Technologies
+
+Test Applied by
+the Service Auditor
+
+The Company has defined and
+published its default
+commitments for retaining and
+deleting sensitive customer data
+via its public-facing website. The
+default data retention and
+deletion policy can be overridden
+by customer-defined retention
+periods.
+
+Inspected the default data
+retention and deletion
+commitments on the company’s
+website to determine that the
+Company defined and published
+its default commitments for
+retaining and deleting sensitive
+customer data via its publicfacing website.
+
+No exceptions noted.
+
+Inspected the data retention
+configurations for an example
+Workspace to determine that the
+default data retention and
+deletion policy could be
+overridden by customer-defined
+retention periods.
+
+No exceptions noted.
+
+Test Results
+
+10.07
+
+Slack utilizes automated scripts
+to dispose of customer data in
+accordance with the default
+and/or customer customized data
+retention settings.
+
+Inspected the automated
+disposal script, job schedule, and
+an example data deletion log
+generated during the period to
+determine that Slack utilized
+automated scripts to dispose of
+customer data in accordance
+with the default and/or customer
+customized data retention
+settings.
+
+No exceptions noted.
+
+10.08
+
+Customers can define their
+retention period for sensitive data
+within the System. Archives of
+the sensitive data are
+automatically destroyed fourteen
+(14) days after the customerdefined retention period ends or
+when the customer deletes their
+Slack Workspace(s).
+
+Inspected the data retention
+configurations for an example
+workspace to determine that
+customers were able to define
+their retention period for sensitive
+data within the System.
+
+No exceptions noted.
+
+Inspected the data archive
+deletion configurations, job
+schedule, and an example data
+archive deletion log generated
+during the period to determine
+that archives of the sensitive
+data were automatically
+destroyed fourteen (14) days
+after the customer-defined
+retention period ended or when
+the customer deleted their Slack
+Workspace(s).
+
+No exceptions noted.
+
+Salesforce is responsible for implementing controls communicating its security, privacy, and architecture
+documentation to Customers via the Trust website, which includes commitments to security, availability,
+and confidentiality.
+
+Slack Confidential Information
+
+38
+
+SECTION 5
+OTHER INFORMATION
+PROVIDED BY SLACK
+
+Slack Confidential Information
+
+39
+
+ADDITIONAL INFORMATION PROVIDED BY MANAGEMENT
+Physical Security
+Physical presence in a Slack Technologies office or a connection to Company Wi-Fi does not confer any elevated
+access to the System production environment, source code, or internal tools.
+
+Slack Confidential Information
+
+40
+
+

@@ -1,0 +1,106 @@
+{
+  "version": 1,
+  "source": "Secureframe Default Template, captured 2026-10-23",
+  "questions": [
+    {
+      "number": 1,
+      "question": "Which IT operational, security, privacy related standards, certifications and/or regulations does the vendor comply with?"
+    },
+    {
+      "number": 2,
+      "question": "Describe the customer data the vendor requires to provide its service: personal information, financial data, confidential/sensitive data, government data"
+    },
+    {
+      "number": 3,
+      "question": "How does the vendor encrypt customer data (in transit, at rest, etc)?"
+    },
+    {
+      "number": 4,
+      "question": "Does the vendor backup customer data?"
+    },
+    {
+      "number": 5,
+      "question": "Describe how backups occur and how they are secured"
+    },
+    {
+      "number": 6,
+      "question": "How does the vendor ensure strong security for employee authentication?"
+    },
+    {
+      "number": 7,
+      "question": "How does the vendor ensure strong security for customer authentication?"
+    },
+    {
+      "number": 8,
+      "question": "Is MFA required for employees/contractors to log in to production systems?"
+    },
+    {
+      "number": 9,
+      "question": "Does the vendor have a formal Information Security Program in place?"
+    },
+    {
+      "number": 10,
+      "question": "Does the vendor have a dedicated information security team?"
+    },
+    {
+      "number": 11,
+      "question": "Describe the Information security risk management program? "
+    },
+    {
+      "number": 12,
+      "question": "Does the vendor's information security and privacy policies align with industry standards (ISO-27001, NIST Cyber Security Framework, SOC 2, etc.)?"
+    },
+    {
+      "number": 13,
+      "question": "Is a formal disciplinary or sanction policy established for employees who have violated security policies and procedures? "
+    },
+    {
+      "number": 14,
+      "question": "Are all personnel required to sign Confidentiality Agreements to protect customer information, as a condition of employment?"
+    },
+    {
+      "number": 15,
+      "question": "Are all personnel required to acknowledge an Acceptable Use Policy?"
+    },
+    {
+      "number": 16,
+      "question": "How does the vendor test the security of its production network and applications?"
+    },
+    {
+      "number": 17,
+      "question": "Summarize the application vulnerability management processes and procedures"
+    },
+    {
+      "number": 18,
+      "question": "How does the vendor regularly evaluate patches and updates for it's infrastructure? "
+    },
+    {
+      "number": 19,
+      "question": "Are all endpoint laptops that connect directly to production networks centrally managed?"
+    },
+    {
+      "number": 20,
+      "question": "Describe the required device security configurations (central management, patching, antimalware, Full Disk Encryption, Administrative Privileges, Firewall, Auto-lock, etc.) for all personnel devices."
+    },
+    {
+      "number": 21,
+      "question": "Does the vendor have a security awareness program for personnel?"
+    },
+    {
+      "number": 22,
+      "question": "Does the vendor have a Security Incident Response Program? "
+    },
+    {
+      "number": 23,
+      "question": "Does the vendor have formally defined criteria for notifying a client during an incident that might impact the security of their data or systems? "
+    },
+    {
+      "number": 24,
+      "question": "How does the vendor ensure code is being developed securely?"
+    },
+    {
+      "number": 25,
+      "question": "Does the vendor conduct external audits of the service?"
+    }
+  ]
+}

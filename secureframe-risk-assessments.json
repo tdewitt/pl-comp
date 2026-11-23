@@ -1,0 +1,158 @@
+{
+  "$schema": "./secureframe-risk-assessments.schema.json",
+  "schema_version": "1.0.0",
+  "generated_at": "2026-08-07T03:39:03.681Z",
+  "ui_contract": {
+    "catalog_description_write_policy": "preserve_do_not_write",
+    "catalog_description_note": "Catalog descriptions are immutable in Secureframe. They are source context only and must never be included in writer actions.",
+    "sections": ["details", "assessment", "treatment", "tasks", "documents", "review"],
+    "score_scale": {
+      "1": "Very Low",
+      "2": "Low",
+      "3": "Moderate",
+      "4": "High",
+      "5": "Very High"
+    },
+    "treatments": ["mitigate", "accept", "transfer", "avoid"],
+    "cia_values": ["confidentiality", "integrity", "availability"],
+    "cia_policy": "required_choose_all_that_apply",
+    "tags_policy": "optional_leave_blank_by_default",
+    "quantitative_assessment_policy": "leave_unchanged",
+    "tasks_policy": "skip_unless_explicitly_populated",
+    "documents_policy": "skip_unless_explicitly_populated",
+    "writer_safety_gate": "Only write records where execution.action is complete_assessment or update_assessment AND execution.readiness is approved. Never write records marked skip."
+  },
+  "scope": {
+    "source": "risk-register-changeset-2026-08-06.md",
+    "retained_risk_ids": [
+      "R-24", "R-26", "R-82", "R-55", "R-20",
+      "R-67", "R-51", "R-73", "R-101", "R-81",
+      "R-34", "R-12", "R-69", "R-30", "R-104",
+      "R-83", "R-2", "R-54", "R-88",
+      "R-16", "R-106", "R-107", "R-71", "R-1", "R-23",
+      "R-19", "R-60", "R-76",
+      "R-63", "R-64", "R-65", "R-68", "R-87", "R-91", "R-109",
+      "R-22", "R-21", "R-49", "R-46", "R-14", "R-17", "R-72", "R-3", "R-84"
+    ],
+    "records_present": 1,
+    "records_remaining": 43
+  },
+  "risks": [
+    {
+      "risk_id": "R-68",
+      "secureframe_risk_id": "42271f57-ae36-474f-9c69-3b40770dd49b",
+      "source": {
+        "catalog_description": "AI applications not complying with evolving regulations and standards.",
+        "description_mutable": false,
+        "secureframe_status": "completed",
+        "last_verified_at": "2026-08-07T03:39:03.681Z"
+      },
+      "details": {
+        "owner": {
+          "secureframe_user_id": "4ddc7974-aa6e-4d2c-8b4b-64d98c82e60c",
+          "name": "Erik Swenson",
+          "role": "CTO"
+        },
+        "categories": ["Artificial Intelligence"],
+        "departments": ["Compliance", "Engineering", "Legal", "Security"],
+        "cia": ["confidentiality", "integrity"],
+        "tags": []
+      },
+      "assessment": {
+        "impact": 4,
+        "impact_justification": "Planera’s AI features process customer project and schedule context and can influence construction-planning decisions. Noncompliance could result in regulatory investigation or penalties, customer and contractual claims, forced product changes or suspension, remediation costs, and material reputational harm. The potential impact is significant but is not assumed to be company-ending, supporting High rather than Very High.",
+        "likelihood": 3,
+        "likelihood_justification": "AI is actively embedded in the product and relies on multiple evolving model providers and tool-execution paths. Planera has change controls, model monitoring, human confirmation before schedule mutations, and active security testing, but no explicit AI-system inventory, regulatory impact-assessment gate, or recurring legal review was identified. Rapidly changing requirements and this governance gap make noncompliance plausible.",
+        "inherent_score": 12,
+        "secureframe_band": "Moderate"
+      },
+      "treatment": {
+        "decision": "mitigate",
+        "notes": "Establish a documented AI governance process owned by the CTO, with executive/compliance, Product, Engineering, and Security participation. Maintain an inventory of AI use cases, models and providers, data classes, intended users, and applicable jurisdictions. Perform and retain legal, privacy, security, and AI-impact reviews before material AI releases or provider/model changes. Review regulatory developments at least quarterly. Maintain human confirmation for consequential schedule changes and appropriate user-facing disclosures and limitations. Review AI vendors for data use, retention, model training, subprocessors, data location, and incident obligations. Reassess this risk annually and after material changes.",
+        "mitigating_controls": [
+          {
+            "secureframe_control_id": "06215e48-f904-4f08-9cd4-ef55746dada2",
+            "key": "RA-01",
+            "reason": "Defines the risk assessment and treatment process."
+          },
+          {
+            "secureframe_control_id": "8e313d7b-6f31-40d9-821e-7a7b183c0a4b",
+            "key": "RA-02",
+            "reason": "Requires formal analysis of relevant internal and external threats."
+          },
+          {
+            "secureframe_control_id": "183e98ba-5e4e-41e3-9001-3370d4de1d0d",
+            "key": "ORG-03",
+            "reason": "Provides recurring senior-management and security-risk review."
+          },
+          {
+            "secureframe_control_id": "635b65b2-2eff-4ce2-8d38-f96ffccc0b4d",
+            "key": "CM-08",
+            "reason": "Defines secure software-development requirements."
+          },
+          {
+            "secureframe_control_id": "6e56af05-b38d-46ad-9e97-93bac070b087",
+            "key": "CM-02",
+            "reason": "Requires software changes to be tested before production."
+          },
+          {
+            "secureframe_control_id": "7ecdb4a4-0981-4bf3-8c2f-f144ce1de297",
+            "key": "CM-03",
+            "reason": "Requires independent approval before production deployment."
+          },
+          {
+            "secureframe_control_id": "d8b275cb-a02c-4030-a790-4d1393110d3c",
+            "key": "RA-04",
+            "reason": "Defines onboarding and lifecycle governance for AI vendors."
+          },
+          {
+            "secureframe_control_id": "e4ec3d3c-ea85-472f-a742-3ba09aa218fc",
+            "key": "COM-06",
+            "reason": "Documents external privacy commitments relevant to AI processing."
+          }
+        ],
+        "residual_impact": 4,
+        "residual_impact_justification": "Even with governance controls, a missed obligation could still cause regulatory scrutiny, customer claims, forced rework, or feature restrictions. The treatment primarily reduces the probability of occurrence rather than the severity of a material violation.",
+        "residual_likelihood": 2,
+        "residual_likelihood_justification": "A maintained AI inventory, quarterly regulatory monitoring, gated pre-release reviews, human confirmation, and vendor assessments should make material noncompliance unlikely. It cannot be considered Very Low because laws, guidance, model providers, and product behavior continue to change.",
+        "residual_score": 8,
+        "secureframe_band": "Low"
+      },
+      "optional_sections": {
+        "tasks": [],
+        "documents": []
+      },
+      "evidence": [
+        {
+          "type": "code",
+          "reference": "/Users/tucker/git/lab/planera.io/python/chat/src/domain/prompts/system.py:98",
+          "supports": "Manny requires explicit user confirmation before schedule mutations."
+        },
+        {
+          "type": "code",
+          "reference": "/Users/tucker/workspaces/planera-mcp/mcp/docs/solution-designs/AI_TOOL_CAPABILITY_GUARDRAILS_SPEC.md:120",
+          "supports": "MCP is designed as the authoritative enforcement point for AI tool capabilities."
+        },
+        {
+          "type": "code",
+          "reference": "/Users/tucker/workspaces/planera-mcp/planera-iac/terraform/infrastructure/gcp/monitoring/alert-policies/main.tf:148",
+          "supports": "Vertex AI request-volume monitoring is defined in infrastructure code."
+        },
+        {
+          "type": "code",
+          "reference": "/Users/tucker/git/lab/planera.io/Manny_RedTeam_Results.md:22",
+          "supports": "AI security testing exists and documents material findings.",
+          "caveat": "Repository evidence does not by itself establish the production deployment state of each finding."
+        }
+      ],
+      "execution": {
+        "action": "skip",
+        "phase": "reference",
+        "readiness": "approved",
+        "status": "verified_completed",
+        "writer_instruction": "Do not modify this risk. It is the completed reference implementation for subsequent records.",
+        "verified_at": "2026-08-07T03:39:03.681Z"
+      }
+    }
+  ]
+}

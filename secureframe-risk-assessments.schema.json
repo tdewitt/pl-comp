@@ -1,0 +1,219 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://planera.local/schemas/secureframe-risk-assessments.schema.json",
+  "title": "Secureframe risk assessment writer handoff",
+  "type": "object",
+  "required": ["schema_version", "ui_contract", "scope", "risks"],
+  "properties": {
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "ui_contract": {
+      "type": "object",
+      "required": ["catalog_description_write_policy", "score_scale", "treatments"],
+      "properties": {
+        "catalog_description_write_policy": {
+          "const": "preserve_do_not_write"
+        },
+        "score_scale": {
+          "type": "object",
+          "required": ["1", "2", "3", "4", "5"],
+          "properties": {
+            "1": { "const": "Very Low" },
+            "2": { "const": "Low" },
+            "3": { "const": "Moderate" },
+            "4": { "const": "High" },
+            "5": { "const": "Very High" }
+          },
+          "additionalProperties": false
+        },
+        "treatments": {
+          "type": "array",
+          "items": {
+            "enum": ["mitigate", "accept", "transfer", "avoid"]
+          }
+        },
+        "quantitative_assessment_policy": {
+          "const": "leave_unchanged"
+        },
+        "tasks_policy": {
+          "const": "skip_unless_explicitly_populated"
+        },
+        "documents_policy": {
+          "const": "skip_unless_explicitly_populated"
+        }
+      },
+      "additionalProperties": true
+    },
+    "scope": {
+      "type": "object",
+      "required": ["retained_risk_ids"],
+      "properties": {
+        "retained_risk_ids": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^R-[0-9]+$" },
+          "uniqueItems": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "risks": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/risk" }
+    }
+  },
+  "$defs": {
+    "score": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "owner": {
+      "type": "object",
+      "required": ["secureframe_user_id", "name"],
+      "properties": {
+        "secureframe_user_id": { "type": "string", "format": "uuid" },
+        "name": { "type": "string", "minLength": 1 },
+        "role": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "control": {
+      "type": "object",
+      "required": ["secureframe_control_id", "key"],
+      "properties": {
+        "secureframe_control_id": { "type": "string", "format": "uuid" },
+        "key": { "type": "string", "minLength": 1 },
+        "reason": { "type": "string" }
+      },
+      "additionalProperties": false
+    },
+    "risk": {
+      "type": "object",
+      "required": [
+        "risk_id",
+        "secureframe_risk_id",
+        "source",
+        "details",
+        "assessment",
+        "treatment",
+        "optional_sections",
+        "execution"
+      ],
+      "properties": {
+        "risk_id": { "type": "string", "pattern": "^R-[0-9]+$" },
+        "secureframe_risk_id": { "type": "string", "format": "uuid" },
+        "source": {
+          "type": "object",
+          "required": ["catalog_description", "description_mutable"],
+          "properties": {
+            "catalog_description": { "type": "string" },
+            "description_mutable": { "const": false },
+            "secureframe_status": { "enum": ["draft", "completed"] },
+            "last_verified_at": { "type": "string", "format": "date-time" }
+          },
+          "additionalProperties": true
+        },
+        "details": {
+          "type": "object",
+          "required": ["owner", "categories", "departments", "cia", "tags"],
+          "properties": {
+            "owner": { "$ref": "#/$defs/owner" },
+            "categories": { "type": "array", "items": { "type": "string" } },
+            "departments": { "type": "array", "items": { "type": "string" } },
+            "cia": {
+              "type": "array",
+              "items": { "enum": ["confidentiality", "integrity", "availability"] },
+              "minItems": 1,
+              "uniqueItems": true
+            },
+            "tags": { "type": "array", "items": { "type": "string" } }
+          },
+          "additionalProperties": false
+        },
+        "assessment": {
+          "type": "object",
+          "required": ["impact", "impact_justification", "likelihood", "likelihood_justification"],
+          "properties": {
+            "impact": { "$ref": "#/$defs/score" },
+            "impact_justification": { "type": "string", "minLength": 1 },
+            "likelihood": { "$ref": "#/$defs/score" },
+            "likelihood_justification": { "type": "string", "minLength": 1 },
+            "inherent_score": { "type": "integer", "minimum": 1, "maximum": 25 },
+            "secureframe_band": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "treatment": {
+          "type": "object",
+          "required": [
+            "decision",
+            "notes",
+            "mitigating_controls",
+            "residual_impact",
+            "residual_impact_justification",
+            "residual_likelihood",
+            "residual_likelihood_justification"
+          ],
+          "properties": {
+            "decision": { "enum": ["mitigate", "accept", "transfer", "avoid"] },
+            "notes": { "type": "string", "minLength": 1 },
+            "mitigating_controls": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/control" }
+            },
+            "residual_impact": { "$ref": "#/$defs/score" },
+            "residual_impact_justification": { "type": "string", "minLength": 1 },
+            "residual_likelihood": { "$ref": "#/$defs/score" },
+            "residual_likelihood_justification": { "type": "string", "minLength": 1 },
+            "residual_score": { "type": "integer", "minimum": 1, "maximum": 25 },
+            "secureframe_band": { "type": "string" }
+          },
+          "additionalProperties": false
+        },
+        "optional_sections": {
+          "type": "object",
+          "required": ["tasks", "documents"],
+          "properties": {
+            "tasks": { "type": "array", "items": { "type": "object" } },
+            "documents": { "type": "array", "items": { "type": "object" } }
+          },
+          "additionalProperties": false
+        },
+        "evidence": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["type", "reference", "supports"],
+            "properties": {
+              "type": { "enum": ["code", "secureframe_control", "secureframe_artifact", "analysis"] },
+              "reference": { "type": "string" },
+              "supports": { "type": "string" },
+              "caveat": { "type": "string" }
+            },
+            "additionalProperties": false
+          }
+        },
+        "execution": {
+          "type": "object",
+          "required": ["action", "readiness", "status"],
+          "properties": {
+            "action": { "enum": ["complete_assessment", "update_assessment", "skip"] },
+            "phase": { "enum": ["bulk_new", "existing_assessment_review", "reference"] },
+            "readiness": { "enum": ["draft", "needs_review", "approved"] },
+            "status": { "enum": ["pending", "in_progress", "completed", "verified_completed"] },
+            "writer_instruction": { "type": "string" },
+            "verified_at": { "type": "string", "format": "date-time" }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "additionalProperties": false
+}
