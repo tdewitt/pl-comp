@@ -1,0 +1,9 @@
+{
+  "id": 78121108,
+  "path_with_namespace": "planera.io/react/manny",
+  "web_url": "https://gitlab.com/planera.io/react/manny",
+  "default_branch": "main",
+  "only_allow_merge_if_pipeline_succeeds": true,
+  "only_allow_merge_if_all_discussions_are_resolved": true,
+  "merge_method": "merge"
+}

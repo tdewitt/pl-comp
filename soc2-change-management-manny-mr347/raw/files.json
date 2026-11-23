@@ -1,0 +1,110 @@
+[
+  {
+    "old_path": ".changeset/chat-3339-builder-finish-button.md",
+    "new_path": ".changeset/chat-3339-builder-finish-button.md",
+    "new_file": true,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/Chat/useChatHeader.ts",
+    "new_path": "src/components/Manny/Chat/useChatHeader.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/Compatibility/automationIds.ts",
+    "new_path": "src/components/Manny/Compatibility/automationIds.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/GenerativeUI/components/__tests__/ScheduleBuilderFinishButtonWrapper.test.tsx",
+    "new_path": "src/components/Manny/GenerativeUI/components/__tests__/ScheduleBuilderFinishButtonWrapper.test.tsx",
+    "new_file": true,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/GenerativeUI/components/ScheduleBuilderFinishButtonWrapper.tsx",
+    "new_path": "src/components/Manny/GenerativeUI/components/ScheduleBuilderFinishButtonWrapper.tsx",
+    "new_file": true,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/GenerativeUI/GenerativeUIRenderer.test.tsx",
+    "new_path": "src/components/Manny/GenerativeUI/GenerativeUIRenderer.test.tsx",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/GenerativeUI/GenerativeUIRenderer.tsx",
+    "new_path": "src/components/Manny/GenerativeUI/GenerativeUIRenderer.tsx",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/GenerativeUI/componentRegistry.ts",
+    "new_path": "src/components/Manny/GenerativeUI/componentRegistry.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/GenerativeUI/generativeUiEagerComponents.ts",
+    "new_path": "src/components/Manny/GenerativeUI/generativeUiEagerComponents.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/__tests__/sseHelpers.test.ts",
+    "new_path": "src/components/Manny/__tests__/sseHelpers.test.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/api.test.ts",
+    "new_path": "src/components/Manny/api.test.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/api.ts",
+    "new_path": "src/components/Manny/api.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/sseHelpers.ts",
+    "new_path": "src/components/Manny/sseHelpers.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/supportedWidgets.test.ts",
+    "new_path": "src/components/Manny/supportedWidgets.test.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/supportedWidgets.ts",
+    "new_path": "src/components/Manny/supportedWidgets.ts",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "src/components/Manny/useEndScheduleBuilder.ts",
+    "new_path": "src/components/Manny/useEndScheduleBuilder.ts",
+    "new_file": true,
+    "deleted_file": false
+  },
+  {
+    "old_path": "CLAUDE.md",
+    "new_path": "CLAUDE.md",
+    "new_file": false,
+    "deleted_file": false
+  },
+  {
+    "old_path": "README.md",
+    "new_path": "README.md",
+    "new_file": false,
+    "deleted_file": false
+  }
+]

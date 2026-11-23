@@ -1,0 +1,147 @@
+[
+  {
+    "created_at": "2026-11-13T20:42:21.477Z",
+    "author": "griffins-planera",
+    "body": "added 1 commit\n\n<ul><li>eaab6e874c11f8a6869ec15414f409001737ff8e - feat(schedule-builder): advertise the finish button to chat (CHAT-3339)</li></ul>\n\n[Compare with previous version](/planera.io/react/manny/-/merge_requests/347/diffs?diff_id=2204016880&start_sha=e37150e406cea4f61aa32d1ba4bbc30a50c908b7)"
+  },
+  {
+    "created_at": "2026-11-13T20:42:46.577Z",
+    "author": "griffins-planera",
+    "body": "changed the description"
+  },
+  {
+    "created_at": "2026-11-13T20:42:57.810Z",
+    "author": "griffins-planera",
+    "body": "mentioned in merge request planera.io/python/chat!1069"
+  },
+  {
+    "created_at": "2026-11-13T20:44:48.472Z",
+    "author": "group_11863854_bot_c2c9cae584c918742c2bac3bb298256a",
+    "body": "resolved all threads"
+  },
+  {
+    "created_at": "2026-11-14T00:00:45.257Z",
+    "author": "griffins-planera",
+    "body": "mentioned in merge request !348"
+  },
+  {
+    "created_at": "2026-11-17T22:32:43.589Z",
+    "author": "griffins-planera",
+    "body": "<p>changed title from <code class=\"idiff\">Draft: [<span class=\"idiff left right deletion\">CHAT</span>-3339] Add Schedule Builder finish widget</code> to <code class=\"idiff\">Draft: [<span class=\"idiff left right addition\">PULSE</span>-3339] Add Schedule Builder finish widget</code></p>"
+  },
+  {
+    "created_at": "2026-11-18T20:42:25.994Z",
+    "author": "griffins-planera",
+    "body": "added 33 commits\n\n<ul><li>eaab6e874c11f8a6869ec15414f409001737ff8e...41b9b4b75410de0aef1eba29eef06f73c06e55b3 - 30 commits from branch <code>main</code></li><li>1de5eccff0d7e5f70fb5682738965765287f0fcf - feat(schedule-builder): add finish button widget (CHAT-3339)</li><li>28ab28bdc5a94ed1c931497d0c80d21bab947599 - feat(schedule-builder): advertise the finish button to chat (CHAT-3339)</li><li>ee07fdbeaac8983cab0374769695bfab508f929c - fix(schedule-builder): label the builder end button Open Schedule (PULSE-3339)</li></ul>\n\n[Compare with previous version](/planera.io/react/manny/-/merge_requests/347/diffs?diff_id=2221317251&start_sha=eaab6e874c11f8a6869ec15414f409001737ff8e)"
+  },
+  {
+    "created_at": "2026-11-18T20:42:42.386Z",
+    "author": "griffins-planera",
+    "body": "added 1 commit\n\n<ul><li>fc83365932fe6a61a37dcdca52689091c639dedf - fix(schedule-builder): label the builder end button Open Schedule (PULSE-3339)</li></ul>\n\n[Compare with previous version](/planera.io/react/manny/-/merge_requests/347/diffs?diff_id=2221318363&start_sha=ee07fdbeaac8983cab0374769695bfab508f929c)"
+  },
+  {
+    "created_at": "2026-11-18T20:43:04.511Z",
+    "author": "griffins-planera",
+    "body": "marked this merge request as **ready**"
+  },
+  {
+    "created_at": "2026-11-18T20:43:04.574Z",
+    "author": "griffins-planera",
+    "body": "<p>changed title from <code class=\"idiff\"><span class=\"idiff left deletion\">Draft: </span>[PULSE-3339] Add Schedule Builder <span class=\"idiff right deletion\">finish widget</span></code> to <code class=\"idiff\">[PULSE-3339] Add <span class=\"idiff left addition\">the </span>Schedule Builder <span class=\"idiff right addition\">Open Schedule button</span></code></p>"
+  },
+  {
+    "created_at": "2026-11-18T20:43:04.611Z",
+    "author": "griffins-planera",
+    "body": "changed the description"
+  },
+  {
+    "created_at": "2026-11-18T20:44:26.046Z",
+    "author": "griffins-planera",
+    "body": "changed the description"
+  },
+  {
+    "created_at": "2026-11-18T20:45:49.822Z",
+    "author": "group_10737198_bot_89d07c37e6c73cb46bd7662fe9e12515",
+    "body": "changed the description"
+  },
+  {
+    "created_at": "2026-11-18T21:06:12.613Z",
+    "author": "griffins-planera",
+    "body": "assigned to @griffins-planera"
+  },
+  {
+    "created_at": "2026-11-18T21:06:27.964Z",
+    "author": "griffins-planera",
+    "body": "changed the description"
+  },
+  {
+    "created_at": "2026-11-18T23:32:09.201Z",
+    "author": "griffins-planera",
+    "body": "requested review from @wasim-planera"
+  },
+  {
+    "created_at": "2026-11-18T23:32:18.147Z",
+    "author": "griffins-planera",
+    "body": "requested review from @andrewb12"
+  },
+  {
+    "created_at": "2026-11-20T23:01:03.140Z",
+    "author": "wasim-planera",
+    "body": "left review comments"
+  },
+  {
+    "created_at": "2026-11-20T23:03:49.547Z",
+    "author": "griffins-planera",
+    "body": "changed this line in [version 5 of the diff](/planera.io/react/manny/-/merge_requests/347/diffs?diff_id=2228926053&start_sha=fc83365932fe6a61a37dcdca52689091c639dedf#02644ce8d12323b80db4cfc24d6c388ea284b88a_145_144)"
+  },
+  {
+    "created_at": "2026-11-20T23:03:49.944Z",
+    "author": "griffins-planera",
+    "body": "added 1 commit\n\n<ul><li>b3a421ab6262c74c165ab26be9a3870c6c1a38ad - test(schedule-builder): drop the renderer PDF case that could not fail (PULSE-3339)</li></ul>\n\n[Compare with previous version](/planera.io/react/manny/-/merge_requests/347/diffs?diff_id=2228926053&start_sha=fc83365932fe6a61a37dcdca52689091c639dedf)"
+  },
+  {
+    "created_at": "2026-11-20T23:03:59.890Z",
+    "author": "griffins-planera",
+    "body": "changed the description"
+  },
+  {
+    "created_at": "2026-11-20T23:05:20.007Z",
+    "author": "griffins-planera",
+    "body": "changed the description"
+  },
+  {
+    "created_at": "2026-11-20T23:05:29.279Z",
+    "author": "group_10737198_bot_89d07c37e6c73cb46bd7662fe9e12515",
+    "body": "changed the description"
+  },
+  {
+    "created_at": "2026-11-20T23:06:01.305Z",
+    "author": "griffins-planera",
+    "body": "requested review from @wasim-planera"
+  },
+  {
+    "created_at": "2026-11-21T00:19:38.784Z",
+    "author": "wasim-planera",
+    "body": "approved this merge request"
+  },
+  {
+    "created_at": "2026-11-21T02:55:45.037Z",
+    "author": "griffins-planera",
+    "body": "resolved all threads"
+  },
+  {
+    "created_at": "2026-11-21T02:55:51.830Z",
+    "author": "griffins-planera",
+    "body": "mentioned in commit 44d314cc3e964e93158a2351303086d63738c66c"
+  },
+  {
+    "created_at": "2026-11-23T16:51:55.172Z",
+    "author": "griffins-planera",
+    "body": "mentioned in commit webapp@dce2c6487404a2ef8001ef98769f53979f160194"
+  },
+  {
+    "created_at": "2026-11-23T16:52:01.302Z",
+    "author": "griffins-planera",
+    "body": "mentioned in merge request webapp!10889"
+  }
+]

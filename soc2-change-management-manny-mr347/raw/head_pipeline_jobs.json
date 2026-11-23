@@ -1,0 +1,93 @@
+[
+  {
+    "name": "changesets_comment",
+    "stage": "review",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:18.507Z",
+    "finished_at": "2026-11-20T23:06:14.563Z"
+  },
+  {
+    "name": "pnpm audit report",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:18.451Z",
+    "finished_at": "2026-11-20T23:06:14.860Z"
+  },
+  {
+    "name": "pnpm build and test 4/4",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:18.362Z",
+    "finished_at": "2026-11-20T23:07:10.072Z"
+  },
+  {
+    "name": "pnpm build and test 3/4",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:18.292Z",
+    "finished_at": "2026-11-20T23:07:07.558Z"
+  },
+  {
+    "name": "pnpm build and test 2/4",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:18.236Z",
+    "finished_at": "2026-11-20T23:07:10.382Z"
+  },
+  {
+    "name": "pnpm build and test 1/4",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:18.201Z",
+    "finished_at": "2026-11-20T23:06:59.212Z"
+  },
+  {
+    "name": "pnpm lint",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:18.128Z",
+    "finished_at": "2026-11-20T23:07:26.973Z"
+  },
+  {
+    "name": "pnpm typecheck",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:18.038Z",
+    "finished_at": "2026-11-20T23:06:42.777Z"
+  },
+  {
+    "name": "semgrep-sast-eval",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:05:43.805Z",
+    "finished_at": "2026-11-20T23:06:02.076Z"
+  },
+  {
+    "name": "secret_detection",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:03:52.236Z",
+    "finished_at": "2026-11-20T23:04:06.411Z"
+  },
+  {
+    "name": "semgrep-sast",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:03:52.189Z",
+    "finished_at": "2026-11-20T23:05:42.324Z"
+  },
+  {
+    "name": "gemnasium-dependency_scanning",
+    "stage": "test",
+    "status": "success",
+    "started_at": "2026-11-20T23:03:52.155Z",
+    "finished_at": "2026-11-20T23:04:40.273Z"
+  },
+  {
+    "name": "node_modules",
+    "stage": ".pre",
+    "status": "success",
+    "started_at": "2026-11-20T23:03:52.166Z",
+    "finished_at": "2026-11-20T23:05:16.578Z"
+  }
+]

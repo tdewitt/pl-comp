@@ -1,0 +1,122 @@
+[
+  {
+    "name": "pnpm i18n check",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:28:44.715Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "semgrep-sast-eval",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:01:53.432Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "pnpm audit report",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:28:29.648Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "pnpm build and test big box 4/4",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:43:22.030Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "pnpm build and test big box 3/4",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:42:24.727Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "pnpm build and test big box 2/4",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:40:47.788Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "pnpm build and test big box 1/4",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:40:54.775Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "pnpm lint big box",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:34:52.662Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "pnpm typecheck",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:29:58.204Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "secret_detection",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T17:51:00.240Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "semgrep-sast",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T18:01:30.294Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "gemnasium-dependency_scanning",
+    "stage": "test",
+    "status": "success",
+    "finished_at": "2026-11-23T17:51:34.996Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "post merge update changelog",
+    "stage": "validate",
+    "status": "success",
+    "finished_at": "2026-11-23T17:51:46.099Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "detect push source",
+    "stage": "validate",
+    "status": "success",
+    "finished_at": "2026-11-23T17:51:01.141Z",
+    "environment": null,
+    "user": "griffins-planera"
+  },
+  {
+    "name": "node_modules big box",
+    "stage": ".pre",
+    "status": "success",
+    "finished_at": "2026-11-23T18:27:08.312Z",
+    "environment": null,
+    "user": "griffins-planera"
+  }
+]
