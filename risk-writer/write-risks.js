@@ -153,8 +153,18 @@ async function treatment(page, rec) {
   return mapped;
 }
 
+// A completed risk must be reopened through the details page menu; Edit returns it to Draft.
+async function reopen(page, rec) {
+  await page.goto('https://app.secureframe.com/risk-management/details/' + rec.secureframe_risk_id);
+  await page.getByRole('button', { name: /View comments/ }).waitFor();
+  await page.getByRole('button', { name: /View comments/ }).locator('xpath=following::button[1]').click();
+  await press(page.getByRole('menuitem', { name: 'Edit', exact: true }));
+  await page.waitForURL(/risk-management\/assessment\//, { timeout: 15000 });
+}
+
 async function processRisk(page, rec) {
-  await page.goto(BASE + rec.secureframe_risk_id);
+  if (rec._apiStatus === 'completed') await reopen(page, rec);
+  else await page.goto(BASE + rec.secureframe_risk_id);
   await page.waitForLoadState('networkidle').catch(() => {});
   await page.getByRole('button', { name: 'details', exact: true }).waitFor();
   if (page.url().includes('/login')) throw new Error('session expired: log in again in the browser window');
@@ -197,8 +207,10 @@ function check(rec, api) {
 
 (async () => {
   const batch = JSON.parse(fs.readFileSync(BATCH, 'utf8'));
-  let recs = batch.assessments.filter(r => r.execution.approved && r.execution.action === 'complete_assessment');
-  if (only) recs = recs.filter(r => only.has(r.risk_id));
+  // --only also selects update_assessment records: naming a risk explicitly is the approval.
+  let recs = only
+    ? batch.assessments.filter(r => only.has(r.risk_id) && ['complete_assessment', 'update_assessment'].includes(r.execution.action))
+    : batch.assessments.filter(r => r.execution.approved && r.execution.action === 'complete_assessment');
 
   const todo = [];
   for (const r of recs) {
@@ -216,7 +228,9 @@ function check(rec, api) {
   for (const rec of todo) {
     const started = new Date().toISOString();
     try {
-      rec._apiOwner = (await apiRisk(rec.secureframe_risk_id))?.owner_id;
+      const before = await apiRisk(rec.secureframe_risk_id);
+      rec._apiOwner = before?.owner_id;
+      rec._apiStatus = before?.status;
       const controls = await processRisk(page, rec);
       const problems = check(rec, await apiRisk(rec.secureframe_risk_id));
       const ok = problems.length === 0 || problems[0] === 'api unavailable';
