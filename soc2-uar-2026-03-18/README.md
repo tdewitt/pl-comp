@@ -5,7 +5,7 @@ Source: Secureframe export (`uar-all.csv`), filtered to in-scope accounts for th
 - Review window: 2026-03-18 to 2026-04-02 (owner: Tucker DeWitt)
 - Policy: Access Control and Termination Policy requires access reviews "at least annually."
 - `Status at Export` is the account state on 2026-11-23, not at review time.
-- `Change Ticket` is populated for every account that was modified or has since been removed.
+- `Change Ticket` links the Jira ticket for each account flagged for change during the review.
 
 | System | File | Accounts | Source |
 |---|---|---|---|
