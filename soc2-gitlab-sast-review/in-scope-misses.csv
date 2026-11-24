@@ -1,0 +1,18 @@
+Repository,mr,merged,title,author,approvals,no_int,no_sast_dep,no_approval
+planera.io / Information Security / Periodic Scans,1,2026-09-02,Authenticate DAST scans with a Cognito ID token,tuckerd-planera,0,true,true,true
+planera.io / Information Security / Periodic Scans,2,2026-09-09,"Rework DAST discovery, containment, and status reporting",tuckerd-planera,0,true,true,true
+planera.io / Information Security / Periodic Scans,3,2026-09-09,Enable use of vercel bypass header,tuckerd-planera,0,true,true,true
+planera.io / Information Security / Periodic Scans,4,2026-09-10,Seed frontend routes into the crawl,tuckerd-planera,0,true,true,true
+planera.io / devops / Terraform / jump-host-scripts,39,2026-03-11,[PRD-25294] Release to Production as v0.4.2,mikeg2,1,true,false,false
+planera.io / react / Webapp,7776,2025-11-05,Prod v2.21.0,planeraguy,1,true,false,false
+planera.io / react / Webapp,7962,2025-12-04,[FIXCHANGELOG] Prod v2.22.2,griffins-planera,2,true,false,false
+planera.io / react / Webapp,7991,2025-12-10,Prod v2.23.0,griffins-planera,1,true,false,false
+planera.io / react / Webapp,8056,2025-12-17,Prod v2.32.1 - Hotfix CHAT-332,griffins-planera,1,true,false,false
+planera.io / react / Webapp,8095,2025-12-23,Prod v2.24.0,griffins-planera,1,true,false,false
+planera.io / react / Webapp,8121,2025-12-27,Prod v2.24.1,griffins-planera,1,true,false,false
+planera.io / react / Webapp,8135,2025-12-29,Hotfix v2.24.2,griffins-planera,1,true,false,false
+planera.io / react / Webapp,9404,2026-06-09,Prod v2.36.0,andrewb12,1,true,true,false
+planera.io / react / dcma-check-webflow-widget,1,2026-06-05,"[SEC-42][PRD-26749] Upgrade to PNPM 11, Add Provenance Data",andrewb12,0,true,true,true
+planera.io / react / dcma-check-webflow-widget,2,2026-06-15,"[PRD-27119] add agents file, update ci template, fix differences with real libraries",andrewb12,0,true,true,true
+planera.io / react / webadmin,102,2026-06-09,[CHAT-1696][PRD-26894]: Prod cut for vercel,benl2,1,true,true,false
+planera.io / react / webadmin,105,2026-07-08,[PRD-27342] - Release to Production as v0.14.0,benl2,1,true,true,false

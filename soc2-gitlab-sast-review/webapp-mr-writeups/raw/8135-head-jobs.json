@@ -1,0 +1,93 @@
+[
+  {
+    "stage": "test",
+    "name": "semgrep-sast-eval",
+    "status": "success",
+    "started_at": "2025-12-29T17:59:55.191Z",
+    "finished_at": "2025-12-29T18:00:24.303Z"
+  },
+  {
+    "stage": "test",
+    "name": "npm audit report",
+    "status": "success",
+    "started_at": "2025-12-29T17:54:47.129Z",
+    "finished_at": "2025-12-29T17:56:13.413Z"
+  },
+  {
+    "stage": "test",
+    "name": "npm build and test big box 4/4",
+    "status": "success",
+    "started_at": "2025-12-29T17:54:58.701Z",
+    "finished_at": "2025-12-29T18:03:10.386Z"
+  },
+  {
+    "stage": "test",
+    "name": "npm build and test big box 3/4",
+    "status": "success",
+    "started_at": "2025-12-29T17:54:51.857Z",
+    "finished_at": "2025-12-29T18:03:11.200Z"
+  },
+  {
+    "stage": "test",
+    "name": "npm build and test big box 2/4",
+    "status": "success",
+    "started_at": "2025-12-29T17:54:50.889Z",
+    "finished_at": "2025-12-29T18:03:01.025Z"
+  },
+  {
+    "stage": "test",
+    "name": "npm build and test big box 1/4",
+    "status": "success",
+    "started_at": "2025-12-29T17:54:49.838Z",
+    "finished_at": "2025-12-29T18:02:49.694Z"
+  },
+  {
+    "stage": "test",
+    "name": "npm lint big box",
+    "status": "success",
+    "started_at": "2025-12-29T17:54:48.715Z",
+    "finished_at": "2025-12-29T17:59:08.428Z"
+  },
+  {
+    "stage": "test",
+    "name": "npm typecheck",
+    "status": "success",
+    "started_at": "2025-12-29T17:54:46.308Z",
+    "finished_at": "2025-12-29T17:57:15.766Z"
+  },
+  {
+    "stage": "test",
+    "name": "secret_detection",
+    "status": "success",
+    "started_at": "2025-12-29T17:50:59.935Z",
+    "finished_at": "2025-12-29T17:51:28.871Z"
+  },
+  {
+    "stage": "test",
+    "name": "semgrep-sast",
+    "status": "success",
+    "started_at": "2025-12-29T17:50:59.552Z",
+    "finished_at": "2025-12-29T17:59:54.844Z"
+  },
+  {
+    "stage": "test",
+    "name": "gemnasium-dependency_scanning",
+    "status": "success",
+    "started_at": "2025-12-29T17:50:58.769Z",
+    "finished_at": "2025-12-29T17:51:43.657Z"
+  },
+  {
+    "stage": "validate",
+    "name": "validate changelog for main",
+    "status": "success",
+    "started_at": "2025-12-29T17:50:58.564Z",
+    "finished_at": "2025-12-29T17:51:43.388Z"
+  },
+  {
+    "stage": ".pre",
+    "name": "node_modules big box",
+    "status": "success",
+    "started_at": "2025-12-29T17:51:08.657Z",
+    "finished_at": "2025-12-29T17:54:46.030Z"
+  }
+]

@@ -1,0 +1,24 @@
+{
+  "commits": [
+    {
+      "short_id": "841bc0ea",
+      "title": "Merge branch 'demo' into 'develop' for version update",
+      "author_name": "Planera MR User"
+    },
+    {
+      "short_id": "178a3a56",
+      "title": "Mark for Release as v2.36.0",
+      "author_name": "Planera MR User"
+    }
+  ],
+  "diffs": [
+    {
+      "new_path": "CHANGELOG.md",
+      "diff": "@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0\n \n ## [Unreleased]\n \n+## [2.36.0] - 2026-06-04\n+\n ### Added\n \n - [PRD-26426] Global default work hours\n"
+    },
+    {
+      "new_path": "package.json",
+      "diff": "@@ -1,6 +1,6 @@\n {\n   \"name\": \"webapp\",\n-  \"version\": \"2.35.1\",\n+  \"version\": \"2.36.0\",\n   \"packageManager\": \"pnpm@10.26.0\",\n   \"engines\": {\n     \"node\": \">=22\",\n"
+    }
+  ]
+}

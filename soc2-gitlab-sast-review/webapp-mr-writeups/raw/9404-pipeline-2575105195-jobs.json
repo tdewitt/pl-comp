@@ -1,0 +1,72 @@
+[
+  {
+    "stage": "test",
+    "name": "semgrep-sast-eval",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm audit report",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm build and test big box 4/4",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm build and test big box 3/4",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm build and test big box 2/4",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm build and test big box 1/4",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm lint big box",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm typecheck",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "secret_detection",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "semgrep-sast",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "gemnasium-dependency_scanning",
+    "status": "success"
+  },
+  {
+    "stage": "validate",
+    "name": "post merge update version",
+    "status": "success"
+  },
+  {
+    "stage": "validate",
+    "name": "detect push source",
+    "status": "success"
+  },
+  {
+    "stage": ".pre",
+    "name": "node_modules big box",
+    "status": "success"
+  }
+]
