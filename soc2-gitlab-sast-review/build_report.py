@@ -63,9 +63,8 @@ approval.**
 
 - **{A[0]} flagged changes ({A[0]*100//ALL[0]}%) are in repositories that were already excluded from SOC 2 when the change
   was merged.** The test export marks every row "In Scope" and does not apply repository-level SOC 2 scoping.
-- **{B1[0] + B2[0] + C[0]} flagged changes are in non-production repositories** (developer sandboxes, templates,
-  prototypes, internal tooling) that were excluded from SOC 2 later in the period, were corrected on 2026-11-23, or
-  have no SOC 2 scope assignment.
+- **{B1[0] + B2[0]} flagged changes are in non-production repositories** (developer sandboxes, templates,
+  prototypes, internal tooling) that were excluded from SOC 2 later in the period or were corrected on 2026-11-23.
 - **{D[0]} flagged changes are in SOC 2 in-scope repositories.** All {D[0]} were approved and their code was tested. The flags
   come from renamed CI jobs (7), release automation commits that did not start a new pipeline (3), and a host that CI/CD
   cannot reach by design (1).
@@ -75,7 +74,6 @@ approval.**
 | Excluded from SOC 2 before merge (export error) | {A[0]} | {A[1]} | {A[2]} | {A[3]} |
 | Excluded from SOC 2 later in the period | {B1[0]} | {B1[1]} | {B1[2]} | {B1[3]} |
 | Should have been excluded; corrected 2026-11-23 | {B2[0]} | {B2[1]} | {B2[2]} | {B2[3]} |
-| No SOC 2 scope assignment (developer sandboxes) | {C[0]} | {C[1]} | {C[2]} | {C[3]} |
 | **SOC 2 in scope (all explained)** | **{D[0]}** | **{D[1]}** | **{D[2]}** | **{D[3]}** |
 | Total | {ALL[0]} | {ALL[1]} | {ALL[2]} | {ALL[3]} |
 
@@ -130,14 +128,13 @@ developer sandboxes, templates, prototypes, and internal IT tooling.
 - **react / dcma-check-webflow-widget**: an uncustomized copy of the Planera React component library template (README:
   "Planera React Component Library Template"). The repository was created on 2026-06-24. Both flagged merge requests
   (!1 on 2026-06-05 and !2 on 2026-06-15) predate it and are template history copied into the new project.
+- **Developer sandbox repositories** (Wasim, Griffin Shaw, Haris Ejaz, vadima3 dev-docs; Forks / Microservice):
+  personal documentation and experimentation repositories created during the period without a SOC 2 scope assignment.
+  The same day, all remaining developer sandbox, proof-of-concept, and third-party repositories were also marked out of
+  scope, so every repository in Secureframe now has an explicit SOC 2 scope.
 
 {table("B2")}
 
-**No SOC 2 scope assignment.** These developer sandbox repositories were created during the period and have no SOC 2
-scope record. They are personal documentation and experimentation repositories, and they should be marked out of
-scope.
-
-{table("C", with_scope=False)}
 
 # Finding 4: SOC 2 in-scope repositories
 
@@ -188,8 +185,7 @@ This MR was approved and passed SAST (pipeline jobs: `deploy demo`, `semgrep clo
 
 | Item | Action | Status |
 |---|---|---|
-| Periodic Scans, dcma-check-webflow-widget | Mark out of SOC 2 scope | Done 2026-11-23 |
-| Developer sandbox repositories with no scope record ({C[4]}) | Mark out of SOC 2 scope | Open |
+| Periodic Scans, dcma-check-webflow-widget, developer sandbox, proof-of-concept, and third-party repositories | Mark out of SOC 2 scope | Done 2026-11-23 |
 | Release automation (Webapp, webadmin) | Make release automation commits trigger CI, or require a merge request pipeline on every `demo` into `main` MR, so an external status alone cannot satisfy the pipeline requirement | Open |
 | New repositories | Assign SOC 2 scope when a repository is created | Open |
 

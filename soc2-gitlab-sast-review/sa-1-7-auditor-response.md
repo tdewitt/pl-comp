@@ -13,8 +13,7 @@ approval.**
 - **326 flagged changes (88%) are in repositories that were already excluded from SOC 2 when the change
   was merged.** The test export marks every row "In Scope" and does not apply repository-level SOC 2 scoping.
 - **31 flagged changes are in non-production repositories** (developer sandboxes, templates,
-  prototypes, internal tooling) that were excluded from SOC 2 later in the period, were corrected on 2026-11-23, or
-  have no SOC 2 scope assignment.
+  prototypes, internal tooling) that were excluded from SOC 2 later in the period or were corrected on 2026-11-23.
 - **11 flagged changes are in SOC 2 in-scope repositories.** All 11 were approved and their code was tested. The flags
   come from renamed CI jobs (7), release automation commits that did not start a new pipeline (3), and a host that CI/CD
   cannot reach by design (1).
@@ -23,8 +22,7 @@ approval.**
 |----------------------------------------|---------|---------|---------|---------|
 | Excluded from SOC 2 before merge (export error) | 326 | 326 | 326 | 124 |
 | Excluded from SOC 2 later in the period | 16 | 16 | 16 | 13 |
-| Should have been excluded; corrected 2026-11-23 | 6 | 6 | 6 | 6 |
-| No SOC 2 scope assignment (developer sandboxes) | 9 | 9 | 9 | 3 |
+| Should have been excluded; corrected 2026-11-23 | 15 | 15 | 15 | 9 |
 | **SOC 2 in scope (all explained)** | **11** | **11** | **3** | **0** |
 | Total | 368 | 368 | 360 | 146 |
 
@@ -124,25 +122,22 @@ developer sandboxes, templates, prototypes, and internal IT tooling.
 - **react / dcma-check-webflow-widget**: an uncustomized copy of the Planera React component library template (README:
   "Planera React Component Library Template"). The repository was created on 2026-06-24. Both flagged merge requests
   (!1 on 2026-06-05 and !2 on 2026-06-15) predate it and are template history copied into the new project.
+- **Developer sandbox repositories** (Wasim, Griffin Shaw, Haris Ejaz, vadima3 dev-docs; Forks / Microservice):
+  personal documentation and experimentation repositories created during the period without a SOC 2 scope assignment.
+  The same day, all remaining developer sandbox, proof-of-concept, and third-party repositories were also marked out of
+  scope, so every repository in Secureframe now has an explicit SOC 2 scope.
 
 | Repository | Excluded on | Excluded by | Reason | MRs | No integ. | No SAST | No appr. |
 |------------------------------|----------|----------|------------------|-------|-------|-------|-------|
 | Information Security / Periodic Scans | 2026-11-23 | Tucker DeWitt | WIP security scanner.  Not product, no access to customer data, nothing. | 4 | 4 | 4 | 4 |
+| Developer Sandbox / Wasim dev-docs | 2026-11-23 | Tucker DeWitt | development asset | 3 | 3 | 3 | 1 |
+| Developer Sandbox / Griffin Shaw dev-docs | 2026-11-23 | Tucker DeWitt | development asset | 2 | 2 | 2 | 0 |
+| Developer Sandbox / Haris Ejaz dev-docs | 2026-11-23 | Tucker DeWitt | development asset | 2 | 2 | 2 | 1 |
 | react / dcma-check-webflow-widget | 2026-11-23 | Tucker DeWitt | development asset | 2 | 2 | 2 | 2 |
-| **Total (2 repositories)** | | | | **6** | **6** | **6** | **6** |
+| Developer Sandbox / Forks / Microservice | 2026-11-23 | Tucker DeWitt | development asset | 1 | 1 | 1 | 1 |
+| Developer Sandbox / vadima3 dev-docs | 2026-11-23 | Tucker DeWitt | development asset | 1 | 1 | 1 | 0 |
+| **Total (7 repositories)** | | | | **15** | **15** | **15** | **9** |
 
-**No SOC 2 scope assignment.** These developer sandbox repositories were created during the period and have no SOC 2
-scope record. They are personal documentation and experimentation repositories, and they should be marked out of
-scope.
-
-| Repository | MRs | No integ. | No SAST | No appr. | Merges |
-|------------------------------|-------|-------|-------|-------|--------------------|
-| Developer Sandbox / Wasim dev-docs | 3 | 3 | 3 | 1 | 2026-07-24 to 2026-09-15 |
-| Developer Sandbox / Griffin Shaw dev-docs | 2 | 2 | 2 | 0 | 2026-08-14 to 2026-08-21 |
-| Developer Sandbox / Haris Ejaz dev-docs | 2 | 2 | 2 | 1 | 2026-09-25 to 2026-10-09 |
-| Developer Sandbox / Forks / Microservice | 1 | 1 | 1 | 1 | 2026-07-17 to 2026-07-17 |
-| Developer Sandbox / vadima3 dev-docs | 1 | 1 | 1 | 0 | 2026-10-06 to 2026-10-06 |
-| **Total (5 repositories)** | **9** | **9** | **9** | **3** | |
 
 # Finding 4: SOC 2 in-scope repositories
 
@@ -193,8 +188,7 @@ This MR was approved and passed SAST (pipeline jobs: `deploy demo`, `semgrep clo
 
 | Item | Action | Status |
 |---|---|---|
-| Periodic Scans, dcma-check-webflow-widget | Mark out of SOC 2 scope | Done 2026-11-23 |
-| Developer sandbox repositories with no scope record (5) | Mark out of SOC 2 scope | Open |
+| Periodic Scans, dcma-check-webflow-widget, developer sandbox, proof-of-concept, and third-party repositories | Mark out of SOC 2 scope | Done 2026-11-23 |
 | Release automation (Webapp, webadmin) | Make release automation commits trigger CI, or require a merge request pipeline on every `demo` into `main` MR, so an external status alone cannot satisfy the pipeline requirement | Open |
 | New repositories | Assign SOC 2 scope when a repository is created | Open |
 

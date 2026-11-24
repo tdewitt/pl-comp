@@ -37,12 +37,12 @@ B1,planera.io / Developer Sandbox / Ben Li dev-docs,2026-06-30,Tucker DeWitt,dev
 B1,planera.io / Developer Sandbox / Jeffrey Tsai dev-docs,2026-06-30,Tucker DeWitt,development_asset,1,1,1,0,2026-06-26,2026-06-26
 B1,planera.io / Developer Sandbox / Mike Guzewicz dev-docs,2026-06-30,Tucker DeWitt,development_asset,1,1,1,0,2026-06-17,2026-06-17
 B2,planera.io / Information Security / Periodic Scans,2026-11-23,Tucker DeWitt,"WIP security scanner.  Not product, no access to customer data, nothing.",4,4,4,4,2026-09-02,2026-09-10
+B2,planera.io / Developer Sandbox / Wasim dev-docs,2026-11-23,Tucker DeWitt,development_asset,3,3,3,1,2026-07-24,2026-09-15
+B2,planera.io / Developer Sandbox / Griffin Shaw dev-docs,2026-11-23,Tucker DeWitt,development_asset,2,2,2,0,2026-08-14,2026-08-21
+B2,planera.io / Developer Sandbox / Haris Ejaz dev-docs,2026-11-23,Tucker DeWitt,development_asset,2,2,2,1,2026-09-25,2026-10-09
 B2,planera.io / react / dcma-check-webflow-widget,2026-11-23,Tucker DeWitt,development_asset,2,2,2,2,2026-06-05,2026-06-15
-C,planera.io / Developer Sandbox / Wasim dev-docs,,"","",3,3,3,1,2026-07-24,2026-09-15
-C,planera.io / Developer Sandbox / Griffin Shaw dev-docs,,"","",2,2,2,0,2026-08-14,2026-08-21
-C,planera.io / Developer Sandbox / Haris Ejaz dev-docs,,"","",2,2,2,1,2026-09-25,2026-10-09
-C,planera.io / Developer Sandbox / Forks / Microservice,,"","",1,1,1,1,2026-07-17,2026-07-17
-C,planera.io / Developer Sandbox / vadima3 dev-docs,,"","",1,1,1,0,2026-10-06,2026-10-06
+B2,planera.io / Developer Sandbox / Forks / Microservice,2026-11-23,Tucker DeWitt,development_asset,1,1,1,1,2026-07-17,2026-07-17
+B2,planera.io / Developer Sandbox / vadima3 dev-docs,2026-11-23,Tucker DeWitt,development_asset,1,1,1,0,2026-10-06,2026-10-06
 D,planera.io / react / Webapp,2025-06-21,"","",8,8,1,0,2025-11-05,2026-06-09
 D,planera.io / react / webadmin,2025-08-08,"","",2,2,2,0,2026-06-09,2026-07-08
 D,planera.io / devops / Terraform / jump-host-scripts,2026-11-23,Tucker DeWitt,"",1,1,0,0,2026-03-11,2026-03-11

@@ -3,42 +3,42 @@ A,planera.io / Corp IT / fleetcmd.it,1,2026-07-22,"fix(image): build on Go 1.26.
 A,planera.io / Corp IT / fleetcmd.it,2,2026-10-29,Add Planera day-one Mac setup and signed installer,tuckerd-planera,0,true,true,2026-06-30
 A,planera.io / Corp IT / fleetcmd.it,4,2026-10-29,Report signing certificate trust errors,tuckerd-planera,1,true,true,2026-06-30
 A,planera.io / Corp IT / fleetcmd.it,3,2026-10-29,Report imported signing identity types on mismatch,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,9,2026-10-30,Sign Planera Setup DMG before notarization,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,12,2026-10-30,Remove unsupported setup backend timeout,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,8,2026-10-30,Include Apple system roots for setup signing,tuckerd-planera,0,true,true,2026-06-30
 A,planera.io / Corp IT / fleetcmd.it,15,2026-10-30,Polish Planera Setup app and portal,tuckerd-planera,0,true,true,2026-06-30
 A,planera.io / Corp IT / fleetcmd.it,13,2026-10-30,Grant setup deployer repository read access,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,14,2026-10-30,Stream setup DMG download,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,7,2026-10-30,Use Installer certificate name for setup package signing,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,8,2026-10-30,Include Apple system roots for setup signing,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,11,2026-10-30,Avoid unrelated refresh in setup bootstrap plan,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,5,2026-10-30,Trust Apple Developer ID G2 during setup signing,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,10,2026-10-30,Provision setup portal from protected main,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,9,2026-10-30,Sign Planera Setup DMG before notarization,tuckerd-planera,0,true,true,2026-06-30
 A,planera.io / Corp IT / fleetcmd.it,6,2026-10-30,Check setup signing identities without trust filter,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,12,2026-10-30,Remove unsupported setup backend timeout,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,5,2026-10-30,Trust Apple Developer ID G2 during setup signing,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,11,2026-10-30,Avoid unrelated refresh in setup bootstrap plan,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,10,2026-10-30,Provision setup portal from protected main,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,7,2026-10-30,Use Installer certificate name for setup package signing,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,14,2026-10-30,Stream setup DMG download,tuckerd-planera,0,true,true,2026-06-30
 A,planera.io / Corp IT / fleetcmd.it,16,2026-10-31,"Endpoint security baseline, Slack/Chrome install via Planera Setup",tuckerd-planera,0,true,true,2026-06-30
 A,planera.io / Corp IT / fleetcmd.it,17,2026-11-01,Require macOS 26.7.2 by 2026-11-20 and enable GitOps mode,tuckerd-planera,0,true,true,2026-06-30
-A,planera.io / Corp IT / fleetcmd.it,19,2026-11-02,Require macOS 27.2 on testing macOS fleet,tuckerd-planera,0,true,true,2026-06-30
 A,planera.io / Corp IT / fleetcmd.it,18,2026-11-02,Add macOS 26.7.2 version compliance policy to production,tuckerd-planera,0,true,true,2026-06-30
+A,planera.io / Corp IT / fleetcmd.it,19,2026-11-02,Require macOS 27.2 on testing macOS fleet,tuckerd-planera,0,true,true,2026-06-30
 A,planera.io / Developer Agents Template,1,2026-05-14,[NOJIRA] dev template setup,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,3,2026-05-15,Add Eriks skills,eriks2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,2,2026-05-26,[NOJIRA] General updates,joshh3,0,true,true,2026-05-05
-A,planera.io / Developer Agents Template,6,2026-05-27,Several changes from Mike,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,4,2026-05-27,Add notes for source control window and repo docs,eriks2,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,6,2026-05-27,Several changes from Mike,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,7,2026-05-29,[CHAT-1680] Switch dev template to non-Git workspace root,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,8,2026-06-03,[CHAT-1700] Multiple updates,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,10,2026-06-10,[PRD-27037] Add new skill for running local services. Rename webapp version for consistency.,mikeg2,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,9,2026-06-11,[CHAT-1805] General updates,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,12,2026-06-11,Setup scripts now Windows friendly (refactor with test),mikeg2,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,9,2026-06-11,[CHAT-1805] General updates,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,14,2026-06-22,"[CHAT-1829] Refine agent setup, Jira/MCP skills, and dev-docs workflows",joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,15,2026-06-25,docs(coding): require Go coverage check before pushing,eriks2,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,17,2026-06-26,Find MRs that are ready and show a nice presentation,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,16,2026-07-01,[CHAT-1958] Improve Manny/Chat Workflows,griffins-planera,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,18,2026-07-02,Add a cloud service release check skill,mikeg2,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,20,2026-07-08,[CHAT-1888] Improve shared agent skill guidance,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,21,2026-07-08,Cross platform fix,mikeg2,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,20,2026-07-08,[CHAT-1888] Improve shared agent skill guidance,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,24,2026-07-09,[NOJIRA] Harden Solution-design Skill Guidelines,jeffreyt3,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,25,2026-07-10,[NOJIRA] Add webapp-release and jira-bulk-transition skills,trystendsmyth,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,22,2026-07-10,[NOJIRA] Promote review skills and clarify MR guidance,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,26,2026-07-10,[NOJIRA] Webapp-release skill follow-ups from post-merge review,trystendsmyth,0,true,true,2026-05-05
+A,planera.io / Developer Agents Template,25,2026-07-10,[NOJIRA] Add webapp-release and jira-bulk-transition skills,trystendsmyth,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,27,2026-07-15,[NOJIRA] Extract shared repo-release skill from webapp-release,mikeg2,2,true,true,2026-05-05
 A,planera.io / Developer Agents Template,28,2026-07-15,Manage symlinked template files in an OS agnostic way,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,30,2026-07-16,cloud-release skill,mikeg2,5,true,true,2026-05-05
@@ -53,20 +53,20 @@ A,planera.io / Developer Agents Template,36,2026-07-29,[NOJIRA] Add production P
 A,planera.io / Developer Agents Template,39,2026-07-30,[NOJIRA][NOCHANGELOG] Improve MR review skill workflows,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,43,2026-08-05,[CHAT-2324] Remove post deploy steps involving Langsmith,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,40,2026-08-10,[CHAT-2298] Document LangSmith workspaces and code-local prompt sourcing in environments.json,joshh3,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,45,2026-08-11,[NOJIRA][NOCHANGELOG] Clarify when Kong/OPA rollout is required,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,44,2026-08-11,[NOJIRA][NOCHANGELOG] Add code-freshness guidance and changelog decision rules,joshh3,2,true,true,2026-05-05
+A,planera.io / Developer Agents Template,45,2026-08-11,[NOJIRA][NOCHANGELOG] Clarify when Kong/OPA rollout is required,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,48,2026-08-13,[NOJIRA] Find CUST tickets by link instead of a status CUST does not have,wasim-planera,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,46,2026-08-14,Make sure tracking ticket numbers (if used) are in MR titles,mikeg2,2,true,true,2026-05-05
 A,planera.io / Developer Agents Template,50,2026-08-22,[NOJIRA] planera-review: emphasize reviewer-only role,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,53,2026-08-25,feat: add manny-feedback-triage skill,vivekn3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,51,2026-08-25,[AUT-269] Automate SKILL | 'data-test-id' changes in any of our dependency repos,rahsanali,2,true,true,2026-05-05
-A,planera.io / Developer Agents Template,52,2026-08-26,[NOJIRA] fix(skills): correct the PRD and CHAT ticket lifecycle around MR merge,wasim-planera,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,49,2026-08-26,Enhance changelog authoring guidance,mikeg2,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,42,2026-08-27,[PRD-28069] Add edit-webapp-text skill,trystendsmyth,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,52,2026-08-26,[NOJIRA] fix(skills): correct the PRD and CHAT ticket lifecycle around MR merge,wasim-planera,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,54,2026-08-27,"[NOJIRA] Review skills: only review open MRs, add simplification pass, doc links",joshh3,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,42,2026-08-27,[PRD-28069] Add edit-webapp-text skill,trystendsmyth,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,56,2026-08-31,[NOJIRA] Solution design skill: summarize the design in the review MR description,joshh3,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,47,2026-08-31,[NOJIRA][NOCHANGELOG] Refactor oversized skills and guard endpoint rollouts,trystendsmyth,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,55,2026-08-31,[NOJIRA] Add manny-feedback-triage-eng skill,mikeg2,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,47,2026-08-31,[NOJIRA][NOCHANGELOG] Refactor oversized skills and guard endpoint rollouts,trystendsmyth,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,57,2026-09-02,[NOJIRA] Prompt-audit cleanup of agent instructions and skills,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,58,2026-09-10,[NOJIRA][NOCHANGELOG] Keep Cursor agents on the multi-root workspace,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,63,2026-09-11,[NOJIRA] Make model guidance in manny-feedback-triage-eng Step 0 a non-blocking advisory,joshh3,0,true,true,2026-05-05
@@ -81,36 +81,36 @@ A,planera.io / Developer Agents Template,73,2026-09-25,[NOJIRA] Add agent draft 
 A,planera.io / Developer Agents Template,75,2026-09-25,[NOJIRA] address-code-rabbit: handle all draft MRs when no MR is given,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,74,2026-09-26,"[CHAT-2814][NOCHANGELOG] manny-evals: run, compare with develop, and report",joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,76,2026-09-29,"[NOJIRA][NOCHANGELOG] Open release MRs as ready, not draft",mikeg2,2,true,true,2026-05-05
-A,planera.io / Developer Agents Template,78,2026-09-30,Promote test-orchestrator to a shared skill with test-planner/runner/generator modes,vivekn3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,79,2026-09-30,[NOJIRA][NOCHANGELOG] Warn QA about removed test IDs; trigger missing CodeRabbit reviews,joshh3,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,78,2026-09-30,Promote test-orchestrator to a shared skill with test-planner/runner/generator modes,vivekn3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,81,2026-10-01,[NOJIRA][NOCHANGELOG] skills(planera-review): frontend pass from 3mo MR feedback,thibaut-planera,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,85,2026-10-02,[NOJIRA][NOCHANGELOG] cloud-release: use pyproject.toml as chat's version source,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,84,2026-10-02,[NOJIRA][NOCHANGELOG] address-code-rabbit: resolve the whole discussion after replying,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,77,2026-10-05,[NOJIRA][NOCHANGELOG] check-manny-mcp-tools: send the project's workspace from chat_send,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,89,2026-10-06,[NOJIRA][NOCHANGELOG] mr-merge-and-qa: default to Ready for QA,joshh3,0,true,true,2026-05-05
-A,planera.io / Developer Agents Template,88,2026-10-06,[NOJIRA][NOCHANGELOG] Share the mr-merge-and-qa skill,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,61,2026-10-06,[NOJIRA][NOCHANGELOG] Add Datadog replay investigation skill,griffins-planera,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,60,2026-10-06,[NOJIRA][NOCHANGELOG] Exclude root pnpm store from VS Code/Cursor,griffins-planera,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,88,2026-10-06,[NOJIRA][NOCHANGELOG] Share the mr-merge-and-qa skill,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,92,2026-10-07,[NOJIRA][NOCHANGELOG] finalize-manny-eval: fixes from the first final sign-off run,joshh3,0,true,true,2026-05-05
-A,planera.io / Developer Agents Template,93,2026-10-07,[NOJIRA][NOCHANGELOG] Remove the plan skill,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,90,2026-10-07,"[NOJIRA][NOCHANGELOG] finalize-manny-eval: final sign-off, Sheet backups, Completed examples tab",joshh3,0,true,true,2026-05-05
+A,planera.io / Developer Agents Template,93,2026-10-07,[NOJIRA][NOCHANGELOG] Remove the plan skill,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,86,2026-10-08,[NOJIRA] docs(endpoint-rollout): place the gateway link-back after the MR summary,naveenp_pln,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,100,2026-10-08,[NOJIRA][NOCHANGELOG] planera-review: require absence tests to fail without their guard,naveenp_pln,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,94,2026-10-08,[CHAT-2935][NOCHANGELOG] finalize-manny-eval: route promotions by Target dataset,joshh3,0,true,true,2026-05-05
-A,planera.io / Developer Agents Template,98,2026-10-09,[NOJIRA][NOCHANGELOG] get-token: time out the optional Kong project lookup,joshh3,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,100,2026-10-08,[NOJIRA][NOCHANGELOG] planera-review: require absence tests to fail without their guard,naveenp_pln,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,99,2026-10-09,[CHAT-2957][NOCHANGELOG] finalize-manny-eval: read snapshots through replay's lookup rules,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,91,2026-10-09,[NOJIRA] Add design sign-off and reviewer independence guidance to MR and review skills,wasim-planera,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,97,2026-10-09,[NOJIRA][NOCHANGELOG] planera-review: cover local commits that already have an open MR,naveenp_pln,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,98,2026-10-09,[NOJIRA][NOCHANGELOG] get-token: time out the optional Kong project lookup,joshh3,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,102,2026-10-13,[CHAT-2972][NOCHANGELOG] Clarify eval capacity and comment evidence,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,96,2026-10-13,[NOJIRA][NOCHANGELOG] mr-merge-and-qa: read full context first and record each run on the ticket,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,83,2026-10-13,[NOJIRA] Name the Atlassian site and cloud ID in AGENTS.md,mikeg2,2,true,true,2026-05-05
-A,planera.io / Developer Agents Template,102,2026-10-13,[CHAT-2972][NOCHANGELOG] Clarify eval capacity and comment evidence,joshh3,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,101,2026-10-14,"[NOJIRA][NOCHANGELOG] aws-diagnose: add AWS diagnosis skill, starting with Cognito SSO",mikeg2,0,true,true,2026-05-05
 A,planera.io / Developer Agents Template,104,2026-10-14,"[NOJIRA][NOCHANGELOG] Validate each cloud release deploy, document planera-iac plan timing, limit merge-backs to hotfixes",mikeg2,2,true,true,2026-05-05
 A,planera.io / Developer Agents Template,87,2026-10-14,[NOJIRA][NOCHANGELOG] design-brief: promote to shared skills,naveenp_pln,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,103,2026-10-14,"[AUT-368] Enhance 'data-testid-drift-sync' Skill, Change Detection, Automation...",rahsanali,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,105,2026-10-19,[NOJIRA][NOCHANGELOG] Define when [NOCHANGELOG] applies and mark CI-only changelog entries,mikeg2,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,112,2026-10-20,[SEC-65][NOCHANGELOG] Add STRIDE threat modeling to solution designs,mikeg2,3,true,true,2026-05-05
 A,planera.io / Developer Agents Template,111,2026-10-20,[NOJIRA][NOCHANGELOG] Pull Figma and Notion into test plans and offer result tracking,vivekn3,0,true,true,2026-05-05
+A,planera.io / Developer Agents Template,112,2026-10-20,[SEC-65][NOCHANGELOG] Add STRIDE threat modeling to solution designs,mikeg2,3,true,true,2026-05-05
 A,planera.io / Developer Agents Template,106,2026-10-23,[NOJIRA][NOCHANGELOG] Re-request review after a significant change post-approval,mikeg2,2,true,true,2026-05-05
 A,planera.io / Developer Agents Template,113,2026-10-26,[NOJIRA][NOCHANGELOG] Check cross-service dependencies in MRs and releases,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,114,2026-10-27,[PRD-24668][NOCHANGELOG] Add US-restricted check to the start of CUST ticket work,mikeg2,1,true,true,2026-05-05
@@ -118,11 +118,11 @@ A,planera.io / Developer Agents Template,116,2026-10-28,[CHAT-3051][NOCHANGELOG]
 A,planera.io / Developer Agents Template,120,2026-10-29,[NOJIRA][NOCHANGELOG] Publish design briefs as Claude artifacts and trim the skill,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,122,2026-10-30,[NOJIRA][NOCHANGELOG] Record the two LaunchDarkly environments,joshh3,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,117,2026-10-30,[NOJIRA][NOCHANGELOG] Switch address-code-rabbit to address-comments: Address human review comments too,joshh3,2,true,true,2026-05-05
-A,planera.io / Developer Agents Template,126,2026-11-03,[NOJIRA][NOCHANGELOG] Route new eval ideas to the Eval Ideas tab in manny-evals,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,125,2026-11-03,Draft: [NOJIRA][NOCHANGELOG] Fix review-status reporting stale after a finished CodeRabbit review,joshh3,0,true,true,2026-05-05
+A,planera.io / Developer Agents Template,126,2026-11-03,[NOJIRA][NOCHANGELOG] Route new eval ideas to the Eval Ideas tab in manny-evals,mikeg2,1,true,true,2026-05-05
+A,planera.io / Developer Agents Template,119,2026-11-04,[NOJIRA][NOCHANGELOG] Move CUST tickets to Customer Validation and tag the reporter at production,catboop,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,130,2026-11-04,[NOJIRA][NOCHANGELOG] Add a dev-readonly AWS profile for dev and demo reference reads,mikeg2,1,true,true,2026-05-05
 A,planera.io / Developer Agents Template,115,2026-11-04,[NOJIRA][NOCHANGELOG] Include tickets shipped through package bumps in release Jira updates,catboop,1,true,true,2026-05-05
-A,planera.io / Developer Agents Template,119,2026-11-04,[NOJIRA][NOCHANGELOG] Move CUST tickets to Customer Validation and tag the reporter at production,catboop,1,true,true,2026-05-05
 A,planera.io / Developer Sandbox / Andrew Boskin dev-docs,6,2026-09-05,[CHAT-2462] Document project dashboard data sources,andrewb12,0,true,true,2026-06-10
 A,planera.io / Developer Sandbox / Andrew Boskin dev-docs,1,2026-09-15,feat: add detailed design document for P6 import canvas auto-layout to prevent...,andrewb12,0,true,true,2026-06-10
 A,planera.io / Developer Sandbox / Andrew Boskin dev-docs,7,2026-09-18,[CHAT-2608] Attachment thumbnail persistence solution design,andrewb12,0,true,true,2026-06-10
@@ -181,8 +181,8 @@ A,planera.io / Developer Sandbox / Mike Guzewicz dev-docs,9,2026-09-02,[CHAT-258
 A,planera.io / Developer Sandbox / Mike Guzewicz dev-docs,10,2026-09-29,[PRD-28658][NOCHANGELOG] Add service shutdown contract solution design,mikeg2,0,true,true,2026-06-30
 A,planera.io / Developer Sandbox / Mike Guzewicz dev-docs,11,2026-10-09,[CHAT-2614] docs: UPDATED add what-if-request-built-plan-id solution design,mikeg2,1,true,true,2026-06-30
 A,planera.io / Developer Sandbox / Naveen Puvvula dev-docs,2,2026-08-14,docs: clarify solution designs publish via review MR,naveenp_pln,0,true,true,2026-06-30
-A,planera.io / Developer Sandbox / Naveen Puvvula dev-docs,3,2026-10-02,[PRD-28768][NOCHANGELOG] docs: add snapshot restore solution design,naveenp_pln,0,true,true,2026-06-30
 A,planera.io / Developer Sandbox / Naveen Puvvula dev-docs,1,2026-10-02,docs: project snapshots and restore solution design (epic umbrella),naveenp_pln,0,true,true,2026-06-30
+A,planera.io / Developer Sandbox / Naveen Puvvula dev-docs,3,2026-10-02,[PRD-28768][NOCHANGELOG] docs: add snapshot restore solution design,naveenp_pln,0,true,true,2026-06-30
 A,planera.io / Developer Sandbox / Shahbaz Shoukat dev-docs,2,2026-09-11,docs: add connect-to-existing-d2 solution design,shahbazs,0,true,true,2026-06-10
 A,planera.io / Developer Sandbox / Shahbaz Shoukat dev-docs,3,2026-10-06,docs: add connect-on-paste solution design,shahbazs,0,true,true,2026-06-10
 A,planera.io / Developer Sandbox / Tayyab Sarwar dev-docs,1,2026-08-31,[PRD-28421] docs: add rru payload reduction solution design,tayyabs,1,true,true,2026-06-10
@@ -197,12 +197,12 @@ A,planera.io / automation / playwright-planera,22,2025-12-16,Demo,zubairshahid,0
 A,planera.io / automation / playwright-planera,19,2025-12-16,Fixed Prod Changes,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,27,2026-01-14,Demo,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,34,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
+A,planera.io / automation / playwright-planera,30,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,40,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,42,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,44,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
-A,planera.io / automation / playwright-planera,38,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
-A,planera.io / automation / playwright-planera,30,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,32,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
+A,planera.io / automation / playwright-planera,38,2026-01-17,Demo,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,50,2026-01-29,Demo,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,53,2026-03-11,Demo,zubairshahid,0,true,true,2025-10-20
 A,planera.io / automation / playwright-planera,56,2026-03-17,Demo,zubairshahid,0,true,true,2025-10-20
@@ -219,8 +219,8 @@ A,planera.io / devops / Continuous Integration and Deployment / Templates,70,202
 A,planera.io / devops / Continuous Integration and Deployment / Templates,71,2026-01-22,PRD-24638 - Add CodeRabbit suggestions in base-react-pnpm.yml,omairz1,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,72,2026-01-26,[CHAT-546] Support multiple linux distributions,mikeg2,0,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,73,2026-01-30,Update PNPM template to support auto Changesets,trystendsmyth,1,true,true,2025-06-21
-A,planera.io / devops / Continuous Integration and Deployment / Templates,74,2026-01-30,Add Chromatic and block publishing on test,trystendsmyth,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,75,2026-01-30,Consolidate Chromatic to be separate job on auto publish,trystendsmyth,1,true,true,2025-06-21
+A,planera.io / devops / Continuous Integration and Deployment / Templates,74,2026-01-30,Add Chromatic and block publishing on test,trystendsmyth,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,76,2026-03-26,[NOJIRA] Missing step leading to blank substitutions in python builds,mikeg2,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,77,2026-04-03,[PRD-26121] Disable semgrep cloud from golang template,mikeg2,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,78,2026-04-06,[PRD-26091] Update go 1.26.1,tayyabs,1,true,true,2025-06-21
@@ -228,8 +228,8 @@ A,planera.io / devops / Continuous Integration and Deployment / Templates,79,202
 A,planera.io / devops / Continuous Integration and Deployment / Templates,81,2026-05-04,[SEC-42] Add SLSA artifact generation,mikeg2,2,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,80,2026-05-12,[CHAT-1300] Changeset Hotfixes,griffins-planera,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,82,2026-06-05,[PRD-26749] Update PNPM base to version 11. Environment driven now.,mikeg2,2,true,true,2025-06-21
-A,planera.io / devops / Continuous Integration and Deployment / Templates,84,2026-06-10,[PRD-27096][PRD-23182][PRD-23175] Docs and a long overdue bug fix,mikeg2,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,83,2026-06-10,[PRD-27042]  Capture docker run exit code before logout in service migrator job,omairz1,1,true,true,2025-06-21
+A,planera.io / devops / Continuous Integration and Deployment / Templates,84,2026-06-10,[PRD-27096][PRD-23182][PRD-23175] Docs and a long overdue bug fix,mikeg2,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,85,2026-06-11,[NOJIRA] Reuse cached node image on big-box CI runners,trystendsmyth,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,86,2026-06-18,Fix missing newline after last section before a version,mikeg2,1,true,true,2025-06-21
 A,planera.io / devops / Continuous Integration and Deployment / Templates,87,2026-07-07,[PRD-27441] - Configure OIDC Authentication for Webflow Widget S3 Deploy in Web Account,omairz1,1,true,true,2025-06-21
@@ -238,12 +238,12 @@ A,planera.io / devops / Continuous Integration and Deployment / Templates,89,202
 A,planera.io / devops / Continuous Integration and Deployment / Templates,90,2026-07-18,[SEC-38] Adopt uv lockfile for python template,mikeg2,1,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,3,2026-06-18,"Modernize AWS bootstrap: terragrunt 1.0 + OpenTofu, live-adopted, tested",tuckerd-planera,1,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,4,2026-06-22,Add Organizations OU hierarchy and dedicated security account,tuckerd-planera,1,true,true,2025-06-21
-A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,10,2026-07-31,"Identity Center: PenTest set + AWS Security Agent access, group adoption, docs",tuckerd-planera,0,true,true,2025-06-21
-A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,6,2026-07-31,Add org-level GuardDuty managed from the delegated-admin account,tuckerd-planera,0,true,true,2025-06-21
-A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,7,2026-07-31,Add log-archive account and organization CloudTrail,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,9,2026-07-31,Enable Centralized Root Access Management + member root-credential removal,tuckerd-planera,0,true,true,2025-06-21
-A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,5,2026-07-31,Register security account as delegated administrator,tuckerd-planera,0,true,true,2025-06-21
+A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,7,2026-07-31,Add log-archive account and organization CloudTrail,tuckerd-planera,0,true,true,2025-06-21
+A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,6,2026-07-31,Add org-level GuardDuty managed from the delegated-admin account,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,8,2026-07-31,Deploy ssosync for Google group membership sync,tuckerd-planera,0,true,true,2025-06-21
+A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,10,2026-07-31,"Identity Center: PenTest set + AWS Security Agent access, group adoption, docs",tuckerd-planera,0,true,true,2025-06-21
+A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,5,2026-07-31,Register security account as delegated administrator,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,11,2026-08-04,"Adopt live org, GuardDuty, and SCP state into Terraform",tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,12,2026-08-06,Deploy ssosync; elevated access grants,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,13,2026-08-06,Move the CloudTrail alarm stack into the security account,tuckerd-planera,1,true,true,2025-06-21
@@ -253,23 +253,23 @@ A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,21,2026
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,17,2026-08-14,Add Security Hub central configuration (Essentials/CSPM enablement),tuckerd-planera,1,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,22,2026-08-15,Fix Security Hub live-apply failures: region scoping and V2/CSPM ownership,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,20,2026-08-20,PRD-28264 - Dimension CloudTrail metric filters and alarms per account,omairz1,0,true,true,2025-06-21
-A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,25,2026-08-27,Route Security Hub findings at a human,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,26,2026-08-27,Cover the GuardDuty families the resource segment misses,tuckerd-planera,0,true,true,2025-06-21
+A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,25,2026-08-27,Route Security Hub findings at a human,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,28,2026-08-28,Fit the GuardDuty type patterns in EventBridge's complexity budget,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,29,2026-08-31,Bring the region SCP under Terraform,tuckerd-planera,1,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,27,2026-08-31,Add trail monitoring alongside the log-archive catalogue,tuckerd-planera,1,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,30,2026-09-01,Deny member accounts their own CloudTrail collection,tuckerd-planera,1,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,31,2026-09-03,Full docs review and cleanup,tuckerd-planera,1,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,32,2026-09-09,Lock the trail bucket in governance mode,tuckerd-planera,1,true,true,2025-06-21
-A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,34,2026-09-12,Extract a shared chatbot-channel module and give the Slack channels working buttons,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,33,2026-09-12,Consolidate the CloudTrail alarm catalogue and route findings by channel,tuckerd-planera,1,true,true,2025-06-21
+A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,34,2026-09-12,Extract a shared chatbot-channel module and give the Slack channels working buttons,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,35,2026-09-13,Grant GetMetricWidgetImage so dashboard widgets render in Slack,tuckerd-planera,0,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,36,2026-09-23,Exclude expected SCIM writes from governance alarm,tuckerd-planera,1,true,true,2025-06-21
 A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,37,2026-11-04,Report production Inspector findings to Jira and Slack,omairz1,0,true,true,2025-06-21
-A,planera.io / go / Rego Generator,17,2026-05-12,[NOJIRA] Use single quote to silence Rabbit,eriks2,1,true,true,2025-06-21
 A,planera.io / go / Rego Generator,18,2026-05-12,Add code-generated header to rego output,eriks2,1,true,true,2025-06-21
-A,planera.io / go / Rego Generator,19,2026-06-24,[PRD-27172] Add regogen agent guide,joshh3,2,true,true,2025-06-21
+A,planera.io / go / Rego Generator,17,2026-05-12,[NOJIRA] Use single quote to silence Rabbit,eriks2,1,true,true,2025-06-21
 A,planera.io / go / Rego Generator,20,2026-06-24,feat(autodesk): register autodesk service in regogen,tayyabs,1,true,true,2025-06-21
+A,planera.io / go / Rego Generator,19,2026-06-24,[PRD-27172] Add regogen agent guide,joshh3,2,true,true,2025-06-21
 A,planera.io / go / Rego Generator,21,2026-07-10,[PRD-27582]: bump Planera CI templates to v15.5.7,benl2,1,true,true,2025-06-21
 A,planera.io / go / Rego Generator,22,2026-07-31,"[PRD-28035] Address CVE-2026-39833, CVE-2026-39821",mikeg2,1,true,true,2025-06-21
 A,planera.io / go / Rego Generator,23,2026-10-02,[PRD-28871] Add the layout service to OPA rule generation,eriks2,1,true,true,2025-06-21
@@ -297,16 +297,16 @@ A,planera.io / go / kongconfig,48,2026-10-08,[CHAT-2765] Rate limit the full pub
 A,planera.io / go / kongconfig,49,2026-10-27,[CHAT-2943] Add the MCP tool set 1 route to Kong config,asadr1,1,true,true,2025-06-21
 A,planera.io / go / kongconfig,50,2026-10-28,[CHAT-2943] Raise the MCP tool set 1 rate limit to 300 a minute,asadr1,1,true,true,2025-06-21
 A,planera.io / go / kongconfig,51,2026-10-31,[PRD-29522] Give every Kong service a 5 s connect timeout,mikeg2,1,true,true,2025-06-21
-A,planera.io / pm-design-template,5,2026-09-01,Add update-workspace: one ask to get the latest setup,griffins-planera,0,true,true,2026-08-10
 A,planera.io / pm-design-template,4,2026-09-01,Guide prototypes toward component contract styling,griffins-planera,0,true,true,2026-08-10
+A,planera.io / pm-design-template,5,2026-09-01,Add update-workspace: one ask to get the latest setup,griffins-planera,0,true,true,2026-08-10
 A,planera.io / react / Test Release Branch,4,2026-04-28,Mock Changes to Bump Version,griffins-planera,0,true,true,2026-04-22
 A,planera.io / react / Test Release Branch,2,2026-04-28,Initial Setup With Hotfix Template,griffins-planera,1,true,true,2026-04-22
-A,planera.io / react / Test Release Branch,14,2026-05-11,V4,griffins-planera,0,true,true,2026-04-22
 A,planera.io / react / Test Release Branch,12,2026-05-11,Fresh v0.3 To Enable More TEsting,griffins-planera,0,true,true,2026-04-22
+A,planera.io / react / Test Release Branch,14,2026-05-11,V4,griffins-planera,0,true,true,2026-04-22
 A,planera.io / react / prototypes,25,2026-09-01,Prefer component contracts for prototype styling,griffins-planera,0,true,true,2026-08-10
-A,planera.io / react / team-status,19,2026-04-13,Demo to Main,trystendsmyth,1,true,true,2026-04-02
 A,planera.io / react / team-status,21,2026-04-13,Change the base URL to allow for the user of atlassian service accounts,tuckerd-planera,1,true,true,2026-04-02
 A,planera.io / react / team-status,20,2026-04-13,chore: direct ci/cd to main,trystendsmyth,1,true,true,2026-04-02
+A,planera.io / react / team-status,19,2026-04-13,Demo to Main,trystendsmyth,1,true,true,2026-04-02
 A,planera.io / react / team-status,22,2026-04-14,fix: jira api language,trystendsmyth,1,true,true,2026-04-02
 A,planera.io / react / team-status,23,2026-04-15,fix: batch of layout tweaks,trystendsmyth,1,true,true,2026-04-02
 A,planera.io / react / team-status,24,2026-04-21,[NOJIRA] chore: upgrade ui to 2.4.1 and past post support,trystendsmyth,1,true,true,2026-04-02
@@ -328,8 +328,8 @@ A,planera.io / tests / Jmeter,14,2026-09-29,[CHAT-2532] Deterministic chat strea
 B1,planera.io / Corp IT / Auto IT,2,2026-02-26,fix(grimes): phase-3 reliability and pipeline correctness fixes,tuckerd-planera,0,true,true,2026-06-01
 B1,planera.io / Corp IT / Auto IT,3,2026-03-01,fix(cd): fix COMMIT_SHA unbound variable under set -u,tuckerd-planera,0,true,true,2026-06-01
 B1,planera.io / Corp IT / Auto IT,4,2026-03-02,fix(cd): fix COMMIT_SHA unbound variable under set -u,tuckerd-planera,0,true,true,2026-06-01
-B1,planera.io / Corp IT / Auto IT,6,2026-03-16,chore(conductor): Add new track 'Admin UI Auth & Org Chart',tuckerd-planera,0,true,true,2026-06-01
 B1,planera.io / Corp IT / Auto IT,5,2026-03-16,chore(conductor): Add new track 'Admin UI Auth & Org Chart',tuckerd-planera,0,true,true,2026-06-01
+B1,planera.io / Corp IT / Auto IT,6,2026-03-16,chore(conductor): Add new track 'Admin UI Auth & Org Chart',tuckerd-planera,0,true,true,2026-06-01
 B1,planera.io / Corp IT / Auto IT,7,2026-03-24,"feat(admin-ui): Overdrive — FLIP drag, animated org chart, shared element page transitions",tuckerd-planera,0,true,true,2026-06-01
 B1,planera.io / Developer Sandbox / Asad Rauf Khan dev-docs,1,2026-06-25,'- [CHAT-1856] Add design doc and plan for comments embeddings,asadr1,1,true,true,2026-06-30
 B1,planera.io / Developer Sandbox / Ben Li dev-docs,1,2026-06-17,"[PRD-26745] : Document for plan api optimization, particularly mongo operations",benl2,0,true,true,2026-06-30
@@ -341,21 +341,21 @@ B1,planera.io / pm-design-template,1,2026-08-08,Surface the Vercel preview URL w
 B1,planera.io / react / prototypes,16,2026-08-07,Restructure as the PM/design prototype sandbox,griffins-planera,0,true,true,2026-08-10
 B1,planera.io / react / prototypes,18,2026-08-08,"One prototype per branch: prototype lives in src/prototype, drop the gallery",griffins-planera,0,true,true,2026-08-10
 B1,planera.io / react / prototypes,20,2026-08-08,Enforce the prototype component conventions,griffins-planera,0,true,true,2026-08-10
+B2,planera.io / Developer Sandbox / Forks / Microservice,3,2026-07-17,Test Changelog Automation Demo to Main,mikeg2,0,true,true,2026-11-23
+B2,planera.io / Developer Sandbox / Griffin Shaw dev-docs,1,2026-08-14,docs: Manny message parts model discovery,griffins-planera,2,true,true,2026-11-23
+B2,planera.io / Developer Sandbox / Griffin Shaw dev-docs,4,2026-08-21,[NOJIRA] Add PM and design prototyping pipeline,griffins-planera,1,true,true,2026-11-23
+B2,planera.io / Developer Sandbox / Haris Ejaz dev-docs,1,2026-09-25,docs: add project snapshots frontend solution design,harise2,1,true,true,2026-11-23
+B2,planera.io / Developer Sandbox / Haris Ejaz dev-docs,2,2026-10-09,docs: add predecessor-actual-date-hints solution design,harise2,0,true,true,2026-11-23
+B2,planera.io / Developer Sandbox / Wasim dev-docs,1,2026-07-24,docs: add contributor-commit-status solution design,wasim-planera,2,true,true,2026-11-23
+B2,planera.io / Developer Sandbox / Wasim dev-docs,3,2026-09-15,[CHAT-2447] Solution design: overlay layering,wasim-planera,0,true,true,2026-11-23
+B2,planera.io / Developer Sandbox / Wasim dev-docs,2,2026-09-15,[CHAT-2447] Discovery: a systematic overlay layering approach,wasim-planera,1,true,true,2026-11-23
+B2,planera.io / Developer Sandbox / vadima3 dev-docs,1,2026-10-06,docs: add history-copy-forward-on-restore solution design,vadima3,1,true,true,2026-11-23
 B2,planera.io / Information Security / Periodic Scans,1,2026-09-02,Authenticate DAST scans with a Cognito ID token,tuckerd-planera,0,true,true,2026-11-23
 B2,planera.io / Information Security / Periodic Scans,2,2026-09-09,"Rework DAST discovery, containment, and status reporting",tuckerd-planera,0,true,true,2026-11-23
 B2,planera.io / Information Security / Periodic Scans,3,2026-09-09,Enable use of vercel bypass header,tuckerd-planera,0,true,true,2026-11-23
 B2,planera.io / Information Security / Periodic Scans,4,2026-09-10,Seed frontend routes into the crawl,tuckerd-planera,0,true,true,2026-11-23
 B2,planera.io / react / dcma-check-webflow-widget,1,2026-06-05,"[SEC-42][PRD-26749] Upgrade to PNPM 11, Add Provenance Data",andrewb12,0,true,true,2026-11-23
 B2,planera.io / react / dcma-check-webflow-widget,2,2026-06-15,"[PRD-27119] add agents file, update ci template, fix differences with real libraries",andrewb12,0,true,true,2026-11-23
-C,planera.io / Developer Sandbox / Forks / Microservice,3,2026-07-17,Test Changelog Automation Demo to Main,mikeg2,0,true,true,
-C,planera.io / Developer Sandbox / Griffin Shaw dev-docs,1,2026-08-14,docs: Manny message parts model discovery,griffins-planera,2,true,true,
-C,planera.io / Developer Sandbox / Griffin Shaw dev-docs,4,2026-08-21,[NOJIRA] Add PM and design prototyping pipeline,griffins-planera,1,true,true,
-C,planera.io / Developer Sandbox / Haris Ejaz dev-docs,1,2026-09-25,docs: add project snapshots frontend solution design,harise2,1,true,true,
-C,planera.io / Developer Sandbox / Haris Ejaz dev-docs,2,2026-10-09,docs: add predecessor-actual-date-hints solution design,harise2,0,true,true,
-C,planera.io / Developer Sandbox / Wasim dev-docs,1,2026-07-24,docs: add contributor-commit-status solution design,wasim-planera,2,true,true,
-C,planera.io / Developer Sandbox / Wasim dev-docs,3,2026-09-15,[CHAT-2447] Solution design: overlay layering,wasim-planera,0,true,true,
-C,planera.io / Developer Sandbox / Wasim dev-docs,2,2026-09-15,[CHAT-2447] Discovery: a systematic overlay layering approach,wasim-planera,1,true,true,
-C,planera.io / Developer Sandbox / vadima3 dev-docs,1,2026-10-06,docs: add history-copy-forward-on-restore solution design,vadima3,1,true,true,
 D,planera.io / devops / Terraform / jump-host-scripts,39,2026-03-11,[PRD-25294] Release to Production as v0.4.2,mikeg2,1,true,false,2026-11-23
 D,planera.io / react / Webapp,7776,2025-11-05,Prod v2.21.0,planeraguy,1,true,false,2025-06-21
 D,planera.io / react / Webapp,7962,2025-12-04,[FIXCHANGELOG] Prod v2.22.2,griffins-planera,2,true,false,2025-06-21
