@@ -1,0 +1,12 @@
+{
+  "diffs": [
+    {
+      "new_path": "CHANGELOG.md",
+      "diff": "@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0\n \n ## [Unreleased]\n \n+## [0.13.0] - 2026-05-26\n+\n ### Added\n \n - vercel.json config to repo\n"
+    },
+    {
+      "new_path": "package.json",
+      "diff": "@@ -1,7 +1,7 @@\n {\n   \"name\": \"webadmin\",\n   \"private\": true,\n-  \"version\": \"0.12.0\",\n+  \"version\": \"0.13.0\",\n   \"packageManager\": \"pnpm@10.26.0\",\n   \"engines\": {\n     \"node\": \"24.x\",\n"
+    }
+  ]
+}

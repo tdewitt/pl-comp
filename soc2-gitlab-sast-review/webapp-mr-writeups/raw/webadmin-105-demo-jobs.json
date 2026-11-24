@@ -1,0 +1,72 @@
+[
+  {
+    "stage": "test",
+    "name": "semgrep-sast-eval",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm audit report",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm build and test 4/4",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm build and test 3/4",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm build and test 2/4",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm build and test 1/4",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm lint",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "pnpm typecheck",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "secret_detection",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "semgrep-sast",
+    "status": "success"
+  },
+  {
+    "stage": "test",
+    "name": "gemnasium-dependency_scanning",
+    "status": "success"
+  },
+  {
+    "stage": "validate",
+    "name": "post merge update version",
+    "status": "success"
+  },
+  {
+    "stage": "validate",
+    "name": "detect push source",
+    "status": "success"
+  },
+  {
+    "stage": ".pre",
+    "name": "node_modules",
+    "status": "success"
+  }
+]
