@@ -14,3 +14,4 @@
 {"id":"f151653e-ecaf-421d-bfa1-3a6a2550de02","field":"likelihood","before":"* Likelihood Select...","after":"3 - Moderate"}
 {"id":"76b6de26-3e2d-49f9-8acd-62f91fb7974d","field":"likelihood","before":"* Likelihood Select...","after":"3 - Moderate"}
 {"id":"6b6e1ef7-29a2-4a7c-9784-dfcde1298fe6","field":"likelihood","before":"* Likelihood 3 - Moderate","after":"2 - Low"}
+{"id":"6b6e1ef7-29a2-4a7c-9784-dfcde1298fe6","label":"Treatment notes","before":"Define a leakage response plan covering secret rotation, access revocation, containment, customer and legal decisions, repository and log review, takedown, evidence, and post-incident prevention.","after":"Secrets have been rotated in response to past exposures, but no written leakage response plan exists. A task is open to write the plan, covering secret rotation, access revocation, containment, customer and legal decisions, repository and log review, takedown, evidence, and post-incident prevention."}
