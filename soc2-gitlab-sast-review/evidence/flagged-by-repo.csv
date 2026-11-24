@@ -1,0 +1,48 @@
+cat,Repository,excluded_on,excluded_by,reason,mrs,no_int,no_sd,zero,first_merge,last_merge
+A,planera.io / Developer Agents Template,2026-05-05,Mike Guzewicz,development_asset,105,105,105,25,2026-05-14,2026-11-04
+A,planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services,2025-06-21,Josiah Alfaro,out_of_scope_production_asset,30,30,30,17,2026-06-18,2026-11-04
+A,planera.io / devops / Continuous Integration and Deployment / Templates,2025-06-21,"",development_asset,24,24,24,2,2025-12-02,2026-07-18
+A,planera.io / go / kongconfig,2025-06-21,"",development_asset,20,20,20,0,2026-05-08,2026-10-31
+A,planera.io / Corp IT / fleetcmd.it,2026-06-30,Tucker DeWitt,Non prod asset,19,19,19,18,2026-07-22,2026-11-02
+A,planera.io / automation / playwright-planera,2025-10-20,Mike Guzewicz,development_asset,19,19,19,13,2025-12-16,2026-10-22
+A,planera.io / react / team-status,2026-04-02,Mike Guzewicz,development_asset,15,15,15,0,2026-04-13,2026-11-02
+A,planera.io / Developer Sandbox / Erik Swenson dev-docs,2026-06-10,Tucker DeWitt,development_asset,11,11,11,7,2026-06-23,2026-10-28
+A,planera.io / Developer Sandbox / Mike Guzewicz dev-docs,2026-06-30,Tucker DeWitt,development_asset,9,9,9,1,2026-07-08,2026-10-09
+A,planera.io / Developer Sandbox / Josh dev-docs,2026-06-10,Tucker DeWitt,development_asset,8,8,8,6,2026-06-18,2026-10-20
+A,planera.io / Developer Sandbox / Cat Nuguid dev-docs,2026-06-10,Tucker DeWitt,development_asset,7,7,7,4,2026-07-17,2026-10-20
+A,planera.io / go / Rego Generator,2025-06-21,"",development_asset,7,7,7,0,2026-05-12,2026-10-02
+A,planera.io / Developer Sandbox / Andrew Boskin dev-docs,2026-06-10,Tucker DeWitt,development_asset,6,6,6,5,2026-09-05,2026-10-26
+A,planera.io / Developer Sandbox / Asad Rauf Khan dev-docs,2026-06-30,Tucker DeWitt,development_asset,6,6,6,3,2026-07-21,2026-10-27
+A,planera.io / Developer Sandbox / Ben Li dev-docs,2026-06-30,Tucker DeWitt,development_asset,5,5,5,4,2026-07-06,2026-10-26
+A,planera.io / automation / manny-feedback-automation,2026-07-07,Mike Guzewicz,development_asset,4,4,4,4,2026-07-15,2026-09-09
+A,planera.io / react / Test Release Branch,2026-04-22,Mike Guzewicz,development_asset,4,4,4,3,2026-04-28,2026-05-11
+A,planera.io / tests / Jmeter,2025-06-21,"",development_asset,4,4,4,0,2026-09-03,2026-09-29
+A,planera.io / Developer Sandbox / Jeffrey Tsai dev-docs,2026-06-30,Tucker DeWitt,development_asset,3,3,3,1,2026-07-22,2026-10-02
+A,planera.io / Developer Sandbox / Naveen Puvvula dev-docs,2026-06-30,Tucker DeWitt,development_asset,3,3,3,3,2026-08-14,2026-10-02
+A,planera.io / go / Scripts,2025-06-21,"",development_asset,3,3,3,0,2026-06-17,2026-09-16
+A,planera.io / Developer Sandbox / Farooq Tareen dev-docs,2026-06-10,Tucker DeWitt,development_asset,2,2,2,0,2026-07-14,2026-08-04
+A,planera.io / Developer Sandbox / Shahbaz Shoukat dev-docs,2026-06-10,Tucker DeWitt,development_asset,2,2,2,2,2026-09-11,2026-10-06
+A,planera.io / Developer Sandbox / Vivek Nyayapathi dev-docs,2026-06-30,Tucker DeWitt,development_asset,2,2,2,2,2026-08-10,2026-08-12
+A,planera.io / pm-design-template,2026-08-10,Mike Guzewicz,development_asset,2,2,2,2,2026-09-01,2026-09-01
+A,planera.io / react / templates / library,2026-01-30,Mike Guzewicz,development_asset,2,2,2,0,2026-06-05,2026-06-15
+A,planera.io / Developer Sandbox / Tayyab Sarwar dev-docs,2026-06-10,Tucker DeWitt,development_asset,1,1,1,0,2026-08-31,2026-08-31
+A,planera.io / Developer Sandbox / Ubaid Rehman dev-docs,2026-06-10,Tucker DeWitt,development_asset,1,1,1,0,2026-07-09,2026-07-09
+A,planera.io / go / changelog-testing,2025-06-21,Mike Guzewicz,Changelog automation test repository,1,1,1,1,2026-06-11,2026-06-11
+A,planera.io / react / prototypes,2026-08-10,Mike Guzewicz,development_asset,1,1,1,1,2026-09-01,2026-09-01
+B1,planera.io / Corp IT / Auto IT,2026-06-01,Tucker DeWitt,development_asset,6,6,6,6,2026-02-26,2026-03-24
+B1,planera.io / pm-design-template,2026-08-10,Mike Guzewicz,development_asset,3,3,3,3,2026-08-08,2026-08-08
+B1,planera.io / react / prototypes,2026-08-10,Mike Guzewicz,development_asset,3,3,3,3,2026-08-07,2026-08-08
+B1,planera.io / Developer Sandbox / Asad Rauf Khan dev-docs,2026-06-30,Tucker DeWitt,development_asset,1,1,1,0,2026-06-25,2026-06-25
+B1,planera.io / Developer Sandbox / Ben Li dev-docs,2026-06-30,Tucker DeWitt,development_asset,1,1,1,1,2026-06-17,2026-06-17
+B1,planera.io / Developer Sandbox / Jeffrey Tsai dev-docs,2026-06-30,Tucker DeWitt,development_asset,1,1,1,0,2026-06-26,2026-06-26
+B1,planera.io / Developer Sandbox / Mike Guzewicz dev-docs,2026-06-30,Tucker DeWitt,development_asset,1,1,1,0,2026-06-17,2026-06-17
+B2,planera.io / Information Security / Periodic Scans,2026-11-23,Tucker DeWitt,"WIP security scanner.  Not product, no access to customer data, nothing.",4,4,4,4,2026-09-02,2026-09-10
+B2,planera.io / react / dcma-check-webflow-widget,2026-11-23,Tucker DeWitt,development_asset,2,2,2,2,2026-06-05,2026-06-15
+C,planera.io / Developer Sandbox / Wasim dev-docs,,"","",3,3,3,1,2026-07-24,2026-09-15
+C,planera.io / Developer Sandbox / Griffin Shaw dev-docs,,"","",2,2,2,0,2026-08-14,2026-08-21
+C,planera.io / Developer Sandbox / Haris Ejaz dev-docs,,"","",2,2,2,1,2026-09-25,2026-10-09
+C,planera.io / Developer Sandbox / Forks / Microservice,,"","",1,1,1,1,2026-07-17,2026-07-17
+C,planera.io / Developer Sandbox / vadima3 dev-docs,,"","",1,1,1,0,2026-10-06,2026-10-06
+D,planera.io / react / Webapp,2025-06-21,"","",8,8,1,0,2025-11-05,2026-06-09
+D,planera.io / react / webadmin,2025-08-08,"","",2,2,2,0,2026-06-09,2026-07-08
+D,planera.io / devops / Terraform / jump-host-scripts,2026-11-23,Tucker DeWitt,"",1,1,0,0,2026-03-11,2026-03-11

@@ -1,0 +1,130 @@
+0096f860-8228-4265-890c-997111d49325	planera.io / devops / Terraform / service-forks / Webapp-Devops
+0352477b-6733-4740-8197-8dbdb55734d1	planera.io / react / ui-components
+0396c771-4b7e-404c-a6e2-dbb054dbabee	planera.io / pocs / collaboration-qodo
+076f6c32-0c1f-4e69-9c7e-dde0a3c3df74	planera.io / pocs / Common with CodeRabbit AI MR Reviewer
+0bf5b471-9a64-4ec7-8c5c-a3f3ceee08d9	planera.io / go / processor
+0dc9e24d-974a-4ffc-b14e-26d63e1e87e3	planera.io / go / Feed
+11baafdb-15f1-43ce-9cfc-a6f1f56b6cb0	planera.io / Corp IT / Auto IT
+11ecf22c-edbe-4f50-9d0b-09c38680db0e	planera.io / thirdparty / Launch Darkly Relay Proxy
+1321512e-3905-4ea3-b5b0-64e03fedf53f	planera.io / Developer Sandbox / Forks / Microservice
+18a97be8-b7c5-4740-adb4-7ab7641803bb	planera.io / Developer Sandbox / Farooq Tareen dev-docs
+1b683702-9d65-4251-9788-55ccdb9f760b	planera.io / go / Planera MCP
+1e58d6b8-4935-4554-b74c-1e61decc45aa	planera.io / Information Security / Security Questionnaire Bot
+22d92e96-35f1-44e8-b0ba-e6cf1c032d88	planera.io / devops / Infrastructure / Bootstrap / Amazon Web Services
+2693e89e-5cf3-445b-995c-5929794de520	planera.io / go / templates / Microservice
+2a6f90a6-86e2-4bf7-8f4b-cfb3204db671	planera.io / react / webadmin
+2a95e95f-70c9-4c62-a9d9-bd71ace8b0a6	planera.io / react / Manny
+2e76e21e-9a7e-4333-9d6f-3a274e173ac4	planera.io / devops / Kubernetes / cluster-management-eks-gitlab-managed
+2fb7786e-4899-4c76-940e-cabb4ad76f4c	planera.io / python / Chat Server
+31cf59ab-2805-4076-896f-240f44563a47	planera.io / node / autodesk
+347d6115-dc80-43bd-9e02-a595ec54a02d	planera.io / react / Webapp
+34fa235c-c51b-4728-8900-4379968b5dd2	planera.io / react / templates / library
+3512966a-f01e-4a3e-bfdd-b2929b916598	planera.io / devops / Infrastructure / Bootstrap / Google Cloud Platform
+3555e706-8307-4b87-aa85-dc203c78af66	planera.io / pocs / Common with Qodo MR Review
+36704c12-433a-4aea-b147-724d006acfd1	planera.io / devops / Terraform / service-examples / aws-otel-go
+3f17e491-eeb2-45de-b1d7-0d8b7a70dcae	planera.io / react / team-status
+3f9443ed-a583-478f-ba27-20f5846fcbcd	planera.io / react / pnpm-changeset-testing
+44a07370-7248-4f4e-9b8c-727731f246f3	planera.io / go / archive / ARCHIVED - Schloobie
+44e29ed3-b717-4750-bcda-339c0a746a3a	planera.io / go / changelog-testing
+453834f3-53bd-4c96-93d0-00b9f34cddc4	planera.io / go / Status
+49f75a79-ef34-4652-a05b-8ed5063d47b5	planera.io / Developer Sandbox / Andrew Boskin dev-docs
+4d9fde1f-c2f3-44af-ac2b-edccb79ae1c1	planera.io / go / Scripts
+4e90db9a-a65c-47fd-bbdb-e84b74d4c55f	planera.io / devops / Terraform / Terraform Images
+52d274cc-f40c-4e17-bff5-e43de765f0af	planera.io / Developer Sandbox / Abu Hurera dev-docs
+554f815b-d3f3-4a1a-afd7-ab4d3079fd39	planera.io / Developer Sandbox / Asad Mehmood dev-docs
+5601cb79-0daf-49ab-89a2-2679237fdfbf	planera.io / Developer Sandbox / Ben Li dev-docs
+568f82ef-0117-4986-b320-e6b8bdc773fa	planera.io / Developer Sandbox / Chantal Jandard dev-docs
+5b158026-92d9-4608-a18c-e85b271bca78	planera.io / go / examples / Pubnub
+5c9abdc0-e9a4-4154-ab67-2b0db068cefe	planera.io / Developer Sandbox / Thibaut Delille dev-docs
+5dad6042-b74c-48d5-ac83-00c5bea62833	planera.io / go / kongconfig
+5fc4b495-e54b-4a7b-bb17-9ff9b17da0ac	planera.io / devops / Infrastructure / Core / Amazon Web Services
+601edf7c-af58-4797-bcbf-745f0f0964f4	planera.io / react / Gantt Pro
+612f89ab-0bf2-4f02-8b5c-b1d0621e8743	planera.io / go / Planera Internal MCP
+61ea6feb-a8ca-4935-b4c4-6ea074f879d6	planera.io / python / hack-client
+62093614-3630-4849-a0d2-92a18dd893ee	planera.io / tests / Jmeter
+656121bd-628f-4461-b340-f366d26f49e6	planera.io / devops / Continuous Integration and Deployment / Templates
+668a9c05-ee8e-468e-be40-539f075a9489	planera.io / Developer Sandbox / Cat Nuguid dev-docs
+694ba6c8-c9ca-444f-b678-c8c3c2c81e63	planera.io / Developer Sandbox / Ubaid Rehman dev-docs
+6a66de36-9d3e-4af6-a32f-f27742fa6c42	planera.io / Developer Sandbox / Naveen Puvvula dev-docs
+6aa02606-be5f-4def-b224-eb8d8ff873ac	planera.io / configs / opa
+6bcc73c3-64f4-467d-9ba1-0c5f0d1c975a	planera.io / samples / Minimal Ruby App
+6d81f466-3488-4fe5-9f74-69e97e4a857f	planera.io / automation / manny-feedback-automation
+6dbe71a3-140e-4553-8f1b-3d6884fcf651	planera.io / Developer Sandbox / Wasim dev-docs
+6e67b36a-59f4-4ee6-a67b-7665880cefff	planera.io / Developer Sandbox / Vad XB Software dev-docs
+743164e7-6c81-4f38-b3ec-dce7ab45d1dc	planera.io / nextjs / vercel-deploy-mcp
+75690d4e-2a27-46ff-8886-6b98674c1b41	planera.io / go / common
+757fcde8-acd8-425e-848b-bb2f716cb549	planera.io / devops / Terraform / service-forks / Webapp-devops
+769cdc9c-7a2c-4b8f-a8cb-25fc67e73d6d	planera.io / devops / Terraform / planera-iac
+795c36ec-0563-41ec-9e45-ae0f5d063618	planera.io / devops / Google Workspace SSO Audit
+797a0dc6-843c-45be-a4de-19ae81bc9985	planera.io / Corp IT / Support Tools
+79e4b4ae-0cac-43fd-8e6d-1088d93508fc	planera.io / Developer Sandbox / Gideon Planera dev-docs
+7a7382db-1be7-471e-a149-5ec173d31b1a	planera.io / Developer Sandbox / Erik Swenson dev-docs
+7bd2075b-cc8a-4cbc-bce1-01a15c3592e1	planera.io / go / Analytics
+7ca6f034-848c-4c93-8838-31b843aa3696	planera.io / node / layout
+81a77258-bb97-4c3c-ac96-b3ad9bee4b36	planera.io / Developer Sandbox / Shahbaz Shoukat dev-docs
+84619e5f-2ede-43e7-a9ed-270e2d41d358	planera.io / devops / Terraform / jump-host-scripts
+86a06a73-4205-4499-ab31-5fabb52acc6a	planera.io / go / Accounts
+89ca2795-28f7-4774-b308-23b5c0e02bbc	planera.io / react / pdfoutput
+8ae2fc0a-4ddf-4e0b-904d-946ad34fe4df	planera.io / go / import-export
+8b7aabcf-b47e-46ab-96bd-2e87f518d598	planera.io / thirdparty / Kong Api Authz
+8d416c18-322a-4f36-983d-f1d9c08f97c0	planera.io / python / insights-filter
+9694964c-c655-4ba2-9171-318b555cb90e	planera.io / pocs / planera-iac-coderabbit
+98c8216a-74e9-42ed-ac30-f4f8c8885377	planera.io / Developer Sandbox / Josh dev-docs
+9a527a75-8dfe-462b-ae2d-2f47c61734f2	planera.io / go / Messaging
+9a52eea0-76ea-423c-ac54-4f79b60cd55c	planera.io / Developer Sandbox / Mike Guzewicz dev-docs
+9e201f53-c763-462d-9fc5-e4cf0448eb06	planera.io / react / prototypes
+a26bc55f-1aba-485c-9aa8-7f9890bedd3f	planera.io / go / tests
+a389da43-4023-441a-93dc-1cf6b7d0bef4	planera.io / python / templates / Microservice
+a4a9f24f-dc73-44c3-a904-ed2f39711775	planera.io / pm-design-template
+a6bae98a-0d72-4039-802c-cf7022d50d5e	planera.io / Developer Sandbox / Haris Ejaz dev-docs
+a80839cb-59da-4b91-ae4c-68bff6b6f487	planera.io / react / react-gantt
+a99fe6c6-c6fe-4e78-a0ee-4e9c92a44f9a	planera.io / Developer Sandbox / Nitin Bhandari dev-docs
+aa8cc490-3186-4c3f-affd-08ed96c7a5b1	planera.io / react / Test Release Branch
+aa93450c-221d-4bf3-bdf2-e3beb22e7e18	planera.io / Developer Sandbox / Griffin Shaw dev-docs
+abe05bb9-2276-4449-a18f-d6804ea5e594	planera.io / Developer Sandbox / Ahsan Ali dev-docs
+ac5cf33e-bc57-4e7a-bef6-7990ef981507	planera.io / go / scheduler
+ad3f52f9-afc1-422a-9001-e7e4236976e2	planera.io / go / collaboration
+aedc20ea-5f20-4f7b-95ce-377ecc9cc766	planera.io / pocs / manny-text
+af6eee2d-489c-4101-a6fa-882d9d3e25da	planera.io / devops / renovate-runner
+b1e0ec79-eb85-44cb-8b73-b479c7ed707c	planera.io / devops / squid / proxy-server
+b5366bb7-0f3b-468c-a30a-3c59180da3c8	planera.io / go / counter
+b54face0-7ade-41d6-9925-f28b4b0a19b3	planera.io / Developer Sandbox / Frank Liu dev-docs
+b5a311a2-4591-4e58-8560-59aa386fc529	planera.io / node / templates / Microservice
+b6af84c5-df5d-4e33-aef8-553ff03b97d2	planera.io / Developer Sandbox / Tayyab Sarwar dev-docs
+b79215cb-50be-46c7-9a97-456787b5480b	planera.io / Developer Sandbox / Vivek Nyayapathi dev-docs
+b89a270b-8ad9-48e8-a78f-c09789a42546	planera.io / pocs / Webapp CodeRabbit Code Review
+b93f92d1-4dbe-405e-bc69-260a6ad3183f	planera.io / automation / playwright-planera
+ba351aca-5876-467f-b0eb-cd89758eff4f	planera.io / Developer Sandbox / Asad Rauf Khan dev-docs
+bb151d10-d12c-443f-b410-3eeecc76757f	planera.io / node / nodepdf
+bd95ddc0-3102-4c9c-8b4d-773b9445a82e	planera.io / Developer Sandbox / Tristan Smith dev-docs
+be8ed408-b5da-48a9-8765-a0c15aefc742	planera.io / Developer Sandbox / Jeffrey Tsai dev-docs
+c4251731-bc50-4495-8698-f467e47a455f	planera.io / thirdparty / gantt-export
+c5d48c55-95fc-43d0-9cd8-036d081b62e7	planera.io / pocs / collaboration-coderabbit
+c7a9f33b-7b94-46d5-b9a0-c7cacf7b1fff	planera.io / Developer Sandbox / Zubair Shahid dev-docs
+c9c13e52-c79a-4473-8974-5a669255737e	planera.io / devops / Terraform / GitLab
+cabf2083-5909-463d-8eb4-380e1fb794a9	planera.io / go / Rego Generator
+cb2a92a2-7c25-45bf-b97c-833415b66374	planera.io / pocs / Webapp Qodo Code Review
+cfd134b2-58c8-43c9-b248-fc031711855b	planera.io / react / templates / reactapp
+d0e3c65e-f52e-4210-901b-fb1d03d7d855	planera.io / Developer Sandbox / Muhammad Umar dev-docs
+d19e197d-f1b9-432e-b625-e27517b3f2f6	planera.io / react / Admin Dashboard
+d40b47f0-a190-4965-a95e-e39fe48ed0e4	planera.io / react / historical-prototype
+d4d6d6e1-2874-4152-b273-f9b865a19653	planera.io / Developer Sandbox / Zeeshan Khalid dev-docs
+d5ccee16-21d3-40dc-82a4-c13a08f0d982	planera.io / automation / checksum-planera
+d7434601-ec02-403a-ab48-4a593b4ac438	planera.io / Developer Sandbox / Abdul Salam dev-docs
+d8087baa-77d1-418b-82e9-41e695dccf98	planera.io / Developer Sandbox / Salman dev-docs
+da71189a-2f8d-4a15-9e5e-86d8679297d5	planera.io / devops / Terraform / service-forks / DevOps Fork - Analytics
+daa22260-70a2-4131-a8cf-24cd4a89543f	planera.io / Corp IT / SSO Authentication
+dcc030eb-f49e-44c6-ac28-95dce23905dc	planera.io / Corp IT / fleetcmd.it
+e2b397c8-7399-4f31-869e-922f2910aec0	planera.io / react / manny-pwa
+e938727c-9a64-44ad-ac3f-589cd14e69de	planera.io / Information Security / Periodic Scans
+e995a02f-c85c-4a3d-a2f8-ff1042333a96	planera.io / automation / cypress-planera
+e9a466e5-0d2d-4a39-b829-00715f2a8333	planera.io / pocs / TruLens Evaluations
+eaf11f2c-9e08-4970-920a-ea47d784b082	planera.io / react / dcma-check-webflow-widget
+ee47112e-f9e9-4b9b-8981-3b3e5a30bbea	planera.io / node / procore
+f20434e6-399f-4cee-aed9-34059787348b	planera.io / Developer Sandbox / Mehul Kulkarni dev-docs
+f347c5f2-0d28-4579-a4db-59bea1b8018b	planera.io / react / jiradashboard
+f45b3239-7f70-4908-a1b4-ae88e6cfdaf5	planera.io / go / archive / ARCHIVED - Analytics
+f97ee1ce-71bb-4ef1-a114-842b2a1f5166	planera.io / pocs / isabella
+ff0a15f3-99bd-43e1-8f23-eee826b5678f	planera.io / Developer Sandbox / Faizas dev-docs
+ff677a73-7456-4457-b47e-969426d2b210	planera.io / Developer Sandbox / vadima3 dev-docs
+ffabe11a-55fc-4160-89ad-c9056d483090	planera.io / Developer Agents Template

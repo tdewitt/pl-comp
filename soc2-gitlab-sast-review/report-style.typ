@@ -1,0 +1,6 @@
+#set par(justify: false)
+#show figure: set block(breakable: true)
+#show table.cell: set align(left)
+#show table.cell: set text(size: 8.5pt)
+#show link: set text(fill: rgb("#1a5fb4"))
+#set table(inset: 4pt)
