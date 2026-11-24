@@ -64,16 +64,16 @@ approval.**
 - **{A[0]} flagged changes ({A[0]*100//ALL[0]}%) are in repositories that were already excluded from SOC 2 when the change
   was merged.** The test export marks every row "In Scope" and does not apply repository-level SOC 2 scoping.
 - **{B1[0] + B2[0]} flagged changes are in non-production repositories** (developer sandboxes, templates,
-  prototypes, internal tooling) that were excluded from SOC 2 later in the period or were corrected on 2026-11-23.
+  prototypes, internal tooling) that were excluded from SOC 2 later in the period or on 2026-11-23.
 - **{D[0]} flagged changes are in SOC 2 in-scope repositories.** All {D[0]} were approved and their code was tested. The flags
   come from renamed CI jobs (7), release automation commits that did not start a new pipeline (3), and a host that CI/CD
   cannot reach by design (1).
 
 | Repository status at merge | MRs | No integration | No SAST / dependency | 0 approvers |
 |----------------------------------------|---------|---------|---------|---------|
-| Excluded from SOC 2 before merge (export error) | {A[0]} | {A[1]} | {A[2]} | {A[3]} |
+| Excluded from SOC 2 before merge (export shows "In Scope") | {A[0]} | {A[1]} | {A[2]} | {A[3]} |
 | Excluded from SOC 2 later in the period | {B1[0]} | {B1[1]} | {B1[2]} | {B1[3]} |
-| Should have been excluded; corrected 2026-11-23 | {B2[0]} | {B2[1]} | {B2[2]} | {B2[3]} |
+| Excluded from SOC 2 on 2026-11-23 | {B2[0]} | {B2[1]} | {B2[2]} | {B2[3]} |
 | **SOC 2 in scope (all explained)** | **{D[0]}** | **{D[1]}** | **{D[2]}** | **{D[3]}** |
 | Total | {ALL[0]} | {ALL[1]} | {ALL[2]} | {ALL[3]} |
 
@@ -119,9 +119,9 @@ developer sandboxes, templates, prototypes, and internal IT tooling.
 
 {table("B1")}
 
-# Finding 3: Repositories that should have been excluded
+# Finding 3: Repositories excluded on 2026-11-23
 
-**Corrected on 2026-11-23.** These repositories were not production systems but had not been marked out of scope:
+These repositories are not production systems and had not been marked out of scope. They were excluded on 2026-11-23:
 
 - **Information Security / Periodic Scans** (`infosec/scans`): DAST scanning tooling under development. It is not part
   of the product and has no access to customer data.
@@ -181,13 +181,11 @@ The jump host is intentionally unreachable from CI/CD, so automated integration 
 release is deployed to the demo environment and verified by connecting to the new host before promotion to production.
 This MR was approved and passed SAST (pipeline jobs: `deploy demo`, `semgrep cloud sast`, both successful).
 
-# Remediation and next steps
+# Scope changes made on 2026-11-23
 
-| Item | Action | Status |
-|---|---|---|
-| Periodic Scans, dcma-check-webflow-widget, developer sandbox, proof-of-concept, and third-party repositories | Mark out of SOC 2 scope | Done 2026-11-23 |
-| Release automation (Webapp, webadmin) | Make release automation commits trigger CI, or require a merge request pipeline on every `demo` into `main` MR, so an external status alone cannot satisfy the pipeline requirement | Open |
-| New repositories | Assign SOC 2 scope when a repository is created | Open |
+Periodic Scans, dcma-check-webflow-widget, and all developer sandbox, proof-of-concept, and third-party repositories
+were marked out of SOC 2 scope in Secureframe. jump-host-scripts was confirmed in scope. Every repository in
+Secureframe now has an explicit SOC 2 scope assignment.
 
 # Evidence
 

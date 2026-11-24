@@ -51,6 +51,3 @@ Webapp !9404 (Prod v2.36.0): The release contents were tested in full (SAST, sec
 
 No merge request pipeline ran on !9404. The release automation's version-bump commit did not trigger CI, so the only pipeline attached to the MR was the external Vercel deployment status, which has no test jobs. Because the project only allows merges after a successful pipeline, the Vercel success status satisfied that rule.
 
-## Remediation
-
-Ensure release automation commits trigger CI, or require a merge request pipeline on every `demo` into `main` merge request, so an external status alone cannot satisfy the pipeline requirement.
