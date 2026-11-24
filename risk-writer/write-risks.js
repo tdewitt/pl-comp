@@ -55,15 +55,19 @@ async function pickOption(page, combobox, optionName) {
 
 async function multiSelect(page, group, values) {
   const current = (await group.innerText()).split('\n').map(s => s.trim());
-  // Option lists are virtualized, so off-screen options are absent from the DOM; filter by typing instead.
+  // Option lists are virtualized, so off-screen options are absent from the DOM; scroll the menu until it renders.
   for (const v of values) {
     if (current.includes(v)) continue;
     const menuOpen = await page.locator('[role=option]').first().isVisible().catch(() => false);
     if (!menuOpen) await press(group.getByRole('button', { name: 'Toggle menu' }).first());
-    await sleep(300);
-    await page.keyboard.type(v, { delay: 20 });
-    await sleep(700);
-    await press(page.getByRole('option', { name: v, exact: true }));
+    await sleep(400);
+    const opt = page.getByRole('option', { name: v, exact: true });
+    for (let i = 0; i < 8 && !(await opt.isVisible().catch(() => false)); i++) {
+      await page.locator('[role=option]').last().scrollIntoViewIfNeeded().catch(() => {});
+      await page.mouse.wheel(0, 200);
+      await sleep(300);
+    }
+    await press(opt);
     await sleep(400);
   }
   await page.keyboard.press('Escape');
