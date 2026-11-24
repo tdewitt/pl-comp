@@ -1,0 +1,6 @@
+Application,Account,First Name,Last Name,Roles,Privileged,Source,Action,Reviewed At,Reviewed By,Notes,Status at Export (2026-11-23),Change Ticket
+Stream,eriks@planera.io,,,admin,true,Manual,Maintain,"Mar 27, 2026 9:40 PM UTC",Tristan Smith,,Yes,
+Stream,mikeg@planera.io,,,admin,true,Manual,Maintain,"Mar 27, 2026 9:40 PM UTC",Tristan Smith,,Yes,
+Stream,nitinb@planera.io,,,admin,true,Manual,Maintain,"Mar 27, 2026 9:40 PM UTC",Tristan Smith,,Yes,
+Stream,omairz@planera.io,,,manager,true,Manual,Maintain,"Mar 27, 2026 9:40 PM UTC",Tristan Smith,,Yes,
+Stream,shahbazs@planera.io,,,developer,false,Manual,Maintain,"Mar 27, 2026 9:41 PM UTC",Tristan Smith,,Yes,

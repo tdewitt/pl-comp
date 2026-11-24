@@ -1,0 +1,13 @@
+Application,Account,First Name,Last Name,Roles,Privileged,Source,Action,Reviewed At,Reviewed By,Notes,Status at Export (2026-11-23),Change Ticket
+"MongoDB, Inc.",asadr@planera.io,Asad,Rauf,"GROUP_DATA_ACCESS_READ_ONLY, GROUP_DATA_ACCESS_READ_WRITE, GROUP_OWNER, GROUP_READ_ONLY, ORG_MEMBER",true,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",benl@planera.io,Ben,Li,"GROUP_DATA_ACCESS_READ_ONLY, GROUP_READ_ONLY, ORG_MEMBER",false,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",eriks@planera.io,Erik,Swenson,"GROUP_CLUSTER_MANAGER, GROUP_OWNER, ORG_OWNER",true,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",faizas@planera.io,Faiza,Shahzadi,"GROUP_DATA_ACCESS_READ_ONLY, GROUP_READ_ONLY, ORG_MEMBER",false,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",farooqt@planera.io,Farooq,Tareen,"GROUP_DATA_ACCESS_ADMIN, GROUP_DATA_ACCESS_READ_ONLY, GROUP_DATA_ACCESS_READ_WRITE, GROUP_READ_ONLY, ORG_MEMBER",true,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",griffins@planera.io,Griffin,Shaw,ORG_MEMBER,false,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",mikeg@planera.io,Mike,Guzewicz,"GROUP_OWNER, ORG_OWNER",true,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",omairz@planera.io,Omair,Nawaz,"GROUP_OWNER, ORG_OWNER",true,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",salmans@planera.io,Salman,Salahuddin,"GROUP_DATA_ACCESS_READ_ONLY, GROUP_READ_ONLY, ORG_MEMBER",false,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",tayyabs@planera.io,Tayyab,Sarwar,"GROUP_DATA_ACCESS_READ_ONLY, GROUP_DATA_ACCESS_READ_WRITE, GROUP_OWNER, GROUP_READ_ONLY, ORG_MEMBER",true,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",tuckerd@planera.io,Tucker,DeWitt,"GROUP_DATABASE_ACCESS_ADMIN, ORG_OWNER",true,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,
+"MongoDB, Inc.",zeeshank@planera.io,Zeeshan,Khalid,"GROUP_DATA_ACCESS_READ_ONLY, GROUP_READ_ONLY, ORG_MEMBER",false,Manual,Maintain,"Mar 27, 2026 1:02 AM UTC",Erik Swenson,,Yes,

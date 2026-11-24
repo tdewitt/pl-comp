@@ -1,0 +1,43 @@
+Application,Account,First Name,Last Name,Roles,Privileged,Source,Action,Reviewed At,Reviewed By,Notes,Status at Export (2026-11-23),Change Ticket
+Gitlab,Abu Hurera,Abu,Hurera,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Adli Hariadi,'Adli Ihsan,Hariadi,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Ahsan Ali,Ahsan,Ali,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Andrew Boskin,Andrew,Boskin,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Annisa Pertiwi,Annisa,Pertiwi,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Asad Mehmood,asadm1,,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Asad Rauf,Asad Rauf,Khan,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Ben Li,Ben,Li,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Cat Nuguid,catboop,,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Dzaky Rahmanto,Dzaky,Rahmanto,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Erik Swenson,Erik,Swenson,owner,true,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Faiza Shahzadi,Faiza,Shahzadi,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Farooq Tareen,Farooq,Tareen,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Farrukh Hussain,farrukhh,,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Griffin Shaw,Griffin,Shaw,maintainer,true,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Haris Ejaz,harise2,,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Lawrence Nguyen,lawrencen1,,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Matthew Guy,Matthew,Guy,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Michael Yap,Michael,Yap,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Mike Guzewicz,Mike,Guzewicz,owner,true,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Miriam Tomkin,miriamt1,,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Muhammad Umar,Muhammad,Umar,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Nitin Bhandari,Nitin,Bhandari,guest,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Omair Nawaz,Omair,Nawaz,owner,true,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Ravi Shankar,Ravi,Shankar,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,https://planera-inc.atlassian.net/browse/SUP-761
+Gitlab,Ricky Saputra,Ricky,Saputra,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Salman Salahuddin,Salman,Salahuddin,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Sameer Merchant,Sameer,Merchant,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Shahbaz Shoukat,Shahbaz,Shoukat,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Suclinton Suclinton,Suclinton,Suclinton,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Tayyab Sarwar,Tayyab,Sarwar,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Travis Ortiz,Travis,Ortiz,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Tristan Smith,Tristan,Smith,maintainer,true,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Tucker DeWitt,Tucker,DeWitt,owner,true,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Ubaid Rehman,Ubaid,Rehman,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Vad XB Software,Vad XB,Software,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Vivek Nyayapathi,vivekn3,,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Waldi Irawan,Waldi,Irawan,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Willy Komara,Willy,Komara,minimal_access,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Removed,No ticket found
+Gitlab,Yola Harsono,Yola,Harsono,minimal_access,false,Integration,Maintain,"Mar 27, 2026 10:04 PM UTC",Mike Guzewicz,"Yola is on extended leave, but will be returning",Removed,No ticket found
+Gitlab,Zeeshan Khalid,Zeeshan,Khalid,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
+Gitlab,Zubair Shahid,Zubair,Shahid,developer,false,Integration,Maintain,"Mar 27, 2026 12:54 AM UTC",Erik Swenson,,Yes,
