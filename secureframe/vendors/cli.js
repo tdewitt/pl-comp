@@ -139,8 +139,15 @@ async function run(args) {
       save(positional[0], data);
       console.log(JSON.stringify(result, null, 2));
     } else if (command === 'apply') {
-      const state = await browser.evaluate(`(() => document.body.innerText.slice(0,900))()`);
-      if (!state.includes('\nIn progress\n')) throw new Error('Apply requires an in-progress review');
+      // The review page renders after domcontentloaded; poll until its status line appears.
+      let state = '';
+      for (let attempt = 0; attempt < 60 && !/\n(In progress|Not started|Completed|Complete)\n/.test(state); attempt++) {
+        state = await browser.evaluate(`(() => document.body.innerText.slice(0,900))()`);
+        await new Promise(resolve => setTimeout(resolve, 500));
+      }
+      if (!state.includes('\nIn progress\n')) {
+        throw new Error('Apply requires an in-progress review. Page header:\n' + state.slice(0, 400));
+      }
       for (const item of [...data.questions].sort((a, b) => a.number - b.number))
         console.log(`Question ${item.number}: ${await review.applyAnswer(browser, item)}`);
       for (const [index, comment] of (data.assessment?.comments || []).entries())

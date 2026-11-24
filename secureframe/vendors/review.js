@@ -82,10 +82,17 @@ async function applyAnswer(browser, item) {
     complete.click(); return 'COMPLETING';
   `), result => result === 'UNCHANGED' || result === 'COMPLETING', `saving question ${number}`);
   if (result === 'COMPLETING') {
+    // The table can lag after Complete; on timeout, reopen the question and read its saved status instead.
     await until(browser, js(`
       const row = [...document.querySelectorAll('tr[data-row-id]')].find(r => r.getAttribute('data-row-id')?.startsWith(${number} + '.'));
-      return row?.innerText.includes('Complete') ? 'SAVED' : 'WAITING';
-    `), result => result === 'SAVED', `verifying question ${number}`);
+      if (row?.innerText.includes('Complete')) return 'SAVED';
+      // The table row can lag behind; a Reopen button in the open editor also confirms completion.
+      const d = document.querySelector('[role="dialog"]');
+      return d && [...d.querySelectorAll('button')].some(b => b.innerText.trim() === 'Reopen') ? 'SAVED' : 'WAITING';
+    `), result => result === 'SAVED', `verifying question ${number}`).catch(async () => {
+      const saved = await readQuestion(browser, number);
+      if (saved.status !== 'Complete' || saved.answer !== answer) throw new Error(`Question ${number} did not save`);
+    });
   }
   return result;
 }
